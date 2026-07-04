@@ -3,9 +3,60 @@ import { Archivo, Source_Sans_3 } from "next/font/google";
 import "./tokens.css";
 import "./globals.css";
 import { Footer, JsonLd } from "@/components";
+import type { FooterColumn } from "@/components";
 import { organizationSchema, websiteSchema, SITE_ORIGIN } from "@/lib/seo";
-import { NAV_ITEMS } from "@/lib/site-data";
+import { ROUTES } from "@/lib/site-data";
 import { SiteNav } from "./site-nav";
+
+// Finalized footer taxonomy — ported from the approved v1-home-comp foot-cols.
+// Column labels/order are the human-approved artifact; hrefs are mapped to the
+// real route map. NOTE: dedicated "Work" and "Contact" pages are in the IA but
+// not yet built — they point at the nearest live route as an interim.
+const FOOTER_COLUMNS: FooterColumn[] = [
+  {
+    title: "Solutions",
+    items: [
+      { label: "BRSR & Assurance Readiness", href: ROUTES.solutionA },
+      { label: "Carbon & Climate", href: ROUTES.solutionB },
+      { label: "Environmental & Social Due Diligence", href: ROUTES.solutionD },
+    ],
+  },
+  {
+    title: "How we work",
+    items: [
+      { label: "Our Method", href: `${ROUTES.howWeProve}#method` },
+      { label: "Standards & Frameworks", href: `${ROUTES.howWeProve}#standards` },
+      { label: "How We Measure Impact", href: `${ROUTES.howWeProve}#impact` },
+    ],
+  },
+  {
+    title: "Company",
+    items: [
+      { label: "About", href: ROUTES.about },
+      { label: "Proof / Evidence", href: ROUTES.howWeProve },
+      { label: "Work", href: ROUTES.howWeProve }, // interim → dedicated /work pending
+      { label: "Learn / Insights", href: "/learn" },
+    ],
+  },
+  {
+    title: "Get started",
+    items: [
+      { label: "Request a Proposal", href: ROUTES.start },
+      { label: "ESG Readiness Assessment", href: "/learn/brsr-readiness" },
+      { label: "Contact", href: ROUTES.start }, // interim → dedicated /contact pending
+    ],
+  },
+];
+
+const FOOTER_LEGAL = [
+  { label: "Privacy", href: "/privacy" },
+  { label: "Terms", href: "/terms" },
+  { label: "Accessibility", href: "/accessibility" },
+  { label: "llms.txt", href: "/llms.txt" },
+];
+
+const FOOTER_TAGLINE =
+  "Practical ESG. Measurable impact. India-based advisory for SEBI-BRSR and assurance readiness.";
 
 // Headings — engineered grotesk (brand @v0 §5.4 prototype stand-in).
 // Exposed as a CSS variable that globals.css maps onto the type tokens.
@@ -49,7 +100,11 @@ export default function RootLayout({
         <JsonLd data={websiteSchema()} />
         <SiteNav />
         {children}
-        <Footer footerItems={NAV_ITEMS} />
+        <Footer
+          columns={FOOTER_COLUMNS}
+          legalLinks={FOOTER_LEGAL}
+          brandTagline={FOOTER_TAGLINE}
+        />
       </body>
     </html>
   );

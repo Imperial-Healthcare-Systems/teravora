@@ -9,6 +9,11 @@ export type FooterProps = {
   footerItems?: NavItem[];
   legalLinks?: { label: string; href: string }[];
   brand?: string;
+  brandHref?: string;
+  /** Short positioning line shown under the brand lockup (finalized foot-brand copy). */
+  brandTagline?: string;
+  /** Brand mark shown on the paper chip; falls back to the shared header mark. */
+  brandMarkSrc?: string;
 };
 
 function fromNav(items: NavItem[]): FooterColumn[] {
@@ -32,6 +37,9 @@ export function Footer({
     { label: "Accessibility", href: "/accessibility" },
   ],
   brand = "Teravora",
+  brandHref = "/",
+  brandTagline,
+  brandMarkSrc = "/brand/teravora-mark.png",
 }: FooterProps) {
   const cols = columns ?? (footerItems ? fromNav(footerItems) : []);
   const year = new Date().getFullYear();
@@ -39,8 +47,34 @@ export function Footer({
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <nav className={styles.columns} aria-label="Footer">
+          {/* Brand lockup on a paper chip — the colored mark reads on the paper
+              ground where it would vanish on the navy footer. */}
+          <div className={styles.brand}>
+            <a
+              className={styles.brandLink}
+              href={brandHref}
+              aria-label={`${brand} — home`}
+            >
+              <span className={styles.brandChip}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className={styles.brandMark}
+                  src={brandMarkSrc}
+                  alt=""
+                  width={437}
+                  height={471}
+                  aria-hidden="true"
+                />
+                <span className={styles.brandWord}>{brand}</span>
+              </span>
+            </a>
+            {brandTagline ? (
+              <p className={styles.tagline}>{brandTagline}</p>
+            ) : null}
+          </div>
+
           {cols.map((col) => (
-            <div key={col.title}>
+            <div key={col.title} className={styles.col}>
               <h2 className={styles.colTitle}>{col.title}</h2>
               <ul className={styles.list}>
                 {col.items.map((item) => (
@@ -55,9 +89,6 @@ export function Footer({
           ))}
         </nav>
         <div className={styles.legal}>
-          <span>
-            © {year} {brand}. Practical ESG. Measurable Impact.
-          </span>
           <ul className={styles.legalLinks}>
             {legalLinks.map((l) => (
               <li key={l.label}>
@@ -67,6 +98,9 @@ export function Footer({
               </li>
             ))}
           </ul>
+          <span className={styles.copy}>
+            © {year} {brand}. Practical ESG. Measurable Impact.
+          </span>
         </div>
       </div>
     </footer>

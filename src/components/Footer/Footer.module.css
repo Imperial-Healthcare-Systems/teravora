@@ -1,8 +1,10 @@
-/* Footer — full service taxonomy + legal (DS §5). Navy ground. Tokens only. */
+/* Footer — finalized comp lockup: brand block + four columns + legal row.
+ * Navy ground. Tokens only. (Ported from working/V/v1-home-comp.html foot-*.) */
 .footer {
   background: var(--trv-sys-color-bg-inverse);
   color: var(--trv-sys-color-text-on-inverse);
   margin-top: auto;
+  border-top: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
 }
 .inner {
   max-width: var(--trv-ref-breakpoint-lg);
@@ -13,11 +15,61 @@
   gap: var(--trv-sys-space-gutter);
   grid-template-columns: 1fr;
 }
+/* Brand cell = 1.4fr, four link columns = 1fr each (finalized foot-cols grid). */
 .columns {
   display: grid;
   gap: var(--trv-sys-space-gutter);
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-columns: 1fr;
 }
+@media (min-width: 560px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .columns {
+    grid-template-columns: 1.4fr repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* --- Brand lockup --- */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-3);
+}
+.brandLink {
+  text-decoration: none;
+  line-height: 0;
+}
+.brandChip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--trv-sys-space-inline);
+  background: var(--trv-ref-color-white);
+  border-radius: var(--trv-sys-radius-card);
+  padding: var(--trv-ref-space-3) var(--trv-ref-space-4);
+}
+.brandMark {
+  height: 2.25rem;
+  width: auto;
+  flex: none;
+}
+.brandWord {
+  font-family: var(--trv-ref-font-family-display);
+  font-weight: var(--trv-ref-font-weight-bold);
+  font-size: var(--trv-ref-font-size-xl);
+  letter-spacing: var(--trv-ref-letter-spacing-tight);
+  color: var(--trv-sys-color-text-primary);
+  line-height: 1;
+}
+.tagline {
+  color: var(--trv-sys-color-text-on-inverse-muted);
+  font-size: var(--trv-sys-text-body-sm-size);
+  max-width: 26ch;
+}
+
+/* --- Columns --- */
 .colTitle {
   font-size: var(--trv-sys-text-overline-size);
   font-weight: var(--trv-sys-text-overline-weight);
@@ -48,6 +100,8 @@
   outline: var(--trv-sys-focus-ring-width) solid var(--trv-sys-color-focus-ring-inverse);
   outline-offset: var(--trv-sys-focus-ring-offset);
 }
+
+/* --- Legal row --- */
 .legal {
   /* AUDIT: divider was text-secondary (dark navy) — invisible on the navy ground.
    * Use a visible rule and lift legal text to full on-inverse white for contrast. */
@@ -66,4 +120,7 @@
   flex-wrap: wrap;
   gap: var(--trv-sys-space-gutter);
   list-style: none;
+}
+.copy {
+  color: var(--trv-sys-color-text-on-inverse-muted);
 }
