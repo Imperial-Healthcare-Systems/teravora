@@ -1,0 +1,83 @@
+/* Card — DS §6. AUDIT: flat architectural grid cell (squared, 1px rule, crosshair
+ * corners). No rounded fills; depth comes from structure, not shadow. Tokens only. */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-3);
+  padding: var(--trv-ref-space-6);
+  background: var(--trv-cmp-card-bg);
+  border: var(--trv-ref-border-hairline) solid var(--trv-cmp-card-border);
+  border-radius: var(--trv-cmp-card-radius);
+  color: var(--trv-sys-color-text-body);
+  text-decoration: none;
+  transition: border-color var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    box-shadow var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    transform var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+/* Crosshair tick at the top-left junction — the auditable-grid signature. */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--trv-sys-color-border-cross), var(--trv-sys-color-border-cross)) center / 100% 1px no-repeat,
+    linear-gradient(var(--trv-sys-color-border-cross), var(--trv-sys-color-border-cross)) center / 1px 100% no-repeat;
+  opacity: 0;
+  transition: opacity var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.raised {
+  box-shadow: var(--trv-cmp-card-elevation);
+}
+/* Hover: navy edge + crosshair reveal + a 1px lift. Cursor + focus ring remain
+ * the non-motion affordances, so this never carries meaning alone. */
+a.card:hover,
+.card[data-interactive="true"]:hover {
+  border-color: var(--trv-sys-color-text-primary);
+  box-shadow: var(--trv-sys-elevation-card);
+  transform: translateY(-2px);
+}
+a.card:hover::before,
+.card[data-interactive="true"]:hover::before {
+  opacity: 1;
+}
+.media {
+  border-radius: var(--trv-sys-radius-control);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+}
+.eyebrow {
+  font-size: var(--trv-sys-text-overline-size);
+  font-weight: var(--trv-sys-text-overline-weight);
+  letter-spacing: var(--trv-sys-text-overline-ls);
+  text-transform: uppercase;
+  color: var(--trv-sys-color-text-muted);
+}
+.title {
+  font-family: var(--trv-ref-font-family-display);
+  font-size: var(--trv-sys-text-h4-size);
+  font-weight: var(--trv-sys-text-h4-weight);
+  color: var(--trv-sys-color-text-primary);
+}
+.body {
+  color: var(--trv-sys-color-text-secondary);
+  font-size: var(--trv-sys-text-body-md-size);
+  line-height: var(--trv-sys-text-body-md-lh);
+}
+.meta {
+  font-size: var(--trv-sys-text-body-sm-size);
+  color: var(--trv-sys-color-text-muted);
+}
+.footerCta {
+  margin-top: auto;
+  padding-top: var(--trv-ref-space-2);
+  color: var(--trv-sys-color-action-text);
+  font-weight: var(--trv-ref-font-weight-semibold);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}

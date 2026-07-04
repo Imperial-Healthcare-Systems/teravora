@@ -1,0 +1,161 @@
+/* =============================================================================
+ * page-shell.module.css — shared page composition primitives (workstream P).
+ * Tokens ONLY (sys/ref/cmp). No raw hex/px/ms. Imported by every MVP page so the
+ * site reads as one system (ia@v0 §2 three-zone skeleton).
+ * ========================================================================== */
+
+.main {
+  flex: 1;
+}
+
+.container {
+  max-width: var(--trv-ref-breakpoint-md);
+  margin: 0 auto;
+  padding: var(--trv-sys-space-section) var(--trv-sys-space-gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-section);
+}
+
+/* --- Hero / message hierarchy zone -------------------------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+  max-width: 52rem;
+}
+
+/* Hero headline uses the display tier (the DS defines display-lg at 62px but the
+ * bare <h1> element maps only to the 40px h1 tier). Clamp keeps mobile at the h1
+ * size and lets it climb to display-lg on wide viewports — no new raw values, the
+ * clamp endpoints are the existing h1 and display-lg size tokens. */
+.hero h1 {
+  font-size: clamp(
+    var(--trv-sys-text-h1-size),
+    calc(var(--trv-sys-text-h1-size) + 2.2vw),
+    var(--trv-sys-text-display-lg-size)
+  );
+  line-height: var(--trv-sys-text-display-lg-lh);
+  letter-spacing: var(--trv-sys-text-display-lg-ls);
+}
+
+.eyebrow {
+  font-size: var(--trv-sys-text-overline-size);
+  font-weight: var(--trv-sys-text-overline-weight);
+  letter-spacing: var(--trv-sys-text-overline-ls);
+  text-transform: uppercase;
+  color: var(--trv-sys-color-text-accent);
+}
+
+.lede {
+  font-size: var(--trv-sys-text-body-lg-size);
+  line-height: var(--trv-sys-text-body-lg-lh);
+  color: var(--trv-sys-color-text-secondary);
+  max-width: 46rem;
+}
+
+/* --- Generic section ---------------------------------------------------- */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+}
+
+.sectionLede {
+  color: var(--trv-sys-color-text-secondary);
+  max-width: 46rem;
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+  max-width: 46rem;
+  color: var(--trv-sys-color-text-body);
+}
+
+/* --- Grids -------------------------------------------------------------- */
+.cardGrid {
+  display: grid;
+  gap: var(--trv-sys-space-gutter);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+/* AUDIT §6: on mobile, comparative card rows become a horizontal swipe lane with
+ * scroll-snap — no more long tiring vertical stacks. The right-edge fade hints
+ * that more is off-screen. Reduced-motion users still get instant scroll. */
+@media (max-width: 767px) {
+  .cardGrid {
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    grid-auto-columns: 82%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--trv-sys-space-gutter);
+    margin-inline: calc(-1 * var(--trv-sys-space-gutter));
+    padding-inline: var(--trv-sys-space-gutter);
+    padding-block-end: var(--trv-ref-space-2);
+    -webkit-overflow-scrolling: touch;
+  }
+  .cardGrid > * {
+    scroll-snap-align: start;
+  }
+}
+
+.stepGrid {
+  display: grid;
+  gap: var(--trv-sys-space-gutter);
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+  padding: var(--trv-sys-space-gutter);
+  background: var(--trv-sys-color-bg-subtle);
+  border-radius: var(--trv-sys-radius-card);
+  border: var(--trv-ref-border-thin) solid var(--trv-sys-color-border);
+}
+
+.stepName {
+  font-size: var(--trv-sys-text-h4-size);
+  font-weight: var(--trv-sys-text-h4-weight);
+  color: var(--trv-sys-color-text-primary);
+}
+
+.stepBody {
+  color: var(--trv-sys-color-text-secondary);
+  font-size: var(--trv-sys-text-body-sm-size);
+  line-height: var(--trv-sys-text-body-sm-lh);
+}
+
+/* --- Proof + CTA conversion zone (adjacent, ia@v0 §2.4/2.5) ------------- */
+.proofZone {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+  padding: var(--trv-sys-space-section) var(--trv-sys-space-gutter);
+  background: var(--trv-sys-color-bg-muted);
+  border-radius: var(--trv-sys-radius-card);
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--trv-sys-space-gutter);
+  align-items: center;
+}
+
+.note {
+  font-size: var(--trv-sys-text-caption-size);
+  color: var(--trv-sys-color-text-muted);
+  max-width: 46rem;
+}
+
+/* --- /start layout ------------------------------------------------------ */
+.formZone {
+  display: grid;
+  gap: var(--trv-sys-space-section);
+  grid-template-columns: minmax(0, 34rem);
+}

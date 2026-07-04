@@ -1,0 +1,148 @@
+/* Form primitives — DS §3. Tokens only. Validate-on-blur posture.
+ * Error meaning is carried non-chromatically (icon + "Error:" text prefix),
+ * per the tokens.css status-red gap caveat. */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+  margin-block-end: var(--trv-sys-space-stack);
+}
+
+.label {
+  font-family: var(--trv-sys-text-label-font);
+  font-size: var(--trv-sys-text-label-size);
+  font-weight: var(--trv-sys-text-label-weight);
+  color: var(--trv-cmp-input-label-color);
+}
+
+.requiredHint {
+  color: var(--trv-sys-color-text-muted);
+  font-weight: var(--trv-ref-font-weight-regular);
+}
+
+.helper {
+  font-size: var(--trv-sys-text-caption-size);
+  color: var(--trv-sys-color-text-muted);
+  line-height: var(--trv-sys-text-body-sm-lh);
+}
+
+/* --- Controls --- */
+.control {
+  width: 100%;
+  min-height: var(--trv-sys-target-comfortable);
+  padding: var(--trv-ref-space-3) var(--trv-ref-space-4);
+  background: var(--trv-cmp-input-bg);
+  color: var(--trv-sys-color-text-body);
+  border: var(--trv-ref-border-thin) solid var(--trv-cmp-input-border);
+  border-radius: var(--trv-cmp-input-radius);
+  transition: border-color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard);
+}
+.control::placeholder {
+  color: var(--trv-sys-color-text-disabled);
+}
+.control:hover:not(:disabled) {
+  border-color: var(--trv-sys-color-text-secondary);
+}
+.control[aria-invalid="true"] {
+  border-color: var(--trv-cmp-input-error-color);
+  border-width: var(--trv-ref-border-thick);
+}
+.control:disabled {
+  background: var(--trv-sys-color-bg-muted);
+  color: var(--trv-sys-color-text-disabled);
+  cursor: not-allowed;
+}
+
+.textarea {
+  min-height: calc(var(--trv-ref-space-24));
+  resize: vertical;
+  line-height: var(--trv-sys-text-body-md-lh);
+}
+
+.select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    calc(100% - var(--trv-ref-space-5)) center,
+    calc(100% - var(--trv-ref-space-4)) center;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-inline-end: var(--trv-ref-space-10);
+}
+
+/* --- Error text: icon + "Error:" prefix (never color alone) --- */
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--trv-sys-space-inline);
+  font-size: var(--trv-sys-text-body-sm-size);
+  color: var(--trv-cmp-input-error-color);
+  font-weight: var(--trv-ref-font-weight-semibold);
+}
+.errorIcon {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+  margin-top: 0.1em;
+}
+
+/* --- Radio / Checkbox: real inputs, full-row ≥44px target --- */
+.optionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+  border: none;
+}
+.optionGroup[data-orientation="horizontal"] {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.legend {
+  font-family: var(--trv-sys-text-label-font);
+  font-size: var(--trv-sys-text-label-size);
+  font-weight: var(--trv-sys-text-label-weight);
+  color: var(--trv-cmp-input-label-color);
+  padding: 0;
+  margin-block-end: var(--trv-ref-space-2);
+}
+
+/* AUDIT §4: custom full-width selection blocks. The whole row is the target;
+ * on select the border goes deep navy (2px) with a gold left rail — a high-touch
+ * scoping feel, not a stock radio list. Native radio retained for semantics. */
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--trv-ref-space-3);
+  min-height: var(--trv-sys-target-comfortable);
+  padding: var(--trv-ref-space-3) var(--trv-ref-space-4);
+  border: var(--trv-ref-border-thin) solid var(--trv-sys-color-border-strong);
+  border-radius: var(--trv-sys-radius-control);
+  cursor: pointer;
+  transition: border-color var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    background-color var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    box-shadow var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.option:hover {
+  border-color: var(--trv-sys-color-text-primary);
+  background: var(--trv-sys-color-bg-subtle);
+}
+.option:has(input:checked) {
+  border-color: var(--trv-sys-color-text-primary);
+  border-width: var(--trv-ref-border-thick);
+  padding-inline-start: calc(var(--trv-ref-space-4) - 1px);
+  background: var(--trv-sys-color-bg-subtle);
+  box-shadow: inset var(--trv-ref-space-1) 0 0 0 var(--trv-sys-color-action-fill);
+}
+.optionInput {
+  width: var(--trv-ref-space-5);
+  height: var(--trv-ref-space-5);
+  flex: none;
+  accent-color: var(--trv-sys-color-text-primary);
+}
+.optionLabel {
+  font-size: var(--trv-sys-text-body-md-size);
+  color: var(--trv-sys-color-text-body);
+}

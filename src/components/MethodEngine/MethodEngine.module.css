@@ -1,0 +1,137 @@
+/* Interactive Method Engine — AUDIT §2. Flat technical pipeline. Tokens only. */
+
+.engine {
+  display: flex;
+  flex-direction: column;
+  border: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+}
+
+/* --- Selector band: the persistent pipeline row --------------------------- */
+.band {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  border-block-end: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+}
+
+/* Progress track threading the active stage. Hairline base + gold fill. */
+.track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: var(--trv-ref-border-thick);
+  background: var(--trv-sys-color-border-hair);
+  z-index: 1;
+}
+.fill {
+  height: 100%;
+  background: var(--trv-sys-color-action-fill);
+  transition: width var(--trv-sys-duration-slow) var(--trv-sys-ease-premium);
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--trv-ref-space-1);
+  min-height: var(--trv-sys-target-comfortable);
+  padding: var(--trv-ref-space-4) var(--trv-ref-space-5);
+  background: var(--trv-sys-color-bg-subtle);
+  border: 0;
+  border-inline-end: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+  cursor: pointer;
+  text-align: left;
+  transition: background-color var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    color var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.stage:last-child {
+  border-inline-end: 0;
+}
+.stage:hover {
+  background: var(--trv-sys-color-bg-canvas);
+}
+.stage[data-selected="true"] {
+  background: var(--trv-sys-color-bg-canvas);
+}
+.stageNum {
+  color: var(--trv-sys-color-text-muted);
+  transition: color var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.stage[data-selected="true"] .stageNum {
+  color: var(--trv-sys-color-text-accent);
+}
+.stageName {
+  font-family: var(--trv-ref-font-family-display);
+  font-size: var(--trv-sys-text-h4-size);
+  font-weight: var(--trv-sys-text-h4-weight);
+  color: var(--trv-sys-color-text-secondary);
+}
+.stage[data-selected="true"] .stageName {
+  color: var(--trv-sys-color-text-primary);
+}
+
+/* --- Active panel: fade-and-shift ---------------------------------------- */
+/* `display:flex` would override the `hidden` attribute — restore hiding. */
+.panel[hidden] {
+  display: none;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+  padding: var(--trv-sys-space-gutter);
+  background: var(--trv-sys-color-bg-canvas);
+  animation: trv-method-in var(--trv-sys-duration-slow) var(--trv-sys-ease-premium);
+}
+@keyframes trv-method-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.panelBody {
+  font-size: var(--trv-sys-text-body-lg-size);
+  line-height: var(--trv-sys-text-body-lg-lh);
+  color: var(--trv-sys-color-text-primary);
+  max-width: 46rem;
+}
+.trace {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--trv-sys-space-inline);
+  padding-block-start: var(--trv-sys-space-stack);
+  border-block-start: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border-hair);
+}
+.traceKey {
+  color: var(--trv-sys-color-text-connect);
+}
+.traceValue {
+  font-family: var(--trv-ref-font-family-mono);
+  font-size: var(--trv-sys-text-body-sm-size);
+  color: var(--trv-sys-color-text-secondary);
+}
+
+/* --- Responsive: stack the band vertically on narrow screens -------------- */
+@media (max-width: 767px) {
+  .band {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+  }
+  .stage {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--trv-ref-space-3);
+    border-inline-end: 0;
+    border-block-end: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+  }
+  .track {
+    display: none;
+  }
+}

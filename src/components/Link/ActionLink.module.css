@@ -1,0 +1,14 @@
+/* Link / action — teal, underlined (never color-alone). DS §2 tertiary/link. */
+.link {
+  color: var(--trv-sys-color-link);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  font-weight: var(--trv-ref-font-weight-semibold);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--trv-sys-space-inline);
+  transition: color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard);
+}
+.link:hover {
+  color: var(--trv-sys-color-link-hover);
+}

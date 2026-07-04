@@ -1,0 +1,75 @@
+/* Disclosure / Tabs — DS §10. Content SSR'd even when collapsed. Tokens only. */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+  border: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+  border-radius: var(--trv-sys-radius-card);
+  overflow: hidden;
+}
+.item {
+  border-bottom: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+}
+.item:last-child {
+  border-bottom: none;
+}
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--trv-sys-space-inline);
+  min-height: var(--trv-sys-target-comfortable);
+  padding: var(--trv-ref-space-4) var(--trv-ref-space-5);
+  cursor: pointer;
+  font-family: var(--trv-ref-font-family-display);
+  font-weight: var(--trv-ref-font-weight-semibold);
+  color: var(--trv-sys-color-text-primary);
+  list-style: none;
+}
+.summary::-webkit-details-marker {
+  display: none;
+}
+.summary:hover {
+  background: var(--trv-sys-color-bg-subtle);
+}
+.marker {
+  transition: transform var(--trv-sys-duration-base) var(--trv-sys-ease-standard);
+  flex: none;
+}
+details[open] > .summary .marker {
+  transform: rotate(45deg);
+}
+.panel {
+  padding: 0 var(--trv-ref-space-5) var(--trv-ref-space-5);
+  color: var(--trv-sys-color-text-body);
+  line-height: var(--trv-sys-text-body-md-lh);
+}
+
+/* --- Tabs --- */
+.tablist {
+  display: flex;
+  gap: var(--trv-ref-space-1);
+  border-bottom: var(--trv-ref-border-thin) solid var(--trv-sys-color-border);
+  overflow-x: auto;
+}
+.tab {
+  min-height: var(--trv-sys-target-comfortable);
+  padding: var(--trv-ref-space-3) var(--trv-ref-space-4);
+  font-family: var(--trv-ref-font-family-display);
+  font-weight: var(--trv-ref-font-weight-semibold);
+  color: var(--trv-sys-color-text-secondary);
+  border: none;
+  border-bottom: var(--trv-ref-border-thick) solid transparent;
+  white-space: nowrap;
+}
+.tab[aria-selected="true"] {
+  color: var(--trv-sys-color-text-primary);
+  border-bottom-color: var(--trv-sys-color-action-text);
+}
+.tab:hover {
+  color: var(--trv-sys-color-text-primary);
+}
+.tabpanel {
+  padding: var(--trv-ref-space-5) 0;
+  color: var(--trv-sys-color-text-body);
+}

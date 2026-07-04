@@ -1,0 +1,459 @@
+/* =============================================================================
+ * Teravora Design System — tokens.css  (DS v0 instantiation)
+ * -----------------------------------------------------------------------------
+ * Workstream: DS (lead: Design Systems Specialist) · Sprint 3 · Authority: propose_only
+ * Governing source: baselines/brand/v0/brand-baseline.md §5 (CLIENT-AUDITED palette, FROZEN)
+ *                   + working/DS/ds-structure.md (value-independent architecture, SP2)
+ *
+ * LAYERS:  ref (raw palette + scales)  →  sys (semantic roles)  →  cmp (per-component)
+ * RULE:    consumers read sys/cmp ONLY. ref is the single freeze-edit surface.
+ *
+ * ⚠️ PENDING-SOURCE-VECTOR CAVEAT (carried from brand@v0 §6):
+ *    Every hex below is the CLIENT-AUDITED RASTER palette. It GOVERNS for prototype,
+ *    but MUST be re-confirmed against the true source logo vector / brand-guide before
+ *    PRODUCTION tokens. Likely deltas: exact gold, teal saturation, tint/shade steps.
+ *    Type families (Archivo / Source Sans 3) are prototype STAND-INS per §5.4.
+ *
+ * ⚠️ STATUS-COLOR GAP: the audited palette contains NO dedicated status red/amber.
+ *    error/warning are mapped within-palette + MANDATORY non-color encoding; a true
+ *    status-red is FLAGGED for the vector/brand-guide pass (see --trv-sys-color-feedback-error).
+ * ========================================================================== */
+
+:root {
+
+  /* ======================================================================
+   * LAYER 1 — ref (PRIMITIVE / REFERENCE)  — the ONLY layer that holds raw values
+   * Every value traces to brand-baseline.md §5.1. Do NOT read these directly.
+   * ==================================================================== */
+
+  /* --- Color: brand hues (function-named) ------------------------------ */
+  --trv-ref-color-anchor:      #04234D;  /* navy      — Ground        (15.25 AAA on white) */
+  --trv-ref-color-eco:         #125A3E;  /* green     — Result tier   (8.07  AAA on white) */
+  --trv-ref-color-connect:     #177E84;  /* teal      — Connective    (4.74 AA white; 4.02 on muted → LARGE/ICON/DATAVIZ) */
+  --trv-ref-color-connect-text:#157075;  /* teal.text — teal WORDS on any light surface (5.72 white / 4.85 on muted #E5EBF2, both AA) */
+  --trv-ref-color-accent:      #C4912F;  /* gold      — Earned peak   (2.77  — FILLS/LARGE ONLY) */
+  --trv-ref-color-accent-text: #7F5C10;  /* gold.text — gold WORDS on light (6.00 AA) */
+  --trv-ref-color-white:       #FDFDFC;  /* paper — primary ground */
+
+  /* --- Color: navy-tinted neutral ramp (in-family, NOT pure grey) ------ */
+  --trv-ref-color-neutral-50:  #F5F7FA;  /* section wash                                  */
+  --trv-ref-color-neutral-100: #E5EBF2;  /* card backs / fills                            */
+  --trv-ref-color-neutral-200: #C5D0DE;  /* 1.53 — NON-TEXT ONLY (borders/rules)          */
+  --trv-ref-color-neutral-400: #8592A7;  /* 3.09 — LARGE TEXT / UI / ICON / DISABLED only */
+  --trv-ref-color-neutral-500: #556275;  /* 6.09 AA   — muted body                        */
+  --trv-ref-color-neutral-600: #374355;  /* 9.84 AAA  — secondary body                    */
+  --trv-ref-color-neutral-700: #1B2A40;  /* 14.21 AAA — soft primary ink                  */
+
+  /* --- Type: families (PROTOTYPE STAND-INS per §5.4) ------------------- */
+  --trv-ref-font-family-display: "Archivo", "Helvetica Neue", Arial, sans-serif;      /* engineered grotesk — headings */
+  --trv-ref-font-family-text:    "Source Sans 3", "Source Sans Pro", system-ui, sans-serif; /* humanist sans — body */
+  --trv-ref-font-family-mono:    "Archivo", ui-monospace, "Cascadia Mono", monospace;  /* tabular figures for metrics */
+
+  /* --- Type: size ramp (stepped ~1.20–1.25 modular scale; 16px base) --- */
+  --trv-ref-font-size-2xs: 0.6875rem;  /* 11px */
+  --trv-ref-font-size-xs:  0.75rem;    /* 12px */
+  --trv-ref-font-size-sm:  0.875rem;   /* 14px */
+  --trv-ref-font-size-md:  1rem;       /* 16px  (base) */
+  --trv-ref-font-size-lg:  1.125rem;   /* 18px */
+  --trv-ref-font-size-xl:  1.375rem;   /* 22px  ~1.22 */
+  --trv-ref-font-size-2xl: 1.625rem;   /* 26px  ~1.18 */
+  --trv-ref-font-size-3xl: 2rem;       /* 32px  ~1.23 */
+  --trv-ref-font-size-4xl: 2.5rem;     /* 40px  1.25  */
+  --trv-ref-font-size-5xl: 3.125rem;   /* 50px  1.25  */
+  --trv-ref-font-size-6xl: 3.875rem;   /* 62px  1.24  */
+
+  /* --- Type: weights (Archivo full range; Source Sans 3 400/600) ------- */
+  --trv-ref-font-weight-regular:  400;
+  --trv-ref-font-weight-medium:   500;
+  --trv-ref-font-weight-semibold: 600;
+  --trv-ref-font-weight-bold:     700;
+
+  /* --- Type: line-heights (unitless) & letter-spacing ------------------ */
+  --trv-ref-line-height-none:    1;      /* metrics — no reflow on count-up */
+  --trv-ref-line-height-tight:   1.05;   /* display */
+  --trv-ref-line-height-snug:    1.2;    /* headings — "steps" like the grid */
+  --trv-ref-line-height-normal:  1.5;    /* body */
+  --trv-ref-line-height-relaxed: 1.65;   /* long-form ESG */
+  --trv-ref-letter-spacing-tight:  -0.02em;
+  --trv-ref-letter-spacing-normal: 0em;
+  --trv-ref-letter-spacing-wide:   0.08em;  /* overline / eyebrow */
+
+  /* --- Spacing: 4px base grid ----------------------------------------- */
+  --trv-ref-space-0:  0;
+  --trv-ref-space-1:  0.25rem;   /* 4  */
+  --trv-ref-space-2:  0.5rem;    /* 8  */
+  --trv-ref-space-3:  0.75rem;   /* 12 */
+  --trv-ref-space-4:  1rem;      /* 16 */
+  --trv-ref-space-5:  1.25rem;   /* 20 */
+  --trv-ref-space-6:  1.5rem;    /* 24 */
+  --trv-ref-space-8:  2rem;      /* 32 */
+  --trv-ref-space-10: 2.5rem;    /* 40 */
+  --trv-ref-space-12: 3rem;      /* 48 */
+  --trv-ref-space-16: 4rem;      /* 64 */
+  --trv-ref-space-20: 5rem;      /* 80 */
+  --trv-ref-space-24: 6rem;      /* 96 */
+  --trv-ref-space-32: 8rem;      /* 128 */
+
+  /* --- Radius ---------------------------------------------------------- */
+  --trv-ref-radius-none: 0;
+  --trv-ref-radius-sm:   2px;
+  --trv-ref-radius-md:   4px;
+  --trv-ref-radius-lg:   8px;
+  --trv-ref-radius-xl:   12px;
+  --trv-ref-radius-pill: 999px;
+  --trv-ref-radius-full: 50%;
+
+  /* --- Border widths --------------------------------------------------- */
+  --trv-ref-border-hairline: 1px;
+  --trv-ref-border-thin:     1.5px;
+  --trv-ref-border-thick:    2px;
+
+  /* --- Elevation (navy-tinted shadow — rgba of anchor 4,35,77) --------- */
+  --trv-ref-shadow-sm: 0 1px 2px rgba(4, 35, 77, 0.06);
+  --trv-ref-shadow-md: 0 2px 8px rgba(4, 35, 77, 0.08);
+  --trv-ref-shadow-lg: 0 8px 24px rgba(4, 35, 77, 0.10);
+  --trv-ref-shadow-xl: 0 16px 48px rgba(4, 35, 77, 0.12);
+
+  /* --- Z-index --------------------------------------------------------- */
+  --trv-ref-z-base:    0;
+  --trv-ref-z-raised:  10;
+  --trv-ref-z-sticky:  100;
+  --trv-ref-z-overlay: 1000;
+  --trv-ref-z-modal:   1100;
+  --trv-ref-z-toast:   1200;
+
+  /* --- Breakpoints (min-width; per Sprint-3 task set) ------------------ */
+  --trv-ref-breakpoint-xs: 360px;
+  --trv-ref-breakpoint-sm: 768px;
+  --trv-ref-breakpoint-md: 1024px;
+  --trv-ref-breakpoint-lg: 1440px;
+  --trv-ref-breakpoint-xl: 2560px;
+
+  /* --- Motion: durations ---------------------------------------------- */
+  --trv-ref-duration-instant: 0ms;
+  --trv-ref-duration-fast:    150ms;  /* micro: hover, toggle */
+  --trv-ref-duration-base:    250ms;  /* step / expand */
+  --trv-ref-duration-slow:    400ms;  /* MAX DEFAULT — reveals, count-up start, chart grow-in */
+  /* T2 immersive budget (approved surface ONLY — exceeds default by gate): */
+  --trv-ref-duration-immersive-stepin: 400ms;   /* per step-in reveal, staggered */
+  --trv-ref-duration-immersive-trend:  800ms;   /* trend-line draw, total */
+  --trv-ref-duration-immersive-count:  1200ms;  /* count-up (SSR final value = fallback) */
+
+  /* --- Motion: easings ------------------------------------------------- */
+  --trv-ref-ease-standard:   cubic-bezier(0.2, 0, 0, 1);
+  --trv-ref-ease-decelerate: cubic-bezier(0, 0, 0, 1);      /* entrances */
+  --trv-ref-ease-accelerate: cubic-bezier(0.3, 0, 1, 1);    /* exits */
+  --trv-ref-ease-emphasized: cubic-bezier(0.2, 0, 0, 1.1);  /* the on-brand "ascent" — subtle overshoot */
+  --trv-ref-ease-premium:    cubic-bezier(0.16, 1, 0.3, 1); /* AUDIT: high-end hardware ease — CTA wipe, panel shift */
+
+  /* --- Structural grid (AUDIT: 1px architectural / blueprint aesthetic) - */
+  --trv-ref-color-border-hair:  rgba(4, 35, 77, 0.08);  /* faded anchor navy — the 1px technical rule */
+  --trv-ref-color-border-cross: rgba(4, 35, 77, 0.18);  /* crosshair tick at grid junctions */
+
+  /* --- Color: DARK-SURFACE additions (V-stream, approved cinematic canvas) ----
+   * The V1 comps place the brand on a navy ground. These raw values extend the
+   * frozen §5 palette for that surface: a navy elevation ramp, the same four brand
+   * hues re-tinted UP for AA legibility on navy, on-dark neutrals, and white-alpha
+   * hairlines. They GOVERN the dark surface only; the light §5 values are unchanged.
+   * Consumers still read sys ([data-surface="dark"] re-point below), never these. */
+  --trv-ref-color-anchor-2:    #062B5C;  /* navy raised   — cards/panels on dark      */
+  --trv-ref-color-anchor-3:    #0A3169;  /* navy raised-2 — hover/inset on dark        */
+  --trv-ref-color-anchor-deep: #03203F;  /* navy deep     — recessed wells / hero base */
+  --trv-ref-color-eco-light:     #3E9E7A;  /* green.light  — result words/marks on navy (AA) */
+  --trv-ref-color-connect-light: #4FBCC2;  /* teal.light   — connective words/data on navy (AA) */
+  --trv-ref-color-accent-light:  #E4BE68;  /* gold.light   — accent words/eyebrow on navy (AA) */
+  --trv-ref-color-neutral-300: #B7C3D4;  /* on-dark body text (7.9 on anchor)          */
+  --trv-ref-color-neutral-meta:#AEBCD0;  /* on-dark mono meta / captions               */
+  --trv-ref-color-hair-on-dark:       rgba(255, 255, 255, 0.11);  /* 1px rule on dark   */
+  --trv-ref-color-hair-on-dark-faint: rgba(255, 255, 255, 0.06);  /* faint rule on dark */
+  --trv-ref-color-cross-on-dark:      rgba(255, 255, 255, 0.28);  /* crosshair on dark  */
+  --trv-ref-color-rail-on-dark:       rgba(79, 188, 194, 0.14);   /* teal rail wash     */
+
+  /* ======================================================================
+   * LAYER 2 — sys (SEMANTIC / SYSTEM)  — the API the product speaks
+   * a11y-baked: every foreground/background pair is a contrast-safe pairing.
+   * ==================================================================== */
+
+  /* --- Backgrounds & surfaces ----------------------------------------- */
+  --trv-sys-color-bg-canvas:     var(--trv-ref-color-white);        /* page ground */
+  --trv-sys-color-bg-subtle:     var(--trv-ref-color-neutral-50);   /* section wash */
+  --trv-sys-color-bg-muted:      var(--trv-ref-color-neutral-100);  /* zebra / fills */
+  --trv-sys-color-bg-inverse:    var(--trv-ref-color-anchor);       /* GROUND — footers, dark sections */
+  --trv-sys-color-surface:       var(--trv-ref-color-white);        /* cards */
+  --trv-sys-color-surface-raised: var(--trv-ref-color-white);       /* + --trv-sys-elevation-card */
+
+  /* --- Borders (NON-TEXT) --------------------------------------------- */
+  --trv-sys-color-border:        var(--trv-ref-color-neutral-200);  /* 1.53 — rules/dividers, non-text only */
+  --trv-sys-color-border-strong: var(--trv-ref-color-neutral-400);  /* 3.09 — UI edges/inputs, non-text/large-UI */
+  --trv-sys-color-border-hair:   var(--trv-ref-color-border-hair);   /* AUDIT: 1px technical grid rule */
+  --trv-sys-color-border-cross:  var(--trv-ref-color-border-cross);  /* AUDIT: grid-junction crosshair */
+
+  /* --- Text on light (canvas) ----------------------------------------- */
+  --trv-sys-color-text-primary:   var(--trv-ref-color-anchor);       /* navy 15.25 AAA — headings/primary ink */
+  --trv-sys-color-text-body:      var(--trv-ref-color-neutral-700);  /* 14.21 AAA — soft primary body ink */
+  --trv-sys-color-text-secondary: var(--trv-ref-color-neutral-600);  /* 9.84 AAA — secondary body */
+  --trv-sys-color-text-muted:     var(--trv-ref-color-neutral-500);  /* 6.09 AA  — muted/caption body (AA floor) */
+  --trv-sys-color-text-disabled:  var(--trv-ref-color-neutral-400);  /* 3.09 — LARGE/UI/disabled ONLY, never body */
+
+  /* --- Text on inverse (navy ground) ---------------------------------- */
+  --trv-sys-color-text-on-inverse:         var(--trv-ref-color-white);        /* 15.25 AAA */
+  --trv-sys-color-text-on-inverse-muted:   var(--trv-ref-color-neutral-100);  /* soft on navy */
+
+  /* --- Brand-role text on light --------------------------------------- */
+  --trv-sys-color-text-result:  var(--trv-ref-color-eco);          /* green 8.07 AAA — result/success words */
+  --trv-sys-color-text-connect: var(--trv-ref-color-connect-text);  /* teal.text 5.72 white / 4.85 muted AA — link/connective words (underline) */
+  --trv-sys-color-text-accent:  var(--trv-ref-color-accent-text);  /* gold.text 6.00 AA — the ONLY compliant gold WORDS on light */
+
+  /* --- Action / accent-as-action (AA branch RESOLVED) -----------------
+   * Gold FAILS as text on white (2.77) → so:
+   *   • Primary CTA = gold FILL with NAVY label  (navy-on-gold 5.50 AA).
+   *   • Interactive/link TEXT action = TEAL, underlined (4.74 AA) — NOT gold.
+   *   • Gold WORDS on light (rare) = gold.text #7F5C10.
+   * ------------------------------------------------------------------- */
+  --trv-sys-color-action-fill:       var(--trv-ref-color-accent);       /* gold — the earned peak; kept SCARCE */
+  --trv-sys-color-action-fill-hover: var(--trv-ref-color-accent-text);  /* darker gold on hover (still navy label ≥AA) */
+  --trv-sys-color-action-on-fill:    var(--trv-ref-color-anchor);       /* NAVY label on gold fill (5.50 AA) */
+  --trv-sys-color-action-text:       var(--trv-ref-color-connect-text);  /* teal.text — link-style/secondary action text (AA on white + muted) */
+  --trv-sys-color-action-disabled:   var(--trv-ref-color-neutral-400);  /* large/UI only */
+
+  /* --- Links ---------------------------------------------------------- */
+  --trv-sys-color-link:       var(--trv-ref-color-connect-text);  /* teal.text 5.72/4.85 AA — MUST underline, never color-alone */
+  --trv-sys-color-link-hover: var(--trv-ref-color-anchor);    /* navy on hover */
+
+  /* --- Focus ring (first-class; ≥3:1 vs adjacent) --------------------- */
+  --trv-sys-color-focus-ring:         var(--trv-ref-color-connect);  /* teal on light surfaces (4.74) */
+  --trv-sys-color-focus-ring-inverse: var(--trv-ref-color-accent);   /* gold on navy/dark surfaces (5.50) */
+  --trv-sys-focus-ring-width:  var(--trv-ref-border-thick);          /* 2px */
+  --trv-sys-focus-ring-offset: 2px;
+
+  /* --- Feedback (NON-COLOR ENCODING MANDATORY: pair with icon + text) - */
+  --trv-sys-color-feedback-success: var(--trv-ref-color-eco);          /* green 8.07 AAA + success icon */
+  --trv-sys-color-feedback-info:    var(--trv-ref-color-connect);      /* teal 4.74 AA + info icon */
+  --trv-sys-color-feedback-warning: var(--trv-ref-color-accent-text);  /* gold.text 6.00 AA + warning icon */
+  /* ⚠️ GAP: audited palette has NO status-red. INTERIM error = neutral-700 ink +
+     REQUIRED error icon + "Error:" text prefix (meaning carried non-chromatically,
+     WCAG 1.4.1 satisfied). FLAG a true status-red for the vector/brand-guide pass. */
+  --trv-sys-color-feedback-error:   var(--trv-ref-color-neutral-700);  /* INTERIM — see caveat; icon+label REQUIRED */
+
+  /* --- Data-viz (categorical — MUST pair with pattern/label, never hue-alone) */
+  --trv-sys-color-dataviz-cat-1: var(--trv-ref-color-anchor);       /* navy  */
+  --trv-sys-color-dataviz-cat-2: var(--trv-ref-color-connect);      /* teal  */
+  --trv-sys-color-dataviz-cat-3: var(--trv-ref-color-eco);          /* green */
+  --trv-sys-color-dataviz-cat-4: var(--trv-ref-color-accent);       /* gold — FILLS / thick marks only, never 1px line */
+  --trv-sys-color-dataviz-cat-5: var(--trv-ref-color-neutral-500);  /* muted */
+  --trv-sys-color-dataviz-cat-6: var(--trv-ref-color-neutral-400);  /* large/UI only */
+  /* sequential magnitude ramp (single-hue climb neutral→teal→navy) */
+  --trv-sys-color-dataviz-seq-1: var(--trv-ref-color-neutral-100);
+  --trv-sys-color-dataviz-seq-2: var(--trv-ref-color-neutral-200);
+  --trv-sys-color-dataviz-seq-3: var(--trv-ref-color-neutral-400);
+  --trv-sys-color-dataviz-seq-4: var(--trv-ref-color-connect);
+  --trv-sys-color-dataviz-seq-5: var(--trv-ref-color-anchor);
+
+  /* --- Type roles (family + size + weight + line-height) -------------- */
+  --trv-sys-text-display-lg-font:   var(--trv-ref-font-family-display);
+  --trv-sys-text-display-lg-size:   var(--trv-ref-font-size-6xl);   /* 62 */
+  --trv-sys-text-display-lg-weight: var(--trv-ref-font-weight-bold);
+  --trv-sys-text-display-lg-lh:     var(--trv-ref-line-height-tight);
+  --trv-sys-text-display-lg-ls:     var(--trv-ref-letter-spacing-tight);
+
+  --trv-sys-text-display-md-size:   var(--trv-ref-font-size-5xl);   /* 50 */
+  --trv-sys-text-display-sm-size:   var(--trv-ref-font-size-4xl);   /* 40 */
+
+  --trv-sys-text-h1-font:   var(--trv-ref-font-family-display);
+  --trv-sys-text-h1-size:   var(--trv-ref-font-size-4xl);   /* 40 */
+  --trv-sys-text-h1-weight: var(--trv-ref-font-weight-bold);
+  --trv-sys-text-h1-lh:     var(--trv-ref-line-height-snug);
+  --trv-sys-text-h2-size:   var(--trv-ref-font-size-3xl);   /* 32 */
+  --trv-sys-text-h2-weight: var(--trv-ref-font-weight-semibold);
+  --trv-sys-text-h3-size:   var(--trv-ref-font-size-2xl);   /* 26 */
+  --trv-sys-text-h3-weight: var(--trv-ref-font-weight-semibold);
+  --trv-sys-text-h4-size:   var(--trv-ref-font-size-xl);    /* 22 */
+  --trv-sys-text-h4-weight: var(--trv-ref-font-weight-semibold);
+
+  --trv-sys-text-body-lg-font: var(--trv-ref-font-family-text);
+  --trv-sys-text-body-lg-size: var(--trv-ref-font-size-lg);   /* 18 */
+  --trv-sys-text-body-lg-lh:   var(--trv-ref-line-height-relaxed);
+  --trv-sys-text-body-md-font: var(--trv-ref-font-family-text);
+  --trv-sys-text-body-md-size: var(--trv-ref-font-size-md);   /* 16 */
+  --trv-sys-text-body-md-lh:   var(--trv-ref-line-height-normal);
+  --trv-sys-text-body-sm-size: var(--trv-ref-font-size-sm);   /* 14 */
+  --trv-sys-text-body-sm-lh:   var(--trv-ref-line-height-normal);
+
+  --trv-sys-text-label-font:   var(--trv-ref-font-family-text);
+  --trv-sys-text-label-size:   var(--trv-ref-font-size-sm);   /* 14 */
+  --trv-sys-text-label-weight: var(--trv-ref-font-weight-semibold);
+  --trv-sys-text-caption-size: var(--trv-ref-font-size-xs);   /* 12 */
+  --trv-sys-text-overline-size:   var(--trv-ref-font-size-2xs);  /* 11, uppercase, wide */
+  --trv-sys-text-overline-weight: var(--trv-ref-font-weight-semibold);
+  --trv-sys-text-overline-ls:     var(--trv-ref-letter-spacing-wide);
+
+  /* metric role — TABULAR figures, no reflow on count-up (T1) */
+  --trv-sys-text-metric-font:    var(--trv-ref-font-family-mono);
+  --trv-sys-text-metric-weight:  var(--trv-ref-font-weight-bold);
+  --trv-sys-text-metric-lh:      var(--trv-ref-line-height-none);
+  --trv-sys-text-metric-numeric: tabular-nums lining-nums;   /* font-variant-numeric */
+
+  /* --- Spacing roles (intent aliases) --------------------------------- */
+  --trv-sys-space-inline:  var(--trv-ref-space-2);   /* 8  — inline gaps */
+  --trv-sys-space-stack:   var(--trv-ref-space-4);   /* 16 — vertical rhythm */
+  --trv-sys-space-gutter:  var(--trv-ref-space-6);   /* 24 — grid gutter */
+  --trv-sys-space-section: var(--trv-ref-space-20);  /* 80 — section band */
+
+  /* --- Radius / elevation roles --------------------------------------- */
+  /* AUDIT (human-approved override of frozen radius): flat architectural grid.
+   * Corners squared to read as a technical / blueprint system, not a SaaS template.
+   * pill radius (badges, stepper dots) is intentionally retained. */
+  --trv-sys-radius-control: var(--trv-ref-radius-none);  /* was md(4) — squared per audit */
+  --trv-sys-radius-card:    var(--trv-ref-radius-none);  /* was lg(8) — squared per audit */
+  --trv-sys-radius-pill:    var(--trv-ref-radius-pill);
+  --trv-sys-elevation-card:    var(--trv-ref-shadow-md);
+  --trv-sys-elevation-popover: var(--trv-ref-shadow-lg);
+  --trv-sys-elevation-modal:   var(--trv-ref-shadow-xl);
+
+  /* --- Target size (WCAG 2.2) ----------------------------------------- */
+  --trv-sys-target-min:         24px;  /* SC 2.5.8 absolute floor */
+  --trv-sys-target-comfortable: 44px;  /* primary CTAs / full-row options */
+
+  /* --- Motion roles (reduced-motion re-points these; see media query) - */
+  --trv-sys-duration-fast:      var(--trv-ref-duration-fast);
+  --trv-sys-duration-base:      var(--trv-ref-duration-base);
+  --trv-sys-duration-slow:      var(--trv-ref-duration-slow);
+  --trv-sys-duration-immersive-stepin: var(--trv-ref-duration-immersive-stepin);
+  --trv-sys-duration-immersive-trend:  var(--trv-ref-duration-immersive-trend);
+  --trv-sys-duration-immersive-count:  var(--trv-ref-duration-immersive-count);
+  --trv-sys-ease-standard:   var(--trv-ref-ease-standard);
+  --trv-sys-ease-decelerate: var(--trv-ref-ease-decelerate);
+  --trv-sys-ease-accelerate: var(--trv-ref-ease-accelerate);
+  --trv-sys-ease-emphasized: var(--trv-ref-ease-emphasized);
+  --trv-sys-ease-premium:    var(--trv-ref-ease-premium);   /* AUDIT: CTA wipe / panel shift */
+
+  /* ======================================================================
+   * LAYER 3 — cmp (COMPONENT)  — per-component bindings (MVP set)
+   * ==================================================================== */
+
+  /* Button / CTA */
+  --trv-cmp-button-primary-bg:       var(--trv-sys-color-action-fill);       /* gold fill */
+  --trv-cmp-button-primary-bg-hover: var(--trv-sys-color-action-fill-hover);
+  --trv-cmp-button-primary-fg:       var(--trv-sys-color-action-on-fill);    /* NAVY label (AA) */
+  --trv-cmp-button-secondary-fg:     var(--trv-sys-color-action-text);       /* teal */
+  --trv-cmp-button-secondary-border: var(--trv-sys-color-action-text);
+  --trv-cmp-button-radius:           var(--trv-sys-radius-control);
+  --trv-cmp-button-min-size:         var(--trv-sys-target-comfortable);      /* 44px */
+  --trv-cmp-button-focus-ring:       var(--trv-sys-color-focus-ring);
+
+  /* Card */
+  --trv-cmp-card-bg:        var(--trv-sys-color-surface);
+  --trv-cmp-card-border:    var(--trv-sys-color-border);
+  --trv-cmp-card-radius:    var(--trv-sys-radius-card);
+  --trv-cmp-card-elevation: var(--trv-sys-elevation-card);
+
+  /* Form field + multi-step (T3) */
+  --trv-cmp-input-bg:              var(--trv-sys-color-surface);
+  --trv-cmp-input-border:          var(--trv-sys-color-border-strong);
+  --trv-cmp-input-border-focus:    var(--trv-sys-color-focus-ring);
+  --trv-cmp-input-radius:          var(--trv-sys-radius-control);
+  --trv-cmp-input-label-color:     var(--trv-sys-color-text-primary);
+  --trv-cmp-input-error-color:     var(--trv-sys-color-feedback-error);     /* + icon + text, never color-alone */
+  --trv-cmp-form-step-active-fill: var(--trv-sys-color-action-fill);        /* gold peak = current step */
+  --trv-cmp-form-step-done-fill:   var(--trv-sys-color-feedback-success);   /* green = complete */
+  --trv-cmp-form-step-idle-fill:   var(--trv-sys-color-border-strong);
+
+  /* Metric counter (T1) — tabular, refuses non-substantiated numbers */
+  --trv-cmp-counter-numeral-font:  var(--trv-sys-text-metric-font);
+  --trv-cmp-counter-numeral-color: var(--trv-sys-color-text-primary);
+  --trv-cmp-counter-accent:        var(--trv-sys-color-action-fill);        /* apex bar/ring fill (gold peak) */
+
+  /* Navigation */
+  --trv-cmp-nav-bg:            var(--trv-sys-color-bg-canvas);
+  --trv-cmp-nav-bg-inverse:    var(--trv-sys-color-bg-inverse);
+  --trv-cmp-nav-link:          var(--trv-sys-color-text-primary);
+  --trv-cmp-nav-link-current:  var(--trv-sys-color-text-connect);           /* + non-color current marker */
+  --trv-cmp-nav-focus-ring:    var(--trv-sys-color-focus-ring);
+
+  /* Data-viz (T5 / T2) */
+  --trv-cmp-chart-axis:  var(--trv-sys-color-border-strong);
+  --trv-cmp-chart-grid:  var(--trv-sys-color-border);
+  --trv-cmp-chart-label: var(--trv-sys-color-text-secondary);
+  --trv-cmp-chart-peak:  var(--trv-sys-color-action-fill);                  /* gold = earned peak/result apex */
+}
+
+/* ==========================================================================
+ * DARK SURFACE — [data-surface="dark"] theme scope (V-stream cinematic canvas)
+ * -----------------------------------------------------------------------------
+ * Re-points the sys/cmp API to the navy-ground palette so any token-driven
+ * component (Nav, Footer, Button, form fields, cards) renders correctly on dark
+ * with NO per-component rewrite. Apply the attribute to a dark page's root
+ * wrapper (or <body>); light workspaces (e.g. /start form) stay on :root default.
+ * Four-color ROLES are preserved: navy=ground, teal=connective, green=result,
+ * gold=earned peak (kept scarce). Contrast pairs re-checked for the navy ground.
+ * ======================================================================== */
+[data-surface="dark"] {
+  /* Backgrounds & surfaces */
+  --trv-sys-color-bg-canvas:      var(--trv-ref-color-anchor);       /* navy ground */
+  --trv-sys-color-bg-subtle:      var(--trv-ref-color-anchor-deep);  /* recessed band */
+  --trv-sys-color-bg-muted:       var(--trv-ref-color-anchor-2);     /* raised wash */
+  --trv-sys-color-bg-inverse:     var(--trv-ref-color-white);        /* inverse-on-dark = light */
+  --trv-sys-color-surface:        var(--trv-ref-color-anchor-2);     /* cards on dark */
+  --trv-sys-color-surface-raised: var(--trv-ref-color-anchor-3);     /* hover/raised */
+
+  /* Borders / rules on dark (white-alpha) */
+  --trv-sys-color-border:        var(--trv-ref-color-hair-on-dark);
+  --trv-sys-color-border-strong: rgba(255, 255, 255, 0.22);          /* input/UI edges on dark */
+  --trv-sys-color-border-hair:   var(--trv-ref-color-hair-on-dark-faint);
+  --trv-sys-color-border-cross:  var(--trv-ref-color-cross-on-dark);
+
+  /* Text on the navy ground */
+  --trv-sys-color-text-primary:   var(--trv-ref-color-white);        /* headings/primary ink */
+  --trv-sys-color-text-body:      var(--trv-ref-color-neutral-300);  /* body */
+  --trv-sys-color-text-secondary: var(--trv-ref-color-neutral-200);  /* secondary */
+  --trv-sys-color-text-muted:     var(--trv-ref-color-neutral-meta);  /* muted/caption */
+  --trv-sys-color-text-on-inverse:       var(--trv-ref-color-anchor);  /* on a light chip */
+  --trv-sys-color-text-on-inverse-muted: var(--trv-ref-color-neutral-600);
+
+  /* Brand-role words re-tinted UP for AA on navy */
+  --trv-sys-color-text-result:  var(--trv-ref-color-eco-light);
+  --trv-sys-color-text-connect: var(--trv-ref-color-connect-light);
+  --trv-sys-color-text-accent:  var(--trv-ref-color-accent-light);
+
+  /* Links on dark = teal.light, still underlined */
+  --trv-sys-color-link:       var(--trv-ref-color-connect-light);
+  --trv-sys-color-link-hover: var(--trv-ref-color-white);
+
+  /* Action: gold FILL + navy label still holds on dark; secondary/link = teal.light */
+  --trv-sys-color-action-text: var(--trv-ref-color-connect-light);
+
+  /* Focus ring on dark = gold (≥3:1 vs navy) */
+  --trv-sys-color-focus-ring: var(--trv-ref-color-accent);
+
+  /* Nav chrome inverts: transparent-over-hero uses light ink */
+  --trv-cmp-nav-bg:           transparent;
+  --trv-cmp-nav-link:         var(--trv-ref-color-white);
+  --trv-cmp-nav-link-current: var(--trv-ref-color-connect-light);
+
+  /* Cards / inputs on dark inherit the re-pointed surface/border above */
+  --trv-cmp-card-bg:     var(--trv-sys-color-surface);
+  --trv-cmp-card-border: var(--trv-sys-color-border);
+  --trv-cmp-input-bg:    var(--trv-ref-color-anchor-deep);
+}
+
+/* ==========================================================================
+ * REDUCED-MOTION — global unbypassable switch (re-points motion at the token layer)
+ * Every duration → 0ms; scroll-linked timelines disabled. Info is unchanged
+ * (SSR final values, static end-states) per §5.5 + ds-structure Part 3.
+ * ======================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --trv-sys-duration-fast:             0ms;
+    --trv-sys-duration-base:             0ms;
+    --trv-sys-duration-slow:             0ms;
+    --trv-sys-duration-immersive-stepin: 0ms;
+    --trv-sys-duration-immersive-trend:  0ms;
+    --trv-sys-duration-immersive-count:  0ms;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

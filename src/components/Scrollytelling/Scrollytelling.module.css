@@ -1,0 +1,94 @@
+/* T2 Scrollytelling — DS §11. The SINGLE immersive surface. Tokens only.
+ * Content is visible by DEFAULT (SSR static end-state = the reduced-motion / no-support
+ * fallback). Motion only ENHANCES, gated behind @supports + no-preference. */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-section);
+  padding: var(--trv-sys-space-section) 0;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-3);
+  max-width: 40rem;
+}
+.heading {
+  font-family: var(--trv-ref-font-family-display);
+  font-size: var(--trv-sys-text-display-sm-size);
+  font-weight: var(--trv-ref-font-weight-bold);
+  line-height: var(--trv-ref-line-height-tight);
+  color: var(--trv-sys-color-text-primary);
+}
+.attribution {
+  font-style: italic;
+  color: var(--trv-sys-color-text-muted);
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-section);
+}
+.step {
+  display: grid;
+  gap: var(--trv-sys-space-gutter);
+  grid-template-columns: 1fr;
+  align-items: center;
+  /* Visible by default — no content is ever hidden without JS + support + motion. */
+  opacity: 1;
+}
+.stepIndex {
+  font-family: var(--trv-sys-text-metric-font);
+  font-variant-numeric: var(--trv-sys-text-metric-numeric);
+  font-size: var(--trv-ref-font-size-3xl);
+  color: var(--trv-sys-color-action-fill);
+  font-weight: var(--trv-ref-font-weight-bold);
+}
+.stepBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-3);
+}
+.stepTitle {
+  font-family: var(--trv-ref-font-family-display);
+  font-size: var(--trv-sys-text-h3-size);
+  font-weight: var(--trv-sys-text-h3-weight);
+  color: var(--trv-sys-color-text-primary);
+}
+
+@media (min-width: 768px) {
+  .step {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Enhancement layer — only where scroll-driven timelines exist AND motion is allowed. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .step {
+      animation: trv-step-in linear both;
+      animation-timeline: view();
+      animation-range: entry 5% cover 35%;
+    }
+  }
+  /* IntersectionObserver fallback path (browsers without scroll-driven timelines). */
+  .step[data-reveal="pending"] {
+    opacity: 0.001;
+    transform: translateY(var(--trv-ref-space-4));
+  }
+  .step[data-reveal="in"] {
+    animation: trv-step-in var(--trv-sys-duration-immersive-stepin)
+      var(--trv-sys-ease-standard) both;
+  }
+}
+
+@keyframes trv-step-in {
+  from {
+    opacity: 0.001;
+    transform: translateY(var(--trv-ref-space-6));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

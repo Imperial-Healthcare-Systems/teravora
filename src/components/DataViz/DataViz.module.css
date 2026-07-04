@@ -1,0 +1,54 @@
+/* Accessible SVG data-viz — DS §9. Tokens only. Non-color encoding mandatory. */
+.figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-3);
+}
+.chart {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.axis {
+  stroke: var(--trv-cmp-chart-axis);
+  stroke-width: 1;
+}
+.grid {
+  stroke: var(--trv-cmp-chart-grid);
+  stroke-width: 1;
+}
+.axisLabel,
+.valueLabel {
+  font-family: var(--trv-sys-text-metric-font);
+  font-variant-numeric: var(--trv-sys-text-metric-numeric);
+  fill: var(--trv-cmp-chart-label);
+  font-size: var(--trv-ref-font-size-2xs);
+}
+.seriesLabel {
+  font-family: var(--trv-ref-font-family-text);
+  font-size: var(--trv-ref-font-size-2xs);
+  fill: var(--trv-sys-color-text-secondary);
+}
+.caption {
+  font-size: var(--trv-sys-text-caption-size);
+  color: var(--trv-sys-color-text-muted);
+}
+.bar,
+.line,
+.ring {
+  transition: none;
+}
+.growIn {
+  animation: trv-grow var(--trv-sys-duration-slow) var(--trv-sys-ease-decelerate) both;
+}
+@keyframes trv-grow {
+  from {
+    opacity: 0;
+    transform: scaleY(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

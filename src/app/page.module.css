@@ -1,0 +1,39 @@
+/* Temporary component gallery — pages are a later stage. Tokens only. */
+.main {
+  flex: 1;
+}
+.container {
+  max-width: var(--trv-ref-breakpoint-md);
+  margin: 0 auto;
+  padding: var(--trv-sys-space-section) var(--trv-sys-space-gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-section);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+}
+.sectionTitle {
+  font-size: var(--trv-sys-text-h2-size);
+  padding-bottom: var(--trv-ref-space-2);
+  border-bottom: var(--trv-ref-border-thin) solid var(--trv-sys-color-border);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--trv-sys-space-gutter);
+  align-items: center;
+}
+.grid {
+  display: grid;
+  gap: var(--trv-sys-space-gutter);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.lede {
+  font-size: var(--trv-sys-text-body-lg-size);
+  line-height: var(--trv-sys-text-body-lg-lh);
+  color: var(--trv-sys-color-text-secondary);
+  max-width: 42rem;
+}

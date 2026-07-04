@@ -1,0 +1,17 @@
+/* Skip-to-content — FIRST in DOM, visible on focus (DS §5). */
+.skipLink {
+  position: absolute;
+  left: var(--trv-ref-space-2);
+  top: calc(-1 * var(--trv-ref-space-20));
+  z-index: var(--trv-ref-z-toast);
+  padding: var(--trv-ref-space-3) var(--trv-ref-space-4);
+  background: var(--trv-sys-color-bg-inverse);
+  color: var(--trv-sys-color-text-on-inverse);
+  border-radius: var(--trv-sys-radius-control);
+  text-decoration: none;
+  font-weight: var(--trv-ref-font-weight-semibold);
+  transition: top var(--trv-sys-duration-fast) var(--trv-sys-ease-standard);
+}
+.skipLink:focus {
+  top: var(--trv-ref-space-2);
+}

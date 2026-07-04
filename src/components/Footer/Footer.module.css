@@ -1,0 +1,69 @@
+/* Footer — full service taxonomy + legal (DS §5). Navy ground. Tokens only. */
+.footer {
+  background: var(--trv-sys-color-bg-inverse);
+  color: var(--trv-sys-color-text-on-inverse);
+  margin-top: auto;
+}
+.inner {
+  max-width: var(--trv-ref-breakpoint-lg);
+  margin: 0 auto;
+  padding: var(--trv-sys-space-section) var(--trv-sys-space-gutter)
+    var(--trv-ref-space-12);
+  display: grid;
+  gap: var(--trv-sys-space-gutter);
+  grid-template-columns: 1fr;
+}
+.columns {
+  display: grid;
+  gap: var(--trv-sys-space-gutter);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+.colTitle {
+  font-size: var(--trv-sys-text-overline-size);
+  font-weight: var(--trv-sys-text-overline-weight);
+  letter-spacing: var(--trv-sys-text-overline-ls);
+  text-transform: uppercase;
+  color: var(--trv-sys-color-text-on-inverse-muted);
+  margin-block-end: var(--trv-ref-space-3);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+  list-style: none;
+}
+.link {
+  display: inline-block;
+  min-height: var(--trv-sys-target-min);
+  color: var(--trv-sys-color-text-on-inverse);
+  text-decoration: none;
+  padding-block: var(--trv-ref-space-1);
+}
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+/* AUDIT: keyboard focus on the navy ground uses the gold inverse ring (≥3:1). */
+.link:focus-visible {
+  outline: var(--trv-sys-focus-ring-width) solid var(--trv-sys-color-focus-ring-inverse);
+  outline-offset: var(--trv-sys-focus-ring-offset);
+}
+.legal {
+  /* AUDIT: divider was text-secondary (dark navy) — invisible on the navy ground.
+   * Use a visible rule and lift legal text to full on-inverse white for contrast. */
+  border-top: var(--trv-ref-border-hairline) solid rgba(253, 253, 252, 0.24);
+  padding-top: var(--trv-ref-space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--trv-sys-space-gutter);
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--trv-sys-text-body-sm-size);
+  color: var(--trv-sys-color-text-on-inverse);
+}
+.legalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--trv-sys-space-gutter);
+  list-style: none;
+}

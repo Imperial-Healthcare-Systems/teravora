@@ -1,0 +1,130 @@
+/* 3-step Proposal Form — DS §4. Tokens only. All motion ≤200ms (within default). */
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+  max-width: 34rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+}
+.intro {
+  color: var(--trv-sys-color-text-secondary);
+  font-size: var(--trv-sys-text-body-md-size);
+}
+
+/* --- Progress stepper: a labeled <nav>, text + state, never motion/color alone --- */
+.stepper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+}
+.stepCount {
+  font-size: var(--trv-sys-text-body-sm-size);
+  font-weight: var(--trv-ref-font-weight-semibold);
+  color: var(--trv-sys-color-text-secondary);
+}
+.stepList {
+  display: flex;
+  gap: var(--trv-ref-space-2);
+  flex-wrap: wrap;
+}
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: var(--trv-sys-space-inline);
+  font-size: var(--trv-sys-text-body-sm-size);
+  color: var(--trv-sys-color-text-muted);
+}
+.stepDot {
+  width: var(--trv-ref-space-5);
+  height: var(--trv-ref-space-5);
+  border-radius: var(--trv-ref-radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--trv-sys-text-caption-size);
+  font-weight: var(--trv-ref-font-weight-bold);
+  background: var(--trv-cmp-form-step-idle-fill);
+  color: var(--trv-sys-color-text-on-inverse);
+  transition: background-color var(--trv-sys-duration-base)
+    var(--trv-sys-ease-standard);
+}
+.stepItem[data-state="active"] {
+  color: var(--trv-sys-color-text-primary);
+  font-weight: var(--trv-ref-font-weight-semibold);
+}
+.stepItem[data-state="active"] .stepDot {
+  background: var(--trv-cmp-form-step-active-fill);
+  color: var(--trv-sys-color-action-on-fill);
+}
+.stepItem[data-state="complete"] .stepDot {
+  background: var(--trv-cmp-form-step-done-fill);
+}
+
+/* --- Error summary (top of step, in-page anchors) --- */
+.errorSummary {
+  border: var(--trv-ref-border-thick) solid var(--trv-cmp-input-error-color);
+  border-radius: var(--trv-sys-radius-card);
+  padding: var(--trv-ref-space-4);
+  background: var(--trv-sys-color-bg-subtle);
+}
+.errorSummary h3 {
+  font-size: var(--trv-sys-text-h4-size);
+  margin-block-end: var(--trv-ref-space-2);
+}
+.errorSummary ul {
+  list-style: disc;
+  padding-inline-start: var(--trv-ref-space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-1);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+}
+.legend {
+  font-family: var(--trv-sys-text-h4-font, var(--trv-ref-font-family-display));
+  font-size: var(--trv-sys-text-h3-size);
+  font-weight: var(--trv-sys-text-h3-weight);
+  color: var(--trv-sys-color-text-primary);
+}
+
+.actions {
+  display: flex;
+  gap: var(--trv-sys-space-inline);
+  justify-content: space-between;
+  margin-block-start: var(--trv-ref-space-2);
+}
+
+/* --- Confirmation lane --- */
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+  border: var(--trv-ref-border-thin) solid var(--trv-sys-color-border);
+  border-left: var(--trv-ref-space-1) solid var(--trv-sys-color-feedback-success);
+  border-radius: var(--trv-sys-radius-card);
+  padding: var(--trv-ref-space-6);
+  background: var(--trv-sys-color-surface);
+}
+.reassurance {
+  color: var(--trv-sys-color-text-body);
+}
+
+/* --- submitError fallback --- */
+.submitError {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+  border: var(--trv-ref-border-thick) solid var(--trv-cmp-input-error-color);
+  border-radius: var(--trv-sys-radius-card);
+  padding: var(--trv-ref-space-6);
+}

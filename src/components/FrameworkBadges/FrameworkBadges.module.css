@@ -1,0 +1,91 @@
+/* Framework Verification Badges — AUDIT §2. Flat technical grid. Tokens only. */
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-sys-space-stack);
+}
+.heading {
+  font-family: var(--trv-ref-font-family-display);
+  font-size: var(--trv-sys-text-h3-size);
+  font-weight: var(--trv-sys-text-h3-weight);
+  color: var(--trv-sys-color-text-primary);
+}
+.grid {
+  display: grid;
+  gap: var(--trv-ref-space-3);
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  align-items: start;
+}
+.cell {
+  border: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+  background: var(--trv-sys-color-bg-subtle);
+  transition: border-color var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    box-shadow var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    background-color var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.cell:hover,
+.cell[data-expanded="true"] {
+  background: var(--trv-sys-color-surface);
+  border-color: var(--trv-sys-color-text-primary);
+  box-shadow: var(--trv-sys-elevation-card);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: var(--trv-sys-space-inline);
+  width: 100%;
+  min-height: var(--trv-sys-target-comfortable);
+  padding: var(--trv-ref-space-3) var(--trv-ref-space-4);
+  font-size: var(--trv-sys-text-body-sm-size);
+  font-weight: var(--trv-ref-font-weight-semibold);
+  color: var(--trv-sys-color-text-primary);
+  text-align: left;
+}
+.badgeLabel {
+  flex: 1;
+}
+.tick {
+  color: var(--trv-sys-color-feedback-success);
+  flex: none;
+}
+/* Chevron rotates on expand — a non-color state cue paired with aria-expanded. */
+.chevron {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-right: var(--trv-ref-border-thin) solid var(--trv-sys-color-text-muted);
+  border-bottom: var(--trv-ref-border-thin) solid var(--trv-sys-color-text-muted);
+  transform: rotate(45deg);
+  transition: transform var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.cell[data-expanded="true"] .chevron {
+  transform: rotate(-135deg);
+}
+
+.panel {
+  padding: 0 var(--trv-ref-space-4) var(--trv-ref-space-4);
+  animation: trv-fw-in var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+@keyframes trv-fw-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-3);
+  padding-block-start: var(--trv-ref-space-3);
+  border-block-start: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border-hair);
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-1);
+}
+.row dd {
+  font-size: var(--trv-sys-text-body-sm-size);
+  line-height: var(--trv-sys-text-body-sm-lh);
+  color: var(--trv-sys-color-text-secondary);
+}

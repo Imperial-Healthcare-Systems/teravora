@@ -1,0 +1,57 @@
+/* Metric Counter — DS §8. Tabular figures, no reflow on count-up. Tokens only. */
+.counter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trv-ref-space-2);
+}
+.value {
+  font-family: var(--trv-cmp-counter-numeral-font);
+  font-weight: var(--trv-sys-text-metric-weight);
+  line-height: var(--trv-sys-text-metric-lh);
+  font-variant-numeric: var(--trv-sys-text-metric-numeric);
+  font-size: var(--trv-ref-font-size-5xl);
+  color: var(--trv-cmp-counter-numeral-color);
+}
+.label {
+  font-size: var(--trv-sys-text-body-md-size);
+  color: var(--trv-sys-color-text-secondary);
+}
+.attribution {
+  font-size: var(--trv-sys-text-body-sm-size);
+  color: var(--trv-sys-color-text-muted);
+  font-style: italic;
+}
+/* thin bar/ring fill — the ascent motif, gold peak (only over substantiated). */
+.bar {
+  height: var(--trv-ref-space-2);
+  border-radius: var(--trv-sys-radius-pill);
+  background: var(--trv-sys-color-bg-muted);
+  overflow: hidden;
+}
+.barFill {
+  height: 100%;
+  background: var(--trv-cmp-counter-accent);
+  border-radius: var(--trv-sys-radius-pill);
+  transition: width var(--trv-sys-duration-slow) var(--trv-sys-ease-emphasized);
+}
+/* Qualitative fallback for an empty/gated slot (never a fake number). */
+.fallback {
+  font-family: var(--trv-ref-font-family-display);
+  font-size: var(--trv-sys-text-h4-size);
+  font-weight: var(--trv-sys-text-h4-weight);
+  color: var(--trv-sys-color-text-primary);
+}
+/* Empty/gated slot rendered as a deliberate module, not an empty number well. */
+.emptyState {
+  padding: var(--trv-sys-space-gutter);
+  border-radius: var(--trv-sys-radius-card);
+  background: var(--trv-sys-color-surface);
+  border: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+  border-left: var(--trv-ref-space-1) solid var(--trv-sys-color-text-connect);
+}
+/* Outlined "pending ascent" bar — the count-up bar in its not-yet-substantiated form. */
+.barOutline {
+  height: var(--trv-ref-space-2);
+  border-radius: var(--trv-sys-radius-pill);
+  border: var(--trv-ref-border-thin) dashed var(--trv-sys-color-border-strong);
+}

@@ -1,0 +1,25 @@
+# Teravora
+
+> Teravora is an India-based ESG advisory that turns BRSR-Core and assurance
+> obligations into a practical, auditable path to a defensible disclosure —
+> with the method shown, not just the result. Teravora is a new India brand
+> built on the advisory backbone of its parent practice, Teravue.
+
+## What Teravora does
+- ESG Disclosure & Assurance Readiness (BRSR and BRSR-Core, prepared for reasonable assurance): https://teravora.in/solutions/esg-disclosure-assurance-readiness
+- Carbon & Climate (GHG inventory, decarbonization pathways, TCFD / IFRS S2 disclosure): https://teravora.in/solutions/carbon-climate
+- Environmental & Social Due Diligence (aligned to IFC Performance Standards and the Equator Principles): https://teravora.in/solutions/environmental-social-due-diligence
+
+## How Teravora proves its work
+- Method and standards (Assess → Comply → Improve → Prove): https://teravora.in/how-we-prove
+
+## Key facts (India ESG context)
+- BRSR = Business Responsibility and Sustainability Report; mandatory for the top 1,000 listed companies since FY2022-23.
+- BRSR-Core = the assured subset: 49 KPIs across 9 attributes.
+- Reasonable assurance phase-in: top 150 (FY2023-24) → top 250 (FY2024-25) → top 500 (FY2025-26) → top 1,000 (FY2026-27).
+
+## About
+- About Teravora (new brand, proven backbone; parent Teravue attributed): https://teravora.in/about
+
+## Contact / engage
+- Request a Proposal: https://teravora.in/start

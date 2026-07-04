@@ -1,0 +1,197 @@
+/* =============================================================================
+ * Teravora — globals.css  (base layer for workstream T foundation)
+ * -----------------------------------------------------------------------------
+ * Reset + base element styles. STYLING SOURCE OF TRUTH is tokens.css — this file
+ * references sys/cmp tokens ONLY (no raw hex/px/ms). The one exception: the three
+ * `--trv-ref-font-family-*` tokens are re-pointed at the next/font variables wired
+ * in layout.tsx, so the real self-hosted Archivo / Source Sans 3 faces flow through
+ * the frozen token graph (ref → sys → cmp) without editing tokens.css itself.
+ * Reduced-motion is handled globally at the token layer (tokens.css media query).
+ * ========================================================================== */
+
+:root {
+  /* Map the next/font faces into the token graph, preserving the frozen
+   * fallback stacks from tokens.css §ref. Consumers still read sys/cmp only. */
+  --trv-ref-font-family-display: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+  --trv-ref-font-family-text: var(--font-source-sans), "Source Sans Pro", system-ui, sans-serif;
+  --trv-ref-font-family-mono: var(--font-archivo), ui-monospace, "Cascadia Mono", monospace;
+}
+
+/* --- Reset --------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--trv-sys-color-bg-canvas);
+  color: var(--trv-sys-color-text-body);
+  font-family: var(--trv-sys-text-body-md-font);
+  font-size: var(--trv-sys-text-body-md-size);
+  line-height: var(--trv-sys-text-body-md-lh);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* --- Media & form element normalization --------------------------------- */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* --- Headings (Archivo display family via tokens) ----------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--trv-sys-text-h1-font);
+  color: var(--trv-sys-color-text-primary);
+  font-weight: var(--trv-ref-font-weight-semibold);
+  line-height: var(--trv-sys-text-h1-lh);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--trv-sys-text-h1-size);
+  font-weight: var(--trv-sys-text-h1-weight);
+  letter-spacing: var(--trv-ref-letter-spacing-tight);
+}
+h2 {
+  font-size: var(--trv-sys-text-h2-size);
+  font-weight: var(--trv-sys-text-h2-weight);
+}
+h3 {
+  font-size: var(--trv-sys-text-h3-size);
+  font-weight: var(--trv-sys-text-h3-weight);
+}
+h4 {
+  font-size: var(--trv-sys-text-h4-size);
+  font-weight: var(--trv-sys-text-h4-weight);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* --- Links (teal, MUST underline — never color alone, brand §5.2) -------- */
+a {
+  color: var(--trv-sys-color-link);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+a:hover {
+  color: var(--trv-sys-color-link-hover);
+}
+
+/* --- Global focus ring (first-class; from the focus-ring token) ---------- */
+:focus-visible {
+  outline: var(--trv-sys-focus-ring-width) solid var(--trv-sys-color-focus-ring);
+  outline-offset: var(--trv-sys-focus-ring-offset);
+}
+/* Remove the ring for pointer users that support :focus-visible. */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* --- Selection ---------------------------------------------------------- */
+::selection {
+  background: var(--trv-sys-color-action-fill);
+  color: var(--trv-sys-color-action-on-fill);
+}
+
+/* =========================================================================
+ * AUDIT — Technical-grid aesthetic + monospace meta layer (globals, token-only)
+ * Blueprint framing: thin structural rules + crosshair junctions. Monospace
+ * micro-labels for data keys / step numbers / tags. All values trace to tokens.
+ * ======================================================================= */
+
+/* Monospace micro-label: data keys, step numbers, meta — uppercase, tracked. */
+.trv-mono-label {
+  font-family: var(--trv-ref-font-family-mono);
+  font-size: var(--trv-sys-text-overline-size);
+  font-weight: var(--trv-sys-text-overline-weight);
+  letter-spacing: var(--trv-sys-text-overline-ls);
+  text-transform: uppercase;
+  font-variant-numeric: var(--trv-sys-text-metric-numeric);
+  color: var(--trv-sys-color-text-muted);
+}
+
+/* Structural grid rule — the 1px architectural line between sections/cells. */
+.trv-rule {
+  border: 0;
+  height: var(--trv-ref-border-hairline);
+  background: var(--trv-sys-color-border-hair);
+}
+
+/* Blueprint frame: a cell bounded by hairline rules with crosshair (+) ticks
+ * at its corners. Apply to any technical grid cell. The crosshairs are the
+ * ::before/::after of the cell; decorative only (aria-hidden not needed — CSS). */
+.trv-blueprint {
+  position: relative;
+  border: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border-hair);
+}
+.trv-blueprint::before,
+.trv-blueprint::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  pointer-events: none;
+  /* crosshair drawn as two 1px bars via layered gradients */
+  background:
+    linear-gradient(var(--trv-sys-color-border-cross), var(--trv-sys-color-border-cross)) center / 100% 1px no-repeat,
+    linear-gradient(var(--trv-sys-color-border-cross), var(--trv-sys-color-border-cross)) center / 1px 100% no-repeat;
+}
+.trv-blueprint::before { top: -5px; left: -5px; }
+.trv-blueprint::after  { bottom: -5px; right: -5px; }
+
+/* --- Utility: visually-hidden (SR-only, still in the a11y tree) ---------- */
+.trv-visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

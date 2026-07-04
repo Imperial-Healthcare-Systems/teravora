@@ -1,0 +1,136 @@
+/* Button / CTA — DS component-library-v0 §2.
+ * Tokens only. Primary = gold fill + navy label (the earned peak). */
+
+.button {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--trv-sys-space-inline);
+  font-family: var(--trv-sys-text-label-font);
+  font-weight: var(--trv-ref-font-weight-semibold);
+  line-height: var(--trv-ref-line-height-none);
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--trv-cmp-button-radius);
+  border: var(--trv-ref-border-thin) solid transparent;
+  cursor: pointer;
+  transition: background-color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard),
+    color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard),
+    border-color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard);
+  /* target size floor — SC 2.5.8 / project 44px comfortable */
+  min-height: var(--trv-cmp-button-min-size);
+}
+/* AUDIT: keep label/icon above the wipe overlay; nudge a trailing arrow (›/→) on
+ * hover using the premium ease. Spans are the Inner() wrappers. */
+.button > span {
+  position: relative;
+  z-index: 1;
+  transition: transform var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.button:hover:not(:disabled):not([aria-disabled="true"]) > span:last-child {
+  transform: translateX(4px);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* --- Sizes --- */
+.sm {
+  min-height: var(--trv-sys-target-min);
+  padding: var(--trv-ref-space-2) var(--trv-ref-space-3);
+  font-size: var(--trv-ref-font-size-sm);
+}
+.md {
+  padding: var(--trv-ref-space-3) var(--trv-ref-space-5);
+  font-size: var(--trv-ref-font-size-md);
+}
+.lg {
+  padding: var(--trv-ref-space-4) var(--trv-ref-space-6);
+  font-size: var(--trv-ref-font-size-lg);
+}
+
+/* --- Variant: primary (gold fill, navy label — AA 5.50) --- */
+.primary {
+  background: var(--trv-cmp-button-primary-bg);
+  color: var(--trv-cmp-button-primary-fg);
+  border-color: var(--trv-cmp-button-primary-bg);
+}
+/* AUDIT: darker-gold fill wipes in from the left on hover (premium ease). The
+ * base gold stays put, so the navy label keeps ≥AA contrast throughout the wipe.
+ * Reduced-motion collapses the duration at the token layer, leaving a clean swap. */
+.primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--trv-cmp-button-primary-bg-hover);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
+}
+.primary:hover:not(:disabled):not([aria-disabled="true"])::before {
+  transform: scaleX(1);
+}
+.primary:hover:not(:disabled):not([aria-disabled="true"]) {
+  border-color: var(--trv-cmp-button-primary-bg-hover);
+}
+
+/* --- Variant: secondary (teal outline, laddering CTA — never gold fill) --- */
+.secondary {
+  background: transparent;
+  color: var(--trv-cmp-button-secondary-fg);
+  border-color: var(--trv-cmp-button-secondary-border);
+}
+.secondary:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--trv-sys-color-bg-subtle);
+}
+
+/* --- Variant: tertiary (teal text button, underline for non-color affordance) --- */
+.tertiary {
+  background: transparent;
+  color: var(--trv-sys-color-action-text);
+  border-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.tertiary:hover:not(:disabled):not([aria-disabled="true"]) {
+  color: var(--trv-sys-color-link-hover);
+}
+
+/* --- Variant: destructive (rare; feedback-error family + icon/text) --- */
+.destructive {
+  background: transparent;
+  color: var(--trv-sys-color-feedback-error);
+  border-color: var(--trv-sys-color-feedback-error);
+}
+
+/* --- Disabled (color is never the sole cue; opacity + not-allowed) --- */
+.button:disabled,
+.button[aria-disabled="true"] {
+  color: var(--trv-sys-color-action-disabled);
+  border-color: var(--trv-sys-color-border-strong);
+  background: var(--trv-sys-color-bg-muted);
+  cursor: not-allowed;
+}
+
+/* --- Loading: spinner is decorative; accessible name preserved --- */
+.spinner {
+  width: 1em;
+  height: 1em;
+  border: var(--trv-ref-border-thick) solid currentColor;
+  border-right-color: transparent;
+  border-radius: var(--trv-ref-radius-full);
+  animation: trv-btn-spin var(--trv-ref-duration-slow) linear infinite;
+}
+@keyframes trv-btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.iconOnly {
+  aspect-ratio: 1;
+  padding: var(--trv-ref-space-2);
+}
