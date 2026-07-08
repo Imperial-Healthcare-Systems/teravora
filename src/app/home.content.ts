@@ -264,8 +264,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
             <div class="cfg-k">STEP 02 / 03 · TIMING</div>
             <h3>When is your filing?</h3>
             <div class="opts" data-group="fy">
-              <div class="opt" data-v="FY 2025-26"><span>This financial year (FY25-26)</span><span class="tag">IMMINENT</span></div>
-              <div class="opt" data-v="FY 2026-27"><span>Next financial year (FY26-27)</span><span class="tag">PLANNING</span></div>
+              <div class="opt" data-v="FY 2026-27"><span>This financial year (FY26-27)</span><span class="tag">IMMINENT</span></div>
+              <div class="opt" data-v="FY 2027-28"><span>Next financial year (FY27-28)</span><span class="tag">PLANNING</span></div>
               <div class="opt" data-v="Exploring"><span>Exploring — no fixed date yet</span><span class="tag">EARLY</span></div>
             </div>
             <div class="cfg-nav"><button class="cfg-back" data-back>← Back</button></div>

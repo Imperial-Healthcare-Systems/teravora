@@ -12,6 +12,7 @@ const DARK_HERO_ROUTES = [
   "/solutions",
   "/how-we-prove",
   "/about",
+  "/why-now",
 ];
 
 function isDarkHero(pathname: string): boolean {
