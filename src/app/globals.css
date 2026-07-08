@@ -195,3 +195,35 @@ a:hover {
   white-space: nowrap;
   border: 0;
 }
+
+/* ── Ported-comp CTA polish (site-wide DS motion pass) ─────────────────────
+   The comp pages (home / why-now / how-we-prove / solution / about / start)
+   render their own scoped `.btn` markup, not the React <Button>. These global
+   rules give every gold CTA the same shimmer sweep + lift as the shared Button,
+   so the design system reads consistently across ported and component pages.
+   `.btn-gold` already sets position:relative + overflow:hidden; the scoped
+   `.btn { transition: transform … }` animates the lift. */
+.btn-gold > span { position: relative; z-index: 1; }
+.btn-gold::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 32%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 68%
+  );
+  transform: translateX(-135%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-gold:hover::after { transform: translateX(135%); }
+.btn-gold:hover { transform: translateY(-2px); }
+.btn-ghost:hover { transform: translateY(-2px); }
+@media (prefers-reduced-motion: reduce) {
+  .btn-gold::after { display: none; }
+  .btn-gold:hover,
+  .btn-ghost:hover { transform: none; }
+}

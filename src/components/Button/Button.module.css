@@ -18,9 +18,15 @@
   cursor: pointer;
   transition: background-color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard),
     color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard),
-    border-color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard);
+    border-color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard),
+    transform var(--trv-sys-duration-base) var(--trv-sys-ease-premium),
+    box-shadow var(--trv-sys-duration-base) var(--trv-sys-ease-premium);
   /* target size floor — SC 2.5.8 / project 44px comfortable */
   min-height: var(--trv-cmp-button-min-size);
+}
+/* Spring press — subtle depress on click, all variants (DS motion pass). */
+.button:active:not(:disabled):not([aria-disabled="true"]) {
+  transform: translateY(0) scale(0.99);
 }
 /* AUDIT: keep label/icon above the wipe overlay; nudge a trailing arrow (›/→) on
  * hover using the premium ease. Spans are the Inner() wrappers. */
@@ -76,6 +82,30 @@
 }
 .primary:hover:not(:disabled):not([aria-disabled="true"]) {
   border-color: var(--trv-cmp-button-primary-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset,
+    0 18px 34px -16px rgba(196, 145, 47, 0.6),
+    0 4px 12px -6px rgba(11, 25, 44, 0.28);
+}
+/* Shimmer sweep — diagonal light band crosses the gold fill on hover. Above the
+   wipe (::before, z-index:0), below the label (span z-index:1). */
+.primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 32%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 68%
+  );
+  transform: translateX(-135%);
+  transition: transform 0.8s var(--trv-sys-ease-premium);
+}
+.primary:hover:not(:disabled):not([aria-disabled="true"])::after {
+  transform: translateX(135%);
 }
 
 /* --- Variant: secondary (teal outline, laddering CTA — never gold fill) --- */
@@ -86,6 +116,8 @@
 }
 .secondary:hover:not(:disabled):not([aria-disabled="true"]) {
   background: var(--trv-sys-color-bg-subtle);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px -16px rgba(11, 25, 44, 0.28);
 }
 
 /* --- Variant: tertiary (teal text button, underline for non-color affordance) --- */
@@ -133,4 +165,11 @@
 .iconOnly {
   aspect-ratio: 1;
   padding: var(--trv-ref-space-2);
+}
+
+/* Reduced motion: no traveling shimmer; hover reduces to a clean state swap. */
+@media (prefers-reduced-motion: reduce) {
+  .primary::after {
+    display: none;
+  }
 }

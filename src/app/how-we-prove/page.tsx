@@ -7,7 +7,7 @@ import { HowWeProveRuntime } from "./HowWeProveRuntime";
 import "../how-we-prove.vcomp.css";
 
 export const metadata: Metadata = buildMetadata({
-  title: "How We Prove It — Method & Standards | Teravora",
+  title: "Our Method — Standards & Assurance-Ready Proof | Teravora",
   description:
     "Credibility you can audit. See our Assess-Comply-Improve-Prove method, the standards we work to, and how we make every metric survive assurance.",
   path: ROUTES.howWeProve,
@@ -30,7 +30,7 @@ export default function HowWeProve() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: ROUTES.home },
-          { name: "How We Prove It", path: ROUTES.howWeProve },
+          { name: "Our Method", path: ROUTES.howWeProve },
         ])}
       />
     </>
