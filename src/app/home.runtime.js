@@ -23,14 +23,14 @@ export function initHome() {
       if(!reduce)setTimeout(function(){s.classList.add("in")},250+(li*300)+(i*90));else s.classList.add("in");});
   });
 
-  var tokens=[["#proof","METRIC · SCOPE-2 EMISSIONS → SOURCED"],["#proof","CONTROL · MASS-BALANCE → VALIDATED"],["#proof","EVIDENCE · ASSURER MATCH → OK"],["#method","METHOD TRACE VERIFIED"],["#infographic","49 KPIs · 9 ATTRIBUTES"],["#proof","AUDIT TRAIL BEHIND EVERY NUMBER"]];
+  var tokens=[["#why","INDIA-BASED ESG ADVISORY · SEBI-BRSR SPECIALISTS"],["#proof","25+ YEARS OF ESG EXPERTISE · BACKED BY TERAVUE"],["#infographic","STANDARDS MASTERED · BRSR-CORE · GRI · TCFD · IFRS S1/S2 · GHG"],["#method","THE METHOD IS SHOWN · NOT ASSERTED"],["#infographic","49 KPIs · 9 BRSR-CORE ATTRIBUTES · ASSURER-READY"],["#method","FROM SCATTERED DATA → A FILED, DEFENSIBLE DISCLOSURE"],["#cta","EVIDENCE BEHIND EVERY NUMBER → REQUEST A PROPOSAL"]];
   var mq=document.getElementById("mq");
   function seg(){var f=document.createDocumentFragment();tokens.forEach(function(t){var a=document.createElement("a");a.href=t[0];a.textContent=t[1];f.appendChild(a);var s=document.createElement("span");s.className="sep";s.textContent="◆";f.appendChild(s)});return f}
   mq.appendChild(seg());mq.appendChild(seg());
 
-  function scan(el){var to=+el.dataset.to,st=null,d=1500;
-    function tick(t){if(!st)st=t;var p=Math.min((t-st)/d,1);
-      if(p<0.75)el.textContent=Math.floor(Math.random()*Math.max(to,10));else el.textContent=Math.round(to*((p-0.75)/0.25));
+  function scan(el){var to=+el.dataset.to,st=null,d=900;
+    function tick(t){if(!st)st=t;var p=Math.min((t-st)/d,1),e=1-Math.pow(1-p,3);
+      el.textContent=Math.round(to*e);
       if(p<1)requestAnimationFrame(tick);else el.textContent=to}
     requestAnimationFrame(tick)}
   var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){reduce?e.target.textContent=e.target.dataset.to:scan(e.target);cio.unobserve(e.target)}})},{threshold:.6});
@@ -137,7 +137,7 @@ export function initHome() {
     addEventListener("resize",sz)}
 
   /* method engine */
-  var path=document.getElementById("mpath"),node=document.getElementById("mnode"),pulse=document.getElementById("mpulse"),ro=document.getElementById("ro"),steps=[].slice.call(document.querySelectorAll(".step"));
+  var path=document.getElementById("mpath"),node=document.getElementById("mnode"),pulse=document.getElementById("mpulse"),ro=document.getElementById("ro"),steps=[].slice.call(document.querySelectorAll(".step")),msteps=[].slice.call(document.querySelectorAll(".mstep"));
   var meta=[[46,268,"01 ASSESS"],[150,196,"02 COMPLY"],[250,120,"03 IMPROVE"],[350,52,"04 PROVE"]],segAt=[0,0,0,0],L=0;
   if(path){L=path.getTotalLength();path.style.strokeDasharray=L;path.style.strokeDashoffset=reduce?0:L;
     function lenAtXY(tx,ty){var best=0,bd=1e9;for(var s=0;s<=L;s+=2){var pt=path.getPointAtLength(s);var d=Math.hypot(pt.x-tx,pt.y-ty);if(d<bd){bd=d;best=s}}return best}
@@ -146,8 +146,9 @@ export function initHome() {
   }
   function pad(n){return String(Math.round(n)).padStart(3,"0")}
   function setStep(i){steps.forEach(function(s,k){s.classList.toggle("on",k==i)});
+    msteps.forEach(function(s,k){s.classList.toggle("on",k==i)});
     if(node){node.setAttribute("cx",meta[i][0]);node.setAttribute("cy",meta[i][1])}
-    if(ro)ro.textContent="X:"+pad(meta[i][0])+" Y:"+pad(meta[i][1])+" · STEP "+meta[i][2];
+    if(ro)ro.textContent="STEP "+meta[i][2];
     if(pulse&&path&&!reduce){var target=segAt[i],start=pulse._at||0,t0=null,dur=650;pulse.setAttribute("opacity","1");
       (function anim(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1);var cur=start+(target-start)*p;var pt=path.getPointAtLength(cur);pulse.setAttribute("cx",pt.x);pulse.setAttribute("cy",pt.y);pulse._at=cur;if(p<1)requestAnimationFrame(anim);})(0)}
   }

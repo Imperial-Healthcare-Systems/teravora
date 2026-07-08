@@ -13,7 +13,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <h1 id="headline"><span class="hl-line">Practical ESG.</span><br><span class="l2 hl-line">Measurable Impact.</span></h1>
     <p class="hero-sub reveal">ESG reporting in India is now a deadline, not a choice. Teravora takes you from scattered data to a filed, defensible disclosure — with the method shown at every step, so it holds up when your assurer asks how you got there.</p>
     <div class="hero-cta reveal"><a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a><a class="btn btn-ghost" href="#start">Find your starting point</a></div>
-    <div class="hero-note reveal"><b>ESG</b> Environmental, Social &amp; Governance — glossed on first use.</div>
+    <div class="hero-note reveal"><b>ESG</b> Environmental, Social &amp; Governance.</div>
   </div></div>
   <div class="audit-ticker" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
 </header>
@@ -33,7 +33,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         </div>
       </div>
       <figure class="why-fig reveal">
-        <img src="/v/home/ab9f79581.webp" alt="ESG compliance cascade — listed corporation down through Tier 1–5 suppliers and the value chain">
+        <img src="/v/home/why-cascade.webp" alt="ESG compliance cascade — listed corporation down through Tier 1–5 suppliers and the value chain">
         <figcaption class="fig-cap"><span>◇ ESG COMPLIANCE CASCADE</span><span>SEBI BRSR-CORE</span></figcaption>
       </figure>
     </div>
@@ -74,6 +74,16 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
+<section class="band" id="impact-band" aria-label="Measurable impact">
+  <div class="band-img" style="background-image:url('/v/home/band-impact.webp')"></div>
+  <div class="band-scrim"></div>
+  <div class="wrap band-in">
+    <span class="mono band-kicker reveal">◇ MEASURABLE IMPACT</span>
+    <h2 class="band-h reveal">The disclosure is the deadline.<br>The impact is the point.</h2>
+    <p class="band-sub reveal">Every figure we file traces back to something real — carbon cut, water saved, a risk retired. The audit trail is how you prove it happened.</p>
+  </div>
+</section>
+
 <section class="sec method" id="method">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -84,13 +94,20 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="engine">
       <div class="pipe reveal">
         <div class="pgrid"></div>
+        <div class="mticks" aria-hidden="true"><span>1.0</span><span>0.6</span><span>0.2</span><span>0</span></div>
         <svg viewBox="0 0 440 320" preserveAspectRatio="none" fill="none" aria-hidden="true">
-          <path id="mpath" d="M46 268 L150 268 L150 196 L250 196 L250 120 L350 120 L350 52 L394 52" stroke="#4FBCC2" stroke-width="2.4"/>
+          <defs><linearGradient id="gtrace" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FBCC2" stop-opacity=".34"/><stop offset="1" stop-color="#4FBCC2" stop-opacity="0"/></linearGradient></defs>
+          <path id="mfill" d="M46 268 L150 268 L150 196 L250 196 L250 120 L350 120 L350 52 L394 52 L394 320 L46 320 Z" fill="url(#gtrace)"/>
+          <path id="mpath" d="M46 268 L150 268 L150 196 L250 196 L250 120 L350 120 L350 52 L394 52" stroke="#4FBCC2" stroke-width="2.9"/>
           <circle id="mpulse" r="4.5" fill="#E4BE68" opacity="0"/>
-          <circle id="mnode" r="5" fill="#E4BE68" cx="46" cy="268"/>
         </svg>
-        <span class="cross" style="left:146px;top:192px"></span><span class="cross" style="left:246px;top:116px"></span><span class="cross" style="left:346px;top:48px"></span>
-        <div class="readout"><span class="lbl">TRACE</span> <span id="ro">X:046 Y:268 · STEP 01 ASSESS</span></div>
+        <div class="mnodes" aria-hidden="true">
+          <span class="mstep on" data-i="0" style="left:10.45%;top:83.75%"><b>Assess</b><i></i></span>
+          <span class="mstep" data-i="1" style="left:34.09%;top:61.25%"><b>Comply</b><i></i></span>
+          <span class="mstep" data-i="2" style="left:56.82%;top:37.5%"><b>Improve</b><i></i></span>
+          <span class="mstep" data-i="3" style="left:79.55%;top:16.25%"><b>Prove</b><i></i></span>
+        </div>
+        <div class="readout"><span id="ro">STEP 01 ASSESS</span></div>
       </div>
       <div class="steps reveal">
         <div class="step on" data-i="0"><div class="sh"><span class="sn">01</span><span class="st">Assess</span></div><p class="sd">We map your existing data against every requirement and find the gaps, in plain language.</p></div>
@@ -104,37 +121,37 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 
 <section class="sec proof" id="proof">
   <div class="wrap">
-    <span class="mono eyebrow reveal" style="color:var(--gold-l);display:inline-block">New brand. Proven backbone.</span>
+    <span class="mono eyebrow reveal" style="color:var(--gold-l);display:inline-block">25+ years of global ESG experience. Built for India.</span>
     <div class="proof-grid">
       <div class="proof-left reveal">
       <div class="sec-head" style="margin-bottom:26px">
-      <h2>We prove the promise a different way — by showing the method, not asserting a number.</h2>
-      <p>We are a new India brand, and we will not publish an outcome we have not verified.</p>
+      <h2>Built on decades of ESG expertise. Designed for Indian businesses.</h2>
+      <p>Backed by more than 25 years of Teravue's global sustainability practice, we help Indian organisations turn ESG from obligation into practical guidance, recognised frameworks and measurable outcomes.</p>
       </div>
       <div class="proof-pts">
-        <div class="ppt" data-row="0"><div class="i">01</div><div><h4>The method is auditable.<span class="st">SOURCED</span></h4><p>Every figure is sourced to primary evidence — the same trail your assurer will follow.</p></div></div>
-        <div class="ppt" data-row="1"><div class="i">02</div><div><h4>The standards are mastered.<span class="st">VALIDATED</span></h4><p>Each number is validated against the standard that governs it — BRSR-Core, GRI, TCFD, IFRS S1/S2, GHG Protocol.</p></div></div>
-        <div class="ppt" data-row="2"><div class="i">03</div><div><h4>The backbone is real.<span class="st">ASSURER-READY</span></h4><p>The result stands assurer-ready, reconciled to the multi-market track record of our parent practice, Teravue.</p></div></div>
+        <div class="ppt" data-row="0"><div class="i">01</div><div><h4>Decades of experience.<span class="st">EXPERIENCE</span></h4><p>25+ years of ESG and sustainability advisory through our parent practice, Teravue — across manufacturing, energy, infrastructure and financial services.</p></div></div>
+        <div class="ppt" data-row="1"><div class="i">02</div><div><h4>Standards you recognise.<span class="st">EXPERTISE</span></h4><p>Our advisory aligns with the frameworks that govern Indian ESG — BRSR, GRI, SASB and TCFD — adapted to your business realities.</p></div></div>
+        <div class="ppt" data-row="2"><div class="i">03</div><div><h4>Outcomes you can act on.<span class="st">EXECUTION</span></h4><p>ISO-certified, IMS-compliant delivery focused on practical, data-backed progress your leadership can measure.</p></div></div>
         <a class="btn btn-gold proof-cta" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
       </div>
       </div>
       <div class="ledger-glass reveal" id="ledger">
         <div class="lg-head">
-          <div class="lg-toggle"><button class="on" data-v="sample">SAMPLE VIEW</button><button data-v="flow">AUDIT-TRAIL</button></div>
-          <span class="lg-tag">THE METHOD, NOT A CLAIM</span>
+          <div class="lg-toggle"><button class="on" data-v="sample">WHY TERAVORA</button><button data-v="flow">OUR APPROACH</button></div>
+          <span class="lg-tag">BACKED BY TERAVUE</span>
         </div>
         <div class="lg-view" data-view="sample">
-          <div class="lrow" data-row="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span><span class="lx">METRIC · SCOPE-2 EMISSIONS</span><span class="v v-src" data-final="SOURCED">SOURCED</span></div>
-          <div class="lrow" data-row="1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="M7 7h10"/><path d="M7 7l-3 6a3 3 0 0 0 6 0Z"/><path d="M17 7l3 6a3 3 0 0 1-6 0Z"/><path d="M8.5 20h7"/></svg></span><span class="lx">CONTROL · MASS-BALANCE CHECK</span><span class="v v-val" data-final="VALIDATED">VALIDATED</span></div>
-          <div class="lrow" data-row="2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6Z"/><path d="M9 11.5l2 2 4-4"/></svg></span><span class="lx">EVIDENCE · ASSURER MATCH</span><span class="v v-ok" data-final="OK">OK</span></div>
+          <div class="lrow" data-row="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span><span class="lx">PRACTICE · GLOBAL ESG ADVISORY</span><span class="v v-src" data-final="25+ YRS">25+ YRS</span></div>
+          <div class="lrow" data-row="1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="M7 7h10"/><path d="M7 7l-3 6a3 3 0 0 0 6 0Z"/><path d="M17 7l3 6a3 3 0 0 1-6 0Z"/><path d="M8.5 20h7"/></svg></span><span class="lx">STANDARDS · RECOGNISED FRAMEWORKS</span><span class="v v-val" data-final="ALIGNED">ALIGNED</span></div>
+          <div class="lrow" data-row="2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6Z"/><path d="M9 11.5l2 2 4-4"/></svg></span><span class="lx">DELIVERY · ISO-CERTIFIED PROCESS</span><span class="v v-ok" data-final="CERTIFIED">CERTIFIED</span></div>
         </div>
         <div class="lg-view" data-view="flow" hidden>
           <div class="flow">
-            <div class="fnode"><div class="fn-k">01 · INGEST</div><div class="fn-t">Primary evidence</div></div>
+            <div class="fnode"><div class="fn-k">01 · DISCOVER</div><div class="fn-t">Understand the business</div></div>
             <span class="farr">→</span>
-            <div class="fnode"><div class="fn-k">02 · VALIDATE</div><div class="fn-t">Against the standard</div></div>
+            <div class="fnode"><div class="fn-k">02 · ASSESS</div><div class="fn-t">Map to the standard</div></div>
             <span class="farr">→</span>
-            <div class="fnode"><div class="fn-k">03 · SIGN-OFF</div><div class="fn-t">Assurer-ready trail</div></div>
+            <div class="fnode"><div class="fn-k">03 · DELIVER</div><div class="fn-t">Measurable outcomes</div></div>
           </div>
         </div>
         <div class="manifest">
@@ -142,19 +159,31 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
           <div class="mf-metrics">
             <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">[ QTY // KPI_METRICS ]</div></div>
             <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">[ BRSR-CORE ATTRIBUTES ]</div></div>
-            <div class="mf-b"><div class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="6.2"/><path d="M9.2 10l2 2 3.6-3.6"/><path d="M8.4 15.6L7 21l5-2.2L17 21l-1.4-5.4"/></svg></div><div class="k">ASSURER-READY</div></div>
+            <div class="mf-b"><div class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="6.2"/><path d="M9.2 10l2 2 3.6-3.6"/><path d="M8.4 15.6L7 21l5-2.2L17 21l-1.4-5.4"/></svg></div><div class="k">ISO-CERTIFIED</div></div>
           </div>
-          <div class="mf-note">Official SEBI BRSR-Core specification · not a client outcome.</div>
+          <div class="mf-note">The SEBI BRSR-Core specification — the standard we work to, not a client claim.</div>
           <div class="mf-std">
             <span class="std" data-t="Business Responsibility & Sustainability Report"><span class="sp">STD</span><span class="sc">BRSR</span></span>
-            <span class="std" data-t="Assured subset — 49 KPIs / 9 attributes"><span class="sp">CORE</span><span class="sc">BRSR-CORE</span></span>
+            <span class="std" data-t="SEBI-assured subset — 49 KPIs / 9 attributes"><span class="sp">CORE</span><span class="sc">BRSR-CORE</span></span>
             <span class="std" data-t="Global Reporting Initiative"><span class="sp">STD</span><span class="sc">GRI</span></span>
+            <span class="std" data-t="Sustainability Accounting Standards Board"><span class="sp">STD</span><span class="sc">SASB</span></span>
             <span class="std" data-t="Task Force on Climate-related Financial Disclosures"><span class="sp">CLIMATE</span><span class="sc">TCFD</span></span>
-            <span class="std" data-t="ISSB sustainability disclosure standards"><span class="sp">ISSB</span><span class="sc">IFRS S1/S2</span></span>
-            <span class="std" data-t="Greenhouse Gas accounting standard"><span class="sp">GHG</span><span class="sc">PROTOCOL</span></span>
+            <span class="std" data-t="ISO-certified, IMS-compliant delivery"><span class="sp">CERT</span><span class="sc">ISO</span></span>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tri" id="real-economy" aria-label="The real economy behind the disclosure">
+  <div class="wrap">
+    <div class="sec-label reveal"><span>SEC-06 // ON THE GROUND</span><span>WHY IT MATTERS</span></div>
+    <div class="tri-head reveal"><h2>A disclosure is only as strong as what it points to.</h2><p>Behind BRSR-Core is the real economy — the assets, resources and people your numbers actually describe.</p></div>
+    <div class="tri-grid">
+      <figure class="tri-card reveal" style="--img:url('/v/home/tri-climate.webp')"><div class="tri-ph"></div><figcaption><span class="tk">CARBON &amp; CLIMATE</span><span class="tl">Energy and emissions — the Scope 1–3 story your footprint has to tell.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/home/tri-built.webp')"><div class="tri-ph"></div><figcaption><span class="tk">BUILT ENVIRONMENT</span><span class="tl">Resource use and green assets across the operations you report on.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/home/tri-land.webp')"><div class="tri-ph"></div><figcaption><span class="tk">LAND &amp; COMMUNITIES</span><span class="tl">Water, waste and the people your value chain reaches, end to end.</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -164,10 +193,13 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="pf-grid reveal">
       <div class="pf-intro">
         <div class="sec-head"><span class="mono eyebrow">The method, applied</span><h2>What working with Teravora looks like.</h2><p>The shape of a typical engagement — from kickoff to a filed, defensible disclosure.</p></div>
-        <div class="pf-foot"><span>Want the track record behind the method?</span> <a href="#" class="lk">See our parent practice's work →</a></div>
+        <div class="pf-foot"><span>Want the track record behind the method?</span> <a href="https://teravue.org/" target="_blank" rel="noopener" class="lk">See our parent practice's work →</a></div>
       </div>
       <figure class="pf-fig">
-        <img src="/v/home/a6d4d21fb.webp" alt="Teravora India advisory network — specialist hubs across Delhi NCR, Mumbai, Bengaluru, Hyderabad, Chennai, Kolkata, Ahmedabad and Pune">
+        <div class="pf-imgwrap">
+          <img src="/v/home/a6d4d21fb.webp" alt="Teravora India advisory network — specialist hubs across Delhi NCR, Mumbai, Bengaluru, Hyderabad, Chennai, Kolkata, Ahmedabad and Pune">
+          <div class="pf-live" aria-hidden="true"><span class="pf-pulse" style="left:28%;top:45%"></span><span class="pf-pulse" style="left:42.5%;top:15.5%;animation-delay:1.1s"></span><span class="pf-pulse" style="left:46%;top:48%;animation-delay:.6s"></span><span class="pf-pulse" style="left:41%;top:71%;animation-delay:1.7s"></span></div>
+        </div>
         <figcaption class="fig-cap"><span>◇ SPECIALIST ADVISORY NETWORK · INDIA</span><span>NATIONAL REACH</span></figcaption>
       </figure>
     </div>
@@ -188,13 +220,13 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="sec-head reveal"><span class="mono eyebrow">Find your starting point</span><h2>Where do you sit? We'll point you to the right first step.</h2></div>
     <div class="start-box reveal">
       <div class="cam" id="cam"></div><div class="flare"></div>
-      <img class="sb-blueprint" src="/v/home/ae4e4fefc.webp" alt="">
+      <img class="sb-blueprint" src="/v/home/start-viz.webp" alt="">
       <div class="bgi" id="bgi0"></div><div class="bgi" id="bgi1"></div><div class="bgi" id="bgi2"></div>
       <div class="sb-inner">
         <div class="persona-tabs">
-          <button class="ptab on" data-p="0"><span>For listed companies</span><span class="pk">S1 · S2</span></button>
-          <button class="ptab" data-p="1"><span>For suppliers &amp; mid-market</span><span class="pk">S3</span></button>
-          <button class="ptab" data-p="2"><span>For CFOs &amp; compliance owners</span><span class="pk">RISK</span></button>
+          <button class="ptab on" data-p="0"><span class="plft"><span class="pchip" style="background-image:url('/v/home/chip-listed.webp')"></span><span class="pl">For listed companies</span></span><span class="pk">S1 · S2</span></button>
+          <button class="ptab" data-p="1"><span class="plft"><span class="pchip" style="background-image:url('/v/home/chip-suppliers.webp')"></span><span class="pl">For suppliers &amp; mid-market</span></span><span class="pk">S3</span></button>
+          <button class="ptab" data-p="2"><span class="plft"><span class="pchip" style="background-image:url('/v/home/chip-cfo.webp')"></span><span class="pl">For CFOs &amp; compliance owners</span></span><span class="pk">RISK</span></button>
           <div class="allsol">Prefer to browse? <a href="#">See all solutions →</a></div>
         </div>
         <div class="sb-card">
