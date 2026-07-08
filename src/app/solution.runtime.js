@@ -3,6 +3,17 @@ export function init_solution() {
   if (typeof window === 'undefined') return;
   if (window.__trv_solution_ran) return; window.__trv_solution_ran = true;
 var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  // hero headline — staggered word rise-in (per home.runtime.js)
+  document.querySelectorAll(".pg-solution .shero .hl-line").forEach(function (line, li) {
+    var words = line.textContent.split(" "); line.innerHTML = "";
+    words.forEach(function (w, i) {
+      var s = document.createElement("span"); s.className = "word"; s.textContent = w;
+      line.appendChild(s);
+      if (i < words.length - 1) line.appendChild(document.createTextNode(" "));
+      if (!reduce) setTimeout(function () { s.classList.add("in"); }, 90 + (li * 300) + (i * 62));
+      else s.classList.add("in");
+    });
+  });
   // nav scroll (transparent over hero -> solid on scroll)
   
   

@@ -8,8 +8,8 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
-    <div class="crumb reveal"><b>Company</b> <span class="sep">/</span> About</div>
-    <h1 class="reveal">A new India ESG brand, built on a proven backbone.</h1>
+    <span class="eyebrow reveal">The company</span>
+    <h1><span class="hl-line">A new India ESG brand, built on a proven backbone.</span></h1>
     <p class="lede reveal">Teravora is the India practice built for India's reality — where ESG is driven by a <span class="g">deadline and a penalty</span>, not by aspiration. New here on purpose: made for the mid-market and value-chain companies the large networks underserve.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
@@ -21,6 +21,7 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
       <span class="chip on"><b>A method</b> you can audit</span>
     </div>
   </div></div>
+  <div class="scrollcue" aria-hidden="true"><div class="wrap"><b>Meet the practice behind the method</b></div></div>
 </header>
 
 <section class="sec" id="why">
