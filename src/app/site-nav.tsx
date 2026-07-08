@@ -15,7 +15,12 @@ const DARK_HERO_ROUTES = [
   "/why-now",
 ];
 
+// Exact-match dark-hero routes — dark cinematic index whose sub-routes are
+// light utility pages (e.g. /learn, whose /learn/brsr-readiness stays solid).
+const DARK_HERO_EXACT = ["/learn"];
+
 function isDarkHero(pathname: string): boolean {
+  if (DARK_HERO_EXACT.includes(pathname)) return true;
   return DARK_HERO_ROUTES.some((r) =>
     r === "/" ? pathname === "/" : pathname.startsWith(r),
   );
