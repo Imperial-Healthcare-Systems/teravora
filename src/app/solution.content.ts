@@ -104,6 +104,16 @@ export const SOLUTION_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
+<section class="band" id="real-economy-band" aria-label="The real economy behind the disclosure">
+  <div class="band-img" style="background-image:url('/v/solution/sol-band.webp')"></div>
+  <div class="band-scrim"></div>
+  <div class="wrap band-in">
+    <span class="mono band-kicker reveal">◇ THE REAL ECONOMY</span>
+    <h2 class="band-h reveal">Every assured number<br>points to something real.</h2>
+    <p class="band-sub reveal">Behind the disclosure is the asset, the resource and the community your figures describe. The evidence trail is how you prove it happened — not merely that it was reported.</p>
+  </div>
+</section>
+
 <section class="sec prob" id="fit">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -114,6 +124,18 @@ export const SOLUTION_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="pc2 reveal"><div class="ic">▤</div><h4>Listed companies</h4><p>In the BRSR-Core assurance band and working to a filing deadline. We get you assurance-ready across the 49 KPIs.</p><span class="lk">Request a Proposal →</span></div>
       <div class="pc2 reveal"><div class="ic">₹</div><h4>CFOs &amp; company secretaries</h4><p>Accountable for a number the board and auditor will test. We give you the working behind every figure.</p><span class="lk">Request a Proposal →</span></div>
       <div class="pc2 reveal"><div class="ic">⬡</div><h4>Suppliers &amp; value chain</h4><p>Pulled in by customers and lenders as the band widens. We scope a proportionate, defensible response.</p><span class="lk">Request a Proposal →</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tri" id="on-the-ground" aria-label="The real economy behind your numbers">
+  <div class="wrap">
+    <div class="sec-label reveal"><span>ON THE GROUND</span><span>WHAT YOUR NUMBERS DESCRIBE</span></div>
+    <div class="tri-head reveal"><h2>A disclosure is only as strong as what it points to.</h2><p>Behind the framework is the real economy — the assets, resources and people your figures actually describe.</p></div>
+    <div class="tri-grid">
+      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-carbon.webp')"><div class="tri-ph"></div><figcaption><span class="tk">CARBON &amp; ENERGY</span><span class="tl">Emissions and energy — the Scope 1&ndash;3 story behind the footprint you report.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-resources.webp')"><div class="tri-ph"></div><figcaption><span class="tk">RESOURCES &amp; OPERATIONS</span><span class="tl">Water, waste and the built assets your disclosures actually measure.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-people.webp')"><div class="tri-ph"></div><figcaption><span class="tk">PEOPLE &amp; COMMUNITIES</span><span class="tl">The workforce and value chain your numbers reach, end to end.</span></figcaption></figure>
     </div>
   </div>
 </section>
