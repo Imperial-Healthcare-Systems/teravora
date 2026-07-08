@@ -6,8 +6,8 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
-    <div class="crumb reveal"><b>Learn</b> <span class="sep">/</span> ESG Capacity Building</div>
-    <h1 class="reveal">Build the ESG capability your filings depend on.</h1>
+    <span class="eyebrow reveal">ESG Capacity Building</span>
+    <h1><span class="hl-line">Build the ESG capability your filings depend on.</span></h1>
     <p class="lede reveal">Practitioner-led training that turns the same method we use in assurance work into your team's capability &mdash; <span class="g">framework-fluent, evidence-first</span>, and built for how disclosure actually works in India.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#programs"><span>Explore programs</span><span class="arw">&rarr;</span></a>
@@ -20,6 +20,7 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
       <span class="chip on"><b>In-house cohorts</b></span>
     </div>
   </div></div>
+  <div class="scrollcue" aria-hidden="true"><div class="wrap"><b>What we teach, and who it&rsquo;s for</b></div></div>
 </header>
 
 <section class="sec" id="why">
