@@ -52,7 +52,6 @@ const FOOTER_LEGAL = [
   { label: "Privacy", href: "/privacy" },
   { label: "Terms", href: "/terms" },
   { label: "Accessibility", href: "/accessibility" },
-  { label: "llms.txt", href: "/llms.txt" },
 ];
 
 const FOOTER_TAGLINE =
