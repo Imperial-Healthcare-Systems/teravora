@@ -47,15 +47,26 @@ export function Nav({
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
   const closeDrawer = useCallback(() => setDrawerOpen(false), []);
 
-  // Transparent variant overlays a full-bleed hero and resolves to solid chrome
-  // once the hero has scrolled past. ~72vh is a hair before the hero bottom so
-  // the swap lands as the hero leaves. Inert for the solid variant.
+  // Drives the top scroll-progress bar on every page via --trv-scroll, and — for
+  // the transparent variant only — resolves the header to solid chrome once the
+  // hero has scrolled past (~72vh, a hair before the hero bottom).
   useEffect(() => {
-    if (variant !== "transparent") return;
-    const onScroll = () =>
-      setScrolled(window.scrollY > window.innerHeight * 0.72);
+    const el = headerRef.current;
+    const isTransparent = variant === "transparent";
+    const onScroll = () => {
+      if (isTransparent) {
+        setScrolled(window.scrollY > window.innerHeight * 0.72);
+      }
+      if (el) {
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - doc.clientHeight;
+        const p = max > 0 ? Math.min(Math.max(window.scrollY / max, 0), 1) : 0;
+        el.style.setProperty("--trv-scroll", p.toFixed(4));
+      }
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -65,6 +76,7 @@ export function Nav({
     <>
       <SkipLink targetId={skipTargetId} />
       <header
+        ref={headerRef}
         className={styles.header}
         data-variant={variant}
         data-scrolled={variant === "transparent" ? scrolled : undefined}

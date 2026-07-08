@@ -7,6 +7,26 @@
   background: var(--trv-cmp-nav-bg);
   border-bottom: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
 }
+/* Scroll-progress bar — a teal→gold fill that grows left→right with page scroll,
+ * driven by the --trv-scroll custom property set in Nav.tsx. Absolutely positioned
+ * (no layout impact) and seamless on whatever the header surface currently is. */
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  transform: scaleX(var(--trv-scroll, 0));
+  transform-origin: left center;
+  background: linear-gradient(
+    90deg,
+    var(--trv-ref-color-connect-light) 0%,
+    var(--trv-ref-color-accent-light) 100%
+  );
+  transition: transform 0.12s linear;
+  pointer-events: none;
+}
 /* Transparent variant = overlay a dark cinematic hero (V-stream). The header
  * goes fixed so the full-bleed hero sits behind it; on scroll past the hero it
  * resolves to the solid light chrome. Ink/logo invert to white while over the
@@ -22,6 +42,19 @@
     background var(--trv-sys-duration-base) var(--trv-sys-ease-standard),
     box-shadow var(--trv-sys-duration-base) var(--trv-sys-ease-standard),
     border-color var(--trv-sys-duration-base) var(--trv-sys-ease-standard);
+}
+/* Over the hero (not yet scrolled): navy scrim + frosted blur keeps the white nav
+ * and CTA legible over bright imagery, with a hairline where scrim meets the photo. */
+.header[data-variant="transparent"]:not([data-scrolled="true"]) {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--trv-ref-color-anchor-deep) 84%, transparent) 0%,
+    color-mix(in srgb, var(--trv-ref-color-anchor) 40%, transparent) 66%,
+    transparent 100%
+  );
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
 }
 /* Over the hero (not yet scrolled): white ink + inverted logo + soft legibility shadow. */
 .header[data-variant="transparent"]:not([data-scrolled="true"]) .navLink,
@@ -39,13 +72,70 @@
 }
 .header[data-variant="transparent"]:not([data-scrolled="true"]) .navLink:hover,
 .header[data-variant="transparent"]:not([data-scrolled="true"]) .navTrigger:hover {
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--trv-ref-color-white);
 }
-/* Scrolled past the hero: solid light chrome (normal token ink applies). */
+/* Scrolled past the hero: solid light chrome (normal token ink applies) with a
+ * refined hairline + soft lift, never a heavy band. */
 .header[data-variant="transparent"][data-scrolled="true"] {
   background: var(--trv-cmp-nav-bg);
-  border-bottom-color: var(--trv-sys-color-border);
-  box-shadow: 0 4px 24px -8px rgba(4, 35, 77, 0.18);
+  border-bottom-color: color-mix(
+    in srgb,
+    var(--trv-ref-color-anchor) 12%,
+    transparent
+  );
+  box-shadow: 0 6px 22px -10px rgba(4, 35, 77, 0.22);
+}
+/* CTA presence — enlarged, elevated, with a gold glow + top sheen. Kept squared
+ * per the design-system control radius. Height (~40px) stays under the 44px nav
+ * row, so the header height is unchanged. */
+.header .desktopActions :is(a, button) {
+  padding-block: 11px;
+  padding-inline: 24px;
+  font-size: 0.9375rem; /* 15px, up from 14 */
+  letter-spacing: 0.01em;
+  transform-origin: bottom left; /* anchor the hover press to bottom-left */
+  box-shadow:
+    0 3px 12px rgba(196, 145, 47, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  transition:
+    box-shadow var(--trv-sys-duration-base) var(--trv-sys-ease-standard),
+    transform var(--trv-sys-duration-base) var(--trv-sys-ease-standard);
+}
+.header[data-variant="transparent"]:not([data-scrolled="true"])
+  .desktopActions
+  :is(a, button) {
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+/* Hover fill: a gentle deeper gold wipes in — replaces the muddy #7F5C10 default.
+ * Higher specificity than the component's .primary::before, so only this CTA changes. */
+.header .desktopActions :is(a, button)::before {
+  background: #b8860b;
+}
+/* Hover motion: PRESS DOWN, anchored at the bottom-left corner — the bottom and
+ * left edges stay put while the top dips and the right pulls inward. Overrides the
+ * component's upward lift; high specificity to beat the Button primary hover rule. */
+.header
+  .desktopActions
+  :is(a, button):hover:not(:disabled):not([aria-disabled="true"]) {
+  transform: scale(0.96);
+  box-shadow:
+    0 1px 5px rgba(196, 145, 47, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+/* Cancel the label's rightward slide so it reads purely as 'pushed down'. */
+.header
+  .desktopActions
+  :is(a, button):hover:not(:disabled):not([aria-disabled="true"])
+  > span:last-child {
+  transform: none;
+}
+/* Keep the same bottom-left origin on click (no center-origin jump). */
+.header
+  .desktopActions
+  :is(a, button):active:not(:disabled):not([aria-disabled="true"]) {
+  transform: scale(0.94);
 }
 
 .bar {
@@ -93,6 +183,7 @@
 }
 .navLink,
 .navTrigger {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: var(--trv-ref-space-1);
@@ -104,14 +195,38 @@
   border-radius: var(--trv-sys-radius-control);
   background: none;
 }
+/* Animated underline — grows from left on hover/focus (DS motion pass). Insets
+   match the link's horizontal padding so the rule spans the text, not the box. */
+.navLink::after,
+.navTrigger::after {
+  content: "";
+  position: absolute;
+  left: var(--trv-ref-space-3);
+  right: var(--trv-ref-space-3);
+  bottom: 0.35em;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--trv-ref-color-connect-light);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--trv-sys-duration-base) var(--trv-sys-ease-standard);
+}
+.navLink:hover::after,
+.navTrigger:hover::after,
+.navLink:focus-visible::after,
+.navTrigger:focus-visible::after {
+  transform: scaleX(1);
+}
+.navLink[aria-current="page"]::after {
+  transform: scaleX(1);
+  background: var(--trv-cmp-nav-link-current);
+}
 .navLink[aria-current="page"] {
   color: var(--trv-cmp-nav-link-current);
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
 }
 .navLink:hover,
 .navTrigger:hover {
-  background: var(--trv-sys-color-bg-subtle);
+  color: var(--trv-cmp-nav-link-current);
 }
 .caret {
   transition: transform var(--trv-sys-duration-fast) var(--trv-sys-ease-standard);
@@ -225,5 +340,17 @@
   }
   .menuToggle {
     display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header::after,
+  .header .desktopActions :is(a, button) {
+    transition: none;
+  }
+  .header
+    .desktopActions
+    :is(a, button):hover:not(:disabled):not([aria-disabled="true"]) {
+    transform: none;
   }
 }
