@@ -23,7 +23,7 @@ export const ROUTES = {
 // --- Nav taxonomy (frozen ia@v0 D-1 A-weighted hybrid) ----------------------
 export const NAV_ITEMS: NavItem[] = [
   { label: "Why now", href: "/why-now", kind: "trigger" },
-  { label: "How we prove it", href: ROUTES.howWeProve, kind: "trigger" },
+  { label: "Our Method", href: ROUTES.howWeProve, kind: "trigger" },
   {
     label: "Solutions",
     kind: "page",

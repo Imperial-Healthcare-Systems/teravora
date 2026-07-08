@@ -92,6 +92,9 @@
   padding-block: var(--trv-ref-space-1);
 }
 .link:hover {
+  /* AUDIT: global a:hover paints links navy (--link-hover), invisible on the navy
+   * footer ground. Override to gold accent-light (AA on navy) so hover is visible. */
+  color: var(--trv-ref-color-accent-light);
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }

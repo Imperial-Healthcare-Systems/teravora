@@ -9,12 +9,13 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="hero-bg"></div><div class="hero-veil"></div>
   <canvas id="stars"></canvas><div class="hero-flare"></div>
   <div class="wrap"><div class="hero-in">
-    <span class="mono eyebrow reveal">India-based ESG advisory · SEBI-BRSR</span>
+    <span class="eyebrow reveal">Turn your sustainability goals into measurable results.</span>
     <h1 id="headline"><span class="hl-line">Practical ESG.</span><br><span class="l2 hl-line">Measurable Impact.</span></h1>
     <p class="hero-sub reveal">ESG reporting in India is now a deadline, not a choice. Teravora takes you from scattered data to a filed, defensible disclosure — with the method shown at every step, so it holds up when your assurer asks how you got there.</p>
     <div class="hero-cta reveal"><a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a><a class="btn btn-ghost" href="#start">Find your starting point</a></div>
     <div class="hero-note reveal"><b>ESG</b> Environmental, Social &amp; Governance.</div>
   </div></div>
+  <div class="scrollcue" aria-hidden="true"><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l7 7 7-7"/></svg><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l7 7 7-7"/></svg></div>
   <div class="audit-ticker" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
 </header>
 

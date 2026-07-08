@@ -6,6 +6,18 @@ export function init_how_we_prove() {
   if (window.__trv_how_we_prove_ran) return; window.__trv_how_we_prove_ran = true;
   var reduce = matchMedia("(prefers-reduced-motion:reduce)").matches;
 
+  // hero headline — staggered word rise-in (per home.runtime.js)
+  document.querySelectorAll(".pg-how-we-prove .shero .hl-line").forEach(function (line, li) {
+    var words = line.textContent.split(" "); line.innerHTML = "";
+    words.forEach(function (w, i) {
+      var s = document.createElement("span"); s.className = "word"; s.textContent = w;
+      line.appendChild(s);
+      if (i < words.length - 1) line.appendChild(document.createTextNode(" "));
+      if (!reduce) setTimeout(function () { s.classList.add("in"); }, 90 + (li * 300) + (i * 62));
+      else s.classList.add("in");
+    });
+  });
+
   // scroll reveals
   if (reduce || !("IntersectionObserver" in window)) {
     document.querySelectorAll(".pg-how-we-prove .reveal").forEach(function (el) { el.classList.add("in"); });

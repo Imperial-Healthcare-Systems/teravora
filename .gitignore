@@ -55,3 +55,11 @@ yarn-error.log*
 /AGENTS.md
 /CLAUDE.md
 /delivery-evidence.json
+
+# --- Local tooling (not part of the site) ---
+/ai-tools/
+/.claude/
+
+# --- Python bytecode ---
+__pycache__/
+*.pyc

@@ -4,8 +4,8 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
-    <div class="crumb reveal"><b>How We Work</b> <span class="sep">/</span> Our Method</div>
-    <h1 class="reveal">Don&rsquo;t take the number on trust.<br>Follow how we got it.</h1>
+    <span class="eyebrow reveal">Our method.</span>
+    <h1><span class="hl-line">Don&rsquo;t take the number on trust.</span><br><span class="hl-line">Follow how we got it.</span></h1>
     <p class="lede reveal">ESG advice has a trust problem: the common critique is that consultants check whether you <span class="g">disclosed</span>, not whether the disclosure reflects what happens on the ground. We answer it the only way we can &mdash; by making our method <span class="g">auditable</span>, so you can test the working rather than take our word.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">&rarr;</span></a>
@@ -15,9 +15,10 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
       <span class="chip"><b>Assess</b></span>
       <span class="chip"><b>Comply</b></span>
       <span class="chip"><b>Improve</b></span>
-      <span class="chip on"><b>Prove</b> auditable</span>
+      <span class="chip on"><b>Prove</b></span>
     </div>
   </div></div>
+  <div class="scrollcue" aria-hidden="true"><div class="wrap"><b>Four steps you can audit</b></div></div>
 </header>
 
 <section class="sec method" id="method">

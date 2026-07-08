@@ -46,7 +46,8 @@
 .pg-how-we-prove .btn-ghost:hover{border-color:var(--gold-l)}
 
 /* ============================ BEAT 1 — dark hero ============================ */
-.pg-how-we-prove .shero{position:relative;min-height:clamp(600px,90vh,880px);display:flex;align-items:center;padding:154px 0 100px;overflow:hidden;background:var(--navy-deep);color:var(--n100)}
+.pg-how-we-prove .shero{position:relative;min-height:100vh;display:flex;align-items:center;padding:154px 0 100px;overflow:hidden;background:var(--navy-deep);color:var(--n100)}
+.pg-how-we-prove .shero .wrap{width:100%}
 .pg-how-we-prove .shero-bg{position:absolute;inset:0;z-index:0;background:url("/v/how-we-prove/hero.webp") 62% 66%/cover no-repeat}
 .pg-how-we-prove .shero-veil{position:absolute;inset:0;z-index:1;pointer-events:none;
   background:
@@ -66,6 +67,20 @@
 .pg-how-we-prove .chip{font-family:var(--mono);font-size:.6rem;letter-spacing:.09em;color:var(--n200);border:1px solid var(--hair);border-radius:999px;padding:8px 14px;display:inline-flex;gap:8px;align-items:center;text-transform:uppercase;background:rgba(3,20,44,.3)}
 .pg-how-we-prove .chip b{color:var(--teal-l);font-weight:400}
 .pg-how-we-prove .chip.on b{color:var(--gold-l)}
+/* hero eyebrow — gold hyphen (replaces the removed breadcrumb) */
+.pg-how-we-prove .shero .eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:.2em;font-size:.66rem;color:var(--teal-l);display:inline-flex;align-items:center;gap:11px;margin-bottom:22px}
+.pg-how-we-prove .shero .eyebrow::before{content:"";flex:none;width:26px;height:1px;background:var(--gold)}
+/* hero headline — word rise-in stagger */
+.pg-how-we-prove .shero .word{display:inline-block;opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.pg-how-we-prove .shero .word.in{opacity:1;transform:none}
+/* hero scroll cue — why-now gold dash */
+.pg-how-we-prove .scrollcue{position:absolute;left:0;right:0;bottom:30px;z-index:3;display:flex;justify-content:center;pointer-events:none}
+.pg-how-we-prove .scrollcue .wrap{display:flex;justify-content:center}
+.pg-how-we-prove .scrollcue b{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:400;display:inline-flex;align-items:center;gap:12px}
+.pg-how-we-prove .scrollcue b::after{content:"";width:44px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);animation:hwppulse 2.4s ease-in-out infinite}
+@keyframes hwppulse{0%,100%{opacity:.3}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.pg-how-we-prove .shero .word{opacity:1;transform:none}.pg-how-we-prove .scrollcue b::after{animation:none;opacity:.7}}
+@media(max-width:820px){.pg-how-we-prove .scrollcue{display:none}}
 
 /* ============================ light body sections ========================== */
 .pg-how-we-prove .sec{padding:clamp(64px,8vw,108px) 0;position:relative;z-index:2}

@@ -55,7 +55,7 @@ const FOOTER_LEGAL = [
 ];
 
 const FOOTER_TAGLINE =
-  "Practical ESG. Measurable impact. India-based advisory for SEBI-BRSR and assurance readiness.";
+  "Turn your sustainability goals into measurable results.";
 
 // Headings — engineered grotesk (brand @v0 §5.4 prototype stand-in).
 // Exposed as a CSS variable that globals.css maps onto the type tokens.
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   // and each page sets an absolute title via buildMetadata.
   title: "Teravora | Practical ESG & BRSR Assurance Readiness, India",
   description:
-    "India-based ESG advisory. Practical ESG. Measurable Impact.",
+    "India-based ESG advisory. Turn your sustainability goals into measurable results.",
 };
 
 export default function RootLayout({
