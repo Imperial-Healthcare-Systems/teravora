@@ -6,11 +6,19 @@ export const START_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="shero-bg"></div>
   <div class="shero-veil"></div>
   <div class="shero-flare"></div>
+  <canvas id="stars"></canvas>
   <div class="wrap"><div class="shero-in">
-    <div class="crumb reveal"><b>Get started</b> <span class="sep">/</span> Request a Proposal</div>
-    <h1 class="reveal">Request a Proposal.</h1>
+    <span class="eyebrow reveal">Scope your proposal in minutes.</span>
+    <h1><span class="hl-line">Request a Proposal.</span></h1>
     <p class="lede reveal">Tell us what is prompting this. In two minutes you'll have a specialist working on a first read of what your band requires — and a proposed scope for a short call. <span class="g">Not a quote yet, and no obligation.</span></p>
-  </div></div>
+    <div class="hero-assure reveal">
+      <span class="ha"><span class="ha-i">◷</span> Reply within <b>two business days</b></span>
+      <span class="ha"><span class="ha-i">◆</span> A scoping conversation, <b>not a quote</b></span>
+      <span class="ha"><span class="ha-i">☺</span> Reviewed by a <b>real specialist</b></span>
+    </div>
+  </div>
+  <a class="scrollcue" href="#start" aria-label="Go to the form"><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l7 7 7-7"/></svg><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l7 7 7-7"/></svg></a>
+  </div>
 </header>
 
 <section class="workspace" id="start">
@@ -78,11 +86,17 @@ export const START_BODY = String.raw`<div class="rails"><i></i></div>
 
       <div class="spec-wrap">
         <div class="spec" id="spec">
-          <div class="spec-head"><span class="mono">◇ YOUR SCOPE · BUILDING</span></div>
+          <div class="spec-scan" aria-hidden="true"></div>
+          <div class="spec-head">
+            <span class="mono">◇ YOUR SCOPE</span>
+            <span class="spec-status" id="specStatus" data-s="0"><span class="sdot"></span><span id="specStatusLbl">AWAITING INPUT</span></span>
+          </div>
+          <div class="spec-prog"><span class="spec-pbar" id="specPbar"></span></div>
           <div class="srow"><span class="sk">PROMPT</span><span class="sv" id="sv-trigger">—</span></div>
           <div class="srow"><span class="sk">BAND</span><span class="sv" id="sv-band">—</span></div>
           <div class="srow"><span class="sk">TIMELINE</span><span class="sv" id="sv-timeline">—</span></div>
-          <div class="srow"><span class="sk">LANE</span><span class="sv lane" id="sv-lane">—</span></div>
+          <div class="srow lane-row"><span class="sk">LANE</span><span class="sv lane" id="sv-lane">—</span></div>
+          <div class="spec-derive" id="specDerive" hidden><span class="dv-tag">▸ DERIVED</span><span id="specDeriveTxt"></span></div>
           <div class="spec-foot" id="specFoot">A specialist is matched from your answers — you see reassurance, never a score.</div>
         </div>
         <div class="reassure">
@@ -91,6 +105,43 @@ export const START_BODY = String.raw`<div class="rails"><i></i></div>
           <div class="rz"><span class="ic">☺</span><div><b>A real person, not a form receipt.</b><p>Reviewed by a specialist, replied to by a specialist.</p></div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="trustband" aria-labelledby="tb-h">
+  <div class="wrap">
+    <div class="tb-grid">
+      <div class="tb-lead reveal">
+        <span class="tb-eyebrow">◇ LINEAGE &amp; STANDARDS</span>
+        <h2 id="tb-h">Not a first attempt — a 25-year practice, now in India.</h2>
+        <p>Teravora is the India branch of <b>Teravue</b>, a sustainability &amp; assurance practice with <b>25+ years</b> across MENA and India. You brief a team that has done this before — the methods and the track record come with us.</p>
+        <div class="tb-attr">▸ Parent-practice track record attributed to Teravue — never restated as a Teravora result.</div>
+      </div>
+      <div class="tb-stds reveal">
+        <span class="tb-stds-h">FRAMEWORKS WE WORK IN</span>
+        <div class="tb-chips">
+          <span class="tb-chip">BRSR &middot; BRSR-Core</span>
+          <span class="tb-chip">IFRS S1 / S2</span>
+          <span class="tb-chip">GHG Protocol</span>
+          <span class="tb-chip">TCFD</span>
+          <span class="tb-chip">GRI</span>
+          <span class="tb-chip">IFC Standards</span>
+          <span class="tb-chip">Equator Principles</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec faqsec" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="badge-hl">&#9671; COMMON QUESTIONS</span><h2>Before you send it.</h2></div>
+    <div class="faq reveal">
+      <div class="qa"><button type="button">Is this a quote? <span class="pl">+</span></button><div class="a"><p>No. You'll get a first read on what your band actually requires and a proposed scope for a short call &mdash; not a number. Pricing follows only once the scope is agreed, so it reflects the work, not a guess.</p></div></div>
+      <div class="qa"><button type="button">What does it cost, and am I committing to anything? <span class="pl">+</span></button><div class="a"><p>Nothing, and no. The proposal request and the scoping call are free and carry no obligation. You decide whether to go further once you've seen how we'd approach it.</p></div></div>
+      <div class="qa"><button type="button">What if I'm not sure what applies to us? <span class="pl">+</span></button><div class="a"><p>That's a valid starting point &mdash; choose <i>&ldquo;Not sure yet&rdquo;</i> and we'll help you work out which requirements actually reach your band. If no filing deadline is forcing your hand, the 5-minute BRSR readiness check is often the better first step.</p></div></div>
+      <div class="qa"><button type="button">Who sees the information I share? <span class="pl">+</span></button><div class="a"><p>Only the specialist reviewing your request. Your details are used to prepare your first read and to reach you about it &mdash; nothing else, and never sold. See our <a href="#">Privacy Policy</a>.</p></div></div>
     </div>
   </div>
 </section>`;

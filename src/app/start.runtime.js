@@ -3,6 +3,13 @@ export function init_start() {
   if (typeof window === 'undefined') return;
   if (window.__trv_start_ran) return; window.__trv_start_ran = true;
 var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+  // hero headline — staggered word rise-in (per home.runtime.js)
+  document.querySelectorAll(".pg-start .shero .hl-line").forEach(function(line,li){
+    var words=line.textContent.split(" ");line.innerHTML="";
+    words.forEach(function(w,i){var s=document.createElement("span");s.className="word";s.textContent=w;line.appendChild(s);
+      if(i<words.length-1)line.appendChild(document.createTextNode(" "));
+      if(!reduce)setTimeout(function(){s.classList.add("in")},90+(li*300)+(i*62));else s.classList.add("in");});
+  });
   // nav scroll (transparent over hero -> solid on scroll)
   
   
@@ -11,7 +18,7 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.14});
   document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)});
   // count-up
-  function count(el){var to=+el.dataset.to,t0=null;function tick(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/1100,1);el.textContent=Math.round(to*(p<1?1-Math.pow(1-p,3):1));if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)}
+  function count(el){var to=+el.dataset.to,t0=null;function tick(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/900,1);el.textContent=Math.round(to*(p<1?1-Math.pow(1-p,3):1));if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)}
   document.querySelectorAll("[data-to]").forEach(function(el){if(reduce){el.textContent=el.dataset.to;return}var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(el);o.unobserve(el)}})},{threshold:.6});o.observe(el)});
   // faq accordion
   document.querySelectorAll(".qa button").forEach(function(b){b.addEventListener("click",function(){b.parentElement.classList.toggle("open")})});
@@ -59,9 +66,24 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
       if(t==="unsure"||b==="supplier"||b==="na"||b==="other")return["Education lane","There's no filing deadline forcing your hand — we'll start by helping you work out what actually applies."];
       if(t==="brsr"||b==="t500"||b==="t1000")return["Fast lane","Because your deadline is real, we'll lead with what has to be assured first."];
       return["Scoping","We'll lead with what your band requires first."]}
-    function setSV(id,val){var el=document.getElementById(id);el.textContent=val||"—";el.classList.toggle("set",!!val)}
-    function updateSpec(){setSV("sv-trigger",state.trigger&&LBL.trigger[state.trigger]);setSV("sv-band",state.band&&LBL.band[state.band]);setSV("sv-timeline",state.timeline&&LBL.timeline[state.timeline]);
-      var has=state.trigger||state.band,el=document.getElementById("sv-lane");el.textContent=has?lane()[0]:"—";el.classList.toggle("set",!!has)}
+    var CHARS="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789·/";
+    function scramble(el,fin){if(reduce){el.textContent=fin;return}var t0=null;function tk(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/520,1),n=Math.floor(fin.length*p),s="";for(var i=0;i<fin.length;i++)s+=i<n?fin[i]:CHARS[Math.floor(Math.random()*CHARS.length)];el.textContent=s;if(p<1)requestAnimationFrame(tk);else el.textContent=fin}requestAnimationFrame(tk)}
+    function typeOut(el,txt){if(reduce){el.textContent=txt;return}el.textContent="";var i=0;(function tk(){el.textContent=txt.slice(0,i++);if(i<=txt.length)setTimeout(tk,14)})()}
+    function setSV(id,val){var el=document.getElementById(id);if(!el)return;var want=val||"—";if(el.dataset.cur===want)return;el.dataset.cur=want;el.classList.toggle("set",!!val);if(val){el.classList.add("flash");setTimeout(function(){el.classList.remove("flash")},600);scramble(el,val)}else{el.textContent="—"}}
+    var STL=["AWAITING INPUT","BUILDING…","SCOPED"];
+    function setStatus(s){var w=document.getElementById("specStatus"),l=document.getElementById("specStatusLbl"),sp=document.getElementById("spec");if(w)w.setAttribute("data-s",s);if(l)l.textContent=STL[s];if(sp)sp.classList.toggle("scanning",s===1)}
+    function updateSpec(){
+      setSV("sv-trigger",state.trigger&&LBL.trigger[state.trigger]);
+      setSV("sv-band",state.band&&LBL.band[state.band]);
+      setSV("sv-timeline",state.timeline&&LBL.timeline[state.timeline]);
+      var has=state.trigger||state.band;
+      setSV("sv-lane",has?lane()[0]:null);
+      var der=document.getElementById("specDerive"),derTxt=document.getElementById("specDeriveTxt");
+      if(der&&derTxt){if(has){der.hidden=false;var lt=lane()[1];if(derTxt.dataset.full!==lt){derTxt.dataset.full=lt;typeOut(derTxt,lt)}}else{der.hidden=true;derTxt.dataset.full="";derTxt.textContent=""}}
+      var filled=(state.trigger?1:0)+(state.band?1:0)+(state.timeline?1:0);
+      var pb=document.getElementById("specPbar");if(pb)pb.style.width=(filled/3*100)+"%";
+      var scoped=state.trigger&&state.band;setStatus(scoped?2:(has?1:0));
+    }
     card.querySelectorAll(".opts").forEach(function(g){var grp=g.dataset.group;
       g.querySelectorAll(".opt").forEach(function(o){o.insertAdjacentHTML("afterbegin",'<span class="rd"></span>');
         o.addEventListener("click",function(){g.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel")});o.classList.add("sel");state[grp]=o.dataset.val;
@@ -81,6 +103,9 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
     function submit(){document.getElementById("confLane").textContent=lane()[1];
       card.hidden=true;document.getElementById("confirmCard").hidden=false;
       document.getElementById("specFoot").textContent="Matched — a specialist has your context.";
+      var w=document.getElementById("specStatus"),l=document.getElementById("specStatusLbl"),sp=document.getElementById("spec");
+      if(w)w.setAttribute("data-s","3");if(l)l.textContent="MATCHED ✓";if(sp)sp.classList.remove("scanning");
+      var pb=document.getElementById("specPbar");if(pb)pb.style.width="100%";
       var s=document.getElementById("start");if(s)window.scrollTo({top:s.offsetTop-40,behavior:"smooth"})}
     show(1);updateSpec();
   })();
