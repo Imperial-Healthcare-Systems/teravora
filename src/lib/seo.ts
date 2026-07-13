@@ -80,7 +80,36 @@ export function organizationSchema(opts?: {
       address: { "@type": "PostalAddress", addressCountry: "IN" },
     },
     sameAs: opts?.sameAs,
+    founder: {
+      "@type": "Person",
+      "@id": `${SITE_ORIGIN}/#founder`,
+      name: "Brijesh Dhruve",
+    },
     // NOTE (E1): no aggregateRating / review / numberOfEmployees unless factual.
+  };
+}
+
+/** Founder Person — factual identity/credentials only (E1: no outcome claims). */
+export function founderSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE_ORIGIN}/#founder`,
+    name: "Brijesh Dhruve",
+    honorificSuffix: "CEnv, CEng, CFA-ESG, GARP SCR",
+    jobTitle: "Founder & Designated Partner",
+    worksFor: { "@id": `${SITE_ORIGIN}/#organization` },
+    url: `${SITE_ORIGIN}/about#founder`,
+    image: `${SITE_ORIGIN}/v/about/founder-brijesh.webp`,
+    knowsAbout: [
+      "ESG governance",
+      "Sustainability reporting",
+      "BRSR-Core disclosure",
+      "Climate risk",
+      "Industrial decarbonisation",
+      "Energy management",
+      "Carbon accounting",
+    ],
   };
 }
 

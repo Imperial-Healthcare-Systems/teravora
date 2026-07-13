@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components";
-import { absUrl, breadcrumbSchema, buildMetadata, SITE_ORIGIN } from "@/lib/seo";
+import {
+  absUrl,
+  breadcrumbSchema,
+  buildMetadata,
+  founderSchema,
+  SITE_ORIGIN,
+} from "@/lib/seo";
 import { ROUTES } from "@/lib/site-data";
 import { ABOUT_BODY } from "../about.content";
 import { AboutRuntime } from "./AboutRuntime";
@@ -43,6 +49,7 @@ export default function About() {
           { name: "About", path: ROUTES.about },
         ])}
       />
+      <JsonLd data={founderSchema()} />
     </>
   );
 }

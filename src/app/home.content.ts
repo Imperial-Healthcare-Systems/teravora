@@ -177,6 +177,31 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
+<section class="sec fdr" id="founder">
+  <div class="wrap">
+    <span class="mono eyebrow reveal" style="display:block;margin-bottom:22px">Leadership</span>
+    <div class="fdr-grid">
+      <figure class="fdr-fig reveal">
+        <img src="/v/about/founder-brijesh.webp" alt="Brijesh Dhruve, Founder &amp; Designated Partner of Teravora Consulting India LLP">
+        <figcaption><span>◇ BRIJESH DHRUVE</span><span>FOUNDER &amp; DESIGNATED PARTNER</span></figcaption>
+      </figure>
+      <div class="fdr-bio reveal">
+        <h2>Brijesh Dhruve</h2>
+        <div class="fdr-creds">CEnv · CEng · CFA-ESG · GARP SCR</div>
+        <div class="fdr-title">Founder &amp; Designated Partner, Teravora Consulting India LLP</div>
+        <p>Brijesh Dhruve leads Teravora with a single focus: helping India's largest listed companies — and their supply chains — turn the mandatory SEBI BRSR-Core disclosure into a defensible, audit-ready asset. He brings more than 25 years of global experience across corporate ESG governance, climate strategy and industrial decarbonisation in the GCC and India.</p>
+        <div class="inline-cta"><a class="btn btn-gold" href="#cta"><span>Discuss your filing deadline with us</span><span class="arw">→</span></a><a class="lk" href="/about#founder">FULL PROFILE →</a></div>
+      </div>
+    </div>
+    <ul class="fdr-badges" role="list">
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></span><span class="lx">Contributor — ISO/IWA 48:2024 ESG Framework</span></li>
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19C6 11 11 5 19 5c0 8-5 14-13 14Z"/><path d="M6 19c3-6 6-9 10-11"/></svg></span><span class="lx">Chartered Environmentalist (CEnv) &amp; Chartered Chemical Engineer (CEng)</span></li>
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7.5 14.5l3.5-4.5 3 2.5 4.5-6"/></svg></span><span class="lx">CFA in ESG Investing &amp; GARP Sustainability and Climate Risk (SCR)</span></li>
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5a7.5 7.5 0 0 1 15 0"/><path d="M12 16.5l3.5-4.5"/><path d="M12 9.5V8"/><path d="M7 11.5l-1-1"/><path d="M17 11.5l1-1"/></svg></span><span class="lx">Certified Energy Manager (CEM · AEE, USA), Certified Energy Auditor (CEA · BEE, India) &amp; ISO 14064 Carbon Accounting Professional</span></li>
+    </ul>
+  </div>
+</section>
+
 <section class="sec tri" id="real-economy" aria-label="The real economy behind the disclosure">
   <div class="wrap">
     <div class="sec-label reveal"><span>SEC-06 // ON THE GROUND</span><span>WHY IT MATTERS</span></div>
