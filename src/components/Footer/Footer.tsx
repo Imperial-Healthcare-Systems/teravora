@@ -12,7 +12,7 @@ export type FooterProps = {
   brandHref?: string;
   /** Short positioning line shown under the brand lockup (finalized foot-brand copy). */
   brandTagline?: string;
-  /** Brand mark shown on the paper chip; falls back to the shared header mark. */
+  /** Brand mark (rendered on a compact white pad); falls back to the shared header mark. */
   brandMarkSrc?: string;
 };
 
@@ -47,8 +47,9 @@ export function Footer({
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <nav className={styles.columns} aria-label="Footer">
-          {/* Brand lockup on a paper chip — the colored mark reads on the paper
-              ground where it would vanish on the navy footer. */}
+          {/* Brand lockup — the colored mark carries a compact white backdrop
+              pad (it would vanish bare on the navy); the wordmark sits directly
+              on the footer ground. */}
           <div className={styles.brand}>
             <a
               className={styles.brandLink}

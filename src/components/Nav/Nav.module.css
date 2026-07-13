@@ -235,18 +235,58 @@
   transform: rotate(180deg);
 }
 
+/* CLIENT r15: submenu card aligned with the DS card language — squared paper
+ * panel, popover elevation, and the brand teal→gold signature rule across the
+ * top (same motif as the header scroll-progress bar). Enters with a ≤200ms
+ * fade/settle; static under prefers-reduced-motion. */
 .dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 16rem;
-  margin-top: var(--trv-ref-space-1);
+  min-width: 18rem;
+  margin-top: var(--trv-ref-space-2);
   padding: var(--trv-ref-space-2);
   background: var(--trv-sys-color-surface);
   border: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
   border-radius: var(--trv-sys-radius-card);
   box-shadow: var(--trv-sys-elevation-popover);
   z-index: var(--trv-ref-z-overlay);
+  animation: dropdownIn var(--trv-sys-duration-base) var(--trv-sys-ease-standard);
+}
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--trv-ref-color-connect) 0%,
+    var(--trv-ref-color-accent) 100%
+  );
+}
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdownHeader {
+  font-size: var(--trv-sys-text-overline-size);
+  font-weight: var(--trv-sys-text-overline-weight);
+  letter-spacing: var(--trv-sys-text-overline-ls);
+  text-transform: uppercase;
+  color: var(--trv-sys-color-text-muted);
+  padding: var(--trv-ref-space-2) var(--trv-ref-space-3) var(--trv-ref-space-2);
+  border-bottom: var(--trv-ref-border-hairline) solid var(--trv-sys-color-border);
+  margin-block-end: var(--trv-ref-space-1);
+}
+.dropdownList {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -259,17 +299,24 @@
   color: var(--trv-sys-color-text-body);
   text-decoration: none;
   border-radius: var(--trv-sys-radius-control);
+  transition:
+    background var(--trv-sys-duration-fast) var(--trv-sys-ease-standard),
+    color var(--trv-sys-duration-fast) var(--trv-sys-ease-standard);
 }
-.dropdownLink:hover {
+.dropdownLink:hover,
+.dropdownLink:focus-visible {
   background: var(--trv-sys-color-bg-subtle);
   color: var(--trv-sys-color-text-primary);
+  /* Teal connective rule on the leading edge — the DS hover signature. */
+  box-shadow: inset 2px 0 0 var(--trv-ref-color-connect);
 }
 
 /* --- Mobile --- */
 .menuToggle {
   display: inline-flex;
   align-items: center;
-  gap: var(--trv-sys-space-inline);
+  justify-content: center;
+  gap: var(--trv-ref-space-2);
   min-height: var(--trv-sys-target-comfortable);
   min-width: var(--trv-sys-target-comfortable);
   padding: var(--trv-ref-space-2) var(--trv-ref-space-3);
@@ -277,6 +324,9 @@
   font-weight: var(--trv-ref-font-weight-semibold);
   border: var(--trv-ref-border-thin) solid var(--trv-sys-color-border-strong);
   border-radius: var(--trv-sys-radius-control);
+}
+.toggleIcon {
+  flex: none;
 }
 
 .drawerOverlay {
@@ -345,8 +395,12 @@
 
 @media (prefers-reduced-motion: reduce) {
   .header::after,
-  .header .desktopActions :is(a, button) {
+  .header .desktopActions :is(a, button),
+  .dropdownLink {
     transition: none;
+  }
+  .dropdown {
+    animation: none;
   }
   .header
     .desktopActions

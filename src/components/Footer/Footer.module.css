@@ -9,8 +9,10 @@
 .inner {
   max-width: var(--trv-ref-breakpoint-lg);
   margin: 0 auto;
+  /* CLIENT r15: bottom padding halved (48→24) — the band below the legal row
+   * read as a big empty break; the legal row now sits closer to the page edge. */
   padding: var(--trv-sys-space-section) var(--trv-sys-space-gutter)
-    var(--trv-ref-space-12);
+    var(--trv-ref-space-6);
   display: grid;
   gap: var(--trv-sys-space-gutter);
   grid-template-columns: 1fr;
@@ -42,25 +44,30 @@
   text-decoration: none;
   line-height: 0;
 }
+/* CLIENT r15 (variant E): the full-lockup white chip read as a big white block.
+ * The white backdrop now hugs the mark alone — a compact pad that keeps the
+ * colored logo from merging into the navy — and the wordmark sits directly on
+ * the footer ground in on-inverse white. */
 .brandChip {
   display: inline-flex;
   align-items: center;
   gap: var(--trv-sys-space-inline);
-  background: var(--trv-ref-color-white);
-  border-radius: var(--trv-sys-radius-card);
-  padding: var(--trv-ref-space-3) var(--trv-ref-space-4);
 }
 .brandMark {
   height: 2.25rem;
   width: auto;
   flex: none;
+  background: var(--trv-ref-color-white);
+  padding: 5px;
+  border-radius: var(--trv-ref-radius-sm);
+  box-sizing: content-box;
 }
 .brandWord {
   font-family: var(--trv-ref-font-family-display);
   font-weight: var(--trv-ref-font-weight-bold);
   font-size: var(--trv-ref-font-size-xl);
   letter-spacing: var(--trv-ref-letter-spacing-tight);
-  color: var(--trv-sys-color-text-primary);
+  color: var(--trv-sys-color-text-on-inverse);
   line-height: 1;
 }
 .tagline {
@@ -75,7 +82,10 @@
   font-weight: var(--trv-sys-text-overline-weight);
   letter-spacing: var(--trv-sys-text-overline-ls);
   text-transform: uppercase;
-  color: var(--trv-sys-color-text-on-inverse-muted);
+  /* CLIENT r15: category titles were near-indistinguishable from links when the
+   * columns stack on mobile. Use the DS eyebrow-on-navy role (gold.light, AA)
+   * so the category reads as a label, not a destination. */
+  color: var(--trv-ref-color-accent-light);
   margin-block-end: var(--trv-ref-space-3);
 }
 .list {
@@ -102,6 +112,19 @@
 .link:focus-visible {
   outline: var(--trv-sys-focus-ring-width) solid var(--trv-sys-color-focus-ring-inverse);
   outline-offset: var(--trv-sys-focus-ring-offset);
+}
+/* CLIENT r15: below the desktop column layout the spatial grouping weakens, so
+ * links carry the underline affordance (DS: links are never color-alone) — a
+ * soft white rule at rest that resolves to the gold hover underline. */
+@media (max-width: 1023px) {
+  .link {
+    text-decoration: underline;
+    text-decoration-color: rgba(253, 253, 252, 0.4);
+    text-underline-offset: 0.18em;
+  }
+  .link:hover {
+    text-decoration-color: currentColor;
+  }
 }
 
 /* --- Legal row --- */

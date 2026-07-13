@@ -35,6 +35,42 @@ const Caret = () => (
   </svg>
 );
 
+const IconMenu = () => (
+  <svg
+    className={styles.toggleIcon}
+    width="18"
+    height="18"
+    viewBox="0 0 16 16"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path
+      d="M2 4h12M2 8h12M2 12h12"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+const IconClose = () => (
+  <svg
+    className={styles.toggleIcon}
+    width="18"
+    height="18"
+    viewBox="0 0 16 16"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path
+      d="M3.5 3.5l9 9m0-9l-9 9"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
 export function Nav({
   items,
   currentPath,
@@ -129,6 +165,7 @@ export function Nav({
             aria-controls="trv-mobile-drawer"
             onClick={() => setDrawerOpen(true)}
           >
+            <IconMenu />
             Menu
           </button>
         </div>
@@ -198,15 +235,20 @@ function DesktopItem({
         <Caret />
       </button>
       {isOpen ? (
-        <ul className={styles.dropdown} id={panelId}>
-          {item.children.map((child) => (
-            <li key={child.label}>
-              <a className={styles.dropdownLink} href={child.href ?? "#"}>
-                {child.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className={styles.dropdown} id={panelId}>
+          {/* Overline group header reuses the trigger's frozen IA label — the
+              panel reads as a titled card, not a floating list. */}
+          <p className={styles.dropdownHeader}>{item.label}</p>
+          <ul className={styles.dropdownList}>
+            {item.children.map((child) => (
+              <li key={child.label}>
+                <a className={styles.dropdownLink} href={child.href ?? "#"}>
+                  {child.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : null}
     </div>
   );
@@ -283,9 +325,10 @@ function MobileDrawer({
           <button
             className={styles.menuToggle}
             type="button"
+            aria-label="Close menu"
             onClick={onClose}
           >
-            Close
+            <IconClose />
           </button>
         </div>
         <nav aria-label="Mobile primary">
