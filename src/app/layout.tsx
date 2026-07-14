@@ -60,6 +60,8 @@ const FOOTER_LEGAL = [
   { label: "Privacy", href: "/privacy" },
   { label: "Terms", href: "/terms" },
   { label: "Accessibility", href: "/accessibility" },
+  // Attribution for CC-licensed editorial photography (Wikimedia Commons).
+  { label: "Image credits", href: "/image-credits" },
 ];
 
 const FOOTER_TAGLINE =

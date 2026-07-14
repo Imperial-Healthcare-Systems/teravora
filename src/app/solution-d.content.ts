@@ -4,7 +4,7 @@
 export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
 
 <header class="shero" id="top">
-  <div class="shero-bg"></div>
+  <div class="shero-bg" style="background-image:url('/v/solution/hero-esdd.webp');background-position:center 40%"></div>
   <div class="shero-veil"></div>
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>
@@ -102,9 +102,9 @@ export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="sec-label reveal"><span>ON THE GROUND</span><span>WHAT THE DILIGENCE EXAMINES</span></div>
     <div class="tri-head reveal"><h2>A deal is only as clean as the asset behind it.</h2><p>Diligence that stays in the data room misses the risk. The standards are tested where the asset, its resources and its people actually are.</p></div>
     <div class="tri-grid">
-      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-carbon.webp')"><div class="tri-ph"></div><figcaption><span class="tk">EMISSIONS &amp; ENERGY</span><span class="tl">The footprint, permits and compliance record behind the asset's operations.</span></figcaption></figure>
-      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-resources.webp')"><div class="tri-ph"></div><figcaption><span class="tk">LAND, WATER &amp; WASTE</span><span class="tl">Contamination, consents, discharge and the environmental liabilities that transfer at close.</span></figcaption></figure>
-      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-people.webp')"><div class="tri-ph"></div><figcaption><span class="tk">PEOPLE &amp; COMMUNITIES</span><span class="tl">Labour conditions, community impact and the social standards the lender will test.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/tri-esdd-site.webp')"><div class="tri-ph"></div><figcaption><span class="tk">EMISSIONS &amp; ENERGY</span><span class="tl">The footprint, permits and compliance record behind the asset's operations.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/tri-esdd-water.webp')"><div class="tri-ph"></div><figcaption><span class="tk">LAND, WATER &amp; WASTE</span><span class="tl">Contamination, consents, discharge and the environmental liabilities that transfer at close.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/tri-esdd-community.webp')"><div class="tri-ph"></div><figcaption><span class="tk">PEOPLE &amp; COMMUNITIES</span><span class="tl">Labour conditions, community impact and the social standards the lender will test.</span></figcaption></figure>
     </div>
   </div>
 </section>

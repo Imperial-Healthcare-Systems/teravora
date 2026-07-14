@@ -5,7 +5,7 @@
 export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div>
 
 <header class="shero" id="top">
-  <div class="shero-bg"></div>
+  <div class="shero-bg" style="background-image:url('/v/solution/hero-advisory.webp');background-position:center 38%"></div>
   <div class="shero-veil"></div>
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>
@@ -103,9 +103,9 @@ export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div
     <div class="sec-label reveal"><span>ON THE GROUND</span><span>WHAT THE STRATEGY MUST SURVIVE</span></div>
     <div class="tri-head reveal"><h2>A strategy is only as strong as the operations it lands in.</h2><p>The test of an ESG strategy is not the deck — it is whether the plant, the supply chain and the people who run them can carry it.</p></div>
     <div class="tri-grid">
-      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-carbon.webp')"><div class="tri-ph"></div><figcaption><span class="tk">ENERGY &amp; EMISSIONS</span><span class="tl">Decarbonisation direction that respects how your assets actually operate.</span></figcaption></figure>
-      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-resources.webp')"><div class="tri-ph"></div><figcaption><span class="tk">RESOURCES &amp; OPERATIONS</span><span class="tl">Water, waste and materials — where policy meets process and cost.</span></figcaption></figure>
-      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-people.webp')"><div class="tri-ph"></div><figcaption><span class="tk">PEOPLE &amp; GOVERNANCE</span><span class="tl">The owners, committees and teams who have to run the strategy after we leave.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/tri-adv-energy.webp')"><div class="tri-ph"></div><figcaption><span class="tk">ENERGY &amp; EMISSIONS</span><span class="tl">Decarbonisation direction that respects how your assets actually operate.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/tri-adv-operations.webp')"><div class="tri-ph"></div><figcaption><span class="tk">RESOURCES &amp; OPERATIONS</span><span class="tl">Water, waste and materials — where policy meets process and cost.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/tri-adv-people.webp')"><div class="tri-ph"></div><figcaption><span class="tk">PEOPLE &amp; GOVERNANCE</span><span class="tl">The owners, committees and teams who have to run the strategy after we leave.</span></figcaption></figure>
     </div>
   </div>
 </section>

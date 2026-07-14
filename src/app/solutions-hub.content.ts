@@ -5,7 +5,7 @@
 export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
 
 <header class="shero hub" id="top">
-  <div class="shero-bg"></div>
+  <div class="shero-bg" style="background-image:url('/v/solution/hero-hub.webp');background-position:center 55%"></div>
   <div class="shero-veil"></div>
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>

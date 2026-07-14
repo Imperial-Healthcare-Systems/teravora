@@ -5,7 +5,7 @@
 export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></div>
 
 <header class="shero" id="top">
-  <div class="shero-bg"></div>
+  <div class="shero-bg" style="background-image:url('/v/solution/hero-technical.webp');background-position:center 45%"></div>
   <div class="shero-veil"></div>
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>
@@ -99,7 +99,7 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
 </section>
 
 <section class="band" id="real-economy-band" aria-label="The plant floor behind the paperwork">
-  <div class="band-img" style="background-image:url('/v/solution/sol-band.webp')"></div>
+  <div class="band-img" style="background-image:url('/v/solution/band-technical.webp')"></div>
   <div class="band-scrim"></div>
   <div class="wrap band-in">
     <span class="mono band-kicker reveal">◇ THE REAL ECONOMY</span>
