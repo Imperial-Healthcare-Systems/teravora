@@ -36,6 +36,8 @@ const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "Proof / Evidence", href: ROUTES.howWeProve },
       { label: "Work", href: ROUTES.howWeProve }, // interim → dedicated /work pending
       { label: "Learn / Insights", href: "/learn" },
+      // Net-new IA addition (human-approved): evergreen careers pipeline, footer-only.
+      { label: "Careers", href: ROUTES.careers },
     ],
   },
   {

@@ -23,5 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(ROUTES.howWeProve, 0.8, "monthly"),
     entry(ROUTES.about, 0.6, "monthly"),
     entry(ROUTES.start, 0.9, "monthly"),
+    entry(ROUTES.careers, 0.5, "monthly"),
   ];
 }

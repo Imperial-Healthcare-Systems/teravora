@@ -18,6 +18,7 @@ export const ROUTES = {
   howWeProve: "/how-we-prove",
   about: "/about",
   start: "/start",
+  careers: "/careers",
 } as const;
 
 // --- Nav taxonomy (frozen ia@v0 D-1 A-weighted hybrid) ----------------------
