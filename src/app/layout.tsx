@@ -15,10 +15,16 @@ import { SiteNav } from "./site-nav";
 const FOOTER_COLUMNS: FooterColumn[] = [
   {
     title: "Solutions",
+    // Full catalog (client-directed completion, 2026-07-14) — mirrors the nav.
     items: [
+      { label: "All Solutions", href: ROUTES.solutions },
       { label: "BRSR & Assurance Readiness", href: ROUTES.solutionA },
       { label: "Carbon & Climate", href: ROUTES.solutionB },
+      { label: "ESG & Climate Strategy Advisory", href: ROUTES.solutionAdvisory },
+      { label: "Technical & Environmental Services", href: ROUTES.solutionTechnical },
+      { label: "Sustainable Finance & Carbon Markets", href: ROUTES.solutionFinance },
       { label: "Environmental & Social Due Diligence", href: ROUTES.solutionD },
+      { label: "Capacity Building & Training", href: ROUTES.solutionTraining },
     ],
   },
   {

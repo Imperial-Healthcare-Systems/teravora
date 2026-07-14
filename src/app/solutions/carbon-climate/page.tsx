@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components";
 import { breadcrumbSchema, buildMetadata, serviceSchema } from "@/lib/seo";
 import { ROUTES } from "@/lib/site-data";
+import { SOLUTION_B_BODY } from "../../solution-b.content";
 import { SolutionView } from "../SolutionView";
 
 export const metadata: Metadata = buildMetadata({
@@ -12,11 +13,12 @@ export const metadata: Metadata = buildMetadata({
   ogImage: "/og/solution-b.png",
 });
 
-// V3 build — visible body is the approved V1 solution archetype (SolutionView).
+// Dedicated body (catalog completion, 2026-07-14) — replaces the MVP shortcut
+// that rendered the Solution A archetype content on this route.
 export default function SolutionB() {
   return (
     <>
-      <SolutionView />
+      <SolutionView body={SOLUTION_B_BODY} />
       <JsonLd
         data={serviceSchema({
           name: "Carbon & Climate",

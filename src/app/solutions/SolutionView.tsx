@@ -1,26 +1,26 @@
 "use client";
 
 import { useEffect } from "react";
-import { SOLUTION_BODY } from "../solution.content";
 import { init_solution } from "../solution.runtime";
 import "../solution.vcomp.css";
 
 /**
- * Shared visible body for the three solution routes (BRSR/assurance, carbon,
- * ESDD) — the approved V1 solution archetype, ported as a dark-surface island.
- * Per the V1 plan this single comp is reused across the solution skeleton; each
- * route supplies its own metadata + Service/Breadcrumb structured data.
+ * Shared visible shell for the solution routes — the approved V1 solution
+ * archetype, ported as a dark-surface island. Each route supplies its own
+ * body (per-solution content), metadata and Service/Breadcrumb structured data.
+ * init_solution() is re-runnable: client-side navigation between two solution
+ * routes remounts this component and must rebind reveals/particles to new DOM.
  */
-export function SolutionView() {
+export function SolutionView({ body }: { body: string }) {
   useEffect(() => {
     init_solution();
-  }, []);
+  }, [body]);
   return (
     <main
       id="main-content"
       className="pg-solution"
       data-surface="dark"
-      dangerouslySetInnerHTML={{ __html: SOLUTION_BODY }}
+      dangerouslySetInnerHTML={{ __html: body }}
     />
   );
 }

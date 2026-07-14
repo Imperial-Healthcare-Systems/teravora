@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components";
 import { breadcrumbSchema, buildMetadata, serviceSchema } from "@/lib/seo";
 import { ROUTES } from "@/lib/site-data";
+import { SOLUTION_BODY } from "../../solution.content";
 import { SolutionView } from "../SolutionView";
 
 export const metadata: Metadata = buildMetadata({
@@ -17,7 +18,7 @@ export const metadata: Metadata = buildMetadata({
 export default function SolutionA() {
   return (
     <>
-      <SolutionView />
+      <SolutionView body={SOLUTION_BODY} />
       <JsonLd
         data={serviceSchema({
           name: "ESG Disclosure & Assurance Readiness",

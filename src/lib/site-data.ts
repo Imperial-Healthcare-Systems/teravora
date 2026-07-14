@@ -12,9 +12,16 @@ import type { FaqEntry } from "@/lib/seo";
 // --- Canonical routes (match seo-aeo-spec §0.1 URL map) ---------------------
 export const ROUTES = {
   home: "/",
+  solutions: "/solutions",
   solutionA: "/solutions/esg-disclosure-assurance-readiness",
   solutionB: "/solutions/carbon-climate",
   solutionD: "/solutions/environmental-social-due-diligence",
+  // Catalog completion (client-directed, 2026-07-14): full Teravue service-scope
+  // parity. Named descriptively — the ia/v0 staged-line letters regrouped these.
+  solutionAdvisory: "/solutions/esg-climate-strategy-advisory",
+  solutionTechnical: "/solutions/technical-environmental-services",
+  solutionFinance: "/solutions/sustainable-finance-carbon-markets",
+  solutionTraining: "/solutions/capacity-building-esg-training",
   howWeProve: "/how-we-prove",
   about: "/about",
   start: "/start",
@@ -28,7 +35,10 @@ export const NAV_ITEMS: NavItem[] = [
   {
     label: "Solutions",
     kind: "page",
+    // Full catalog (client-directed completion, 2026-07-14); conversion-ranked
+    // order (research@v0 §4) with the catalog index first.
     children: [
+      { label: "All Solutions", href: ROUTES.solutions, kind: "page" },
       {
         label: "BRSR & Assurance Readiness",
         href: ROUTES.solutionA,
@@ -36,8 +46,28 @@ export const NAV_ITEMS: NavItem[] = [
       },
       { label: "Carbon & Climate", href: ROUTES.solutionB, kind: "service" },
       {
+        label: "ESG & Climate Strategy Advisory",
+        href: ROUTES.solutionAdvisory,
+        kind: "service",
+      },
+      {
+        label: "Technical & Environmental Services",
+        href: ROUTES.solutionTechnical,
+        kind: "service",
+      },
+      {
+        label: "Sustainable Finance & Carbon Markets",
+        href: ROUTES.solutionFinance,
+        kind: "service",
+      },
+      {
         label: "Environmental & Social Due Diligence",
         href: ROUTES.solutionD,
+        kind: "service",
+      },
+      {
+        label: "Capacity Building & Training",
+        href: ROUTES.solutionTraining,
         kind: "service",
       },
     ],
