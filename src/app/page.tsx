@@ -6,10 +6,13 @@ import { HOME_BODY } from "./home.content";
 import { HomeRuntime } from "./HomeRuntime";
 import "./home.vcomp.css";
 
+// buildMetadata sets an ABSOLUTE title (no template — see layout.tsx), so this
+// title, not the root one, is the home page's SERP identity. Keep the two aligned.
 export const metadata: Metadata = buildMetadata({
-  title: "Teravora | Practical ESG & BRSR Assurance Readiness, India",
+  title:
+    "Teravora | Environmental & Social Risk, ESG Due Diligence & Advisory, India",
   description:
-    "India-based ESG advisory. We turn BRSR-Core and assurance duties into an auditable path to a defensible disclosure — the method shown, not just the result.",
+    "India-based environmental and social risk practice — IFC Performance Standards and Equator Principles advisory, ESG due diligence, carbon and climate, and practitioner-led training. The method shown, not just the result.",
   path: ROUTES.home,
   ogImage: "/og/home.png",
 });

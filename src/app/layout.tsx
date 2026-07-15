@@ -15,16 +15,17 @@ import { SiteNav } from "./site-nav";
 const FOOTER_COLUMNS: FooterColumn[] = [
   {
     title: "Solutions",
-    // Full catalog (client-directed completion, 2026-07-14) — mirrors the nav.
+    // Mirrors NAV_ITEMS in site-data.ts — core-first order (client repositioning,
+    // 2026-07-15). Keep the two in step: this list ranks the practice on every page.
     items: [
       { label: "All Solutions", href: ROUTES.solutions },
-      { label: "BRSR & Assurance Readiness", href: ROUTES.solutionA },
+      { label: "Environmental & Social Due Diligence", href: ROUTES.solutionD },
+      { label: "Capacity Building & Training", href: ROUTES.solutionTraining },
       { label: "Carbon & Climate", href: ROUTES.solutionB },
       { label: "ESG & Climate Strategy Advisory", href: ROUTES.solutionAdvisory },
       { label: "Technical & Environmental Services", href: ROUTES.solutionTechnical },
       { label: "Sustainable Finance & Carbon Markets", href: ROUTES.solutionFinance },
-      { label: "Environmental & Social Due Diligence", href: ROUTES.solutionD },
-      { label: "Capacity Building & Training", href: ROUTES.solutionTraining },
+      { label: "BRSR & Assurance Readiness", href: ROUTES.solutionA },
     ],
   },
   {
@@ -50,7 +51,9 @@ const FOOTER_COLUMNS: FooterColumn[] = [
     title: "Get started",
     items: [
       { label: "Request a Proposal", href: ROUTES.start },
-      { label: "ESG Readiness Assessment", href: "/learn/brsr-readiness" },
+      // Was → /learn/brsr-readiness, an unbuilt stub. A "Get started" slot on every
+      // page cannot point at a tool that does not exist yet, least of all a BRSR one.
+      { label: "Browse Solutions", href: ROUTES.solutions },
       { label: "Contact", href: ROUTES.start }, // interim → dedicated /contact pending
     ],
   },

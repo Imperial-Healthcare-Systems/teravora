@@ -12,9 +12,9 @@ import "../learn.vcomp.css";
 // ESG-training page. Subject scope informed by the parent practice; all copy,
 // layout and structure are original to the Teravora brand.
 export const metadata: Metadata = buildMetadata({
-  title: "ESG Training & Capacity Building | Teravora",
+  title: "Corporate & On-Field ESG Training | Teravora",
   description:
-    "Practitioner-led ESG training for Indian teams — BRSR, GHG accounting, TCFD, sustainable finance and ESG governance. Executive masterclasses, in-house cohorts and workshops, taught by the specialists who prepare filings for assurance.",
+    "Tailor-made corporate and on-field training on environment, ESG, climate change and sustainability for Indian teams — IFC Performance Standards, Equator Principles, ESDD, GHG accounting and BRSR. Executive masterclasses, in-house cohorts and workshops, taught by practitioners.",
   path: "/learn",
 });
 

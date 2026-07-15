@@ -23,7 +23,7 @@ export function initHome() {
       if(!reduce)setTimeout(function(){s.classList.add("in")},250+(li*300)+(i*90));else s.classList.add("in");});
   });
 
-  var tokens=[["#why","INDIA-BASED ESG ADVISORY · SEBI-BRSR SPECIALISTS"],["#proof","25+ YEARS OF ESG EXPERTISE · BACKED BY TERAVUE"],["#infographic","STANDARDS MASTERED · BRSR-CORE · GRI · TCFD · IFRS S1/S2 · GHG"],["#method","THE METHOD IS SHOWN · NOT ASSERTED"],["#infographic","49 KPIs · 9 BRSR-CORE ATTRIBUTES · ASSURER-READY"],["#method","FROM SCATTERED DATA → A FILED, DEFENSIBLE DISCLOSURE"],["#cta","EVIDENCE BEHIND EVERY NUMBER → REQUEST A PROPOSAL"]];
+  var tokens=[["#why","INDIA-BASED ENVIRONMENTAL & SOCIAL RISK PRACTICE"],["#proof","25+ YEARS OF ESG EXPERTISE · BACKED BY TERAVUE"],["#why","IFC PERFORMANCE STANDARDS · EQUATOR PRINCIPLES · ESDD"],["#method","THE METHOD IS SHOWN · NOT ASSERTED"],["#real-economy","SCOPE 3 · ALL FIFTEEN CATEGORIES · THE FULL VALUE CHAIN"],["#infographic","STANDARDS · IFC PS · EQUATOR · GHG PROTOCOL · IFRS S1/S2 · BRSR-CORE"],["#cta","EVIDENCE BEHIND EVERY NUMBER → REQUEST A PROPOSAL"]];
   var mq=document.getElementById("mq");
   function seg(){var f=document.createDocumentFragment();tokens.forEach(function(t){var a=document.createElement("a");a.href=t[0];a.textContent=t[1];f.appendChild(a);var s=document.createElement("span");s.className="sep";s.textContent="◆";f.appendChild(s)});return f}
   mq.appendChild(seg());mq.appendChild(seg());
@@ -167,8 +167,8 @@ export function initHome() {
     shield:'<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M60 12l40 15v25c0 28-18 45-40 54C38 97 20 80 20 52V27z"/><path d="M42 60l12 12 22-28"/></svg>'
   };
   var PER=[
-    ["FOR LISTED COMPANIES","BRSR assurance now applies to your band.","The independent, auditor-grade sign-off has arrived for your market-cap band. We get you to a disclosure that survives that bar — with the working shown at every step.","BRSR & ASSURANCE READINESS",ICON.columns,0,0],
-    ["A CUSTOMER OR LENDER ASKED FOR DATA","You're being pulled into the cascade.","Turn the request into a clean, credible data set you can hand over — start with a readiness snapshot, then the disclosure that keeps you on the panel.","START WITH A READINESS SNAPSHOT",ICON.chain,-70,-30],
+    ["FOR LENDERS & DEAL TEAMS","The diligence has to survive the deal clock.","IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-Based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.","ENVIRONMENTAL & SOCIAL DUE DILIGENCE",ICON.columns,0,0],
+    ["A CUSTOMER OR LENDER ASKED FOR DATA","You're being pulled into the cascade.","Turn the request into a clean, credible data set you can hand over — the evidence behind each number, not a questionnaire answered once.","BUILD THE EVIDENCE BASE",ICON.chain,-70,-30],
     ["RISK, QUANTIFIED","The exposure, framed against the method — not guesswork.","We frame the penalty and audit-committee risk against a concrete method, so the board conversation is about a defensible plan, not a vague worry.","SEE HOW WE PROVE IT",ICON.shield,60,-60]
   ];
   var tabs=[].slice.call(document.querySelectorAll(".ptab")),ck=document.getElementById("ck"),ch=document.getElementById("ch"),cp=document.getElementById("cp"),cgo=document.getElementById("cgo"),cam=document.getElementById("cam");
@@ -182,12 +182,12 @@ export function initHome() {
 
   /* configurator + dossier */
   var cfg={band:null,fy:null},cur=0,barEl=document.getElementById("cfgbar"),inEl=document.getElementById("cfgin");
-  var dband=document.getElementById("dband"),dfy=document.getElementById("dfy"),drect=document.getElementById("drect");
+  var dband=document.getElementById("dband"),dfy=document.getElementById("dfy"),dstd=document.getElementById("dstd"),drect=document.getElementById("drect");
   function drawBorder(){if(!drect||reduce)return;try{var w=drect.ownerSVGElement.clientWidth,h=drect.ownerSVGElement.clientHeight;drect.setAttribute("width",w-2);drect.setAttribute("height",h-2);var per=2*((w-2)+(h-2));drect.style.strokeDasharray=per;drect.style.strokeDashoffset=per;drect.getBoundingClientRect();drect.style.transition="stroke-dashoffset 1.1s cubic-bezier(.16,1,.3,1)";drect.style.strokeDashoffset=0}catch(e){}}
   function showStep(n){cur=n;inEl.style.transform="translateX(-"+(n*25)+"%)";if(barEl)barEl.style.width=Math.min((n+1)/3*100,100)+"%"}
   document.querySelectorAll(".opts").forEach(function(g){g.addEventListener("click",function(e){var o=e.target.closest(".opt");if(!o)return;
     [].slice.call(g.children).forEach(function(x){x.classList.remove("sel")});o.classList.add("sel");cfg[g.dataset.group]=o.dataset.v;
-    if(g.dataset.group==="band"){dband.textContent=o.dataset.v;dband.classList.remove("dim");if(o.dataset.fy){dfy.textContent=o.dataset.fy;dfy.classList.remove("dim")}drawBorder()}
+    if(g.dataset.group==="band"){dband.textContent=o.dataset.v;dband.classList.remove("dim");if(o.dataset.fy){dfy.textContent=o.dataset.fy;dfy.classList.remove("dim")}if(dstd&&o.dataset.std){dstd.textContent=o.dataset.std;dstd.classList.remove("dim")}drawBorder()}
     else{dfy.textContent=o.dataset.v;dfy.classList.remove("dim");drawBorder()}
     setTimeout(function(){showStep(g.dataset.group==="band"?1:2)},reduce?0:240)})});
   document.querySelectorAll("[data-back]").forEach(function(b){b.addEventListener("click",function(){showStep(Math.max(cur-1,0))})});

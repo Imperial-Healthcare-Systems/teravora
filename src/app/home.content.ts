@@ -44,9 +44,9 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 <section class="sec ig" id="infographic">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="mono eyebrow">When BRSR is on your desk</span>
+      <span class="mono eyebrow">One service, in depth · When a BRSR deadline is what you're facing</span>
       <h2>The assured subset, made legible.</h2>
-      <p>One of the things we do: India's SEBI BRSR-Core — the part of your disclosure that faces reasonable assurance. Grouped by Environmental, Social and Governance — hover any segment.</p>
+      <p>India's SEBI BRSR-Core — the part of a disclosure that faces reasonable assurance — is one line of the practice, and this is how we read it. Grouped by Environmental, Social and Governance — hover any segment.</p>
     </div>
   </div>
   <div class="ig-stage">
@@ -249,16 +249,16 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="bgi" id="bgi0"></div><div class="bgi" id="bgi1"></div><div class="bgi" id="bgi2"></div>
       <div class="sb-inner">
         <div class="persona-tabs">
-          <button class="ptab on" data-p="0"><span class="plft"><span class="pchip" style="background-image:url('/v/home/chip-listed.webp')"></span><span class="pl">For listed companies</span></span><span class="pk">S1 · S2</span></button>
+          <button class="ptab on" data-p="0"><span class="plft"><span class="pchip" style="background-image:url('/v/home/chip-listed.webp')"></span><span class="pl">For lenders &amp; deal teams</span></span><span class="pk">IFC · EP</span></button>
           <button class="ptab" data-p="1"><span class="plft"><span class="pchip" style="background-image:url('/v/home/chip-suppliers.webp')"></span><span class="pl">For suppliers &amp; mid-market</span></span><span class="pk">S3</span></button>
           <button class="ptab" data-p="2"><span class="plft"><span class="pchip" style="background-image:url('/v/home/chip-cfo.webp')"></span><span class="pl">For CFOs &amp; compliance owners</span></span><span class="pk">RISK</span></button>
-          <div class="allsol">Prefer to browse? <a href="#">See all solutions →</a></div>
+          <div class="allsol">Prefer to browse? <a href="/solutions">See all solutions →</a></div>
         </div>
         <div class="sb-card">
-          <div class="ck" id="ck">FOR LISTED COMPANIES</div>
-          <h3 id="ch">BRSR assurance now applies to your band.</h3>
-          <p id="cp">The independent, auditor-grade sign-off has arrived for your market-cap band. We get you to a disclosure that survives that bar — with the working shown at every step.</p>
-          <a class="go" href="#cta" id="cgo">BRSR &amp; ASSURANCE READINESS <span class="arw">→</span></a>
+          <div class="ck" id="ck">FOR LENDERS &amp; DEAL TEAMS</div>
+          <h3 id="ch">The diligence has to survive the deal clock.</h3>
+          <p id="cp">IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-Based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.</p>
+          <a class="go" href="#cta" id="cgo">ENVIRONMENTAL &amp; SOCIAL DUE DILIGENCE <span class="arw">→</span></a>
         </div>
       </div>
     </div>
@@ -269,7 +269,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="dhband"></div><div class="fflare"></div>
   <div class="wrap">
     <div class="final-head">
-      <h2 class="reveal">Bring us your deadline.</h2>
+      <h2 class="reveal">Bring us your deal, or your deadline.</h2>
       <p class="reveal">Two questions scope your proposal — and your specification builds live on the right. Then a specialist responds; a real person, not a form receipt.</p>
     </div>
     <div class="cfg-split">
@@ -280,17 +280,20 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
             <div class="cfg-k">STEP 01 / 03 · SCOPE</div>
             <h3>Which describes you?</h3>
             <div class="opts" data-group="band">
-              <div class="opt" data-v="Top 500 listed" data-fy="FY 2025-26"><span>Top 500 listed company</span><span class="tag">ASSURANCE FY25-26</span></div>
-              <div class="opt" data-v="Top 1,000 listed" data-fy="FY 2026-27"><span>Top 1,000 listed company</span><span class="tag">ASSURANCE FY26-27</span></div>
-              <div class="opt" data-v="Value chain / supplier" data-fy="Exploring"><span>Supplier or mid-market in a value chain</span><span class="tag">CASCADE</span></div>
+              <div class="opt" data-v="Lender / DFI" data-fy="Deal window" data-std="IFC Performance Standards · Equator Principles"><span>Lender, DFI or project financier</span><span class="tag">IFC · EP</span></div>
+              <div class="opt" data-v="Investor / deal team" data-fy="Deal window" data-std="ESDD — Desktop, escalating to Site-Based"><span>Investor or PE deal team</span><span class="tag">ESDD</span></div>
+              <div class="opt" data-v="Sponsor / borrower" data-fy="Deal window" data-std="IFC PS implementation · HSESMS · ESAP"><span>Project sponsor or borrower</span><span class="tag">IFC PS</span></div>
+              <div class="opt" data-v="Top 500 listed" data-fy="FY 2025-26" data-std="BRSR-Core · 49 KPIs / 9 attributes"><span>Top 500 listed company</span><span class="tag">ASSURANCE FY25-26</span></div>
+              <div class="opt" data-v="Top 1,000 listed" data-fy="FY 2026-27" data-std="BRSR-Core · 49 KPIs / 9 attributes"><span>Top 1,000 listed company</span><span class="tag">ASSURANCE FY26-27</span></div>
+              <div class="opt" data-v="Value chain / supplier" data-fy="Exploring" data-std="GHG Protocol · Scope 3 value chain"><span>Supplier or mid-market in a value chain</span><span class="tag">CASCADE</span></div>
             </div>
           </div>
           <div class="cfg-step" data-s="1">
             <div class="cfg-k">STEP 02 / 03 · TIMING</div>
-            <h3>When is your filing?</h3>
+            <h3>When do you need it?</h3>
             <div class="opts" data-group="fy">
-              <div class="opt" data-v="FY 2026-27"><span>This financial year (FY26-27)</span><span class="tag">IMMINENT</span></div>
-              <div class="opt" data-v="FY 2027-28"><span>Next financial year (FY27-28)</span><span class="tag">PLANNING</span></div>
+              <div class="opt" data-v="Live now"><span>Now — a live deal or deadline is running</span><span class="tag">IMMINENT</span></div>
+              <div class="opt" data-v="This financial year"><span>This financial year</span><span class="tag">PLANNING</span></div>
               <div class="opt" data-v="Exploring"><span>Exploring — no fixed date yet</span><span class="tag">EARLY</span></div>
             </div>
             <div class="cfg-nav"><button class="cfg-back" data-back>← Back</button></div>
@@ -311,12 +314,12 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
       <div class="dossier reveal">
         <svg class="draw" id="ddraw" preserveAspectRatio="none"><rect id="drect" x="1" y="1" rx="15"></rect></svg>
-        <div class="dsl">◇ ASSURANCE SPECIFICATION</div>
+        <div class="dsl">◇ ENGAGEMENT SPECIFICATION</div>
         <div class="drow"><span class="k">PROFILE</span><span class="val dim" id="dband">— select —</span></div>
-        <div class="drow"><span class="k">FILING</span><span class="val dim" id="dfy">—</span></div>
-        <div class="drow"><span class="k">STANDARD</span><span class="val">BRSR-Core · 49 KPIs / 9 attributes</span></div>
-        <div class="dspec">Reasonable assurance scope, mapped to your profile.</div>
-        <div class="dnote">Regulatory specification: SEBI BRSR-Core standard.</div>
+        <div class="drow"><span class="k">TIMING</span><span class="val dim" id="dfy">—</span></div>
+        <div class="drow"><span class="k">STANDARD</span><span class="val dim" id="dstd">—</span></div>
+        <div class="dspec">Scope mapped to your profile — the standard follows the work, not the other way round.</div>
+        <div class="dnote">Indicative only. A specialist confirms the specification before any scope is agreed.</div>
       </div>
     </div>
   </div>

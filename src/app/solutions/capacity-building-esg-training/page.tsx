@@ -6,9 +6,9 @@ import { SOLUTION_TRAINING_BODY } from "../../solution-training.content";
 import { SolutionView } from "../SolutionView";
 
 export const metadata: Metadata = buildMetadata({
-  title: "ESG Training & Capacity Building, India | Teravora",
+  title: "Corporate & On-Field ESG Training, India | Teravora",
   description:
-    "Targeted ESG training and capacity-building for boards, finance owners and operating teams — BRSR, GHG accounting and IFRS S1/S2, taught on your own data by practitioners.",
+    "Tailor-made corporate and on-field training on environment, ESG, climate change and sustainability — IFC Performance Standards, Equator Principles, GHG accounting and BRSR, taught on your own data by practitioners.",
   path: ROUTES.solutionTraining,
 });
 
@@ -22,9 +22,10 @@ export default function SolutionTraining() {
       <JsonLd
         data={serviceSchema({
           name: "Capacity Building & ESG Training",
-          serviceType: "ESG, BRSR and GHG-accounting training and capacity building",
+          serviceType:
+            "Corporate and on-field training on environment, ESG, climate change and sustainability",
           description:
-            "Targeted training and capacity-building programmes for boards, finance owners and operating teams — BRSR/BRSR-Core, GHG Protocol accounting and IFRS S1/S2, taught by practitioners on the client's own data and filings.",
+            "Tailor-made corporate and on-field training programmes for boards, finance owners and operating teams — the IFC Performance Standards and Equator Principles, GHG Protocol accounting, IFRS S1/S2 and India's BRSR/BRSR-Core, taught by practitioners on the client's own data and sites.",
           path: ROUTES.solutionTraining,
         })}
       />

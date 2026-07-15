@@ -58,14 +58,19 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
     var backBtn=document.getElementById("backBtn"),nextBtn=document.getElementById("nextBtn"),nextLbl=document.getElementById("nextLbl");
     var titles=["What's prompting this?","A little context","Where do we reach you?"];
     var helps=["Two quick taps. This routes you to the right specialist.","One required field. The rest help us tailor the reply — skip anything you'd rather not share.","Last step. A specialist replies within two business days."];
-    var LBL={trigger:{brsr:"BRSR / assurance deadline",customer:"Customer / lender asked",deal:"Deal due diligence",emissions:"Measure / cut emissions",unsure:"Not sure yet"},
-             band:{t500:"Listed · top 500",t1000:"Listed · top 1,000",other:"Listed · other",supplier:"Supplier / MSME",investor:"Investor / lender",na:"Not sure"},
+    var LBL={trigger:{brsr:"BRSR / assurance deadline",customer:"Lender / DFI asked",deal:"Deal due diligence",training:"Team training",emissions:"Measure / cut emissions",unsure:"Not sure yet"},
+             band:{lender:"Lender / DFI",investor:"Investor / PE deal team",sponsor:"Sponsor / borrower",training:"Training buyer",t500:"Listed · top 500",t1000:"Listed · top 1,000",other:"Listed · other",supplier:"Supplier / MSME",na:"Not sure"},
              timeline:{thisfy:"This FY","6mo":"Next 6 months",explore:"Exploring"}};
+    // A live deal carries a real clock, so deal/lender-driven requests lead the
+    // queue alongside a filing deadline — they are the core practice, not an
+    // education case. Only a genuinely undirected request lands in Education.
     function lane(){var t=state.trigger,b=state.band;
-      if(t==="deal")return["DD lane","We'll scope to your deal timeline before anything else."];
-      if(t==="unsure"||b==="supplier"||b==="na"||b==="other")return["Education lane","There's no filing deadline forcing your hand — we'll start by helping you work out what actually applies."];
+      if(t==="deal"||t==="customer"||b==="lender"||b==="investor"||b==="sponsor")return["Deal lane","A live deal has its own clock — we'll scope to your transaction timeline before anything else."];
       if(t==="brsr"||b==="t500"||b==="t1000")return["Fast lane","Because your deadline is real, we'll lead with what has to be assured first."];
-      return["Scoping","We'll lead with what your band requires first."]}
+      if(t==="training"||b==="training")return["Training lane","We'll scope the cohort and the level to your teams before anything else."];
+      if(t==="emissions")return["Scoping","We'll start with the inventory boundary — including where Scope 3 actually sits."];
+      if(t==="unsure"||b==="na")return["Education lane","Nothing is forcing your hand yet — we'll start by helping you work out what actually applies."];
+      return["Scoping","We'll lead with what your situation requires first."]}
     var CHARS="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789·/";
     function scramble(el,fin){if(reduce){el.textContent=fin;return}var t0=null;function tk(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/520,1),n=Math.floor(fin.length*p),s="";for(var i=0;i<fin.length;i++)s+=i<n?fin[i]:CHARS[Math.floor(Math.random()*CHARS.length)];el.textContent=s;if(p<1)requestAnimationFrame(tk);else el.textContent=fin}requestAnimationFrame(tk)}
     function typeOut(el,txt){if(reduce){el.textContent=txt;return}el.textContent="";var i=0;(function tk(){el.textContent=txt.slice(0,i++);if(i<=txt.length)setTimeout(tk,14)})()}

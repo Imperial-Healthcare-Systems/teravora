@@ -515,9 +515,8 @@ function Confirmation({
           never required.
         </p>
       ) : null}
-      <ActionLink href="/learn/brsr-readiness">
-        While you wait, the 5-minute BRSR readiness check tells you which
-        requirements apply to your band →
+      <ActionLink href="/solutions">
+        While you wait, browse the solutions to see the shape of the work →
       </ActionLink>
     </div>
   );

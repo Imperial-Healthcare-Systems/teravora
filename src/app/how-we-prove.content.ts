@@ -208,10 +208,10 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
     </div>
     <div class="closing-cta reveal">
       <h3>See the method. Now put it to work.</h3>
-      <p>Bring us your filing and your deadline. A specialist scopes a proposal &mdash; a real person, not a form receipt.</p>
+      <p>Bring us your deal, or your deadline. A specialist scopes a proposal &mdash; a real person, not a form receipt.</p>
       <div class="hero-cta">
         <a class="btn btn-gold" href="/start"><span>Request a Proposal</span><span class="arw">&rarr;</span></a>
-        <a class="btn btn-ghost" href="/learn/brsr-readiness"><span>Check your BRSR readiness</span></a>
+        <a class="btn btn-ghost" href="/solutions/environmental-social-due-diligence"><span>See how ESDD works</span></a>
       </div>
     </div>
   </div>

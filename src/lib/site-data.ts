@@ -78,7 +78,42 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 // --- FAQ facts (seo-aeo-spec §3.5 — verbatim; traceable to research@v0) -----
+// Core-practice entries (client repositioning, 2026-07-15) are lifted from the
+// approved prose in solution-d.content.ts §faq and solution-b.content.ts §scope3,
+// plain-texted for JSON-LD. Definitional only — no capability or outcome claim
+// enters structured data (E1 guard, seo.ts header).
 export const FAQ: Record<string, FaqEntry> = {
+  whatIsEsdd: {
+    question: "What is ESDD, and how is it different from an EIA?",
+    answer:
+      "An EIA (environmental impact assessment) assesses a proposed project's future impacts, usually for a consent. ESDD — environmental and social due diligence — assesses an existing business or asset's environmental and social risks and liabilities, typically for a transaction or financing decision.",
+  },
+  ifcPerformanceStandards: {
+    question: "What are the IFC Performance Standards?",
+    answer:
+      "Eight standards from the International Finance Corporation covering risk management, labour, resource efficiency and pollution, community health and safety, land and resettlement, biodiversity, indigenous peoples, and cultural heritage. They are the de-facto benchmark lenders and investors apply to environmental and social diligence.",
+  },
+  equatorPrinciples: {
+    question: "What are the Equator Principles?",
+    answer:
+      "A risk-management framework adopted by financial institutions for assessing and managing environmental and social risk in project-related financing. Equator-aligned lenders expect projects to be assessed against the IFC Performance Standards — which is why diligence is built on them.",
+  },
+  desktopVsSiteEsdd: {
+    question: "What is the difference between a Desktop ESDD and a Site-Based ESDD?",
+    answer:
+      "A Desktop ESDD reviews the data room, permits and public record remotely — fast, and often enough for a red-flag screen. A Site-Based ESDD adds field verification: site visits, interviews and sampling where the risk or the lender requires eyes on the asset. Scope follows the deal, escalating only where the evidence demands it.",
+  },
+  ifcImplementation: {
+    question:
+      "Is IFC Performance Standards work limited to assessment, or does it extend to implementation?",
+    answer:
+      "Both. Beyond diligence, IFC Performance Standards implementation advisory builds the environmental and social management system (HSESMS), the E&S action plan (ESAP) and the monitoring a borrower needs to meet lender conditions through the life of the asset.",
+  },
+  whatIsScope3: {
+    question: "What is Scope 3, and why is it the hard part?",
+    answer:
+      "Scope 3 is value-chain emissions — purchased and capital goods, transport, waste, business travel, use of sold products and end-of-life, spread across fifteen categories. It is where most of an organisation's footprint sits, and where most inventories stop.",
+  },
   whatIsBrsr: {
     question: "What is BRSR?",
     answer:
@@ -111,8 +146,19 @@ export const FAQ: Record<string, FaqEntry> = {
   },
 };
 
-/** All six confirmed facts (Home carries the full topic set). */
+/**
+ * The full topic set (Home). Core practice leads — environmental & social risk,
+ * IFC PS, Equator, ESDD, Scope 3 — then India's BRSR line. This array is the
+ * FAQPage JSON-LD every answer engine ingests for the site, so its order is the
+ * positioning, not a cosmetic choice.
+ */
 export const FAQ_ALL: FaqEntry[] = [
+  FAQ.whatIsEsdd,
+  FAQ.ifcPerformanceStandards,
+  FAQ.equatorPrinciples,
+  FAQ.desktopVsSiteEsdd,
+  FAQ.ifcImplementation,
+  FAQ.whatIsScope3,
   FAQ.whatIsBrsr,
   FAQ.whatIsBrsrCore,
   FAQ.whoNeedsAssurance,

@@ -146,8 +146,8 @@ export const SOLUTION_BODY = String.raw`<div class="rails"><i></i></div>
     <h2 class="reveal">Bring us your deadline.</h2>
     <p class="reveal">Tell us your band and where your data sits. A specialist scopes a proposal — a real person, not a form receipt.</p>
     <div class="hero-cta reveal">
-      <a class="btn btn-gold" href="#"><span>Request a Proposal</span><span class="arw">→</span></a>
-      <a class="btn btn-ghost" href="#"><span>Check your BRSR readiness</span></a>
+      <a class="btn btn-gold" href="/start"><span>Request a Proposal</span><span class="arw">→</span></a>
+      <a class="btn btn-ghost" href="/learn/brsr-readiness"><span>Check your BRSR readiness</span></a>
     </div>
   </div>
 </section>
