@@ -88,9 +88,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   // No title template — seo-aeo-spec titles already carry the "| Teravora" suffix,
   // and each page sets an absolute title via buildMetadata.
-  title: "Teravora | Practical ESG & BRSR Assurance Readiness, India",
+  title: "Teravora | Environmental & Social Risk, ESG Due Diligence & Advisory, India",
   description:
-    "India-based ESG advisory. Turn your sustainability goals into measurable results.",
+    "India-based environmental and social risk practice — IFC Performance Standards & Equator Principles advisory, ESG due diligence (ESDD), carbon and climate, and training. BRSR assurance readiness included.",
 };
 
 export default function RootLayout({

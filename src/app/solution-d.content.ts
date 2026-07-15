@@ -17,9 +17,9 @@ export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
       <a class="btn btn-ghost" href="#scope"><span>See our method</span></a>
     </div>
     <div class="chips reveal">
-      <span class="chip"><b>IFC</b> Performance Standards</span>
+      <span class="chip"><b>IFC PS</b> implementation &amp; advisory</span>
       <span class="chip"><b>Equator</b> Principles</span>
-      <span class="chip"><b>ESDD → HSESDD</b> scoped to the deal</span>
+      <span class="chip"><b>Desktop &amp; Site-Based</b> ESDD</span>
       <span class="chip on"><b>Deal-timeline</b> delivery</span>
     </div>
   </div></div>
@@ -48,12 +48,12 @@ export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="sec-head reveal">
       <span class="mono eyebrow">What this is · what you get</span>
       <h2>From data room to a findings report both sides of the table can use.</h2>
-      <p>We scope the diligence to the transaction — red-flag review to full ESDD or HSESDD <i>(adding health and safety)</i> — and hand over an action plan the asset can actually run.</p>
+      <p>We scope the diligence to the transaction — from a <b>Desktop ESDD</b> <i>(document and data-room review)</i> to a <b>Site-Based ESDD</b> with field verification, escalating to HSESDD <i>(adding health and safety)</i> where the evidence demands it — and hand over an action plan the asset can actually run.</p>
     </div>
     <div class="trace reveal" aria-hidden="true"><span class="tline"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tpulse"></span></div>
     <div class="steps4">
       <div class="s4 reveal"><div class="n">01 · SCREEN</div><h4>Scope to the risk</h4><p>Transaction screened and categorised against the IFC Performance Standards — so the diligence fits the deal, not a template.</p></div>
-      <div class="s4 reveal"><div class="n">02 · DILIGENCE</div><h4>Test on the ground</h4><p>Site visits, document review and interviews — every finding evidenced, mapped to the standard it offends, and rated.</p></div>
+      <div class="s4 reveal"><div class="n">02 · DILIGENCE</div><h4>Desktop, then on-site</h4><p>A Desktop ESDD screens the data room and public record; a Site-Based ESDD verifies it in the field — every finding evidenced, mapped to the standard it offends, and rated.</p></div>
       <div class="s4 reveal"><div class="n">03 · REPORT</div><h4>Report for decisions</h4><p>Findings written for a deal team and a credit committee: what it is, what it costs to fix, what it means for terms.</p></div>
       <div class="s4 reveal"><div class="n">04 · MANAGE</div><h4>Close the actions</h4><p>An E&amp;S action plan and management system (HSESMS) so conditions get closed on schedule — for the life of the asset.</p></div>
     </div>
@@ -118,7 +118,7 @@ export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="personas">
       <div class="pc2 reveal"><div class="ic">◆</div><h4>Investors &amp; PE/VC</h4><p>Entry diligence, portfolio obligations and exit readiness — findings that hold up in the deal and to your LPs.</p><span class="lk">Request a Proposal →</span></div>
       <div class="pc2 reveal"><div class="ic">₹</div><h4>Lenders &amp; project finance</h4><p>Equator-aligned screening and IFC PS assessment for credit decisions — written for a credit committee.</p><span class="lk">Request a Proposal →</span></div>
-      <div class="pc2 reveal"><div class="ic">⬡</div><h4>Project sponsors</h4><p>Facing lender E&amp;S conditions on a live project. We build the action plan and the management system that closes them.</p><span class="lk">Request a Proposal →</span></div>
+      <div class="pc2 reveal"><div class="ic">⬡</div><h4>Sponsors &amp; borrowers</h4><p>Implementing the IFC Performance Standards on a live project — we build the E&amp;S management system (HSESMS), the action plan (ESAP) and the monitoring that satisfies lender conditions, for the life of the asset.</p><span class="lk">Request a Proposal →</span></div>
     </div>
   </div>
 </section>
@@ -141,6 +141,8 @@ export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="qa"><button>What is ESDD, and how is it different from an EIA? <span class="pl">+</span></button><div class="a">An EIA <i>(environmental impact assessment)</i> assesses a proposed project's future impacts, usually for a consent. ESDD assesses an <i>existing</i> business or asset's environmental and social risks and liabilities — typically for a transaction or financing decision.</div></div>
       <div class="qa"><button>What are the IFC Performance Standards? <span class="pl">+</span></button><div class="a">Eight standards from the International Finance Corporation covering risk management, labour, resource efficiency and pollution, community health and safety, land and resettlement, biodiversity, indigenous peoples, and cultural heritage. They are the de-facto benchmark lenders and investors apply to E&amp;S diligence.</div></div>
       <div class="qa"><button>What are the Equator Principles? <span class="pl">+</span></button><div class="a">A risk-management framework adopted by financial institutions for assessing and managing environmental and social risk in project-related financing. Equator-aligned lenders expect projects to be assessed against the IFC Performance Standards — which is why diligence is built on them.</div></div>
+      <div class="qa"><button>Desktop ESDD or Site-Based ESDD — which do we need? <span class="pl">+</span></button><div class="a">A <b>Desktop ESDD</b> reviews the data room, permits and public record remotely — fast, and often enough for a red-flag screen. A <b>Site-Based ESDD</b> adds field verification: site visits, interviews and sampling where the risk or the lender requires eyes on the asset. We scope to the deal and escalate only where the evidence demands it.</div></div>
+      <div class="qa"><button>Do you only assess against the IFC PS, or help implement them? <span class="pl">+</span></button><div class="a">Both. Beyond diligence, we provide IFC Performance Standards implementation advisory — building the E&amp;S management system (HSESMS), the E&amp;S action plan (ESAP) and the monitoring a borrower needs to meet lender conditions through the life of the asset.</div></div>
       <div class="qa"><button>Can you work inside our deal window? <span class="pl">+</span></button><div class="a">The diligence is scoped to the transaction — a red-flag review where speed governs, escalating to full ESDD or HSESDD only where the evidence demands it. Findings are reported for decisions, not for shelf documentation.</div></div>
     </div>
   </div>

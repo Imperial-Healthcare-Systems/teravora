@@ -11,7 +11,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap"><div class="hero-in">
     <span class="eyebrow reveal">Turn your sustainability goals into measurable results.</span>
     <h1 id="headline"><span class="hl-line">Practical ESG.</span><br><span class="l2 hl-line">Measurable Impact.</span></h1>
-    <p class="hero-sub reveal">ESG reporting in India is now a deadline, not a choice. Teravora takes you from scattered data to a filed, defensible disclosure — with the method shown at every step, so it holds up when your assurer asks how you got there.</p>
+    <p class="hero-sub reveal">Teravora is an environmental and social risk practice — IFC Performance Standards and Equator Principles advisory, ESG due diligence (desktop and site-based), Scope 1–3 carbon, and hands-on training. Evidence-led, with the method shown at every step — including India's BRSR assurance readiness when a deadline is what you're facing.</p>
     <div class="hero-cta reveal"><a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a><a class="btn btn-ghost" href="#start">Find your starting point</a></div>
     <div class="hero-note reveal"><b>ESG</b> Environmental, Social &amp; Governance.</div>
   </div></div>
@@ -21,11 +21,11 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 
 <section class="sec why" id="why">
   <div class="wrap">
-    <div class="sec-label reveal"><span>SEC-02 // BUYER TRIGGER</span><span>SEBI-BRSR</span></div>
+    <div class="sec-label reveal"><span>SEC-02 // WHAT'S DRIVING THIS</span><span>RISK · CAPITAL · DISCLOSURE</span></div>
     <div class="why-grid">
       <div class="reveal">
-        <h2>The rules moved. Your reporting has to move with them.</h2>
-        <p>India's largest listed companies now face <b style="color:var(--paper)">reasonable assurance</b> — an independent auditor's sign-off. Most teams have the data. What they lack is a method that turns it into a disclosure an auditor will pass.</p>
+        <h2>The pressure isn't only a filing. It's your capital, your deals and your licence to operate.</h2>
+        <p>Lenders and DFIs test projects against the <b style="color:var(--paper)">IFC Performance Standards</b> and the <b style="color:var(--paper)">Equator Principles</b>. Buyers and investors ask for defensible ESG data. And India's listed companies now face reasonable assurance on BRSR-Core. Different triggers, one demand: numbers that hold up when someone independent checks them.</p>
         <div class="inline-cta"><a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a><a class="lk" href="#method">See the method ↓</a></div>
         <div class="statlist">
           <div class="statrow"><span class="n" data-to="500">0</span><span class="d">Top listed companies, first assurance band<span class="s">FY 2025–26</span></span></div>
@@ -44,9 +44,9 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 <section class="sec ig" id="infographic">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="mono eyebrow">BRSR-Core at a glance</span>
+      <span class="mono eyebrow">When BRSR is on your desk</span>
       <h2>The assured subset, made legible.</h2>
-      <p>BRSR-Core is the part of your disclosure that faces reasonable assurance. Grouped by Environmental, Social and Governance — hover any segment.</p>
+      <p>One of the things we do: India's SEBI BRSR-Core — the part of your disclosure that faces reasonable assurance. Grouped by Environmental, Social and Governance — hover any segment.</p>
     </div>
   </div>
   <div class="ig-stage">
@@ -131,7 +131,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
       <div class="proof-pts">
         <div class="ppt" data-row="0"><div class="i">01</div><div><h4>Decades of experience.<span class="st">EXPERIENCE</span></h4><p>25+ years of ESG and sustainability advisory through our parent practice, Teravue — across manufacturing, energy, infrastructure and financial services.</p></div></div>
-        <div class="ppt" data-row="1"><div class="i">02</div><div><h4>Standards you recognise.<span class="st">EXPERTISE</span></h4><p>Our advisory aligns with the frameworks that govern Indian ESG — BRSR, GRI, SASB and TCFD — adapted to your business realities.</p></div></div>
+        <div class="ppt" data-row="1"><div class="i">02</div><div><h4>Standards you recognise.<span class="st">EXPERTISE</span></h4><p>Our advisory aligns with the frameworks that govern environmental and social risk — the IFC Performance Standards, the Equator Principles, the GHG Protocol and IFRS S1/S2, alongside India's BRSR — adapted to your business realities.</p></div></div>
         <div class="ppt" data-row="2"><div class="i">03</div><div><h4>Outcomes you can act on.<span class="st">EXECUTION</span></h4><p>ISO-certified, IMS-compliant delivery focused on practical, data-backed progress your leadership can measure.</p></div></div>
         <a class="btn btn-gold proof-cta" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
       </div>
@@ -164,6 +164,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
           </div>
           <div class="mf-note">The SEBI BRSR-Core specification — the standard we work to, not a client claim.</div>
           <div class="mf-std">
+            <span class="std" data-t="IFC Performance Standards — environmental and social risk"><span class="sp">E&amp;S</span><span class="sc">IFC PS</span></span>
+            <span class="std" data-t="Equator Principles — project-finance risk framework"><span class="sp">FINANCE</span><span class="sc">EQUATOR</span></span>
             <span class="std" data-t="Business Responsibility & Sustainability Report"><span class="sp">STD</span><span class="sc">BRSR</span></span>
             <span class="std" data-t="SEBI-assured subset — 49 KPIs / 9 attributes"><span class="sp">CORE</span><span class="sc">BRSR-CORE</span></span>
             <span class="std" data-t="Global Reporting Initiative"><span class="sp">STD</span><span class="sc">GRI</span></span>
@@ -181,35 +183,32 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <span class="mono eyebrow reveal" style="display:block;margin-bottom:22px">Leadership</span>
     <div class="fdr-grid">
-      <figure class="fdr-fig reveal">
-        <img src="/v/about/founder-brijesh.webp" alt="Brijesh Dhruve, Founder &amp; Designated Partner of Teravora Consulting India LLP">
-        <figcaption><span>◇ BRIJESH DHRUVE</span><span>FOUNDER &amp; DESIGNATED PARTNER</span></figcaption>
-      </figure>
       <div class="fdr-bio reveal">
-        <h2>Brijesh Dhruve</h2>
-        <div class="fdr-creds">CEnv · CEng · CFA-ESG · GARP SCR</div>
+        <h2>Brijesh D.</h2>
+        <div class="fdr-creds">CEnv · CEng · CFA-Sustainable Investing · CFA-ESG · GARP-SCR · CEM · CEA · PMP</div>
         <div class="fdr-title">Founder &amp; Designated Partner, Teravora Consulting India LLP</div>
-        <p>Brijesh Dhruve leads Teravora with a single focus: helping India's largest listed companies — and their supply chains — turn the mandatory SEBI BRSR-Core disclosure into a defensible, audit-ready asset. He brings more than 25 years of global experience across corporate ESG governance, climate strategy and industrial decarbonisation in the GCC and India.</p>
-        <div class="inline-cta"><a class="btn btn-gold" href="#cta"><span>Discuss your filing deadline with us</span><span class="arw">→</span></a><a class="lk" href="/about#founder">FULL PROFILE →</a></div>
+        <p>Brijesh D. leads Teravora as a practitioner in environmental and social risk — <b style="color:var(--paper)">IFC Performance Standards implementation, Equator Principles advisory and ESG due diligence (Desktop and Site-Based ESDD)</b> for lenders, investors and the companies they finance, plus tailor-made training on environment, ESG, climate change and sustainability. More than 25 years across ESG governance, climate strategy and industrial decarbonisation in the GCC and India — including Scope 3 across all fifteen categories for an energy company.</p>
+        <div class="inline-cta"><a class="btn btn-gold" href="#cta"><span>Discuss your mandate with us</span><span class="arw">→</span></a><a class="lk" href="/about#founder">FULL PROFILE →</a></div>
       </div>
     </div>
     <ul class="fdr-badges" role="list">
       <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></span><span class="lx">Contributor — ISO/IWA 48:2024 ESG Framework</span></li>
       <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19C6 11 11 5 19 5c0 8-5 14-13 14Z"/><path d="M6 19c3-6 6-9 10-11"/></svg></span><span class="lx">Chartered Environmentalist (CEnv) &amp; Chartered Chemical Engineer (CEng)</span></li>
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7.5 14.5l3.5-4.5 3 2.5 4.5-6"/></svg></span><span class="lx">CFA in ESG Investing &amp; GARP Sustainability and Climate Risk (SCR)</span></li>
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5a7.5 7.5 0 0 1 15 0"/><path d="M12 16.5l3.5-4.5"/><path d="M12 9.5V8"/><path d="M7 11.5l-1-1"/><path d="M17 11.5l1-1"/></svg></span><span class="lx">Certified Energy Manager (CEM · AEE, USA), Certified Energy Auditor (CEA · BEE, India) &amp; ISO 14064 Carbon Accounting Professional</span></li>
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7.5 14.5l3.5-4.5 3 2.5 4.5-6"/></svg></span><span class="lx">CFA — Certificate in Sustainable Investing &amp; Certificate in ESG Investing</span></li>
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6Z"/><path d="M9 11.5l2 2 4-4"/></svg></span><span class="lx">GARP Sustainability &amp; Climate Risk (SCR) &amp; Project Management Professional (PMP)</span></li>
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5a7.5 7.5 0 0 1 15 0"/><path d="M12 16.5l3.5-4.5"/><path d="M12 9.5V8"/><path d="M7 11.5l-1-1"/><path d="M17 11.5l1-1"/></svg></span><span class="lx">Certified Energy Manager (CEM · AEE, USA) &amp; Certified Energy Auditor (CEA · BEE, India)</span></li>
     </ul>
   </div>
 </section>
 
-<section class="sec tri" id="real-economy" aria-label="The real economy behind the disclosure">
+<section class="sec tri" id="real-economy" aria-label="The Scope 1–3 emissions story">
   <div class="wrap">
-    <div class="sec-label reveal"><span>SEC-06 // ON THE GROUND</span><span>WHY IT MATTERS</span></div>
-    <div class="tri-head reveal"><h2>A disclosure is only as strong as what it points to.</h2><p>Behind BRSR-Core is the real economy — the assets, resources and people your numbers actually describe.</p></div>
+    <div class="sec-label reveal"><span>SEC-06 // THE CARBON STORY</span><span>SCOPE 1 · 2 · 3</span></div>
+    <div class="tri-head reveal"><h2>Most of your footprint lives in the supply chain.</h2><p>Scope 1 and 2 are the easy part. The weight sits in Scope 3 — the value chain — and that is where the work gets real. We have taken it the whole way: <b style="color:var(--paper)">Scope 3 across all fifteen categories for an energy company</b>.</p></div>
     <div class="tri-grid">
-      <figure class="tri-card reveal" style="--img:url('/v/home/tri-climate.webp')"><div class="tri-ph"></div><figcaption><span class="tk">CARBON &amp; CLIMATE</span><span class="tl">Energy and emissions — the Scope 1–3 story your footprint has to tell.</span></figcaption></figure>
-      <figure class="tri-card reveal" style="--img:url('/v/home/tri-built.webp')"><div class="tri-ph"></div><figcaption><span class="tk">BUILT ENVIRONMENT</span><span class="tl">Resource use and green assets across the operations you report on.</span></figcaption></figure>
-      <figure class="tri-card reveal" style="--img:url('/v/home/tri-land.webp')"><div class="tri-ph"></div><figcaption><span class="tk">LAND &amp; COMMUNITIES</span><span class="tl">Water, waste and the people your value chain reaches, end to end.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/home/tri-climate.webp')"><div class="tri-ph"></div><figcaption><span class="tk">SCOPE 1 · DIRECT</span><span class="tl">Fuel combustion, process emissions and company assets — the footprint you own and control.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/home/tri-built.webp')"><div class="tri-ph"></div><figcaption><span class="tk">SCOPE 2 · ENERGY</span><span class="tl">Purchased electricity, steam and cooling — the emissions embedded in the energy you buy.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/home/ab9f79581.webp')"><div class="tri-ph"></div><figcaption><span class="tk">SCOPE 3 · ALL 15 CATEGORIES</span><span class="tl">Purchased goods, transport, waste, business travel, use and end-of-life — the whole value chain, end to end.</span></figcaption></figure>
     </div>
   </div>
 </section>

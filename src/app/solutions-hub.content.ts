@@ -29,14 +29,19 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
       <p>Deadline, deal, audit, buyer questionnaire or board question — each service is a different entry into the same practice.</p>
     </div>
     <div class="hubgrid">
-      <a class="hubcard reveal" href="/solutions/esg-disclosure-assurance-readiness">
-        <div class="hk">COMPLY · ASSURE</div><h3>BRSR &amp; Assurance Readiness</h3>
-        <p>From scattered data to a filed BRSR built to survive reasonable assurance — audit trail included.</p>
+      <a class="hubcard reveal" href="/solutions/environmental-social-due-diligence">
+        <div class="hk">DE-RISK · TRANSACT</div><h3>Environmental &amp; Social Due Diligence</h3>
+        <p>IFC Performance Standards &amp; Equator Principles advisory and ESG due diligence — Desktop and Site-Based ESDD a deal team and a lender can both rely on.</p>
+        <span class="ha">Explore →</span>
+      </a>
+      <a class="hubcard reveal" href="/solutions/capacity-building-esg-training">
+        <div class="hk">TEACH · EMBED</div><h3>Capacity Building &amp; Training</h3>
+        <p>Tailor-made corporate and on-field training on environment, ESG, climate change and sustainability — so the capability outlives the engagement.</p>
         <span class="ha">Explore →</span>
       </a>
       <a class="hubcard reveal" href="/solutions/carbon-climate">
         <div class="hk">MEASURE · DECARBONISE</div><h3>Carbon &amp; Climate</h3>
-        <p>A defensible Scope 1–3 footprint, a board-approvable reduction pathway, and TCFD / IFRS S2 disclosure.</p>
+        <p>A defensible Scope 1–3 footprint — including Scope 3 across all fifteen categories — a board-approvable pathway, and TCFD / IFRS S2 disclosure.</p>
         <span class="ha">Explore →</span>
       </a>
       <a class="hubcard reveal" href="/solutions/esg-climate-strategy-advisory">
@@ -54,14 +59,9 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
         <p>Green capital, ESG ratings and carbon-market entry — on evidence built to survive diligence.</p>
         <span class="ha">Explore →</span>
       </a>
-      <a class="hubcard reveal" href="/solutions/environmental-social-due-diligence">
-        <div class="hk">DE-RISK · TRANSACT</div><h3>Environmental &amp; Social Due Diligence</h3>
-        <p>IFC / Equator-aligned ESDD on a deal timeline — findings a deal team and a lender can both rely on.</p>
-        <span class="ha">Explore →</span>
-      </a>
-      <a class="hubcard reveal" href="/solutions/capacity-building-esg-training">
-        <div class="hk">TEACH · EMBED</div><h3>Capacity Building &amp; Training</h3>
-        <p>Practitioner training on your own data and filings — so the capability outlives the engagement.</p>
+      <a class="hubcard reveal" href="/solutions/esg-disclosure-assurance-readiness">
+        <div class="hk">COMPLY · ASSURE</div><h3>BRSR &amp; Assurance Readiness</h3>
+        <p>From scattered data to a filed BRSR built to survive reasonable assurance — audit trail included.</p>
         <span class="ha">Explore →</span>
       </a>
       <div class="hubcard ghost reveal" aria-hidden="true">

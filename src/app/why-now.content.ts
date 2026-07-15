@@ -19,15 +19,16 @@ export const WHYNOW_BODY = String.raw`
         <span class="l2"><span class="word">The</span> <span class="word">advantage</span> <span class="word">is</span> <span class="word">still</span> <span class="word">open.</span></span>
       </h1>
       <p class="wn-lede">
-        BRSR-Core assurance, CSRD reaching into Indian supply chains, lenders
-        pricing climate risk into capital &mdash; the requirements are arriving on
-        a <b>fixed schedule</b>. The companies that build a defensible disclosure
+        Lenders and DFIs pricing E&amp;S risk into capital, IFC &amp; Equator
+        conditions on every deal, CSRD reaching into Indian supply chains, and
+        BRSR-Core assurance at home &mdash; the requirements are arriving on a
+        <b>fixed schedule</b>. The companies that build defensible evidence
         <b>before</b> the deadline set their own terms. The ones that wait inherit
         someone else&rsquo;s.
       </p>
       <div class="wn-cta">
         <a class="btn btn-gold" href="/start"><span>Request a Proposal</span> <span class="arw">&rarr;</span></a>
-        <a class="btn btn-ghost" href="/solutions/esg-disclosure-assurance-readiness">See the readiness path</a>
+        <a class="btn btn-ghost" href="/solutions">See what we do</a>
       </div>
     </div>
   </div>

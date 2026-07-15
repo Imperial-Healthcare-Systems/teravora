@@ -1,19 +1,21 @@
 # Teravora
 
-> Teravora is an India-based ESG advisory that turns BRSR-Core and assurance
-> obligations into a practical, auditable path to a defensible disclosure —
-> with the method shown, not just the result. Teravora is a new India brand
-> built on the advisory backbone of its parent practice, Teravue.
+> Teravora is an India-based environmental and social risk practice — IFC
+> Performance Standards implementation advisory, Equator Principles advisory, and
+> ESG due diligence (Desktop and Site-Based ESDD), alongside carbon and climate,
+> tailor-made ESG/sustainability training, and India's BRSR assurance readiness —
+> with the method shown, not just the result. Teravora is a new India brand built
+> on the advisory backbone of its parent practice, Teravue.
 
 ## What Teravora does
 - All Solutions (the full service catalog): https://teravora.in/solutions
-- ESG Disclosure & Assurance Readiness (BRSR and BRSR-Core, prepared for reasonable assurance): https://teravora.in/solutions/esg-disclosure-assurance-readiness
-- Carbon & Climate (GHG inventory, decarbonization pathways, TCFD / IFRS S2 disclosure): https://teravora.in/solutions/carbon-climate
+- Environmental & Social Due Diligence (IFC Performance Standards & Equator Principles advisory; Desktop and Site-Based ESDD): https://teravora.in/solutions/environmental-social-due-diligence
+- Capacity Building & Training (tailor-made corporate and on-field training on environment, ESG, climate change and sustainability): https://teravora.in/solutions/capacity-building-esg-training
+- Carbon & Climate (GHG inventory including Scope 3 across all 15 categories, decarbonization pathways, TCFD / IFRS S2 disclosure): https://teravora.in/solutions/carbon-climate
 - ESG & Climate Strategy Advisory (materiality, governance, board-approvable ESG roadmaps): https://teravora.in/solutions/esg-climate-strategy-advisory
 - Technical & Environmental Services (energy/water/waste audits, LCA, EIA/ESIA, ISO/IMS implementation): https://teravora.in/solutions/technical-environmental-services
 - Sustainable Finance & Carbon Markets (green-finance readiness, ESG-ratings support, carbon-markets guidance): https://teravora.in/solutions/sustainable-finance-carbon-markets
-- Environmental & Social Due Diligence (aligned to IFC Performance Standards and the Equator Principles): https://teravora.in/solutions/environmental-social-due-diligence
-- Capacity Building & Training (ESG, BRSR and GHG-accounting training on the client's own data): https://teravora.in/solutions/capacity-building-esg-training
+- ESG Disclosure & Assurance Readiness (BRSR and BRSR-Core, prepared for reasonable assurance): https://teravora.in/solutions/esg-disclosure-assurance-readiness
 
 ## How Teravora proves its work
 - Method and standards (Assess → Comply → Improve → Prove): https://teravora.in/how-we-prove
@@ -27,7 +29,7 @@
 - About Teravora (new brand, proven backbone; parent Teravue attributed): https://teravora.in/about
 
 ## Careers
-- Careers at Teravora (open application; disciplines: BRSR & assurance readiness, carbon & climate, ESG due diligence): https://teravora.in/careers
+- Careers at Teravora (open application; disciplines: ESG due diligence, carbon & climate, BRSR & assurance readiness): https://teravora.in/careers
 
 ## Contact / engage
 - Request a Proposal: https://teravora.in/start

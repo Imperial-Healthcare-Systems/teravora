@@ -114,7 +114,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           </div>
           <div class="tc-panel" data-i="3">
             <h4>It stands up.</h4>
-            <p>The figure and its full trail survive independent, auditor-grade testing to the assurance bar &mdash; BRSR-Core reasonable assurance. Now it&rsquo;s a defensible disclosure, not an assertion.</p>
+            <p>The figure and its full trail survive independent, auditor-grade testing to the highest bar &mdash; whether that is a lender&rsquo;s IFC / Equator E&amp;S review or BRSR-Core reasonable assurance. Now it&rsquo;s defensible evidence, not an assertion.</p>
             <div class="tc-doc on"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>Assurance file &middot; reasonable assurance</div>
           </div>
         </div>

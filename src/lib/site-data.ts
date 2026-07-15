@@ -35,13 +35,19 @@ export const NAV_ITEMS: NavItem[] = [
   {
     label: "Solutions",
     kind: "page",
-    // Full catalog (client-directed completion, 2026-07-14); conversion-ranked
-    // order (research@v0 §4) with the catalog index first.
+    // Full catalog; core-first order (client repositioning, 2026-07-15): the
+    // environmental & social risk practice leads — ESDD/IFC/Equator and training
+    // first — with BRSR retained as the India-disclosure line, not the headline.
     children: [
       { label: "All Solutions", href: ROUTES.solutions, kind: "page" },
       {
-        label: "BRSR & Assurance Readiness",
-        href: ROUTES.solutionA,
+        label: "Environmental & Social Due Diligence",
+        href: ROUTES.solutionD,
+        kind: "service",
+      },
+      {
+        label: "Capacity Building & Training",
+        href: ROUTES.solutionTraining,
         kind: "service",
       },
       { label: "Carbon & Climate", href: ROUTES.solutionB, kind: "service" },
@@ -61,13 +67,8 @@ export const NAV_ITEMS: NavItem[] = [
         kind: "service",
       },
       {
-        label: "Environmental & Social Due Diligence",
-        href: ROUTES.solutionD,
-        kind: "service",
-      },
-      {
-        label: "Capacity Building & Training",
-        href: ROUTES.solutionTraining,
+        label: "BRSR & Assurance Readiness",
+        href: ROUTES.solutionA,
         kind: "service",
       },
     ],

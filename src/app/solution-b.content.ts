@@ -61,6 +61,20 @@ export const SOLUTION_B_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
+<section class="sec" id="scope3">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="mono eyebrow" style="color:var(--gold-l)">Signature capability · Scope 3</span>
+      <h2>The hard part is the value chain. We have done all fifteen categories.</h2>
+      <p>Scope 3 is where most of the footprint hides — and where most inventories stop. We have calculated Scope 3 across <b style="color:var(--paper)">all fifteen categories — the full supply-chain footprint — for an energy company</b>: purchased and capital goods, transport, waste, business travel, use of sold products and end-of-life, each traced to activity data.</p>
+    </div>
+    <figure class="reveal" style="margin:0">
+      <img src="/v/home/ae4e4fefc.webp" alt="Carbon accounting architecture — Scope 1 direct, Scope 2 purchased energy and Scope 3 value-chain emissions reconciled into an audit-ready ledger" style="width:100%;height:auto;display:block;border:1px solid rgba(196,145,47,.22);border-radius:14px" loading="lazy">
+      <figcaption style="margin-top:12px;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;color:rgba(255,255,255,.5)">◇ SCOPE 1 · 2 · 3 — DIRECT, ENERGY AND THE FULL VALUE CHAIN. ILLUSTRATIVE ARCHITECTURE, NOT A CLIENT RESULT.</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section class="sec" id="proof">
   <div class="wrap">
     <div class="sec-head reveal" style="max-width:none;margin-bottom:34px">

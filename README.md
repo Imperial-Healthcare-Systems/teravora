@@ -1,8 +1,10 @@
 # Teravora
 
-Marketing and lead-generation site for **Teravora** — an India-based ESG advisory
-specialising in SEBI **BRSR / BRSR-Core** assurance readiness, carbon & climate, and
-environmental & social due diligence.
+Marketing and lead-generation site for **Teravora** — an India-based **environmental
+and social risk** practice: **IFC Performance Standards** implementation advisory,
+**Equator Principles** advisory, and **ESG due diligence** (Desktop and Site-Based
+ESDD), alongside carbon & climate, tailor-made ESG/sustainability training, and SEBI
+**BRSR / BRSR-Core** assurance readiness.
 
 The site's job is to prove what Teravora does and remove friction along the path to a
 single primary conversion: **request a proposal**. It pairs a dark, cinematic marketing

@@ -15,13 +15,13 @@ export type FieldOption = { value: string; label: string };
 
 // Step 1 — triggers map to research triggers, not services.
 export const TRIGGER_OPTIONS: FieldOption[] = [
-  { value: "brsr_deadline", label: "BRSR/assurance deadline in our band" },
+  { value: "deal_dd", label: "A live deal or project needs ESG due diligence" },
   {
     value: "customer_lender_request",
-    label: "A customer or lender asked us for ESG data",
+    label: "A lender, DFI or investor asked us for E&S / ESG data",
   },
-  { value: "deal_dd", label: "A live deal or investment needs due diligence" },
   { value: "emissions", label: "We want to measure or cut our emissions" },
+  { value: "brsr_deadline", label: "BRSR/assurance deadline in our band" },
   {
     value: "not_sure",
     label: "Not sure yet — help me work out what applies",

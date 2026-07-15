@@ -7,8 +7,8 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">ESG Capacity Building</span>
-    <h1><span class="hl-line">Build the ESG capability your filings depend on.</span></h1>
-    <p class="lede reveal">Practitioner-led training that turns the same method we use in assurance work into your team's capability &mdash; <span class="g">framework-fluent, evidence-first</span>, and built for how disclosure actually works in India.</p>
+    <h1><span class="hl-line">Build real ESG, climate and sustainability capability in your team.</span></h1>
+    <p class="lede reveal">Tailor-made, practitioner-led training on environment, ESG, climate change and sustainability &mdash; corporate and on-field &mdash; that turns the method we use in live advisory into your team's capability: <span class="g">framework-fluent, evidence-first</span>.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#programs"><span>Explore programs</span><span class="arw">&rarr;</span></a>
       <a class="btn btn-ghost" href="#formats"><span>See formats</span></a>
@@ -16,7 +16,7 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="chips reveal">
       <span class="chip"><b>Practitioner-led</b> not academic</span>
       <span class="chip"><b>Online + on-site</b></span>
-      <span class="chip"><b>BRSR-first</b> India context</span>
+      <span class="chip"><b>IFC · Equator · BRSR</b> standards</span>
       <span class="chip on"><b>In-house cohorts</b></span>
     </div>
   </div></div>
@@ -33,7 +33,7 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="vgrid">
       <div class="vcard reveal"><div class="k">01 &middot; PRACTITIONER-LED</div><h4>From the field, not the textbook.</h4><p>Every module is drawn from live advisory work &mdash; the same gap maps, controls and evidence trails an assurer will follow.</p></div>
       <div class="vcard reveal"><div class="k">02 &middot; IMPLEMENTATION-FIRST</div><h4>You leave able to do it.</h4><p>Worked examples, real templates and your own data &mdash; training aimed at capability you can apply next reporting cycle, not a certificate on the wall.</p></div>
-      <div class="vcard reveal"><div class="k">03 &middot; BUILT FOR INDIA</div><h4>BRSR-first, framework-fluent.</h4><p>Grounded in BRSR / BRSR-Core and the standards that reach Indian companies &mdash; mapped to IFRS S1/S2, the GHG Protocol and the global frameworks they align to.</p></div>
+      <div class="vcard reveal"><div class="k">03 &middot; BUILT FOR INDIA</div><h4>Standard-fluent, India-ready.</h4><p>Grounded in the standards that reach Indian companies &mdash; the IFC Performance Standards, the Equator Principles, the GHG Protocol, IFRS S1/S2 and India's BRSR / BRSR-Core &mdash; taught on the frameworks your team is accountable to.</p></div>
     </div>
   </div>
 </section>

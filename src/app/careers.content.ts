@@ -38,7 +38,7 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="vcard reveal"><div class="k">THE WORK</div><h3>Built to be checked.</h3><p>Every number we produce carries its source, control and evidence path — built to survive reasonable assurance, the independent auditor-grade sign-off India's rules now demand. You learn to make work that holds up when it is tested, and that discipline stays with you for a career.</p></div>
       <div class="vcard reveal"><div class="k">THE STANDARDS</div><h3>Standards fluency, learned on live work.</h3><p>BRSR and BRSR-Core (the assured subset — 49 KPIs across 9 attributes), the GHG Protocol, IFRS S1/S2, IFC Performance Standards and the Equator Principles — practised on real engagements, not read about after the fact.</p></div>
       <div class="vcard reveal"><div class="k">THE STAGE</div><h3>Early enough to matter.</h3><p>Teravora is a new India practice on the backbone of our parent, Teravue. You get the scope and ownership of an early-stage team without starting from zero — the method, the standards fluency and the discipline are already in the building.</p></div>
-      <div class="vcard reveal"><div class="k">THE LEADERSHIP</div><h3>Reviewed by practitioners, not decks.</h3><p>The practice is led by its founder — a Chartered Environmentalist and Chartered Chemical Engineer with CFA-ESG and GARP SCR credentials and more than 25 years across ESG governance, climate strategy and decarbonisation. The people who review your work do the work.</p></div>
+      <div class="vcard reveal"><div class="k">THE LEADERSHIP</div><h3>Reviewed by practitioners, not decks.</h3><p>The practice is led by its founder — a Chartered Environmentalist and Chartered Chemical Engineer with CFA (Sustainable Investing &amp; ESG), GARP-SCR, CEM, CEA and PMP credentials and more than 25 years across ESG governance, climate strategy and decarbonisation. The people who review your work do the work.</p></div>
     </div>
   </div>
 </section>
@@ -52,9 +52,9 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
     </div>
     <div class="tracks">
       <div class="track reveal">
-        <div class="track-h"><div class="track-g">◇</div><div class="track-t"><h3>BRSR &amp; Assurance Readiness</h3><div class="track-for">DISCLOSURE · ASSURANCE</div></div></div>
-        <p class="track-p">Take listed companies from scattered data to a filed BRSR (Business Responsibility and Sustainability Report) that passes reasonable assurance: mapping data to the 49 BRSR-Core KPIs, closing gaps in plain language, and building the audit trail behind every number.</p>
-        <p class="track-fit"><b>Fits:</b> audit, assurance, sustainability-reporting or ESG-compliance backgrounds — people who read a standard for what it requires, not what it suggests.</p>
+        <div class="track-h"><div class="track-g">⬡</div><div class="track-t"><h3>ESG Due Diligence</h3><div class="track-for">TRANSACTIONS · IFC / EQUATOR</div></div></div>
+        <p class="track-p">Assess environmental and social risk on live deals against the IFC Performance Standards and the Equator Principles — Desktop and Site-Based ESDD — and report findings a deal team and a lender can both rely on, on a deal timeline, not an academic one.</p>
+        <p class="track-fit"><b>Fits:</b> due-diligence, EHS, project-finance or E&amp;S-risk backgrounds — precise under time pressure.</p>
       </div>
       <div class="track reveal">
         <div class="track-h"><div class="track-g">◆</div><div class="track-t"><h3>Carbon &amp; Climate</h3><div class="track-for">GHG · CLIMATE DISCLOSURE</div></div></div>
@@ -62,9 +62,9 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
         <p class="track-fit"><b>Fits:</b> energy, engineering, carbon-accounting or climate-analytics backgrounds — comfortable defending a calculation line by line.</p>
       </div>
       <div class="track reveal">
-        <div class="track-h"><div class="track-g">⬡</div><div class="track-t"><h3>ESG Due Diligence</h3><div class="track-for">TRANSACTIONS · IFC / EQUATOR</div></div></div>
-        <p class="track-p">Assess environmental and social risk on live deals against the IFC Performance Standards and the Equator Principles, and report findings a deal team and a lender can both rely on — on a deal timeline, not an academic one.</p>
-        <p class="track-fit"><b>Fits:</b> due-diligence, EHS, project-finance or E&amp;S-risk backgrounds — precise under time pressure.</p>
+        <div class="track-h"><div class="track-g">◇</div><div class="track-t"><h3>BRSR &amp; Assurance Readiness</h3><div class="track-for">DISCLOSURE · ASSURANCE</div></div></div>
+        <p class="track-p">Take listed companies from scattered data to a filed BRSR (Business Responsibility and Sustainability Report) that passes reasonable assurance: mapping data to the 49 BRSR-Core KPIs, closing gaps in plain language, and building the audit trail behind every number.</p>
+        <p class="track-fit"><b>Fits:</b> audit, assurance, sustainability-reporting or ESG-compliance backgrounds — people who read a standard for what it requires, not what it suggests.</p>
       </div>
     </div>
   </div>

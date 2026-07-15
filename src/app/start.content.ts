@@ -32,10 +32,10 @@ export const START_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="fstep" data-step="1">
           <div class="fld"><label>What's prompting this? <span class="req">required</span></label>
             <div class="opts" data-group="trigger">
-              <div class="opt" data-val="brsr">A BRSR / assurance deadline in our band</div>
-              <div class="opt" data-val="customer">A customer or lender asked us for ESG data</div>
-              <div class="opt" data-val="deal">A live deal or investment needs due diligence</div>
+              <div class="opt" data-val="deal">A live deal or project needs ESG due diligence</div>
+              <div class="opt" data-val="customer">A lender, DFI or investor asked us for E&amp;S / ESG data</div>
               <div class="opt" data-val="emissions">We want to measure or cut our emissions</div>
+              <div class="opt" data-val="brsr">A BRSR / assurance deadline in our band</div>
               <div class="opt" data-val="unsure">Not sure yet — help me work out what applies</div>
             </div>
           </div>

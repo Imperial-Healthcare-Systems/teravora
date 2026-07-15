@@ -8,7 +8,7 @@ import { SolutionView } from "./SolutionView";
 export const metadata: Metadata = buildMetadata({
   title: "ESG & Sustainability Consulting Solutions | Teravora",
   description:
-    "Teravora's full catalog: BRSR & assurance readiness, carbon & climate, ESG strategy, technical & environmental services, sustainable finance, ESDD and ESG training.",
+    "Teravora's full catalog: environmental & social due diligence (IFC & Equator), ESG training, carbon & climate, ESG strategy, technical & environmental services, sustainable finance, and BRSR assurance readiness.",
   path: ROUTES.solutions,
 });
 
@@ -16,13 +16,13 @@ export const metadata: Metadata = buildMetadata({
 // JSON-LD pointed at /solutions since MVP — this page makes the URL real and
 // gives the seven services one canonical index.
 const CATALOG: { name: string; path: string }[] = [
-  { name: "BRSR & Assurance Readiness", path: ROUTES.solutionA },
+  { name: "Environmental & Social Due Diligence", path: ROUTES.solutionD },
+  { name: "Capacity Building & Training", path: ROUTES.solutionTraining },
   { name: "Carbon & Climate", path: ROUTES.solutionB },
   { name: "ESG & Climate Strategy Advisory", path: ROUTES.solutionAdvisory },
   { name: "Technical & Environmental Services", path: ROUTES.solutionTechnical },
   { name: "Sustainable Finance & Carbon Markets", path: ROUTES.solutionFinance },
-  { name: "Environmental & Social Due Diligence", path: ROUTES.solutionD },
-  { name: "Capacity Building & Training", path: ROUTES.solutionTraining },
+  { name: "BRSR & Assurance Readiness", path: ROUTES.solutionA },
 ];
 
 export default function Solutions() {
