@@ -34,8 +34,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         </div>
       </div>
       <figure class="why-fig reveal">
-        <img src="/v/home/why-cascade.webp" alt="ESG compliance cascade — listed corporation down through Tier 1–5 suppliers and the value chain">
-        <figcaption class="fig-cap"><span>◇ ESG COMPLIANCE CASCADE</span><span>SEBI BRSR-CORE</span></figcaption>
+        <img src="/v/home/why-onsite.webp" alt="An engineer in a hard hat and hi-vis reviews live plant data on a laptop, overlooking a working refinery — ESG risk verified on the ground, not on paper">
+        <figcaption class="fig-cap"><span>◇ SITE-BASED ESG DUE DILIGENCE</span><span>REAL-ECONOMY DATA</span></figcaption>
       </figure>
     </div>
   </div>
@@ -183,10 +183,12 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <span class="mono eyebrow reveal" style="display:block;margin-bottom:22px">Leadership</span>
     <div class="fdr-grid">
-      <div class="fdr-bio reveal">
+      <div class="fdr-id reveal">
         <h2>Brijesh D.</h2>
         <div class="fdr-creds">CEnv · CEng · CFA-Sustainable Investing · CFA-ESG · GARP-SCR · CEM · CEA · PMP</div>
         <div class="fdr-title">Founder &amp; Designated Partner, Teravora Consulting India LLP</div>
+      </div>
+      <div class="fdr-bio reveal">
         <p>Brijesh D. leads Teravora as a practitioner in environmental and social risk — <b style="color:var(--paper)">IFC Performance Standards implementation, Equator Principles advisory and ESG due diligence (Desktop and Site-Based ESDD)</b> for lenders, investors and the companies they finance, plus tailor-made training on environment, ESG, climate change and sustainability. More than 25 years across ESG governance, climate strategy and industrial decarbonisation in the GCC and India — including Scope 3 across all fifteen categories for an energy company.</p>
         <div class="inline-cta"><a class="btn btn-gold" href="#cta"><span>Discuss your mandate with us</span><span class="arw">→</span></a><a class="lk" href="/about#founder">FULL PROFILE →</a></div>
       </div>
@@ -222,10 +224,10 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
       <figure class="pf-fig">
         <div class="pf-imgwrap">
-          <img src="/v/home/a6d4d21fb.webp" alt="Teravora India advisory network — specialist hubs across Delhi NCR, Mumbai, Bengaluru, Hyderabad, Chennai, Kolkata, Ahmedabad and Pune">
-          <div class="pf-live" aria-hidden="true"><span class="pf-pulse" style="left:28%;top:45%"></span><span class="pf-pulse" style="left:42.5%;top:15.5%;animation-delay:1.1s"></span><span class="pf-pulse" style="left:46%;top:48%;animation-delay:.6s"></span><span class="pf-pulse" style="left:41%;top:71%;animation-delay:1.7s"></span></div>
+          <img src="/v/home/method-review.webp" alt="A specialist reviews an ESG disclosure dashboard on a laptop — charts, KPIs and figures checked line by line before filing">
+          <div class="pf-live" aria-hidden="true"></div>
         </div>
-        <figcaption class="fig-cap"><span>◇ SPECIALIST ADVISORY NETWORK · INDIA</span><span>NATIONAL REACH</span></figcaption>
+        <figcaption class="fig-cap"><span>◇ ENGAGEMENT WALKTHROUGH</span><span>KICKOFF → FILED</span></figcaption>
       </figure>
     </div>
     <div class="pf-view reveal" data-view="process">

@@ -54,8 +54,8 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="egate">[ SPECIFIC PARENT OUTCOMES (25 YEARS · 100+ ESDD · DECARBONIZATION · CDM) APPEAR HERE ONLY WHEN CLEARED — EACH LABELLED “DELIVERED BY OUR PARENT, TERAVUE.” ]</div>
       </div>
       <figure class="bb-fig reveal">
-        <img src="/v/about/a9e69c971.webp" alt="Institutional advisory setting — the disciplined, board-level practice Teravora inherits from its parent, Teravue">
-        <figcaption>◇ INSTITUTIONAL DISCIPLINE · INHERITED, NOT BORROWED</figcaption>
+        <img src="/v/about/lineage-boardroom.webp" alt="A Teravora specialist walks a client team through the practice's multi-market track record across MENA and India — the methods and standards discipline inherited from parent practice Teravue">
+        <figcaption>◇ MULTI-MARKET TRACK RECORD · MENA + INDIA, INHERITED NOT BORROWED</figcaption>
       </figure>
     </div>
     <div class="lineage reveal" aria-hidden="true">
@@ -70,37 +70,27 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <span class="mono eyebrow reveal" style="display:block;margin-bottom:22px">Leadership</span>
     <div class="fdr-grid">
-      <div class="fdr-bio reveal">
+      <div class="fdr-id reveal">
         <h2>Brijesh D.</h2>
         <div class="fdr-creds">CEnv · CEng · CFA-Sustainable Investing · CFA-ESG · GARP-SCR · CEM · CEA · PMP</div>
         <div class="fdr-title">Founder &amp; Designated Partner, Teravora Consulting India LLP</div>
+      </div>
+      <div class="fdr-bio reveal">
         <p>Brijesh D. leads Teravora as a practitioner in environmental and social risk. His core work is <b style="color:var(--paper)">IFC Performance Standards implementation advisory, Equator Principles advisory, and ESG due diligence — both Desktop ESDD and Site-Based ESDD</b> — for lenders, DFIs, investors and the companies they finance. Alongside it he runs tailor-made corporate and on-field training on environment, ESG, climate change and sustainability. He brings more than 25 years across ESG governance, climate strategy and industrial decarbonisation in the GCC and India.</p>
         <p>He doesn't just apply global frameworks — he has helped shape them. Brijesh served as a Contributor to the ISO/IWA 48:2024 ESG framework and a Member of ICAO Working Group 5, and reviewed the UAE Climate Law and National Climate Registry — an inside view of the standards driving global and national sustainability mandates.</p>
         <p>His technical depth is hands-on: he has calculated Scope 3 emissions across all fifteen categories — the full supply-chain footprint — for an energy company, work few practitioners in India have taken end to end. Before founding Teravora, he built enterprise-wide climate functions as Group Manager at Emirates National Oil Company (ENOC) and drove ESG initiatives at ACC Limited (Holcim Group), Infosys and Cairn Energy. India's SEBI BRSR / BRSR-Core assurance readiness is part of what Teravora delivers — but it sits within a broader environmental and social risk practice, not at the centre of it.</p>
       </div>
+      <ul class="fdr-badges" role="list">
+        <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></span><span class="lx">Contributor — ISO/IWA 48:2024 ESG Framework</span></li>
+        <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19C6 11 11 5 19 5c0 8-5 14-13 14Z"/><path d="M6 19c3-6 6-9 10-11"/></svg></span><span class="lx">Chartered Environmentalist (CEnv) &amp; Chartered Chemical Engineer (CEng)</span></li>
+        <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7.5 14.5l3.5-4.5 3 2.5 4.5-6"/></svg></span><span class="lx">CFA — Certificate in Sustainable Investing &amp; Certificate in ESG Investing</span></li>
+        <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6Z"/><path d="M9 11.5l2 2 4-4"/></svg></span><span class="lx">GARP Sustainability &amp; Climate Risk (SCR) &amp; Project Management Professional (PMP)</span></li>
+        <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5a7.5 7.5 0 0 1 15 0"/><path d="M12 16.5l3.5-4.5"/><path d="M12 9.5V8"/><path d="M7 11.5l-1-1"/><path d="M17 11.5l1-1"/></svg></span><span class="lx">Certified Energy Manager (CEM · AEE, USA) &amp; Certified Energy Auditor (CEA · BEE, India)</span></li>
+      </ul>
     </div>
-    <ul class="fdr-badges" role="list">
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></span><span class="lx">Contributor — ISO/IWA 48:2024 ESG Framework</span></li>
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19C6 11 11 5 19 5c0 8-5 14-13 14Z"/><path d="M6 19c3-6 6-9 10-11"/></svg></span><span class="lx">Chartered Environmentalist (CEnv) &amp; Chartered Chemical Engineer (CEng)</span></li>
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7.5 14.5l3.5-4.5 3 2.5 4.5-6"/></svg></span><span class="lx">CFA — Certificate in Sustainable Investing &amp; Certificate in ESG Investing</span></li>
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6Z"/><path d="M9 11.5l2 2 4-4"/></svg></span><span class="lx">GARP Sustainability &amp; Climate Risk (SCR) &amp; Project Management Professional (PMP)</span></li>
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5a7.5 7.5 0 0 1 15 0"/><path d="M12 16.5l3.5-4.5"/><path d="M12 9.5V8"/><path d="M7 11.5l-1-1"/><path d="M17 11.5l1-1"/></svg></span><span class="lx">Certified Energy Manager (CEM · AEE, USA) &amp; Certified Energy Auditor (CEA · BEE, India)</span></li>
-    </ul>
     <div class="inline-cta reveal">
       <a class="btn btn-gold" href="/#cta"><span>Discuss your filing deadline with us</span><span class="arw">→</span></a>
     </div>
-  </div>
-</section>
-
-<section class="sec" id="fit">
-  <div class="wrap">
-    <div class="sec-head reveal"><span class="mono eyebrow">The team</span><h2>The specialists you will work with.</h2><p>Reviewed by a specialist, replied to by a specialist. Named people and verifiable credentials go live before launch — we won't imply experience we can't show.</p></div>
-    <div class="specs">
-      <div class="spec-slot reveal"><div class="av">◇</div><div class="role">BRSR &amp; ASSURANCE</div><h4>Assurance-readiness lead</h4><p>Named specialist &amp; verifiable credentials appear here before launch.</p></div>
-      <div class="spec-slot reveal"><div class="av">◆</div><div class="role">CARBON &amp; CLIMATE</div><h4>GHG &amp; climate lead</h4><p>Named specialist &amp; verifiable credentials appear here before launch.</p></div>
-      <div class="spec-slot reveal"><div class="av">⬡</div><div class="role">ESG DUE DILIGENCE</div><h4>ESDD lead</h4><p>Named specialist &amp; verifiable credentials appear here before launch.</p></div>
-    </div>
-    <div class="egate reveal" style="margin-top:22px;border-top:1px dotted var(--hair);padding-top:15px">[ E1 · MVP-SLOT — ROLES SHOWN ARE THE DISCIPLINES WE COVER; NO HEADCOUNT OR EXPERIENCE IS IMPLIED UNTIL REAL NAMES + CREDENTIALS SHIP. ]</div>
   </div>
 </section>
 
