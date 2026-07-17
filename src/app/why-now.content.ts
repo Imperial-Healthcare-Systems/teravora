@@ -263,7 +263,7 @@ export const WHYNOW_BODY = String.raw`
           </div>
           <div class="cfg-step" data-s="3">
             <div class="cfg-done"><div class="tick">&#10003;</div><h3>Request received.</h3>
-              <p style="color:var(--n200);max-width:44ch;margin-top:10px">A Teravora specialist will respond within two minutes during business hours &mdash; with the method, scoped to your answers. <em>(Demo &mdash; no data is sent from this comp.)</em></p>
+              <p style="color:var(--n200);max-width:44ch;margin-top:10px">A Teravora specialist will respond within two minutes during business hours &mdash; with the method, scoped to your answers.</p>
             </div>
           </div>
         </div></div>

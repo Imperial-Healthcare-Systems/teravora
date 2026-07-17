@@ -13,6 +13,9 @@
   --rail:var(--trv-ref-color-rail-on-dark);
   --disp:var(--trv-ref-font-family-display); --body:var(--trv-ref-font-family-text);
   --mono:var(--trv-ref-font-family-mono);
+  /* light-surface ink + ground for the FAQ — values mirror /how-we-prove */
+  --ink:#0e2033; --ink-2:#3a4a5c; --ink-3:#5c6b7a;
+  --paper2:#f5f8fb; --line:#dde5ee; --line-2:#c9d5e2;
   --gut:clamp(20px,5vw,64px); --maxw:1410px;
 }
 .pg-learn *{box-sizing:border-box}
@@ -142,16 +145,22 @@
 .pg-learn .band-sub{margin-top:20px;max-width:56ch;color:var(--n100);font-size:clamp(1.02rem,1.4vw,1.2rem);text-shadow:0 1px 14px rgba(1,10,28,.5)}
 @keyframes learnbandkb{from{transform:scale(1.04)}to{transform:scale(1.12)}}
 
-/* B7 faq */
-.pg-learn .faqsec{background:linear-gradient(180deg,var(--navy-deep),#06303a);border-top:1px solid var(--hair)}
-.pg-learn .faq{max-width:860px}
-.pg-learn .qa{border-bottom:1px solid var(--hair)}
-.pg-learn .qa button{width:100%;text-align:left;background:none;border:none;color:var(--paper);font-family:var(--disp);font-weight:700;font-size:1.06rem;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;transition:color .2s}
-.pg-learn .qa button:hover{color:var(--teal-l)}
-.pg-learn .qa .pl{color:var(--teal-l);font-size:1.3rem;transition:transform .3s;flex:none}
-.pg-learn .qa.open .pl{transform:rotate(45deg);color:var(--gold-l)}
-.pg-learn .qa .a{max-height:0;overflow:hidden;color:var(--n200);transition:max-height .45s ease,padding .45s;font-size:.98rem;line-height:1.6}
-.pg-learn .qa.open .a{max-height:280px;padding-bottom:22px}
+/* B7 faq (light) — paper surface, as on /how-we-prove */
+.pg-learn #faq{background:radial-gradient(circle, rgba(196,145,47,.09) 1px, transparent 1.4px) 0 0/24px 24px, var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pg-learn #faq .sec-head h2{color:var(--ink)}
+.pg-learn #faq .sec-head p{color:var(--ink-2)}
+.pg-learn #faq .eyebrow{color:#0f6a70}
+.pg-learn #faq .faq{max-width:860px}
+.pg-learn #faq .qa{border-bottom:1px solid var(--line-2)}
+.pg-learn #faq .qa button{width:100%;text-align:left;background:none;border:none;color:var(--ink);font-family:var(--disp);font-weight:700;font-size:1.06rem;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;transition:color .2s}
+.pg-learn #faq .qa button:hover{color:#0f6a70}
+.pg-learn #faq .qa .pl{color:var(--teal);font-size:1.3rem;transition:transform .3s,color .3s ease;flex:none}
+.pg-learn #faq .qa.open .pl{transform:rotate(45deg);color:var(--gold)}
+.pg-learn #faq .qa .a{max-height:0;overflow:hidden;color:var(--ink-2);transition:max-height .45s ease,padding .45s;font-size:.98rem;line-height:1.6}
+.pg-learn #faq .qa.open .a{max-height:280px;padding-bottom:22px}
+.pg-learn #faq .qa .a p{color:var(--ink-2)}
+.pg-learn #faq .qa .a i{color:var(--ink-3);font-style:normal;font-family:var(--mono);font-size:.85em}
+.pg-learn #faq .qa .a b{color:var(--ink)}
 
 /* B8 final cta */
 .pg-learn .final{background:linear-gradient(180deg,var(--navy),#052a54);text-align:center;overflow:hidden}

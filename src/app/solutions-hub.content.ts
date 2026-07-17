@@ -31,7 +31,7 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="hubgrid">
       <a class="hubcard reveal" href="/solutions/environmental-social-due-diligence">
         <div class="hk">DE-RISK · TRANSACT</div><h3>Environmental &amp; Social Due Diligence</h3>
-        <p>IFC Performance Standards &amp; Equator Principles advisory and ESG due diligence — Desktop and Site-Based ESDD a deal team and a lender can both rely on.</p>
+        <p>IFC Performance Standards &amp; Equator Principles advisory and ESG due diligence — Desktop and Site-based ESDD a deal team and a lender can both rely on.</p>
         <span class="ha">Explore →</span>
       </a>
       <a class="hubcard reveal" href="/solutions/capacity-building-esg-training">

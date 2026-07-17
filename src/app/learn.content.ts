@@ -51,7 +51,7 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
         <ul class="track-list">
           <li><span class="pg-dot"></span><b>IFC Performance Standards</b> &mdash; the eight standards, and what meeting them asks of an asset.</li>
           <li><span class="pg-dot"></span><b>Equator Principles</b> &mdash; how project financiers assess, condition and monitor E&amp;S risk.</li>
-          <li><span class="pg-dot"></span><b>Desktop &amp; Site-Based ESDD</b> &mdash; from a red-flag screen to field verification, scoped to the deal.</li>
+          <li><span class="pg-dot"></span><b>Desktop and Site-based ESDD</b> &mdash; from a red-flag screen to field verification, scoped to the deal.</li>
         </ul>
       </div>
       <div class="track reveal">

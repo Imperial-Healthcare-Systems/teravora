@@ -11,7 +11,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap"><div class="hero-in">
     <span class="eyebrow reveal">Turn your sustainability goals into measurable results.</span>
     <h1 id="headline"><span class="hl-line">Practical ESG.</span><br><span class="l2 hl-line">Measurable Impact.</span></h1>
-    <p class="hero-sub reveal">Teravora is an environmental and social risk practice — IFC Performance Standards and Equator Principles advisory, ESG due diligence (desktop and site-based), Scope 1–3 carbon, and hands-on training. Evidence-led, with the method shown at every step — including India's BRSR assurance readiness when a deadline is what you're facing.</p>
+    <p class="hero-sub reveal">Teravora is an environmental and social risk practice — IFC Performance Standards and Equator Principles advisory, ESG due diligence (Desktop and Site-based), Scope 1–3 carbon, and hands-on training. Evidence-led, with the method shown at every step — including India's BRSR assurance readiness when you're facing a deadline.</p>
     <div class="hero-cta reveal"><a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a><a class="btn btn-ghost" href="#start">Find your starting point</a></div>
     <div class="hero-note reveal"><b>ESG</b> Environmental, Social &amp; Governance.</div>
   </div></div>
@@ -21,7 +21,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 
 <section class="sec why" id="why">
   <div class="wrap">
-    <div class="sec-label reveal"><span>SEC-02 // WHAT'S DRIVING THIS</span><span>RISK · CAPITAL · DISCLOSURE</span></div>
+    <div class="sec-label reveal"><span>WHAT'S DRIVING THIS</span><span>RISK · CAPITAL · DISCLOSURE</span></div>
     <div class="why-grid">
       <div class="reveal">
         <h2>The pressure isn't only a filing. It's your capital, your deals and your licence to operate.</h2>
@@ -46,7 +46,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="sec-head reveal">
       <span class="mono eyebrow">One service, in depth · When a BRSR deadline is what you're facing</span>
       <h2>The assured subset, made legible.</h2>
-      <p>India's SEBI BRSR-Core — the part of a disclosure that faces reasonable assurance — is one line of the practice, and this is how we read it. Grouped by Environmental, Social and Governance — hover any segment.</p>
+      <p>India's SEBI BRSR-Core — that is subject to reasonable assurance — is one of our core service lines, and this is how we read it. Grouped by Environmental, Social and Governance — hover any segment.</p>
     </div>
   </div>
   <div class="ig-stage">
@@ -189,7 +189,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="fdr-title">Founder &amp; Designated Partner, Teravora Consulting India LLP</div>
       </div>
       <div class="fdr-bio reveal">
-        <p>Brijesh D. leads Teravora as a practitioner in environmental and social risk — <b style="color:var(--paper)">IFC Performance Standards implementation, Equator Principles advisory and ESG due diligence (Desktop and Site-Based ESDD)</b> for lenders, investors and the companies they finance, plus tailor-made training on environment, ESG, climate change and sustainability. More than 25 years across ESG governance, climate strategy and industrial decarbonisation in the GCC and India — including Scope 3 across all fifteen categories for an energy company.</p>
+        <p>Brijesh D. leads Teravora as a practitioner in environmental and social risk — <b style="color:var(--paper)">IFC Performance Standards implementation, Equator Principles advisory and ESG due diligence (Desktop and Site-based ESDD)</b> for lenders, investors and the companies they finance, plus tailor-made training on the environment, ESG, climate change and sustainability. More than 25 years across ESG governance, climate strategy and industrial decarbonisation in the GCC and India — including Scope 3 across all 15 categories for an energy company.</p>
         <div class="inline-cta"><a class="btn btn-gold" href="#cta"><span>Discuss your mandate with us</span><span class="arw">→</span></a><a class="lk" href="/about#founder">FULL PROFILE →</a></div>
       </div>
     </div>
@@ -205,8 +205,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 
 <section class="sec tri" id="real-economy" aria-label="The Scope 1–3 emissions story">
   <div class="wrap">
-    <div class="sec-label reveal"><span>SEC-06 // THE CARBON STORY</span><span>SCOPE 1 · 2 · 3</span></div>
-    <div class="tri-head reveal"><h2>Most of your footprint lives in the supply chain.</h2><p>Scope 1 and 2 are the easy part. The weight sits in Scope 3 — the value chain — and that is where the work gets real. We have taken it the whole way: <b style="color:var(--paper)">Scope 3 across all fifteen categories for an energy company</b>.</p></div>
+    <div class="sec-label reveal"><span>THE CARBON STORY</span><span>SCOPE 1 · 2 · 3</span></div>
+    <div class="tri-head reveal"><h2>Most of your footprint lives in the supply chain.</h2><p>Scope 1 and 2 are the easy part. The weight sits in Scope 3 — the value chain — and that is where the work gets real. We have taken it the whole way: <b style="color:var(--paper)">Scope 3 across all 15 categories for an energy company</b>.</p></div>
     <div class="tri-grid">
       <figure class="tri-card reveal" style="--img:url('/v/home/tri-climate.webp')"><div class="tri-ph"></div><figcaption><span class="tk">SCOPE 1 · DIRECT</span><span class="tl">Fuel combustion, process emissions and company assets — the footprint you own and control.</span></figcaption></figure>
       <figure class="tri-card reveal" style="--img:url('/v/home/tri-built.webp')"><div class="tri-ph"></div><figcaption><span class="tk">SCOPE 2 · ENERGY</span><span class="tl">Purchased electricity, steam and cooling — the emissions embedded in the energy you buy.</span></figcaption></figure>
@@ -232,7 +232,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     </div>
     <div class="pf-view reveal" data-view="process">
       <div class="tl">
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEK 0</div><h4>Kickoff &amp; scope</h4><p>We map your band, deadline, and the data you already hold.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEK 0</div><h4>Kickoff &amp; scope</h4><p>We map your band, deadline and the data you already hold.</p></div>
         <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 1–2 · ASSESS</div><h4>Gap analysis</h4><p>Every BRSR-Core requirement marked present, partial, or missing — in plain language.</p></div>
         <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 3–6 · COMPLY</div><h4>Build the disclosure</h4><p>A filing assembled to pass reasonable assurance the first time.</p></div>
         <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">ONGOING · IMPROVE</div><h4>Turn it to advantage</h4><p>Use the disclosure for financing and operating gains, not just compliance.</p></div>
@@ -309,7 +309,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
           </div>
           <div class="cfg-step" data-s="3">
             <div class="cfg-done"><div class="tick">✓</div><h3>Request received.</h3>
-              <p style="color:var(--n200);max-width:44ch;margin-top:10px">A Teravora specialist will respond within two minutes during business hours — with the method, scoped to your answers. <em>(Demo — no data is sent from this comp.)</em></p>
+              <p style="color:var(--n200);max-width:44ch;margin-top:10px">A Teravora specialist will respond within two minutes during business hours — with the method, scoped to your answers.</p>
             </div>
           </div>
         </div></div>

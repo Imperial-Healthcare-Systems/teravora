@@ -53,7 +53,7 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="tracks">
       <div class="track reveal">
         <div class="track-h"><div class="track-g">⬡</div><div class="track-t"><h3>ESG Due Diligence</h3><div class="track-for">TRANSACTIONS · IFC / EQUATOR</div></div></div>
-        <p class="track-p">Assess environmental and social risk on live deals against the IFC Performance Standards and the Equator Principles — Desktop and Site-Based ESDD — and report findings a deal team and a lender can both rely on, on a deal timeline, not an academic one.</p>
+        <p class="track-p">Assess environmental and social risk on live deals against the IFC Performance Standards and the Equator Principles — Desktop and Site-based ESDD — and report findings a deal team and a lender can both rely on, on a deal timeline, not an academic one.</p>
         <p class="track-fit"><b>Fits:</b> due-diligence, EHS, project-finance or E&amp;S-risk backgrounds — precise under time pressure.</p>
       </div>
       <div class="track reveal">

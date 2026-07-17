@@ -19,7 +19,7 @@ export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="chips reveal">
       <span class="chip"><b>IFC PS</b> implementation &amp; advisory</span>
       <span class="chip"><b>Equator</b> Principles</span>
-      <span class="chip"><b>Desktop &amp; Site-Based</b> ESDD</span>
+      <span class="chip"><b>Desktop and Site-based</b> ESDD</span>
       <span class="chip on"><b>Deal-timeline</b> delivery</span>
     </div>
   </div></div>
