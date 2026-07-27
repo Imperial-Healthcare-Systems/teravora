@@ -32,7 +32,7 @@ export const SOLUTION_TRAINING_BODY = String.raw`<div class="rails"><i></i></div
     <div class="prob-top">
       <div class="sec-head reveal" style="margin-bottom:0">
         <span class="mono eyebrow">The shift</span>
-        <h2>The obligations are annual. Renting the skill every year is the expensive way.</h2>
+        <h2>The obligations recur every year. The capability to meet them is worth owning.</h2>
         <p>Environmental and social obligations recur — every deal, every lender review, every audit, every filing. Teams that hold the capability in-house answer faster and buy advice only where it counts. Three pressures land at once.</p>
       </div>
     </div>
@@ -53,10 +53,10 @@ export const SOLUTION_TRAINING_BODY = String.raw`<div class="rails"><i></i></div
     </div>
     <div class="trace reveal" aria-hidden="true"><span class="tline"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tpulse"></span></div>
     <div class="steps4">
-      <div class="s4 reveal"><div class="n">01 · DIAGNOSE</div><h4>Map the gap</h4><p>Your obligations against your team's current capability — who needs to know what, to what depth, by when.</p></div>
-      <div class="s4 reveal"><div class="n">02 · DESIGN</div><h4>Build the curriculum</h4><p>Sessions designed around your sector, your data and your obligations — board briefings to practitioner deep-dives, in the room or on site.</p></div>
-      <div class="s4 reveal"><div class="n">03 · DELIVER</div><h4>Train by doing</h4><p>Working sessions on live material — your E&amp;S action plan, your inventory, your audit findings — so the learning is immediately used.</p></div>
-      <div class="s4 reveal"><div class="n">04 · EMBED</div><h4>Leave it installed</h4><p>Playbooks, templates and a refresh cadence — plus a clear line on when to call an advisor and when you no longer need to.</p></div>
+      <div class="s4 reveal"><div class="n">01 · DIAGNOSE</div><h4>Map the gap</h4><p>Your obligations against your team's current capability — who needs to know what, to what depth, by when.</p><div class="mout"><span class="mout-k">You get</span> A capability gap map</div></div>
+      <div class="s4 reveal"><div class="n">02 · DESIGN</div><h4>Build the curriculum</h4><p>Sessions designed around your sector, your data and your obligations — board briefings to practitioner deep-dives, in the room or on site.</p><div class="mout"><span class="mout-k">You get</span> A tailored curriculum</div></div>
+      <div class="s4 reveal"><div class="n">03 · DELIVER</div><h4>Train by doing</h4><p>Working sessions on live material — your E&amp;S action plan, your inventory, your audit findings — so the learning is immediately used.</p><div class="mout"><span class="mout-k">You get</span> Working sessions on live data</div></div>
+      <div class="s4 reveal"><div class="n">04 · EMBED</div><h4>Leave it installed</h4><p>Playbooks, templates and a refresh cadence — plus a clear line on when to call an advisor and when you no longer need to.</p><div class="mout"><span class="mout-k">You get</span> Playbooks &amp; a refresh cadence</div></div>
     </div>
   </div>
 </section>
@@ -69,27 +69,26 @@ export const SOLUTION_TRAINING_BODY = String.raw`<div class="rails"><i></i></div
     </div>
     <div class="pb-grid">
       <div class="reveal">
-        <p style="color:var(--n200);margin-bottom:18px">The curriculum is drawn from live practice across the standards your team is accountable to:</p>
+        <p style="color:var(--n200);margin-bottom:18px">The curriculum is drawn from live practice across the standards your team is accountable to, matched to a facilitator with the relevant domain experience:</p>
         <div class="stds">
           <span class="std2"><b>IFC</b> Performance Standards</span>
           <span class="std2"><b>Equator</b> Principles</span>
           <span class="std2"><b>GHG</b> Protocol</span>
-          <span class="std2"><b>IFRS</b> S1 / S2</span>
-          <span class="std2"><b>BRSR</b> / BRSR-Core</span>
+          <span class="std2"><b>IFRS</b> S1 &amp; S2</span>
+          <span class="std2"><b>BRSR</b> / BRSR Core</span>
         </div>
         <div class="pov">Generic ESG training teaches the acronyms. Useful training teaches your team to defend their own numbers, answer a lender on their own site, and know when a question is above their pay grade — on purpose.</div>
         <div class="illus">
           <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
           <p>A typical programme runs from capability diagnosis to delivered working sessions and installed playbooks across one reporting cycle.</p>
         </div>
-        <div class="egate">[ PROGRAMME OUTCOMES POPULATE HERE ONCE SUBSTANTIATED — WE DO NOT PUBLISH AN OUTCOME WE HAVE NOT VERIFIED. ]</div>
       </div>
       <div class="readycard reveal">
         <div class="rc-head"><span class="t">CAPABILITY PROGRAMME · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">GAPS · MAPPED TO OBLIGATIONS</span><span class="v" data-final="MAPPED">MAPPED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">SESSIONS · RUN ON LIVE DATA</span><span class="v" data-final="APPLIED">APPLIED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">PLAYBOOKS · LEFT IN THE BUILDING</span><span class="v" data-final="INSTALLED">INSTALLED</span></div>
-        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF OUR PARENT PRACTICE, TERAVUE.</div>
+        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF THE ASSOCIATED PRACTICE, TERAVUE.</div>
       </div>
     </div>
     <div class="inline-cta reveal">
@@ -139,9 +138,9 @@ export const SOLUTION_TRAINING_BODY = String.raw`<div class="rails"><i></i></div
     <div class="sec-head reveal"><span class="mono eyebrow">Common questions</span><h2>ESG training, briefly.</h2></div>
     <div class="faq reveal">
       <div class="qa"><button>Who is the training for? <span class="pl">+</span></button><div class="a">Three audiences, taught differently: boards and CXOs (what you are signing and what it exposes), finance and secretarial owners (the controls behind the disclosure), and practitioners and site teams (how to build the inventory, run the E&amp;S action plan, answer the lender or the auditor).</div></div>
-      <div class="qa"><button>Is it generic ESG content or standard-specific? <span class="pl">+</span></button><div class="a">Standard-specific. Sessions are built on the frameworks your team is accountable to — the IFC Performance Standards and Equator Principles for deal and project teams, the GHG Protocol, IFRS S1/S2, and India's BRSR/BRSR-Core — and on your own data and sites wherever possible.</div></div>
-      <div class="qa"><button>How does this pair with your advisory services? <span class="pl">+</span></button><div class="a">Deliberately. Advisory engagements hand over an audit trail; training teaches your team to run it. Many clients sequence them — we build the first cycle together, your team runs the next one, and we step back to review.</div></div>
-      <div class="qa"><button>Do you certify participants? <span class="pl">+</span></button><div class="a">We run capability programmes, not certificate mills — the test of the training is your next lender review, audit or filing, answered in-house. Where a recognised external certification serves your team, we say so and point you to it.</div></div>
+      <div class="qa"><button>Is it generic ESG content or standard-specific? <span class="pl">+</span></button><div class="a">Standard-specific. Sessions are built on the standards your team is accountable to — the IFC Performance Standards and Equator Principles for deal and project teams, the GHG Protocol, IFRS S1 and IFRS S2, and India's BRSR/BRSR Core — and on your own data and sites wherever possible.</div></div>
+      <div class="qa"><button>How does this pair with your advisory services? <span class="pl">+</span></button><div class="a">Deliberately. Advisory engagements hand over an evidence trail; training teaches your team to run it. Many clients sequence them — we build the first cycle together, your team runs the next one, and we step back to review.</div></div>
+      <div class="qa"><button>Do you certify participants? <span class="pl">+</span></button><div class="a">We run capability programmes, not certificate mills. Any certificate we issue records completion of the training — it is not an accredited professional certification, which only a recognised awarding body can grant. The real test of the training is your next lender review, audit or filing, answered in-house; where a recognised external certification serves your team, we say so and point you to it.</div></div>
     </div>
   </div>
 </section>`;
