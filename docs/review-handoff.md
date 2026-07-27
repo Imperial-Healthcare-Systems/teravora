@@ -60,8 +60,8 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 |---|---|---|---|
 | ~~About~~ | ~~81, 82, 83~~ | ~~Relationship, founder, own-positioning cards~~ | ✅ **DONE** (`953fd6a`, `7b9f38a`) — *interim:* ENOC shown as "a senior role" pending exact title |
 | ~~Careers~~ | ~~86~~ | ~~Assessment-or-assurance, associated practice, CFA, IFRS S2~~ | ✅ **DONE** (`8b11bf8`) |
-| **Careers** | 88 | CV **retention period** number; verify a dedicated `careers@` inbox | ✅ consent/privacy microcopy shipped; **retention number = client fact (lives in Privacy §90)**; email still `contact@teravora.in` |
-| **Legal** | 90–92 | Privacy / Terms / Accessibility — full policies | **client facts (see §5)** |
+| **Careers** | 88 | CV **retention period** number; verify a dedicated `careers@` inbox | ✅ consent/privacy microcopy shipped; retention now stated in Privacy (**up to 12 months** default — counsel to confirm); email still `contact@teravora.in` |
+| ~~Legal~~ | ~~90–92~~ | ~~Privacy / Terms / Accessibility — full policies~~ | ✅ **DRAFTED** (`13ef208`) — complete generic policies, no placeholders; **counsel review + confirm defaults** (see §5) |
 
 ### 3b. Non-critical (🟡/🟠) still open
 | Page | Points | What | Blocker |
@@ -125,7 +125,7 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 ---
 
 ## 5. CLIENT INPUTS NEEDED (the real blockers to closing)
-1. **Legal facts** (Privacy/Terms/Accessibility, points 90–92): analytics/cookies used · WhatsApp number · data-retention periods · processors/sub-processors · governing jurisdiction · grievance officer name + contact.
+1. **Legal pages — now DRAFTED** (`13ef208`), no longer a blocker to *build*. Counsel should review and **confirm/correct the defaults** the drafts encode: registered office address · exact retention periods (CVs default **12 months**) · Grievance Officer **name** (drafts use the role + `contact@teravora.in`) · governing **city** for jurisdiction (drafts say "courts of competent jurisdiction in India") · any **analytics/processors** to add (drafts state essential-cookies-only + cloud host/CDN + email provider) · WhatsApp number (drafts reference the channel generically, no number). See `docs/client-facts-needed.md`.
 2. **Careers CV retention period** (point 88).
 3. **Founder verifications** (point 83 / G8): exact ENOC title · ISO/IWA 48 · ICAO WG5 · past employers · the "few practitioners" claim.
 4. **ESDD independence / conflicts** policy wording (point 50).

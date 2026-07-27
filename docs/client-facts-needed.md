@@ -5,7 +5,17 @@ Legal pages (points 90–92), the Careers CV-retention line (88), the ESDD confl
 FAQ (50), and to finalize the About founder section (83) and Home timeline (H11).
 Fill these in and I build the rest with no placeholders.
 
-_Status: awaiting client. Created 2026-07-27._
+_Status: created 2026-07-27._
+
+> **UPDATE 2026-07-27 — Legal pages are now fully DRAFTED** (`13ef208`), no placeholders.
+> Rather than blank fields, the drafts encode sensible **defaults**; the items below are now
+> **"confirm or correct"**, not "fill in the blank". What the drafts assumed:
+> essential-cookies-only + no third-party tracking (B5/B6) · cloud host/CDN + email provider as
+> processors (B10) · cross-border transfer via those providers (B11) · retention: enquiries kept
+> a reasonable period, **CVs up to 12 months**, logs short-lived (B9/D-88) · **Grievance Officer =
+> the role at `contact@teravora.in`** (B12) · governing law = **India**, "courts of competent
+> jurisdiction in India" (C14) · WhatsApp referenced generically, **no number** (B8). Correct any
+> that are wrong; otherwise the drafts stand for your counsel's review.
 
 ---
 
