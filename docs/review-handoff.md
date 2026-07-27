@@ -108,14 +108,20 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 ---
 
 ## 4. NON-PDF work to reach final build (dev / QA / launch)
-| Item | Ref | Owner |
-|---|---|---|
-| Print / Save-as-PDF CSS (reveals show, accordions open, fixed buttons hidden, no blank pages) | G15 | Dev — all pages |
-| Interactive a11y: hover→click/tap, keyboard selectable, focus states, diagram alt text (BRSR wheel, persona/framework selectors) | G18 | Dev |
-| Remove dev "N" badge on production build (`next.config` `devIndicators:false`) | G20 | Dev — **verify on prod build** |
-| Mobile + speed testing; compress images; defer non-critical animation | G22 | Dev / QA |
+
+> **Update 2026-07-27:** **G15 (print CSS) ✅ done** (`ea11792`) · **G18 (interactive a11y) ✅ done**
+> (`66512d0`) · **Legal pages ✅ done** (`13ef208`). **Production build passes clean** — all 33
+> routes compile, static generation OK. **G20 (N badge)** = client-confirmed local-dev only, no
+> action. Remaining: G22 (mobile/speed/compress), delete `/comps` at ship, `/learn` decision, deploy.
+
+| Item | Ref | Owner | Status |
+|---|---|---|---|
+| Print / Save-as-PDF CSS (reveals show, accordions open, fixed nav hidden, no blank pages) | G15 | Dev | ✅ `ea11792` — global `@media print` |
+| Interactive a11y: keyboard-operable BRSR wheel/steps/configurators/forms, focus, accessible names, aria-hidden decor | G18 | Dev | ✅ `66512d0` (Home + /start + /why-now; FAQs & climb-tabs already `<button>`). AT spot-test at QA still advised. |
+| Remove dev "N" badge | G20 | Dev | ✅ N/A — local-dev indicator only, never in prod (client-confirmed) |
+| Mobile + speed testing; compress images; defer non-critical animation | G22 | Dev / QA | ⬜ open |
 | Optional page-length trim −20–30% (careful, per page; no identity change) | G16 | Us — optional |
-| Route / contents-map reconcile (account for BRSR-Readiness removal + Learn skip; **exclude/delete `/comps/*` prototype routes — they carry stale pre-review copy**) | Part C #13 | QA / Dev |
+| Route / contents-map reconcile: **delete `/comps/*` at ship** (already sitemap-excluded + robots-disallowed, so not indexed — just needs removing per the code's own note); decide `/learn` (linked in nav/footer, carries pre-review copy, not in sitemap) | Part C #13 | QA / Dev |
 | Domain / SSL / analytics / sitemap / robots / metadata | Part C #12 | Dev — launch |
 | **Bespoke imagery for the new Social Impact & SROI page** (currently reuses community/people photos as a placeholder-free interim) | VA follow-up | Design |
 | All forms tested (notice, error, success) incl. new consent lines | Part C #7 | Us + client wiring |
