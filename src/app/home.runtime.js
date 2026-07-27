@@ -23,7 +23,7 @@ export function initHome() {
       if(!reduce)setTimeout(function(){s.classList.add("in")},250+(li*300)+(i*90));else s.classList.add("in");});
   });
 
-  var tokens=[["#why","INDIA-BASED ENVIRONMENTAL & SOCIAL RISK PRACTICE"],["#proof","25+ YEARS OF ESG EXPERTISE · BACKED BY TERAVUE"],["#why","IFC PERFORMANCE STANDARDS · EQUATOR PRINCIPLES · ESDD"],["#method","THE METHOD IS SHOWN · NOT ASSERTED"],["#real-economy","SCOPE 3 · ALL FIFTEEN CATEGORIES · THE FULL VALUE CHAIN"],["#infographic","STANDARDS · IFC PS · EQUATOR · GHG PROTOCOL · IFRS S1/S2 · BRSR-CORE"],["#cta","EVIDENCE BEHIND EVERY NUMBER → REQUEST A PROPOSAL"]];
+  var tokens=[["#why","INDIA-BASED ENVIRONMENTAL & SOCIAL RISK PRACTICE"],["#proof","MORE THAN 25 YEARS OF PRACTITIONER EXPERIENCE"],["#why","IFC PERFORMANCE STANDARDS · EQUATOR PRINCIPLES · ESDD"],["#method","THE METHOD IS SHOWN · NOT ASSERTED"],["#real-economy","SCOPE 3 · ALL FIFTEEN CATEGORIES · THE FULL VALUE CHAIN"],["#infographic","STANDARDS · IFC PS · EQUATOR · GHG PROTOCOL · IFRS S1 & S2 · BRSR CORE"],["#cta","EVIDENCE BEHIND EVERY NUMBER → REQUEST A PROPOSAL"]];
   var mq=document.getElementById("mq");
   function seg(){var f=document.createDocumentFragment();tokens.forEach(function(t){var a=document.createElement("a");a.href=t[0];a.textContent=t[1];f.appendChild(a);var s=document.createElement("span");s.className="sep";s.textContent="◆";f.appendChild(s)});return f}
   mq.appendChild(seg());mq.appendChild(seg());
