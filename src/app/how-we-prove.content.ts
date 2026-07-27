@@ -69,7 +69,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
     <div class="sec-head reveal">
       <span class="badge-hl gold">&#9671; TEST THE WORKING</span>
       <h2>Trace a number, end to end.</h2>
-      <p>Don&rsquo;t take our word for it &mdash; follow one figure from raw source to assured disclosure. Step through it: the working shows at every stage.</p>
+      <p>Don&rsquo;t take our word for it &mdash; follow one figure from raw source to an assurance-ready disclosure. Step through it: the working shows at every stage.</p>
     </div>
     <div class="tconsole reveal">
       <div class="tc-left">
@@ -94,7 +94,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <button class="tc-tab on" data-i="0" type="button"><span class="ti">01</span> Source</button>
           <button class="tc-tab" data-i="1" type="button"><span class="ti">02</span> Control</button>
           <button class="tc-tab" data-i="2" type="button"><span class="ti">03</span> Evidence</button>
-          <button class="tc-tab" data-i="3" type="button"><span class="ti">04</span> Assured</button>
+          <button class="tc-tab" data-i="3" type="button"><span class="ti">04</span> Assurance-ready</button>
         </div>
         <div class="tc-panels">
           <div class="tc-panel on" data-i="0">
@@ -128,7 +128,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
     <div class="sec-head reveal">
       <span class="badge-hl">&#9671; MEASURABLE IMPACT</span>
       <h2>How measurable impact happens.</h2>
-      <p>Not a slogan &mdash; a shape. A figure is taken from an unverified baseline to a measured, assured position, and the working is shown the whole way up.</p>
+      <p>Not a slogan &mdash; a shape. A figure is taken from an unverified baseline to a measured, assurance-ready position, and the working is shown the whole way up.</p>
     </div>
     <div class="imp-grid">
       <div class="imp-stage reveal">
@@ -140,7 +140,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <circle class="cnode" data-i="1" cx="350" cy="150" r="6"/>
           <circle class="cnode cpeak" id="cpeak" data-i="2" cx="470" cy="70" r="7" opacity="0"/>
           <defs><linearGradient id="impcg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(79,188,194,.30)"/><stop offset="1" stop-color="rgba(79,188,194,0)"/></linearGradient></defs>
-          <text x="44" y="326" class="clab">BASELINE</text><text x="318" y="326" class="clab">MEASURED</text><text x="430" y="326" class="clab">ASSURED</text>
+          <text x="44" y="326" class="clab">BASELINE</text><text x="300" y="326" class="clab">MEASURED</text><text x="500" y="326" text-anchor="end" class="clab">ASSURANCE-READY</text>
         </svg>
         <p class="imp-cap">Across more than 25 years, the associated practice, <b>Teravue</b>, has taken emitters from a baseline to a measured, independently assured reduction &mdash; the backbone the Teravora method is built on. As we complete engagements in India, our own results will appear here, measured the same way.</p>
       </div>
@@ -156,8 +156,8 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <p>Each figure is produced with a documented source and control &mdash; measurable by design, from the moment it exists.</p>
         </article>
         <article class="imp-card reveal on" data-i="2">
-          <div class="k">03 &middot; Assured</div>
-          <h4>Stand up to the auditor.</h4>
+          <div class="k">03 &middot; Assurance-ready</div>
+          <h4>Ready to stand up to the auditor.</h4>
           <p>The evidence path is complete: the disclosure is built to stand up to independent assessment or assurance &mdash; the proven peak.</p>
         </article>
       </div>
