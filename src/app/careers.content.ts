@@ -63,7 +63,7 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
         <p class="track-fit"><b>Fits:</b> energy, engineering, carbon-accounting or climate-analytics backgrounds — comfortable defending a calculation line by line.</p>
       </div>
       <div class="track reveal">
-        <div class="track-h"><div class="track-g">◇</div><div class="track-t"><h3>BRSR &amp; Assurance Readiness</h3><div class="track-for">DISCLOSURE · ASSURANCE</div></div></div>
+        <div class="track-h"><div class="track-g">◇</div><div class="track-t"><h3>ESG Disclosure &amp; Assurance Readiness</h3><div class="track-for">DISCLOSURE · ASSURANCE</div></div></div>
         <p class="track-p">Take listed companies from scattered data to a filed BRSR (Business Responsibility and Sustainability Report) that passes reasonable assurance: mapping data to the 49 BRSR-Core KPIs, closing gaps in plain language, and building the audit trail behind every number.</p>
         <p class="track-fit"><b>Fits:</b> audit, assurance, sustainability-reporting or ESG-compliance backgrounds — people who read a standard for what it requires, not what it suggests.</p>
       </div>

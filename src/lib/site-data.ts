@@ -67,7 +67,7 @@ export const NAV_ITEMS: NavItem[] = [
         kind: "service",
       },
       {
-        label: "BRSR & Assurance Readiness",
+        label: "ESG Disclosure & Assurance Readiness",
         href: ROUTES.solutionA,
         kind: "service",
       },

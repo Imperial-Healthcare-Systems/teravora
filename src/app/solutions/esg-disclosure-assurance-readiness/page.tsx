@@ -6,7 +6,7 @@ import { SOLUTION_BODY } from "../../solution.content";
 import { SolutionView } from "../SolutionView";
 
 export const metadata: Metadata = buildMetadata({
-  title: "BRSR & Assurance Readiness in India | Teravora",
+  title: "ESG Disclosure & Assurance Readiness in India | Teravora",
   description:
     "Get to a filed, defensible BRSR that passes reasonable assurance. We map your data to BRSR-Core's 49 KPIs, close gaps, and show the method at every step.",
   path: ROUTES.solutionA,

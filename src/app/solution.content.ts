@@ -8,7 +8,7 @@ export const SOLUTION_BODY = String.raw`<div class="rails"><i></i></div>
   <canvas id="stars"></canvas>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
-    <span class="eyebrow reveal">BRSR &amp; Assurance Readiness</span>
+    <span class="eyebrow reveal">ESG Disclosure &amp; Assurance Readiness</span>
     <h1><span class="hl-line">Be assurance-ready before your BRSR filing deadline.</span></h1>
     <p class="lede reveal">Your band now faces <span class="g">reasonable assurance</span> — independent, auditor-grade sign-off on your <span class="g">BRSR</span> <i>(Business Responsibility and Sustainability Report)</i>. A filing that passed on disclosure alone may not survive that bar.</p>
     <div class="hero-cta reveal">

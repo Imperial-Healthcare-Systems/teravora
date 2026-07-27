@@ -25,7 +25,7 @@ const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "ESG & Climate Strategy Advisory", href: ROUTES.solutionAdvisory },
       { label: "Technical & Environmental Services", href: ROUTES.solutionTechnical },
       { label: "Sustainable Finance & Carbon Markets", href: ROUTES.solutionFinance },
-      { label: "BRSR & Assurance Readiness", href: ROUTES.solutionA },
+      { label: "ESG Disclosure & Assurance Readiness", href: ROUTES.solutionA },
     ],
   },
   {

@@ -60,7 +60,7 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
         <span class="ha">Explore →</span>
       </a>
       <a class="hubcard reveal" href="/solutions/esg-disclosure-assurance-readiness">
-        <div class="hk">COMPLY · ASSURE</div><h3>BRSR &amp; Assurance Readiness</h3>
+        <div class="hk">COMPLY · ASSURE</div><h3>ESG Disclosure &amp; Assurance Readiness</h3>
         <p>From scattered data to a filed BRSR built to survive reasonable assurance — audit trail included.</p>
         <span class="ha">Explore →</span>
       </a>

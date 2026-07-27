@@ -42,7 +42,7 @@ export default function BrsrReadiness() {
               Request a Proposal
             </Button>
             <ActionLink href={ROUTES.solutionA}>
-              BRSR &amp; Assurance Readiness &rarr;
+              ESG Disclosure &amp; Assurance Readiness &rarr;
             </ActionLink>
           </div>
         </section>
