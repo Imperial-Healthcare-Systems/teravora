@@ -100,7 +100,7 @@ export function Footer({
             ))}
           </ul>
           <span className={styles.copy}>
-            © {year} {brand}. Practical ESG. Measurable Impact.
+            © {year} Teravora Consulting India LLP. All rights reserved. LLPIN: ACY-9976.
           </span>
         </div>
       </div>
