@@ -11,7 +11,8 @@ import "../careers.vcomp.css";
 // - NO JobPosting JSON-LD until real, current openings exist (Google's job-posting
 //   spam policy penalizes listings that aren't real jobs). When roles go live, add
 //   per-role JobPosting nodes here alongside the role cards in careers.content.ts.
-// - careers@teravora.in is TBC with the client (same status as PROPOSAL_FALLBACK_EMAIL).
+// - Open applications route to contact@teravora.in — the single live point of
+//   contact until the client provisions a dedicated careers inbox.
 // - Open-roles section ships as an honest empty state (content@v0 E1: no ghost listings).
 export const metadata: Metadata = buildMetadata({
   title: "ESG & Sustainability Consulting Careers, India | Teravora",

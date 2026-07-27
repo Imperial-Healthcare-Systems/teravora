@@ -191,6 +191,12 @@ export function initHome() {
     else{dfy.textContent=o.dataset.v;dfy.classList.remove("dim");drawBorder()}
     setTimeout(function(){showStep(g.dataset.group==="band"?1:2)},reduce?0:240)})});
   document.querySelectorAll("[data-back]").forEach(function(b){b.addEventListener("click",function(){showStep(Math.max(cur-1,0))})});
-  var submit=document.getElementById("cfgsubmit");if(submit)submit.addEventListener("click",function(e){e.preventDefault();showStep(3);if(barEl)barEl.style.width="100%"});
+  // Hand off to the full /start request form, carrying the scoped answers so they
+  // prefill there (band always maps; timing maps where /start has a matching bucket).
+  var BAND2START={"Lender / DFI":"lender","Investor / deal team":"investor","Sponsor / borrower":"sponsor","Top 500 listed":"t500","Top 1,000 listed":"t1000","Value chain / supplier":"supplier"};
+  var FY2START={"Live now":"thisfy","This financial year":"thisfy","Exploring":"explore"};
+  var submit=document.getElementById("cfgsubmit");if(submit)submit.addEventListener("click",function(e){e.preventDefault();
+    var q=[];if(cfg.band&&BAND2START[cfg.band])q.push("band="+BAND2START[cfg.band]);if(cfg.fy&&FY2START[cfg.fy])q.push("timeline="+FY2START[cfg.fy]);
+    window.location.href="/start"+(q.length?"?"+q.join("&"):"")+"#start"});
 
 }
