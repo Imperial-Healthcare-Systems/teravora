@@ -10,7 +10,7 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">The company</span>
     <h1><span class="hl-line">A new India ESG brand, built on a proven backbone.</span></h1>
-    <p class="lede reveal">Teravora is the India practice built for India's reality — where ESG is now driven by <span class="g">regulation, financing conditions and value-chain expectations</span>, not by aspiration alone. New here on purpose: made for the mid-market and value-chain companies the large networks underserve.</p>
+    <p class="lede reveal">Teravora is the India practice built for India's reality — where ESG is now driven by <span class="g">regulation, financing conditions and value-chain expectations</span>, not by aspiration alone. New here on purpose: built for the mid-market and value-chain companies meeting India's ESG rules for the first time.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
       <a class="btn btn-ghost" href="#scope"><span>See our method</span></a>
@@ -29,12 +29,12 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="sec-head reveal">
       <span class="mono eyebrow">Who we are</span>
       <h2>Practical and measurable, by discipline.</h2>
-      <p>The market splits two ways — and we sit deliberately outside both. We compete on something narrower and harder than a report.</p>
+      <p>Built for a specific client, a specific job, and a specific standard of proof.</p>
     </div>
     <div class="pos">
-      <div class="pos-card reveal"><div class="k">THE GLOBAL NETWORKS</div><h4>Trusted, but not built for you.</h4><p>Costly and generic for the mid-market and the value chain — the companies moving fastest under India's rules.</p></div>
-      <div class="pos-card reveal"><div class="k">THE CROWDED MIDDLE</div><h4>“We do BRSR reports.”</h4><p>Undifferentiated advisers competing on producing a document — not on whether the numbers survive an audit.</p></div>
-      <div class="pos-card us reveal"><span class="tag">TERAVORA</span><div class="k">THE NARROW, HARDER THING</div><h4>A method you can audit.</h4><p>Built to produce assured, defensible numbers. Practical to implement. Measurable by design.</p></div>
+      <div class="pos-card reveal"><div class="k">WHO WE'RE FOR</div><h4>Mid-market and value-chain companies.</h4><p>The companies meeting India's ESG rules for the first time, and moving fastest under them.</p></div>
+      <div class="pos-card reveal"><div class="k">WHAT WE DELIVER</div><h4>Defensible, assurance-ready numbers.</h4><p>Evidence a reviewer can follow, end to end — not just a report that names the right frameworks.</p></div>
+      <div class="pos-card us reveal"><span class="tag">TERAVORA</span><div class="k">HOW WE WORK</div><h4>Practical to implement, measurable by design.</h4><p>Sized, priced and paced for how fast this obligation is moving — built to be lived with, not filed and forgotten.</p></div>
     </div>
   </div>
 </section>
@@ -46,7 +46,7 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="reveal">
         <h2 style="font-size:clamp(1.9rem,4vw,3rem);line-height:1.06;margin-bottom:16px">The backbone behind the brand.</h2>
         <p style="color:var(--n200);font-size:1.06rem;max-width:60ch;margin-bottom:22px">Teravora is an India-based practice associated with Teravue — an advisory practice with a multi-market track record across MENA and India. From that associated practice we draw the methods, standards fluency and discipline, applied here to India's regulation-driven demand.</p>
-        <p style="color:var(--n200);margin-bottom:18px">We are new here on purpose: designed for the mid-market and value-chain companies the large networks underserve, and priced and paced for how fast this obligation is moving.</p>
+        <p style="color:var(--n200);margin-bottom:18px">We are new here on purpose: designed for the mid-market and value-chain companies meeting India's ESG rules for the first time, and priced and paced for how fast this obligation is moving.</p>
         <div class="illus">
           <span class="lbl">◇ HOW WE TALK ABOUT TRACK RECORD</span>
           <p>We are careful about what we claim. The associated practice's history belongs to Teravue, and we say so — attributed to Teravue, never restated as a Teravora result.</p>
