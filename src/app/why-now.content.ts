@@ -20,11 +20,11 @@ export const WHYNOW_BODY = String.raw`
       </h1>
       <p class="wn-lede">
         Lenders and DFIs pricing E&amp;S risk into capital, IFC &amp; Equator
-        conditions on every deal, CSRD reaching into Indian supply chains, and
-        BRSR-Core assurance at home &mdash; the requirements are arriving on a
-        <b>fixed schedule</b>. The companies that build defensible evidence
-        <b>before</b> the deadline set their own terms. The ones that wait inherit
-        someone else&rsquo;s.
+        conditions on every deal, CSRD reaching into Indian value chains, and
+        BRSR Core assessment or assurance at home &mdash; the requirements are
+        arriving on a <b>fixed schedule</b>. The companies that build defensible
+        evidence <b>before</b> the deadline set their own terms. The ones that
+        wait inherit someone else&rsquo;s.
       </p>
       <div class="wn-cta">
         <a class="btn btn-gold" href="/start"><span>Request a Proposal</span> <span class="arw">&rarr;</span></a>
@@ -32,7 +32,7 @@ export const WHYNOW_BODY = String.raw`
       </div>
     </div>
   </div>
-  <div class="wn-scroll" aria-hidden="true"><div class="wrap"><b>The forces below are not optional</b></div></div>
+  <div class="wn-scroll" aria-hidden="true"><div class="wrap"><b>These forces are already in motion</b></div></div>
 </section>
 
 <!-- ═══ BEAT 2 · the regulatory clock (light glide-path timeline) ═════════ -->
@@ -42,12 +42,12 @@ export const WHYNOW_BODY = String.raw`
       <span class="eyebrow eyebrow-dk">The regulatory clock</span>
       <h2>The schedule is already published. <span class="mut">Only your readiness is optional.</span></h2>
       <p>
-        SEBI&rsquo;s reasonable-assurance duty on the BRSR Core arrives on a
-        widening glide path. Every financial year pulls a larger band of listed
-        companies into <b>independent assurance</b> &mdash; the threshold is
-        moving toward you, not away.
+        SEBI&rsquo;s assessment or assurance requirement on the BRSR Core arrives
+        on a widening glide path. Each financial year pulls a larger band of
+        listed companies <b>into scope</b> &mdash; the threshold is moving toward
+        you, not away.
       </p>
-      <span class="wn-flag">Schedule per SEBI&rsquo;s BRSR-Core reasonable-assurance glide path</span>
+      <span class="wn-flag">Schedule per SEBI&rsquo;s BRSR Core assessment-or-assurance glide path</span>
     </div>
 
     <div class="wn-timeline reveal">
@@ -59,7 +59,7 @@ export const WHYNOW_BODY = String.raw`
         <div class="wn-card">
           <b class="wn-th">Top 150</b>
           <span class="wn-th-sub">listed, by market cap</span>
-          <p>Reasonable assurance of the BRSR Core becomes mandatory for the first band.</p>
+          <p>Independent assessment or assurance of the BRSR Core becomes mandatory for the first band.</p>
           <div class="wn-cov" aria-hidden="true"><i style="--w:15%"></i></div>
           <span class="wn-cov-l">~150 companies</span>
         </div>
@@ -83,7 +83,7 @@ export const WHYNOW_BODY = String.raw`
         <div class="wn-card">
           <b class="wn-th">Top 500</b>
           <span class="wn-th-sub">listed, by market cap</span>
-          <p>Assured disclosure becomes the mid-market norm &mdash; and a lender and buyer expectation.</p>
+          <p>Independently checked disclosure becomes the mid-market norm &mdash; and a lender and buyer expectation.</p>
           <div class="wn-cov" aria-hidden="true"><i style="--w:50%"></i></div>
           <span class="wn-cov-l">~500 companies</span>
         </div>
@@ -125,8 +125,8 @@ export const WHYNOW_BODY = String.raw`
           <span class="wn-force-kick">Regulators</span>
         </div>
         <div class="wn-force-body">
-          <h3>The mandate is assured, not assumed.</h3>
-          <p>SEBI&rsquo;s BRSR Core moves reporting from self-declared to independently assured &mdash; band by band, on the schedule above.</p>
+          <h3>The mandate is checked, not assumed.</h3>
+          <p>SEBI&rsquo;s BRSR Core moves reporting from self-declared to independently assessed or assured &mdash; band by band, on the schedule above.</p>
         </div>
       </article>
 
@@ -137,7 +137,7 @@ export const WHYNOW_BODY = String.raw`
         </div>
         <div class="wn-force-body">
           <h3>Capital is repricing ESG risk.</h3>
-          <p>Lenders and investors now read sustainability data as a credit and valuation signal. Numbers no one has assured get discounted.</p>
+          <p>Lenders and investors now read sustainability data as a credit and valuation signal. Numbers no one has independently checked get discounted.</p>
         </div>
       </article>
 
@@ -148,7 +148,7 @@ export const WHYNOW_BODY = String.raw`
         </div>
         <div class="wn-force-body">
           <h3>Global buyers are asking first.</h3>
-          <p>CSRD and IFRS S2 reach through multinational supply chains into their Indian suppliers&rsquo; data &mdash; often ahead of the local deadline.</p>
+          <p>CSRD and IFRS S2 reach through multinational value chains into their Indian suppliers&rsquo; data &mdash; often ahead of the local deadline.</p>
         </div>
       </article>
 
@@ -159,7 +159,7 @@ export const WHYNOW_BODY = String.raw`
         </div>
         <div class="wn-force-body">
           <h3>Trust now runs on evidence.</h3>
-          <p>Stakeholders reward a claim they can check and penalise one they can&rsquo;t. Reputation compounds on proof, not intent.</p>
+          <p>Stakeholders reward a claim they can check and discount one they can&rsquo;t. Reputation compounds on proof, not intent.</p>
         </div>
       </article>
     </div>
@@ -171,7 +171,7 @@ export const WHYNOW_BODY = String.raw`
   <div class="wrap">
     <div class="wn-cost-head reveal">
       <span class="eyebrow eyebrow-dk">The cost of waiting</span>
-      <h2>Readiness is cheapest before it&rsquo;s required.</h2>
+      <h2>Early readiness usually reduces disruption, rework and cost.</h2>
       <p>
         The work doesn&rsquo;t shrink if you delay it &mdash; it <b>compresses</b>.
         The same disclosure, built under deadline, costs more, proves less, and
@@ -205,9 +205,9 @@ export const WHYNOW_BODY = String.raw`
         <span class="wn-path-k">If you wait for the deadline</span>
         <h3>The scramble.</h3>
         <ul>
-          <li>Assurance capacity is booked &mdash; you <b>queue behind everyone</b> on the same deadline.</li>
-          <li>Data gathered in a rush gets <b>restated</b> &mdash; publicly, and at cost.</li>
-          <li>Capital and buyers apply the <b>unassured discount</b> to numbers no one has checked.</li>
+          <li>Assurance capacity can tighten near deadlines &mdash; you may <b>queue behind everyone</b> on the same schedule.</li>
+          <li>Data gathered in a rush may need <b>restating</b> &mdash; sometimes publicly, and at cost.</li>
+          <li>Capital and buyers can <b>discount</b> numbers no one has independently checked.</li>
         </ul>
       </div>
       <div class="wn-path move reveal">
@@ -239,8 +239,8 @@ export const WHYNOW_BODY = String.raw`
             <div class="cfg-k">STEP 01 / 03 · SCOPE</div>
             <h3>Which describes you?</h3>
             <div class="opts" data-group="band">
-              <div class="opt" data-v="Top 500 listed" data-fy="FY 2025-26"><span>Top 500 listed company</span><span class="tag">ASSURANCE FY25-26</span></div>
-              <div class="opt" data-v="Top 1,000 listed" data-fy="FY 2026-27"><span>Top 1,000 listed company</span><span class="tag">ASSURANCE FY26-27</span></div>
+              <div class="opt" data-v="Top 500 listed" data-fy="FY 2025-26"><span>Top 500 listed company</span><span class="tag">IN SCOPE FY25&ndash;26</span></div>
+              <div class="opt" data-v="Top 1,000 listed" data-fy="FY 2026-27"><span>Top 1,000 listed company</span><span class="tag">IN SCOPE FY26&ndash;27</span></div>
               <div class="opt" data-v="Value chain / supplier" data-fy="Exploring"><span>Supplier or mid-market in a value chain</span><span class="tag">CASCADE</span></div>
             </div>
           </div>
@@ -259,6 +259,7 @@ export const WHYNOW_BODY = String.raw`
             <h3>Your specification is ready.</h3>
             <p style="color:var(--n200);font-size:.95rem;margin-bottom:18px">Everything on the right goes to your specialist. Continue and we&rsquo;ll respond with the scoped method.</p>
             <div class="hero-cta"><a class="btn btn-gold" href="#" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">&rarr;</span></a></div>
+            <p class="cfg-consent" style="margin-top:14px;font-size:.78rem;line-height:1.5;color:rgba(255,255,255,.55)">By sending this, you agree Teravora may use the details you provide to respond to your enquiry, in line with our <a href="/privacy" style="color:inherit;text-decoration:underline">Privacy Policy</a>. We do not sell your data or share it for third-party marketing.</p>
             <div class="cfg-nav"><button class="cfg-back" data-back>&larr; Change answers</button></div>
           </div>
           <div class="cfg-step" data-s="3">
@@ -273,9 +274,9 @@ export const WHYNOW_BODY = String.raw`
         <div class="dsl">&#9671; ASSURANCE SPECIFICATION</div>
         <div class="drow"><span class="k">PROFILE</span><span class="val dim" id="dband">&mdash; select &mdash;</span></div>
         <div class="drow"><span class="k">FILING</span><span class="val dim" id="dfy">&mdash;</span></div>
-        <div class="drow"><span class="k">STANDARD</span><span class="val">BRSR-Core &middot; 49 KPIs / 9 attributes</span></div>
-        <div class="dspec">Reasonable assurance scope, mapped to your profile.</div>
-        <div class="dnote">Regulatory specification: SEBI BRSR-Core standard.</div>
+        <div class="drow"><span class="k">STANDARD</span><span class="val">BRSR Core &middot; 49 KPIs / 9 attributes</span></div>
+        <div class="dspec">Assessment or assurance scope, mapped to your profile.</div>
+        <div class="dnote">Regulatory specification: SEBI BRSR Core standard.</div>
       </div>
     </div>
   </div>
