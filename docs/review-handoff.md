@@ -50,21 +50,24 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 
 ## 3. REMAINING FROM THE REVIEW PDF
 
+> **Update 2026-07-27:** **About (80–84) and Careers (85–88) are now DONE and committed** —
+> `953fd6a`, `7b9f38a` (About), `8b11bf8` (Careers). The only PDF content pages still
+> open are the **three Legal pages (90–92)**, which are blocked on client facts. Two
+> residual sub-items are noted below; both live in the Privacy policy or need a client fact.
+
 ### 3a. Critical (🔴) still open
 | Page | Points | What | Blocker |
 |---|---|---|---|
-| **About** | 82 | Relationship + diagram → "associated practice / India practice" | none — **doable now** |
-| **About** | 83 | Founder: single CFA credential, value-chain, past-tense employment | partly doable; **exact ENOC title needs client** |
-| **About** | 81 | Remove competitor-comparison cards, replace with own-positioning | **positioning decision** — needs 2–3 options + sign-off |
-| **Careers** | 86 | Assessment-or-assurance reframe; remove parent; fix CFA; IFRS S2 (incl. TCFD) | none — **doable now** |
-| **Careers** | 88 | CV-form privacy + consent + retention | **CV retention period = client fact** |
+| ~~About~~ | ~~81, 82, 83~~ | ~~Relationship, founder, own-positioning cards~~ | ✅ **DONE** (`953fd6a`, `7b9f38a`) — *interim:* ENOC shown as "a senior role" pending exact title |
+| ~~Careers~~ | ~~86~~ | ~~Assessment-or-assurance, associated practice, CFA, IFRS S2~~ | ✅ **DONE** (`8b11bf8`) |
+| **Careers** | 88 | CV **retention period** number; verify a dedicated `careers@` inbox | ✅ consent/privacy microcopy shipped; **retention number = client fact (lives in Privacy §90)**; email still `contact@teravora.in` |
 | **Legal** | 90–92 | Privacy / Terms / Accessibility — full policies | **client facts (see §5)** |
 
 ### 3b. Non-critical (🟡/🟠) still open
 | Page | Points | What | Blocker |
 |---|---|---|---|
-| About | 80, 84 | Balanced hero framing; footer/print | 80 doable; 84 = G14 done / G15 print CSS |
-| Careers | 85, 87, 89 | "survive an auditor" → "independent review"; "current priority areas"; footer/print | doable now (89 = G15 print) |
+| ~~About~~ | ~~80~~ | ~~Balanced hero framing~~ | ✅ **DONE** (`953fd6a`) — 84 print = G15 |
+| ~~Careers~~ | ~~85, 87~~ | ~~"independent review"; "current priority areas"~~ | ✅ **DONE** (`8b11bf8`) — 89 print = G15 |
 | ESDD | 50 | Independence / conflicts FAQ | **needs client conflicts policy** |
 | Home | H11 | Engagement-timeline week figures realistic? | **client to confirm** |
 
