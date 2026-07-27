@@ -167,7 +167,7 @@ export function initHome() {
     shield:'<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M60 12l40 15v25c0 28-18 45-40 54C38 97 20 80 20 52V27z"/><path d="M42 60l12 12 22-28"/></svg>'
   };
   var PER=[
-    ["FOR LENDERS & DEAL TEAMS","The diligence has to survive the deal clock.","IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-Based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.","ENVIRONMENTAL & SOCIAL DUE DILIGENCE",ICON.columns,0,0],
+    ["FOR LENDERS & DEAL TEAMS","The diligence has to survive the deal clock.","IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.","ENVIRONMENTAL & SOCIAL DUE DILIGENCE",ICON.columns,0,0],
     ["A CUSTOMER OR LENDER ASKED FOR DATA","You're being pulled into the cascade.","Turn the request into a clean, credible data set you can hand over — the evidence behind each number, not a questionnaire answered once.","BUILD THE EVIDENCE BASE",ICON.chain,-70,-30],
     ["RISK, QUANTIFIED","The exposure, framed against the method — not guesswork.","We frame the penalty and audit-committee risk against a concrete method, so the board conversation is about a defensible plan, not a vague worry.","SEE HOW WE PROVE IT",ICON.shield,60,-60]
   ];
