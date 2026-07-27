@@ -23,7 +23,7 @@ export default function SolutionAdvisory() {
           name: "ESG & Climate Strategy Advisory",
           serviceType: "ESG and climate strategy, governance and materiality advisory",
           description:
-            "We embed ESG and climate into governance, strategy and operations — from materiality assessment to a board-approvable roadmap with named owners, aligned to BRSR, GRI, TCFD and IFRS S1/S2.",
+            "We embed ESG and climate into governance, strategy and operations — from materiality assessment to a board-approvable roadmap with named owners, aligned to BRSR, GRI, and IFRS S1 and IFRS S2 (incorporating the TCFD recommendations).",
           path: ROUTES.solutionAdvisory,
         })}
       />
