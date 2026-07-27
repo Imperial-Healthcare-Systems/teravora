@@ -25,7 +25,7 @@ export default function SolutionTraining() {
           serviceType:
             "Corporate and on-field training on environment, ESG, climate change and sustainability",
           description:
-            "Tailor-made corporate and on-field training programmes for boards, finance owners and operating teams — the IFC Performance Standards and Equator Principles, GHG Protocol accounting, IFRS S1/S2 and India's BRSR/BRSR-Core, taught by practitioners on the client's own data and sites.",
+            "Tailor-made corporate and on-field training programmes for boards, finance owners and operating teams — the IFC Performance Standards and Equator Principles, GHG Protocol accounting, IFRS S1 and IFRS S2, and India's BRSR/BRSR Core, taught by practitioners on the client's own data and sites.",
           path: ROUTES.solutionTraining,
         })}
       />

@@ -7,11 +7,11 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 <span id="top"></span>
 <header class="hero">
   <div class="hero-bg"></div><div class="hero-veil"></div>
-  <canvas id="stars"></canvas><div class="hero-flare"></div>
+  <canvas id="stars" aria-hidden="true"></canvas><div class="hero-flare"></div>
   <div class="wrap"><div class="hero-in">
     <span class="eyebrow reveal">Turn your sustainability goals into measurable results.</span>
     <h1 id="headline"><span class="hl-line">Practical ESG.</span><br><span class="l2 hl-line">Measurable Impact.</span></h1>
-    <p class="hero-sub reveal">Teravora is an environmental and social risk practice — IFC Performance Standards and Equator Principles advisory, ESG due diligence (Desktop and Site-based), Scope 1–3 carbon, and hands-on training. Evidence-led, with the method shown at every step — including India's BRSR assurance readiness when you're facing a deadline.</p>
+    <p class="hero-sub reveal">Teravora is an environmental and social risk practice — evidence-led, with the method shown at every step, so your numbers hold up when someone independent checks them. Including India's BRSR Core assessment or assurance readiness, when you're facing a deadline.</p>
     <div class="hero-cta reveal"><a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a><a class="btn btn-ghost" href="#start">Find your starting point</a></div>
     <div class="hero-note reveal"><b>ESG</b> Environmental, Social &amp; Governance.</div>
   </div></div>
@@ -25,11 +25,11 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="why-grid">
       <div class="reveal">
         <h2>The pressure isn't only a filing. It's your capital, your deals and your licence to operate.</h2>
-        <p>Lenders and DFIs test projects against the <b style="color:var(--paper)">IFC Performance Standards</b> and the <b style="color:var(--paper)">Equator Principles</b>. Buyers and investors ask for defensible ESG data. And India's listed companies now face reasonable assurance on BRSR-Core. Different triggers, one demand: numbers that hold up when someone independent checks them.</p>
+        <p>Lenders and DFIs test projects against the <b style="color:var(--paper)">IFC Performance Standards</b> and the <b style="color:var(--paper)">Equator Principles</b>. Buyers and investors ask for defensible ESG data. And India's listed companies now face independent assessment or assurance on BRSR Core. Different triggers, one demand: numbers that hold up when someone independent checks them.</p>
         <div class="inline-cta"><a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a><a class="lk" href="#method">See the method ↓</a></div>
         <div class="statlist">
-          <div class="statrow"><span class="n" data-to="500">0</span><span class="d">Top listed companies, first assurance band<span class="s">FY 2025–26</span></span></div>
-          <div class="statrow"><span class="n" data-to="1000">0</span><span class="d">Band widens the following year<span class="s">FY 2026–27</span></span></div>
+          <div class="statrow"><span class="n" data-to="1000">0</span><span class="d">Listed companies now in scope (assessment or assurance)<span class="s">FY 2026–27 · THIS FINANCIAL YEAR</span></span></div>
+          <div class="statrow"><span class="n" data-to="500">0</span><span class="d">In scope a year earlier<span class="s">FY 2025–26</span></span></div>
           <div class="statrow"><span class="n">＋</span><span class="d">Suppliers &amp; mid-market, via customers &amp; lenders<span class="s">VALUE-CHAIN CASCADE</span></span></div>
         </div>
       </div>
@@ -41,12 +41,12 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
-<section class="sec ig" id="infographic">
+<section class="sec ig" id="infographic" aria-label="BRSR Core: 49 KPIs across nine attributes">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="mono eyebrow">One service, in depth · When a BRSR deadline is what you're facing</span>
-      <h2>The assured subset, made legible.</h2>
-      <p>India's SEBI BRSR-Core — that is subject to reasonable assurance — is one of our core service lines, and this is how we read it. Grouped by Environmental, Social and Governance — hover any segment.</p>
+      <span class="mono eyebrow">One service, in depth · When a BRSR Core deadline is what you're facing</span>
+      <h2>The BRSR Core subset, made legible.</h2>
+      <p>India's SEBI BRSR Core — the subset subject to independent assessment or assurance — is one of our core service lines, and this is how we read it. Grouped by Environmental, Social and Governance — select any segment.</p>
     </div>
   </div>
   <div class="ig-stage">
@@ -63,7 +63,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         <h3 id="ightitle">GHG emissions</h3>
         <p id="igdesc">Scope 1 and Scope 2 greenhouse-gas footprint — and Scope 3 where material — with intensity per rupee of turnover.</p>
         <div class="ig-tags" id="igtags"></div>
-        <div class="ig-note">[ OFFICIAL SEBI-BRSR-CORE SPECIFICATION — NOT A CLIENT OUTCOME METRIC ]</div>
+        <div class="ig-note">[ OFFICIAL SEBI BRSR CORE SPECIFICATION — NOT A CLIENT OUTCOME METRIC ]</div>
         <div class="ig-cap">49 KPIs · 9 ATTRIBUTES</div>
         <div class="ig-esg" id="igesg">
           <div class="e e0"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-9 7-16 16-16 0 9-7 16-16 16Z"/><path d="M4 20 14 10"/></svg></div><div class="lb">ENVIRONMENTAL</div></div>
@@ -89,7 +89,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="badge-hl">◇ METHOD ENGINE · TRACE VIEW</span>
-      <h2>One method, four steps — from first data to assured disclosure.</h2>
+      <h2>One method, four steps — from first data to a defensible disclosure.</h2>
       <p>You see the working at every stage. That is the difference between a filing and a defensible disclosure.</p>
     </div>
     <div class="engine">
@@ -112,7 +112,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
       <div class="steps reveal">
         <div class="step on" data-i="0"><div class="sh"><span class="sn">01</span><span class="st">Assess</span></div><p class="sd">We map your existing data against every requirement and find the gaps, in plain language.</p></div>
-        <div class="step" data-i="1"><div class="sh"><span class="sn">02</span><span class="st">Comply</span></div><p class="sd">We prepare a BRSR filing built to pass reasonable assurance the first time.</p></div>
+        <div class="step" data-i="1"><div class="sh"><span class="sn">02</span><span class="st">Comply</span></div><p class="sd">We prepare a BRSR filing ready for independent assessment or assurance.</p></div>
         <div class="step" data-i="2"><div class="sh"><span class="sn">03</span><span class="st">Improve</span></div><p class="sd">We turn the disclosure you must produce into operating and financing advantages you can use.</p></div>
         <div class="step" data-i="3"><div class="sh"><span class="sn">04</span><span class="st">Prove</span></div><p class="sd">We build the audit trail behind every number, so the result stands up to scrutiny.</p></div>
       </div>
@@ -122,30 +122,28 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 
 <section class="sec proof" id="proof">
   <div class="wrap">
-    <span class="mono eyebrow reveal" style="color:var(--gold-l);display:inline-block">25+ years of global ESG experience. Built for India.</span>
+    <span class="mono eyebrow reveal" style="color:var(--gold-l);display:inline-block">More than 25 years of practitioner experience. Built for India.</span>
     <div class="proof-grid">
       <div class="proof-left reveal">
       <div class="sec-head" style="margin-bottom:26px">
       <h2>Built on decades of ESG expertise. Designed for Indian businesses.</h2>
-      <p>Backed by more than 25 years of Teravue's global sustainability practice, we help Indian organisations turn ESG from obligation into practical guidance, recognised frameworks and measurable outcomes.</p>
+      <p>Drawing on more than 25 years of practitioner experience — the backbone we share with the associated practice, Teravue — we help Indian organisations turn ESG from obligation into practical guidance and measurable outcomes.</p>
       </div>
       <div class="proof-pts">
-        <div class="ppt" data-row="0"><div class="i">01</div><div><h4>Decades of experience.<span class="st">EXPERIENCE</span></h4><p>25+ years of ESG and sustainability advisory through our parent practice, Teravue — across manufacturing, energy, infrastructure and financial services.</p></div></div>
-        <div class="ppt" data-row="1"><div class="i">02</div><div><h4>Standards you recognise.<span class="st">EXPERTISE</span></h4><p>Our advisory aligns with the frameworks that govern environmental and social risk — the IFC Performance Standards, the Equator Principles, the GHG Protocol and IFRS S1/S2, alongside India's BRSR — adapted to your business realities.</p></div></div>
-        <div class="ppt" data-row="2"><div class="i">03</div><div><h4>Outcomes you can act on.<span class="st">EXECUTION</span></h4><p>ISO-certified, IMS-compliant delivery focused on practical, data-backed progress your leadership can measure.</p></div></div>
+        <div class="ppt" data-row="0"><div class="i">01</div><div><h4>Decades of experience.<span class="st">EXPERIENCE</span></h4><p>More than 25 years of ESG and sustainability advisory, drawn from the associated practice, Teravue — across manufacturing, energy, infrastructure and financial services.</p></div></div>
+        <div class="ppt" data-row="1"><div class="i">02</div><div><h4>Standards you recognise.<span class="st">EXPERTISE</span></h4><p>Our advisory aligns with the frameworks that govern environmental and social risk — the IFC Performance Standards, the Equator Principles, the GHG Protocol and IFRS S1 and IFRS S2, alongside India's BRSR — adapted to your business realities.</p></div></div>
+        <div class="ppt" data-row="2"><div class="i">03</div><div><h4>Outcomes you can act on.<span class="st">EXECUTION</span></h4><p>Structured delivery aligned with relevant ISO management-system principles, focused on practical, data-backed progress your leadership can measure.</p></div></div>
         <a class="btn btn-gold proof-cta" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
       </div>
       </div>
       <div class="ledger-glass reveal" id="ledger">
         <div class="lg-head">
           <div class="lg-toggle"><button class="on" data-v="sample">WHY TERAVORA</button><button data-v="flow">OUR APPROACH</button></div>
-          <span class="lg-tag">BACKED BY TERAVUE</span>
+          <span class="lg-tag">ASSOCIATED PRACTICE</span>
         </div>
         <div class="lg-view" data-view="sample">
           <div class="lrow" data-row="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span><span class="lx">PRACTICE · GLOBAL ESG ADVISORY</span><span class="v v-src" data-final="25+ YRS">25+ YRS</span></div>
-          <div class="lrow" data-row="1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="M7 7h10"/><path d="M7 7l-3 6a3 3 0 0 0 6 0Z"/><path d="M17 7l3 6a3 3 0 0 1-6 0Z"/><path d="M8.5 20h7"/></svg></span><span class="lx">STANDARDS · RECOGNISED FRAMEWORKS</span><span class="v v-val" data-final="ALIGNED">ALIGNED</span></div>
-          <div class="lrow" data-row="2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6Z"/><path d="M9 11.5l2 2 4-4"/></svg></span><span class="lx">DELIVERY · ISO-CERTIFIED PROCESS</span><span class="v v-ok" data-final="CERTIFIED">CERTIFIED</span></div>
-        </div>
+          <div class="lrow" data-row="1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16"/><path d="M7 7h10"/><path d="M7 7l-3 6a3 3 0 0 0 6 0Z"/><path d="M17 7l3 6a3 3 0 0 1-6 0Z"/><path d="M8.5 20h7"/></svg></span><span class="lx">STANDARDS · RECOGNISED FRAMEWORKS</span><span class="v v-val" data-final="ALIGNED">ALIGNED</span></div>        </div>
         <div class="lg-view" data-view="flow" hidden>
           <div class="flow">
             <div class="fnode"><div class="fn-k">01 · DISCOVER</div><div class="fn-t">Understand the business</div></div>
@@ -158,21 +156,17 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="manifest">
           <span class="mf-c tl"></span><span class="mf-c tr"></span><span class="mf-c bl"></span><span class="mf-c br"></span>
           <div class="mf-metrics">
-            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">[ QTY // KPI_METRICS ]</div></div>
-            <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">[ BRSR-CORE ATTRIBUTES ]</div></div>
-            <div class="mf-b"><div class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="6.2"/><path d="M9.2 10l2 2 3.6-3.6"/><path d="M8.4 15.6L7 21l5-2.2L17 21l-1.4-5.4"/></svg></div><div class="k">ISO-CERTIFIED</div></div>
-          </div>
-          <div class="mf-note">The SEBI BRSR-Core specification — the standard we work to, not a client claim.</div>
+            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">[ BRSR CORE KPIs ]</div></div>
+            <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">[ BRSR CORE ATTRIBUTES ]</div></div>          </div>
+          <div class="mf-note">The SEBI BRSR Core specification — the standard we work to, not a client claim.</div>
           <div class="mf-std">
             <span class="std" data-t="IFC Performance Standards — environmental and social risk"><span class="sp">E&amp;S</span><span class="sc">IFC PS</span></span>
             <span class="std" data-t="Equator Principles — project-finance risk framework"><span class="sp">FINANCE</span><span class="sc">EQUATOR</span></span>
             <span class="std" data-t="Business Responsibility & Sustainability Report"><span class="sp">STD</span><span class="sc">BRSR</span></span>
-            <span class="std" data-t="SEBI-assured subset — 49 KPIs / 9 attributes"><span class="sp">CORE</span><span class="sc">BRSR-CORE</span></span>
+            <span class="std" data-t="BRSR Core subset subject to assessment or assurance — 49 KPIs / 9 attributes"><span class="sp">CORE</span><span class="sc">BRSR CORE</span></span>
             <span class="std" data-t="Global Reporting Initiative"><span class="sp">STD</span><span class="sc">GRI</span></span>
             <span class="std" data-t="Sustainability Accounting Standards Board"><span class="sp">STD</span><span class="sc">SASB</span></span>
-            <span class="std" data-t="Task Force on Climate-related Financial Disclosures"><span class="sp">CLIMATE</span><span class="sc">TCFD</span></span>
-            <span class="std" data-t="ISO-certified, IMS-compliant delivery"><span class="sp">CERT</span><span class="sc">ISO</span></span>
-          </div>
+            <span class="std" data-t="IFRS S1 and IFRS S2 (ISSB) — incorporating the TCFD recommendations"><span class="sp">CLIMATE</span><span class="sc">ISSB</span></span>          </div>
         </div>
       </div>
     </div>
@@ -185,7 +179,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="fdr-grid">
       <div class="fdr-id reveal">
         <h2>Brijesh D.</h2>
-        <div class="fdr-creds">CEnv · CEng · CFA-Sustainable Investing · CFA-ESG · GARP-SCR · CEM · CEA · PMP</div>
+        <div class="fdr-creds">CEnv · CEng · Sustainable Investing Certificate (CFA Institute) · GARP-SCR · CEM · CEA · PMP</div>
         <div class="fdr-title">Founder &amp; Designated Partner, Teravora Consulting India LLP</div>
       </div>
       <div class="fdr-bio reveal">
@@ -196,17 +190,17 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <ul class="fdr-badges" role="list">
       <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v4h4"/><path d="M9.5 12h5"/><path d="M9.5 15.5h5"/></svg></span><span class="lx">Contributor — ISO/IWA 48:2024 ESG Framework</span></li>
       <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19C6 11 11 5 19 5c0 8-5 14-13 14Z"/><path d="M6 19c3-6 6-9 10-11"/></svg></span><span class="lx">Chartered Environmentalist (CEnv) &amp; Chartered Chemical Engineer (CEng)</span></li>
-      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7.5 14.5l3.5-4.5 3 2.5 4.5-6"/></svg></span><span class="lx">CFA — Certificate in Sustainable Investing &amp; Certificate in ESG Investing</span></li>
+      <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7.5 14.5l3.5-4.5 3 2.5 4.5-6"/></svg></span><span class="lx">Sustainable Investing Certificate, CFA Institute (formerly Certificate in ESG Investing)</span></li>
       <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.4-7 9-4-1.6-7-4.5-7-9V6Z"/><path d="M9 11.5l2 2 4-4"/></svg></span><span class="lx">GARP Sustainability &amp; Climate Risk (SCR) &amp; Project Management Professional (PMP)</span></li>
       <li class="fdr-badge reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5a7.5 7.5 0 0 1 15 0"/><path d="M12 16.5l3.5-4.5"/><path d="M12 9.5V8"/><path d="M7 11.5l-1-1"/><path d="M17 11.5l1-1"/></svg></span><span class="lx">Certified Energy Manager (CEM · AEE, USA) &amp; Certified Energy Auditor (CEA · BEE, India)</span></li>
     </ul>
   </div>
 </section>
 
-<section class="sec tri" id="real-economy" aria-label="The Scope 1–3 emissions story">
+<section class="sec tri" id="real-economy" aria-label="The Scopes 1, 2 and 3 emissions story">
   <div class="wrap">
-    <div class="sec-label reveal"><span>THE CARBON STORY</span><span>SCOPE 1 · 2 · 3</span></div>
-    <div class="tri-head reveal"><h2>Most of your footprint lives in the supply chain.</h2><p>Scope 1 and 2 are the easy part. The weight sits in Scope 3 — the value chain — and that is where the work gets real. We have taken it the whole way: <b style="color:var(--paper)">Scope 3 across all 15 categories for an energy company</b>.</p></div>
+    <div class="sec-label reveal"><span>THE CARBON STORY</span><span>SCOPES 1 · 2 · 3</span></div>
+    <div class="tri-head reveal"><h2>For many organisations, a significant share lies in the value chain.</h2><p>Scope 3 — the value chain — is often the largest share, and that is where the work gets real. We have taken it the whole way: <b style="color:var(--paper)">Scope 3 across all 15 categories for an energy company</b>.</p></div>
     <div class="tri-grid">
       <figure class="tri-card reveal" style="--img:url('/v/home/tri-climate.webp')"><div class="tri-ph"></div><figcaption><span class="tk">SCOPE 1 · DIRECT</span><span class="tl">Fuel combustion, process emissions and company assets — the footprint you own and control.</span></figcaption></figure>
       <figure class="tri-card reveal" style="--img:url('/v/home/tri-built.webp')"><div class="tri-ph"></div><figcaption><span class="tk">SCOPE 2 · ENERGY</span><span class="tl">Purchased electricity, steam and cooling — the emissions embedded in the energy you buy.</span></figcaption></figure>
@@ -220,7 +214,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="pf-grid reveal">
       <div class="pf-intro">
         <div class="sec-head"><span class="mono eyebrow">The method, applied</span><h2>What working with Teravora looks like.</h2><p>The shape of a typical engagement — from kickoff to a filed, defensible disclosure.</p></div>
-        <div class="pf-foot"><span>Want the track record behind the method?</span> <a href="https://teravue.org/" target="_blank" rel="noopener" class="lk">See our parent practice's work →</a></div>
+        <div class="pf-foot"><span>Want the track record behind the method?</span> <a href="https://teravue.org/" target="_blank" rel="noopener" class="lk">See the associated practice's work →</a></div>
       </div>
       <figure class="pf-fig">
         <div class="pf-imgwrap">
@@ -233,10 +227,10 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="pf-view reveal" data-view="process">
       <div class="tl">
         <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEK 0</div><h4>Kickoff &amp; scope</h4><p>We map your band, deadline and the data you already hold.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 1–2 · ASSESS</div><h4>Gap analysis</h4><p>Every BRSR-Core requirement marked present, partial, or missing — in plain language.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 3–6 · COMPLY</div><h4>Build the disclosure</h4><p>A filing assembled to pass reasonable assurance the first time.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 1–2 · ASSESS</div><h4>Gap analysis</h4><p>Every BRSR Core requirement marked present, partial, or missing — in plain language.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 3–6 · COMPLY</div><h4>Build the disclosure</h4><p>A filing prepared for independent assessment or assurance.</p></div>
         <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">ONGOING · IMPROVE</div><h4>Turn it to advantage</h4><p>Use the disclosure for financing and operating gains, not just compliance.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">FILING · PROVE</div><h4>Audit trail delivered</h4><p>Every number backed by evidence your assurer can follow.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">FILING · PROVE</div><h4>Audit trail delivered</h4><p>Every number backed by evidence an assessor or assurer can follow.</p></div>
       </div>
     </div>
   </div>
@@ -259,7 +253,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="sb-card">
           <div class="ck" id="ck">FOR LENDERS &amp; DEAL TEAMS</div>
           <h3 id="ch">The diligence has to survive the deal clock.</h3>
-          <p id="cp">IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-Based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.</p>
+          <p id="cp">IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.</p>
           <a class="go" href="#cta" id="cgo">ENVIRONMENTAL &amp; SOCIAL DUE DILIGENCE <span class="arw">→</span></a>
         </div>
       </div>
@@ -283,10 +277,10 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
             <h3>Which describes you?</h3>
             <div class="opts" data-group="band">
               <div class="opt" data-v="Lender / DFI" data-fy="Deal window" data-std="IFC Performance Standards · Equator Principles"><span>Lender, DFI or project financier</span><span class="tag">IFC · EP</span></div>
-              <div class="opt" data-v="Investor / deal team" data-fy="Deal window" data-std="ESDD — Desktop, escalating to Site-Based"><span>Investor or PE deal team</span><span class="tag">ESDD</span></div>
+              <div class="opt" data-v="Investor / deal team" data-fy="Deal window" data-std="ESDD — Desktop, escalating to Site-based"><span>Investor or PE deal team</span><span class="tag">ESDD</span></div>
               <div class="opt" data-v="Sponsor / borrower" data-fy="Deal window" data-std="IFC PS implementation · HSESMS · ESAP"><span>Project sponsor or borrower</span><span class="tag">IFC PS</span></div>
-              <div class="opt" data-v="Top 500 listed" data-fy="FY 2025-26" data-std="BRSR-Core · 49 KPIs / 9 attributes"><span>Top 500 listed company</span><span class="tag">ASSURANCE FY25-26</span></div>
-              <div class="opt" data-v="Top 1,000 listed" data-fy="FY 2026-27" data-std="BRSR-Core · 49 KPIs / 9 attributes"><span>Top 1,000 listed company</span><span class="tag">ASSURANCE FY26-27</span></div>
+              <div class="opt" data-v="Top 1,000 listed" data-fy="FY 2026-27" data-std="BRSR Core · 49 KPIs / 9 attributes"><span>Top 1,000 listed company</span><span class="tag">ASSURANCE FY26-27</span></div>
+              <div class="opt" data-v="Top 500 listed" data-fy="FY 2025-26" data-std="BRSR Core · 49 KPIs / 9 attributes"><span>Top 500 listed company</span><span class="tag">ASSURANCE FY25-26</span></div>
               <div class="opt" data-v="Value chain / supplier" data-fy="Exploring" data-std="GHG Protocol · Scope 3 value chain"><span>Supplier or mid-market in a value chain</span><span class="tag">CASCADE</span></div>
             </div>
           </div>
@@ -305,6 +299,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
             <h3>Your specification is ready.</h3>
             <p style="color:var(--n200);font-size:.95rem;margin-bottom:18px">Everything on the right goes to your specialist. Continue and we'll respond with the scoped method.</p>
             <div class="hero-cta"><a class="btn btn-gold" href="#" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">→</span></a></div>
+            <p class="cfg-consent" style="margin-top:14px;font-size:.78rem;line-height:1.5;color:rgba(255,255,255,.55)">By sending this, you agree Teravora may use the details you provide to respond to your enquiry, in line with our <a href="/privacy" style="color:inherit;text-decoration:underline">Privacy Policy</a>. We do not sell your data or share it for third-party marketing.</p>
             <div class="cfg-nav"><button class="cfg-back" data-back>← Change answers</button></div>
           </div>
           <div class="cfg-step" data-s="3">

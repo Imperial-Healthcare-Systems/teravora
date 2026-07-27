@@ -127,6 +127,8 @@
 .pg-careers .apply-alt{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-top:26px}
 .pg-careers .apply-mail{color:var(--teal-l);border-bottom:1px solid rgba(79,188,194,.4);padding-bottom:1px}
 .pg-careers .apply-mail:hover{color:var(--gold-l);border-color:var(--gold-l)}
+.pg-careers .apply-consent{max-width:60ch;margin:20px auto 0;font-size:.82rem;line-height:1.55;color:var(--meta)}
+.pg-careers .apply-consent .apply-mail{text-transform:none;letter-spacing:0}
 
 @media(prefers-reduced-motion:reduce){
   .pg-careers *{transition:none!important;animation:none!important}

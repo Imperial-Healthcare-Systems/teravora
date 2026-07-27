@@ -53,7 +53,7 @@ export function init_how_we_prove() {
     draw(); addEventListener("resize", sz);
   }
 
-  // Beat 3 — trace a number. Step one figure Source→Control→Evidence→Assured;
+  // Beat 3 — trace a number. Step one figure Source→Control→Evidence→Assurance-ready;
   // status badge climbs, progress + trace node advance. Autoplays once on
   // scroll-in (unless reduced motion), then stays interactive.
   (function () {
@@ -69,7 +69,7 @@ export function init_how_we_prove() {
     var prog = document.getElementById("tcprog");
     var docs = [].slice.call(root.querySelectorAll(".tc-doc"));
     var CX = [24, 114, 206, 296];
-    var LABELS = ["SOURCED", "CONTROLLED", "EVIDENCED", "ASSURED"];
+    var LABELS = ["SOURCED", "CONTROLLED", "EVIDENCED", "ASSURANCE-READY"];
     var cur = -1;
     function show(i) {
       if (i === cur) return; cur = i;

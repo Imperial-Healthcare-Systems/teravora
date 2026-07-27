@@ -227,3 +227,88 @@ a:hover {
   .btn-gold:hover,
   .btn-ghost:hover { transform: none; }
 }
+
+/* =========================================================================
+ * PRINT / Save-as-PDF  (review G15)
+ * The dark-theme token graph is screen-only; print is outside its scope, so
+ * this block is the ONE documented place that uses literal ink-on-paper values
+ * (like the next/font exception above). Goals: flatten the dark theme to legible
+ * ink-on-white (browsers drop background graphics by default, which would leave
+ * the site's light text invisible), reveal scroll-in content, open every FAQ
+ * accordion, hide fixed/decorative chrome, and avoid blank / logo-only pages.
+ * Base flatten mirrors the HTML5-Boilerplate print reset.
+ * ======================================================================= */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #1a1a1a !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+  html,
+  body { background: #fff !important; }
+
+  /* Keep links identifiable on paper. */
+  a { color: #0b3d5c !important; text-decoration: underline !important; }
+
+  /* Scroll-reveal elements may never have entered the viewport — force shown. */
+  .reveal,
+  .hl-line,
+  [class*="reveal"] { opacity: 1 !important; transform: none !important; }
+
+  /* FAQ accordions (.qa) — print every answer expanded. */
+  .qa .a {
+    max-height: none !important;
+    overflow: visible !important;
+    padding-bottom: 18px !important;
+  }
+
+  /* Fixed site nav (a <header> that is NOT a page hero) — hero <header class="shero">
+     and the <footer> are kept. */
+  header:not(.shero) { display: none !important; }
+
+  /* Decorative full-bleed layers / particles / cues — hidden (ink + blank-page savers). */
+  .rails,
+  .scrollcue,
+  .shero-bg,
+  .shero-veil,
+  .shero-flare,
+  .dhband,
+  .fflare,
+  .flare,
+  .veil,
+  .particles,
+  #stars,
+  canvas,
+  .img-credit { display: none !important; }
+  .btn-gold::after { display: none !important; }
+
+  /* Trim heavy hero padding so the first printed page is not a near-blank band. */
+  .shero,
+  header.shero {
+    min-height: 0 !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* Flow control — keep figures/cards/rows and headings intact across pages. */
+  img,
+  svg,
+  figure { max-width: 100% !important; break-inside: avoid; page-break-inside: avoid; }
+  h1, h2, h3, h4 { break-after: avoid; page-break-after: avoid; }
+  li,
+  figure,
+  blockquote,
+  .card,
+  .vcard,
+  .track,
+  .pos-card,
+  .tri-card,
+  .rc,
+  .qa { break-inside: avoid; page-break-inside: avoid; }
+
+  @page { margin: 14mm; }
+}

@@ -11,7 +11,7 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">Sustainable Finance &amp; Carbon Markets</span>
-    <h1><span class="hl-line">Green capital is cheaper — if your numbers survive diligence.</span></h1>
+    <h1><span class="hl-line">Credible sustainability data can strengthen access to capital — if it survives diligence.</span></h1>
     <p class="lede reveal">Sustainable-finance readiness, <span class="g">ESG-ratings support</span> and <span class="g">carbon-markets guidance</span> <i>(compliance and voluntary)</i> — built on the same evidence discipline as our disclosure work, because the lender's first question is "prove it."</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
@@ -37,8 +37,8 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
     </div>
     <div class="pressure">
-      <div class="pcard reveal"><div class="k">01 · THE LENDER</div><h4>Terms follow evidence.</h4><p>Green and sustainability-linked instruments tie pricing to KPIs — which means the KPIs get tested. A target without a verifiable baseline does not survive the lender's diligence.</p></div>
-      <div class="pcard reveal"><div class="k">02 · THE RATING</div><h4>Ratings gate capital.</h4><p>ESG rating providers are now SEBI-regulated in India, and investors screen on their output. A rating built on incomplete disclosure is a discount you pay every year.</p></div>
+      <div class="pcard reveal"><div class="k">01 · THE LENDER</div><h4>Terms follow evidence.</h4><p>Green and sustainability-linked instruments tie pricing to KPIs — which means the KPIs get tested. A target without a verifiable baseline rarely survives the lender's diligence.</p></div>
+      <div class="pcard reveal"><div class="k">02 · THE RATING</div><h4>Ratings influence capital.</h4><p>ESG rating providers are now SEBI-regulated in India, and investors screen on their output. A rating built on incomplete disclosure can cost you every year.</p></div>
       <div class="pcard reveal"><div class="k">03 · THE MARKET</div><h4>Carbon gets a price.</h4><p>Compliance and voluntary carbon markets are maturing — with integrity scrutiny to match. Credits and claims that cannot show their measurement basis are the ones that get challenged.</p></div>
     </div>
   </div>
@@ -53,10 +53,10 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
     </div>
     <div class="trace reveal" aria-hidden="true"><span class="tline"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tpulse"></span></div>
     <div class="steps4">
-      <div class="s4 reveal"><div class="n">01 · BASELINE</div><h4>Establish the evidence</h4><p>The ESG and emissions data an investor, lender or rater will test — sourced, controlled and reconciled to your disclosure.</p></div>
-      <div class="s4 reveal"><div class="n">02 · STRUCTURE</div><h4>Fit the instrument</h4><p>Which route fits — green or sustainability-linked finance, a ratings uplift, a carbon-market position — and what it requires of you.</p></div>
-      <div class="s4 reveal"><div class="n">03 · EVIDENCE</div><h4>Prepare for diligence</h4><p>Frameworks, documentation and the data room prepared for external review and second-party scrutiny.</p></div>
-      <div class="s4 reveal"><div class="n">04 · MAINTAIN</div><h4>Report and hold it</h4><p>Post-issuance reporting and KPI tracking — because linked terms and ratings are re-tested every cycle, not once.</p></div>
+      <div class="s4 reveal"><div class="n">01 · BASELINE</div><h4>Establish the evidence</h4><p>The ESG and emissions data an investor, lender or rater will test — sourced, controlled and reconciled to your disclosure.</p><div class="mout"><span class="mout-k">You get</span> A verifiable evidence base</div></div>
+      <div class="s4 reveal"><div class="n">02 · STRUCTURE</div><h4>Fit the instrument</h4><p>Which route fits — green or sustainability-linked finance, a ratings uplift, a carbon-market position — and what it requires of you.</p><div class="mout"><span class="mout-k">You get</span> A structuring route</div></div>
+      <div class="s4 reveal"><div class="n">03 · EVIDENCE</div><h4>Prepare for diligence</h4><p>Frameworks, documentation and the data room prepared for external review and second-party scrutiny.</p><div class="mout"><span class="mout-k">You get</span> A diligence-ready data room</div></div>
+      <div class="s4 reveal"><div class="n">04 · MAINTAIN</div><h4>Report and hold it</h4><p>Post-issuance reporting and KPI tracking — because linked terms and ratings are re-tested every cycle, not once.</p><div class="mout"><span class="mout-k">You get</span> Post-issuance reporting</div></div>
     </div>
   </div>
 </section>
@@ -71,9 +71,9 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="reveal">
         <p style="color:var(--n200);margin-bottom:18px">The work sits on the same standards spine as our disclosure practice — one set of numbers serving reporting, rating and financing:</p>
         <div class="stds">
-          <span class="std2"><b>BRSR</b> / BRSR-Core</span>
+          <span class="std2"><b>BRSR</b> / BRSR Core</span>
           <span class="std2"><b>GHG</b> Protocol</span>
-          <span class="std2"><b>IFRS</b> S1 / S2</span>
+          <span class="std2"><b>IFRS</b> S1 &amp; S2</span>
           <span class="std2"><b>ESG ratings</b> · ERP</span>
         </div>
         <div class="pov">Sustainable finance fails at the same place every time: the gap between the claim and the data behind it. We close that gap before you take the claim to market.</div>
@@ -81,14 +81,13 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
           <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
           <p>A typical engagement moves from evidence baseline to a diligence-ready framework and data room across one financing cycle.</p>
         </div>
-        <div class="egate">[ FINANCING &amp; RATINGS OUTCOMES POPULATE HERE ONCE SUBSTANTIATED — WE DO NOT PUBLISH AN OUTCOME WE HAVE NOT VERIFIED. ]</div>
       </div>
       <div class="readycard reveal">
         <div class="rc-head"><span class="t">FINANCE READINESS · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">BASELINE · RECONCILED TO DISCLOSURE</span><span class="v" data-final="RECONCILED">RECONCILED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">KPIs · SELECTED TO BE TESTABLE</span><span class="v" data-final="TESTABLE">TESTABLE</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">DATA ROOM · READY FOR REVIEW</span><span class="v" data-final="READY">READY</span></div>
-        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF OUR PARENT PRACTICE, TERAVUE.</div>
+        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF THE ASSOCIATED PRACTICE, TERAVUE.</div>
       </div>
     </div>
     <div class="inline-cta reveal">
@@ -103,8 +102,8 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="band-scrim"></div>
   <div class="wrap band-in">
     <span class="mono band-kicker reveal">◇ THE REAL ECONOMY</span>
-    <h2 class="band-h reveal">Every instrument prices<br>something physical.</h2>
-    <p class="band-sub reveal">A green bond funds an asset. A credit represents a tonne. The finance is only as strong as the measurement underneath it — that is the part we build.</p>
+    <h2 class="band-h reveal">Each instrument links to something<br>measurable and eligible.</h2>
+    <p class="band-sub reveal">A green bond funds a qualifying asset; a credit represents a measured tonne; a linked KPI must be one you can evidence. Each instrument should be linked to measurable eligible activities, assets or KPIs — the finance is only as strong as the measurement underneath, and that is the part we build.</p>
   </div>
 </section>
 
@@ -140,7 +139,8 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="qa"><button>What counts as "sustainable finance"? <span class="pl">+</span></button><div class="a">Financing whose terms are tied to environmental or social performance — green bonds and loans that fund qualifying assets, and sustainability-linked instruments whose pricing moves with agreed KPIs. Both stand or fall on verifiable data.</div></div>
       <div class="qa"><button>Who regulates ESG ratings in India? <span class="pl">+</span></button><div class="a">SEBI regulates ESG Rating Providers (ERPs) in India. Ratings differ meaningfully between providers, so the practical work is evidence: closing the disclosure and data gaps that raters score, rather than arguing with the methodology.</div></div>
       <div class="qa"><button>What is the difference between compliance and voluntary carbon markets? <span class="pl">+</span></button><div class="a">Compliance markets are created by regulation, where covered entities must meet obligations. Voluntary markets are where organisations buy credits by choice, against integrity standards. Both increasingly demand the same thing: a credible, traceable measurement basis.</div></div>
-      <div class="qa"><button>Do you publish outcome numbers? <span class="pl">+</span></button><div class="a">No — we are a new India brand and will not publish an outcome we have not verified. We prove the method: the baseline, KPI and evidence trail a diligence process will test. Track record shown is our parent practice, Teravue, attributed.</div></div>
+      <div class="qa"><button>Can you guarantee a better rating or cheaper capital? <span class="pl">+</span></button><div class="a">No. Ratings, pricing and eligibility are decided by third parties — rating providers, lenders and verifiers — on their own criteria. What we do is close the evidence gaps those parties test, which is what strengthens your standing; we do not promise a particular rating, price or approval.</div></div>
+      <div class="qa"><button>Do you publish outcome numbers? <span class="pl">+</span></button><div class="a">Not until they are verified. Teravora is a new India practice and will not publish an outcome we have not substantiated. We prove the method — the baseline, KPI and evidence trail a diligence process will test — and our own results appear as engagements complete. The wider track record shown is the associated practice, Teravue, attributed.</div></div>
     </div>
   </div>
 </section>`;

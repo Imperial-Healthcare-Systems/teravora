@@ -11,7 +11,7 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">Technical &amp; Environmental Services</span>
-    <h1><span class="hl-line">Measured on site. Costed in rupees. Ready for the certifier.</span></h1>
+    <h1><span class="hl-line">Measured on site. Costed in rupees. Prepared for certification audit.</span></h1>
     <p class="lede reveal">Energy, water and waste audits, <span class="g">LCA</span> <i>(life-cycle assessment)</i>, <span class="g">EIA / ESIA</span> <i>(environmental and social impact assessment)</i> and ISO / IMS implementation — the engineering layer under every credible ESG claim.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
@@ -32,13 +32,13 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
     <div class="prob-top">
       <div class="sec-head reveal" style="margin-bottom:0">
         <span class="mono eyebrow">The shift</span>
-        <h2>Every ESG number traces back to a meter, a manifest or a permit.</h2>
+        <h2>Technical environmental data should trace to a meter, record, manifest, permit or verified source.</h2>
         <p>Disclosure and strategy are only as good as the measurements under them — and the same measurements carry permits, costs and customer requirements. Three pressures land at once.</p>
       </div>
     </div>
     <div class="pressure">
       <div class="pcard reveal"><div class="k">01 · THE PERMIT</div><h4>Compliance is continuous.</h4><p>Consents, discharge norms and environmental clearances do not pause between filings. Audits and impact assessments keep the operating licence current — and evidenced.</p></div>
-      <div class="pcard reveal"><div class="k">02 · THE COST LINE</div><h4>Waste is paid for twice.</h4><p>Energy, water and material losses show up in the P&amp;L before they show up in any report. A proper audit finds where the money leaks — and ranks the fixes by payback.</p></div>
+      <div class="pcard reveal"><div class="k">02 · THE COST LINE</div><h4>Waste is paid for twice.</h4><p>Energy, water and material losses show up in the P&amp;L before they show up in any report. A proper audit finds where the money leaks — and ranks the fixes by cost and payback, where one applies.</p></div>
       <div class="pcard reveal"><div class="k">03 · THE CUSTOMER</div><h4>Buyers ask for the system.</h4><p>Export customers and large buyers increasingly require certified management systems — ISO 14001, 45001, 9001 — and audit them. A certificate without a living system fails that audit.</p></div>
     </div>
   </div>
@@ -53,10 +53,10 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
     </div>
     <div class="trace reveal" aria-hidden="true"><span class="tline"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tpulse"></span></div>
     <div class="steps4">
-      <div class="s4 reveal"><div class="n">01 · AUDIT</div><h4>Measure on site</h4><p>Energy, water and waste flows measured where they happen — meters, logs and mass balance, not estimates from a template.</p></div>
-      <div class="s4 reveal"><div class="n">02 · QUANTIFY</div><h4>Rank the findings</h4><p>Losses, gaps and impacts quantified and ranked — by cost, by compliance risk, by payback — into a punch-list you can budget.</p></div>
-      <div class="s4 reveal"><div class="n">03 · IMPLEMENT</div><h4>Build the system</h4><p>ISO / IMS documentation and implementation support that fits how the site actually works — written to be used, not shelved.</p></div>
-      <div class="s4 reveal"><div class="n">04 · VERIFY</div><h4>Stand the scrutiny</h4><p>Certification-ready systems and assessment reports with the evidence attached — for the certifier, the regulator or the customer audit.</p></div>
+      <div class="s4 reveal"><div class="n">01 · AUDIT</div><h4>Measure on site</h4><p>Energy, water and waste flows measured where they happen — meters, logs and mass balance, not estimates from a template.</p><div class="mout"><span class="mout-k">You get</span> A measured baseline</div></div>
+      <div class="s4 reveal"><div class="n">02 · QUANTIFY</div><h4>Rank the findings</h4><p>Losses, gaps and impacts quantified and ranked — by cost, by compliance risk, and by payback where it applies — into a punch-list you can budget.</p><div class="mout"><span class="mout-k">You get</span> A ranked findings register</div></div>
+      <div class="s4 reveal"><div class="n">03 · IMPLEMENT</div><h4>Build the system</h4><p>ISO / IMS documentation and implementation support that fits how the site actually works — written to be used, not shelved.</p><div class="mout"><span class="mout-k">You get</span> An ISO / IMS system</div></div>
+      <div class="s4 reveal"><div class="n">04 · VERIFY</div><h4>Stand the scrutiny</h4><p>Certification-ready systems and assessment reports with the evidence attached — for the certification body, the regulator or a customer audit.</p><div class="mout"><span class="mout-k">You get</span> A certification-ready pack</div></div>
     </div>
   </div>
 </section>
@@ -65,7 +65,7 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
   <div class="wrap">
     <div class="sec-head reveal" style="max-width:none;margin-bottom:34px">
       <span class="mono eyebrow" style="color:var(--gold-l)">Engineering-grade — and we show how</span>
-      <h2>Every finding carries its measurement, its method and its payback.</h2>
+      <h2>Every finding carries its measurement, its method and, where it applies, its payback.</h2>
     </div>
     <div class="pb-grid">
       <div class="reveal">
@@ -81,14 +81,13 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
           <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
           <p>A typical audit engagement runs from site measurement to a ranked findings register and implementation plan within a defined audit window.</p>
         </div>
-        <div class="egate">[ AUDITED SAVINGS &amp; CERTIFICATIONS POPULATE HERE ONCE SUBSTANTIATED — WE DO NOT PUBLISH AN OUTCOME WE HAVE NOT VERIFIED. ]</div>
       </div>
       <div class="readycard reveal">
         <div class="rc-head"><span class="t">SITE AUDIT · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">FLOWS · METERED AT SOURCE</span><span class="v" data-final="MEASURED">MEASURED</span></div>
-        <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">FINDINGS · RANKED BY PAYBACK</span><span class="v" data-final="RANKED">RANKED</span></div>
+        <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">FINDINGS · RANKED BY COST &amp; PAYBACK</span><span class="v" data-final="RANKED">RANKED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">SYSTEM · CERTIFICATION-READY</span><span class="v" data-final="READY">READY</span></div>
-        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF OUR PARENT PRACTICE, TERAVUE.</div>
+        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF THE ASSOCIATED PRACTICE, TERAVUE.</div>
       </div>
     </div>
     <div class="inline-cta reveal">
@@ -141,6 +140,7 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
       <div class="qa"><button>What is a life-cycle assessment (LCA)? <span class="pl">+</span></button><div class="a">A quantified assessment of a product's environmental impact across its life — raw materials, manufacture, use and end-of-life — carried out to the ISO 14040 / 14044 standards. Buyers increasingly ask for it behind "green" product claims.</div></div>
       <div class="qa"><button>What is the difference between an EIA and an ESIA? <span class="pl">+</span></button><div class="a">An EIA assesses a proposed project's environmental impacts, typically for regulatory clearance. An ESIA extends the same discipline to social impacts — land, livelihoods, community health — which lenders aligned to IFC standards usually require.</div></div>
       <div class="qa"><button>What is an IMS, and why integrate? <span class="pl">+</span></button><div class="a">An integrated management system runs quality, environment and occupational health &amp; safety (e.g. ISO 9001, 14001, 45001) as one system instead of three parallel ones — one document set, one audit calendar, less duplication, and a system people actually use.</div></div>
+      <div class="qa"><button>Do you certify our management system? <span class="pl">+</span></button><div class="a">No — and deliberately so. We build, implement and prepare the management system and its evidence so it is ready for audit; the certificate itself is issued by an accredited certification body, independent of the advisor who prepared the system. The same separation applies to disclosure: we prepare the data and evidence, and an eligible independent provider carries out the assessment or assurance.</div></div>
     </div>
   </div>
 </section>`;

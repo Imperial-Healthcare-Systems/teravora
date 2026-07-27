@@ -23,7 +23,7 @@ export function initHome() {
       if(!reduce)setTimeout(function(){s.classList.add("in")},250+(li*300)+(i*90));else s.classList.add("in");});
   });
 
-  var tokens=[["#why","INDIA-BASED ENVIRONMENTAL & SOCIAL RISK PRACTICE"],["#proof","25+ YEARS OF ESG EXPERTISE · BACKED BY TERAVUE"],["#why","IFC PERFORMANCE STANDARDS · EQUATOR PRINCIPLES · ESDD"],["#method","THE METHOD IS SHOWN · NOT ASSERTED"],["#real-economy","SCOPE 3 · ALL FIFTEEN CATEGORIES · THE FULL VALUE CHAIN"],["#infographic","STANDARDS · IFC PS · EQUATOR · GHG PROTOCOL · IFRS S1/S2 · BRSR-CORE"],["#cta","EVIDENCE BEHIND EVERY NUMBER → REQUEST A PROPOSAL"]];
+  var tokens=[["#why","INDIA-BASED ENVIRONMENTAL & SOCIAL RISK PRACTICE"],["#proof","MORE THAN 25 YEARS OF PRACTITIONER EXPERIENCE"],["#why","IFC PERFORMANCE STANDARDS · EQUATOR PRINCIPLES · ESDD"],["#method","THE METHOD IS SHOWN · NOT ASSERTED"],["#real-economy","SCOPE 3 · ALL FIFTEEN CATEGORIES · THE FULL VALUE CHAIN"],["#infographic","STANDARDS · IFC PS · EQUATOR · GHG PROTOCOL · IFRS S1 & S2 · BRSR CORE"],["#cta","EVIDENCE BEHIND EVERY NUMBER → REQUEST A PROPOSAL"]];
   var mq=document.getElementById("mq");
   function seg(){var f=document.createDocumentFragment();tokens.forEach(function(t){var a=document.createElement("a");a.href=t[0];a.textContent=t[1];f.appendChild(a);var s=document.createElement("span");s.className="sep";s.textContent="◆";f.appendChild(s)});return f}
   mq.appendChild(seg());mq.appendChild(seg());
@@ -101,6 +101,21 @@ export function initHome() {
       tg.innerHTML="";A[i][2].forEach(function(x){var s=document.createElement("span");s.textContent=x;tg.appendChild(s)});
     }
     sel(0);
+    /* a11y (G18): the decorative SVG ring is pointer-only + aria-hidden; make the
+       numbered rail the keyboard-operable control for the same 9 attributes, each
+       with an accessible name. Focusing or activating a rail item selects it (the
+       keyboard parallel of hovering a wedge) and pauses the auto-advance. */
+    var railEl=document.querySelector(".ig-rail");
+    if(railEl)railEl.setAttribute("aria-label","Select a BRSR Core attribute");
+    rail.forEach(function(li,i){
+      li.setAttribute("role","button");
+      li.setAttribute("tabindex","0");
+      li.setAttribute("aria-label","BRSR Core attribute "+(i+1)+" of 9: "+A[i][0]);
+      li.style.cursor="pointer";
+      li.addEventListener("click",function(){ci=i;paused=true;sel(i)});
+      li.addEventListener("focus",function(){ci=i;paused=true;sel(i)});
+      li.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "||e.key==="Spacebar"){e.preventDefault();ci=i;paused=true;sel(i)}});
+    });
     hot.addEventListener("mouseleave",function(){paused=false});   /* resume from the last-hovered segment */
     if(!reduce){setInterval(function(){if(paused)return;ci=(ci+1)%9;sel(ci)},2600)}
   })();
@@ -152,7 +167,12 @@ export function initHome() {
     if(pulse&&path&&!reduce){var target=segAt[i],start=pulse._at||0,t0=null,dur=650;pulse.setAttribute("opacity","1");
       (function anim(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1);var cur=start+(target-start)*p;var pt=path.getPointAtLength(cur);pulse.setAttribute("cx",pt.x);pulse.setAttribute("cy",pt.y);pulse._at=cur;if(p<1)requestAnimationFrame(anim);})(0)}
   }
-  steps.forEach(function(s){s.addEventListener("mouseenter",function(){setStep(+s.dataset.i)});s.addEventListener("click",function(){setStep(+s.dataset.i)})});
+  steps.forEach(function(s){
+    s.setAttribute("role","button");s.setAttribute("tabindex","0");
+    s.addEventListener("mouseenter",function(){setStep(+s.dataset.i)});
+    s.addEventListener("click",function(){setStep(+s.dataset.i)});
+    s.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "||e.key==="Spacebar"){e.preventDefault();setStep(+s.dataset.i)}});
+  });
   if(!reduce){var ai=0;setInterval(function(){if(document.querySelector("#method .step:hover"))return;ai=(ai+1)%4;setStep(ai)},2800)}
 
   /* portfolio toggle */
@@ -167,7 +187,7 @@ export function initHome() {
     shield:'<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M60 12l40 15v25c0 28-18 45-40 54C38 97 20 80 20 52V27z"/><path d="M42 60l12 12 22-28"/></svg>'
   };
   var PER=[
-    ["FOR LENDERS & DEAL TEAMS","The diligence has to survive the deal clock.","IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-Based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.","ENVIRONMENTAL & SOCIAL DUE DILIGENCE",ICON.columns,0,0],
+    ["FOR LENDERS & DEAL TEAMS","The diligence has to survive the deal clock.","IFC Performance Standards and Equator conditions land on the deal, not after it. Desktop ESDD where speed governs, escalating to Site-based ESDD where the risk demands eyes on the asset — findings reported for decisions, not for shelf documentation.","ENVIRONMENTAL & SOCIAL DUE DILIGENCE",ICON.columns,0,0],
     ["A CUSTOMER OR LENDER ASKED FOR DATA","You're being pulled into the cascade.","Turn the request into a clean, credible data set you can hand over — the evidence behind each number, not a questionnaire answered once.","BUILD THE EVIDENCE BASE",ICON.chain,-70,-30],
     ["RISK, QUANTIFIED","The exposure, framed against the method — not guesswork.","We frame the penalty and audit-committee risk against a concrete method, so the board conversation is about a defensible plan, not a vague worry.","SEE HOW WE PROVE IT",ICON.shield,60,-60]
   ];
@@ -198,5 +218,33 @@ export function initHome() {
   var submit=document.getElementById("cfgsubmit");if(submit)submit.addEventListener("click",function(e){e.preventDefault();
     var q=[];if(cfg.band&&BAND2START[cfg.band])q.push("band="+BAND2START[cfg.band]);if(cfg.fy&&FY2START[cfg.fy])q.push("timeline="+FY2START[cfg.fy]);
     window.location.href="/start"+(q.length?"?"+q.join("&"):"")+"#start"});
+
+  /* ── a11y (G18): keyboard operability + accessible names for the remaining
+     pointer-built controls. Additive only — mouse behaviour is untouched. ───── */
+  // Configurator options: <div class="opt"> selection controls -> button-like.
+  // Enter/Space re-uses the existing delegated click handler on .opts. Because the
+  // steps are a horizontal transform carousel (off-screen but not `hidden`), only
+  // the visible step's options are kept in the tab order — hooked onto showStep so
+  // focus never lands on an off-screen group. Group order in the DOM == step index.
+  document.querySelectorAll(".opts .opt").forEach(function(o){
+    o.setAttribute("role","button");
+    o.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "||e.key==="Spacebar"){e.preventDefault();o.click()}});
+  });
+  function syncOptTabs(){
+    document.querySelectorAll(".opts").forEach(function(g,k){
+      g.querySelectorAll(".opt").forEach(function(o){o.setAttribute("tabindex",k===cur?"0":"-1")});
+    });
+  }
+  if(typeof showStep==="function"){var _showStep=showStep;showStep=function(n){_showStep(n);syncOptTabs()};}
+  syncOptTabs();
+  // Standards chips: surface the hover-tooltip text (data-t) as the accessible
+  // name and let keyboard users focus them.
+  document.querySelectorAll(".std[data-t]").forEach(function(s){
+    s.setAttribute("tabindex","0");s.setAttribute("aria-label",s.getAttribute("data-t"));
+  });
+  // Persona tabs are real <button>s already; reflect selected state to AT.
+  (function(){var pt=document.querySelectorAll(".ptab");if(!pt.length)return;
+    function syncp(){pt.forEach(function(t){t.setAttribute("aria-pressed",t.classList.contains("on")?"true":"false")})}
+    pt.forEach(function(t){t.addEventListener("click",syncp)});syncp();})();
 
 }

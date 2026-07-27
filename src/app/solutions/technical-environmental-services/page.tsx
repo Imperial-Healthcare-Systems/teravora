@@ -8,7 +8,7 @@ import { SolutionView } from "../SolutionView";
 export const metadata: Metadata = buildMetadata({
   title: "Energy Audits, LCA, EIA & ISO Advisory, India | Teravora",
   description:
-    "Energy, water and waste audits, life-cycle assessment (LCA), EIA/ESIA and ISO/IMS implementation — measured on site, costed in rupees, ready for the certifier.",
+    "Energy, water and waste audits, life-cycle assessment (LCA), EIA/ESIA and ISO/IMS implementation — measured on site, costed in rupees, prepared for certification audit.",
   path: ROUTES.solutionTechnical,
 });
 

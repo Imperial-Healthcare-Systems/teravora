@@ -15,7 +15,7 @@ import "../about.vcomp.css";
 export const metadata: Metadata = buildMetadata({
   title: "About Teravora | New India Brand, Proven Backbone",
   description:
-    "Teravora is a new India ESG advisory built on a proven backbone: the methods and standards mastery of our parent practice, Teravue, applied to India's rules.",
+    "Teravora is a new India ESG advisory built on a proven backbone: the methods and standards mastery of the associated practice, Teravue, applied to India's rules.",
   path: ROUTES.about,
   ogImage: "/og/about.png",
 });

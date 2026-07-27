@@ -11,8 +11,8 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">Solutions</span>
-    <h1><span class="hl-line">One evidence discipline. Seven ways in.</span></h1>
-    <p class="lede reveal">Every engagement runs the same spine — <span class="g">assess → strategize → comply → improve → prove</span> — so wherever you start, the numbers you end with can be checked. Start from the pressure you are actually under.</p>
+    <h1><span class="hl-line">One evidence discipline. Eight ways in.</span></h1>
+    <p class="lede reveal">Every engagement runs the same spine — <span class="g">assess → comply → improve → prove</span> — so wherever you start, the numbers you end with can be checked. Start from the pressure you are actually under.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="/start"><span>Request a Proposal</span><span class="arw">→</span></a>
       <a class="btn btn-ghost" href="#catalog"><span>Browse the catalog</span></a>
@@ -41,11 +41,11 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
       </a>
       <a class="hubcard reveal" href="/solutions/carbon-climate">
         <div class="hk">MEASURE · DECARBONISE</div><h3>Carbon &amp; Climate</h3>
-        <p>A defensible Scope 1–3 footprint — including Scope 3 across all fifteen categories — a board-approvable pathway, and TCFD / IFRS S2 disclosure.</p>
+        <p>A defensible Scopes 1, 2 and 3 footprint — including Scope 3 across all fifteen categories — a board-approvable pathway, and IFRS S2 (incorporating the TCFD recommendations) disclosure.</p>
         <span class="ha">Explore →</span>
       </a>
       <a class="hubcard reveal" href="/solutions/esg-climate-strategy-advisory">
-        <div class="hk">GOVERN · STRATEGIZE</div><h3>ESG &amp; Climate Strategy Advisory</h3>
+        <div class="hk">GOVERN · DIRECT</div><h3>ESG &amp; Climate Strategy Advisory</h3>
         <p>Materiality to board-approved roadmap — ESG embedded in governance and operations, with named owners.</p>
         <span class="ha">Explore →</span>
       </a>
@@ -56,12 +56,17 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
       </a>
       <a class="hubcard reveal" href="/solutions/sustainable-finance-carbon-markets">
         <div class="hk">FUND · MONETISE</div><h3>Sustainable Finance &amp; Carbon Markets</h3>
-        <p>Green capital, ESG ratings and carbon-market entry — on evidence built to survive diligence.</p>
+        <p>Access to sustainable finance, ESG ratings and carbon-market entry — on evidence built to stand up to diligence.</p>
         <span class="ha">Explore →</span>
       </a>
       <a class="hubcard reveal" href="/solutions/esg-disclosure-assurance-readiness">
-        <div class="hk">COMPLY · ASSURE</div><h3>BRSR &amp; Assurance Readiness</h3>
-        <p>From scattered data to a filed BRSR built to survive reasonable assurance — audit trail included.</p>
+        <div class="hk">COMPLY · ASSURE</div><h3>ESG Disclosure &amp; Assurance Readiness</h3>
+        <p>From scattered data to a filed BRSR built for independent assessment or assurance — evidence trail included.</p>
+        <span class="ha">Explore →</span>
+      </a>
+      <a class="hubcard reveal" href="/solutions/social-impact-sroi">
+        <div class="hk">MEASURE · PROVE</div><h3>Social Impact &amp; SROI</h3>
+        <p>CSR and community programmes turned into measured outcomes and a defensible SROI — the social value created for every rupee, with the working shown.</p>
         <span class="ha">Explore →</span>
       </a>
       <div class="hubcard ghost reveal" aria-hidden="true">
@@ -80,9 +85,9 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
       <p>Whichever service you enter through, the work runs one spine — and every stage hands its evidence to the next.</p>
     </div>
     <div class="spine reveal" aria-label="The engagement spine">
-      <span class="sp">ASSESS</span><i>→</i><span class="sp">STRATEGIZE</span><i>→</i><span class="sp">COMPLY</span><i>→</i><span class="sp">IMPROVE</span><i>→</i><span class="sp on">PROVE</span>
+      <span class="sp">ASSESS</span><i>→</i><span class="sp">COMPLY</span><i>→</i><span class="sp">IMPROVE</span><i>→</i><span class="sp on">PROVE</span>
     </div>
-    <p class="spine-note reveal">The last stage is the point: work you can <b>prove</b> — to an auditor, a lender, a buyer or your board. <a class="lk2" href="/how-we-prove">See how we prove it →</a></p>
+    <p class="spine-note reveal">The last stage is the point: work you can <b>prove</b> — to an assessor, a lender, a buyer or your board. <a class="lk2" href="/how-we-prove">See how we prove it →</a></p>
   </div>
 </section>
 

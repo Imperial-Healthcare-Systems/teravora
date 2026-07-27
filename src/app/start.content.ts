@@ -36,7 +36,7 @@ export const START_BODY = String.raw`<div class="rails"><i></i></div>
               <div class="opt" data-val="customer">A lender, DFI or investor asked us for E&amp;S / ESG data</div>
               <div class="opt" data-val="training">We need to train our team on environment, ESG or climate</div>
               <div class="opt" data-val="emissions">We want to measure or cut our emissions</div>
-              <div class="opt" data-val="brsr">A BRSR / assurance deadline in our band</div>
+              <div class="opt" data-val="brsr">A BRSR assessment or assurance requirement in our band</div>
               <div class="opt" data-val="unsure">Not sure yet — help me work out what applies</div>
             </div>
           </div>
@@ -118,21 +118,20 @@ export const START_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <div class="tb-grid">
       <div class="tb-lead reveal">
-        <span class="tb-eyebrow">◇ LINEAGE &amp; STANDARDS</span>
-        <h2 id="tb-h">Not a first attempt — a 25-year practice, now in India.</h2>
-        <p>Teravora is the India branch of <b>Teravue</b>, a sustainability &amp; assurance practice with <b>25+ years</b> across MENA and India. You brief a team that has done this before — the methods and the track record come with us.</p>
-        <div class="tb-attr">▸ Parent-practice track record attributed to Teravue — never restated as a Teravora result.</div>
+        <span class="tb-eyebrow">◇ ASSOCIATED PRACTICE &amp; STANDARDS</span>
+        <h2 id="tb-h">Not a first attempt — built on a practice with more than 25 years behind it.</h2>
+        <p>Teravora is an India-based practice associated with <b>Teravue</b>, a sustainability and ESG advisory practice with <b>more than 25 years</b> across MENA and India. You brief a team whose practitioners have done this before — the methods and the track record come with us.</p>
+        <div class="tb-attr">▸ Track record attributed to the associated practice, Teravue — never restated as a Teravora result.</div>
       </div>
       <div class="tb-stds reveal">
-        <span class="tb-stds-h">FRAMEWORKS WE WORK IN</span>
+        <span class="tb-stds-h">STANDARDS WE WORK IN</span>
         <div class="tb-chips">
           <span class="tb-chip">IFC Performance Standards</span>
           <span class="tb-chip">Equator Principles</span>
           <span class="tb-chip">GHG Protocol</span>
-          <span class="tb-chip">IFRS S1 / S2</span>
-          <span class="tb-chip">TCFD</span>
+          <span class="tb-chip">IFRS S1 and IFRS S2</span>
           <span class="tb-chip">GRI</span>
-          <span class="tb-chip">BRSR &middot; BRSR-Core</span>
+          <span class="tb-chip">BRSR &middot; BRSR Core</span>
         </div>
       </div>
     </div>

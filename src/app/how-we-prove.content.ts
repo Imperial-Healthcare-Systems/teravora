@@ -42,22 +42,22 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <span class="mnode"></span>
           <div class="mtop"><span class="mn">02</span><span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 15 2 2 4-4"/></svg></span></div>
           <h3 class="mname">Comply</h3>
-          <p class="mdesc">Prepare the disclosure to the standard and the assurance bar &mdash; not a report, a filing with evidence attached.</p>
-          <div class="mout"><span class="mout-k">You get</span> A filing, evidence-backed</div>
+          <p class="mdesc">Prepare the disclosure to the standard, ready for assessment or assurance &mdash; not a report, a pack with the evidence attached.</p>
+          <div class="mout"><span class="mout-k">You get</span> A disclosure pack</div>
         </article>
         <article class="mstep">
           <span class="mnode"></span>
           <div class="mtop"><span class="mn">03</span><span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 5h4v4"/></svg></span></div>
           <h3 class="mname">Improve</h3>
           <p class="mdesc">Turn required reporting into operating and financing value &mdash; the disclosure becomes a lever, not a cost.</p>
-          <div class="mout"><span class="mout-k">You get</span> A prioritized action list</div>
+          <div class="mout"><span class="mout-k">You get</span> An action plan</div>
         </article>
         <article class="mstep">
           <span class="mnode on"></span>
           <div class="mtop"><span class="mn">04</span><span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6h7a3 3 0 0 1 3 3v7"/><path d="m9.5 15.5 2 2-2 2"/></svg></span></div>
           <h3 class="mname">Prove</h3>
-          <p class="mdesc">Build the audit trail &mdash; the source, control, and evidence path behind every number, ready to re-walk.</p>
-          <div class="mout on"><span class="mout-k">You get</span> An auditable trail</div>
+          <p class="mdesc">Build the evidence trail &mdash; the source, control, and evidence path behind every number, ready to re-walk.</p>
+          <div class="mout on"><span class="mout-k">You get</span> An evidence trail</div>
         </article>
       </div>
     </div>
@@ -69,7 +69,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
     <div class="sec-head reveal">
       <span class="badge-hl gold">&#9671; TEST THE WORKING</span>
       <h2>Trace a number, end to end.</h2>
-      <p>Don&rsquo;t take our word for it &mdash; follow one figure from raw source to assured disclosure. Step through it: the working shows at every stage.</p>
+      <p>Don&rsquo;t take our word for it &mdash; follow one figure from raw source to an assurance-ready disclosure. Step through it: the working shows at every stage.</p>
     </div>
     <div class="tconsole reveal">
       <div class="tc-left">
@@ -94,7 +94,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <button class="tc-tab on" data-i="0" type="button"><span class="ti">01</span> Source</button>
           <button class="tc-tab" data-i="1" type="button"><span class="ti">02</span> Control</button>
           <button class="tc-tab" data-i="2" type="button"><span class="ti">03</span> Evidence</button>
-          <button class="tc-tab" data-i="3" type="button"><span class="ti">04</span> Assured</button>
+          <button class="tc-tab" data-i="3" type="button"><span class="ti">04</span> Assurance-ready</button>
         </div>
         <div class="tc-panels">
           <div class="tc-panel on" data-i="0">
@@ -114,8 +114,8 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           </div>
           <div class="tc-panel" data-i="3">
             <h4>It stands up.</h4>
-            <p>The figure and its full trail survive independent, auditor-grade testing to the highest bar &mdash; whether that is a lender&rsquo;s IFC / Equator E&amp;S review or BRSR-Core reasonable assurance. Now it&rsquo;s defensible evidence, not an assertion.</p>
-            <div class="tc-doc on"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>Assurance file &middot; reasonable assurance</div>
+            <p>The figure and its full trail are built to stand up to independent testing &mdash; whether that is a lender&rsquo;s IFC / Equator E&amp;S review or BRSR Core assessment or assurance. Now it&rsquo;s defensible evidence, not an assertion.</p>
+            <div class="tc-doc on"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>Assurance file &middot; ready for assessment or assurance</div>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
     <div class="sec-head reveal">
       <span class="badge-hl">&#9671; MEASURABLE IMPACT</span>
       <h2>How measurable impact happens.</h2>
-      <p>Not a slogan &mdash; a shape. A figure is taken from an unverified baseline to a measured, assured position, and the working is shown the whole way up.</p>
+      <p>Not a slogan &mdash; a shape. A figure is taken from an unverified baseline to a measured, assurance-ready position, and the working is shown the whole way up.</p>
     </div>
     <div class="imp-grid">
       <div class="imp-stage reveal">
@@ -140,9 +140,9 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <circle class="cnode" data-i="1" cx="350" cy="150" r="6"/>
           <circle class="cnode cpeak" id="cpeak" data-i="2" cx="470" cy="70" r="7" opacity="0"/>
           <defs><linearGradient id="impcg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(79,188,194,.30)"/><stop offset="1" stop-color="rgba(79,188,194,0)"/></linearGradient></defs>
-          <text x="44" y="326" class="clab">BASELINE</text><text x="318" y="326" class="clab">MEASURED</text><text x="430" y="326" class="clab">ASSURED</text>
+          <text x="44" y="326" class="clab">BASELINE</text><text x="300" y="326" class="clab">MEASURED</text><text x="500" y="326" text-anchor="end" class="clab">ASSURANCE-READY</text>
         </svg>
-        <p class="imp-cap">Over 25 years, our parent practice, <b>Teravue</b>, has taken emitters from a baseline to a measured, assured reduction &mdash; the backbone the Teravora method is built on. As we complete engagements in India, our own results appear here, measured the same way. <span class="held">[ Specific figures shown once verified. ]</span></p>
+        <p class="imp-cap">Across more than 25 years, the associated practice, <b>Teravue</b>, has taken emitters from a baseline to a measured, independently assured reduction &mdash; the backbone the Teravora method is built on. As we complete engagements in India, our own results will appear here, measured the same way.</p>
       </div>
       <div class="imp-track">
         <article class="imp-card reveal" data-i="0">
@@ -156,9 +156,9 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <p>Each figure is produced with a documented source and control &mdash; measurable by design, from the moment it exists.</p>
         </article>
         <article class="imp-card reveal on" data-i="2">
-          <div class="k">03 &middot; Assured</div>
-          <h4>Stand up to the auditor.</h4>
-          <p>The evidence path is complete: the disclosure survives independent, auditor-grade testing &mdash; the assured peak.</p>
+          <div class="k">03 &middot; Assurance-ready</div>
+          <h4>Ready to stand up to the auditor.</h4>
+          <p>The evidence path is complete: the disclosure is built to stand up to independent assessment or assurance &mdash; the proven peak.</p>
         </article>
       </div>
     </div>
@@ -175,12 +175,11 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
     <div class="std-split">
       <figure class="std-figure reveal"><img src="/v/how-we-prove/standards.webp" alt="An ordered set of framework reference binders — the disclosure standards Teravora works to." loading="lazy" width="1024" height="1536"/></figure>
       <div class="stds-grid reveal">
-      <div class="std-tile"><span class="std-ac">BRSR &middot; BRSR-Core</span><span class="std-fn">Business Responsibility &amp; Sustainability Report &mdash; SEBI&rsquo;s listed-company disclosure and its assured core subset.</span></div>
+      <div class="std-tile"><span class="std-ac">BRSR &middot; BRSR Core</span><span class="std-fn">Business Responsibility &amp; Sustainability Report &mdash; SEBI&rsquo;s listed-company disclosure and its core subset subject to assessment or assurance.</span></div>
       <div class="std-tile"><span class="std-ac">GRI</span><span class="std-fn">Global Reporting Initiative &mdash; the widely-used sustainability reporting standard.</span></div>
-      <div class="std-tile"><span class="std-ac">TCFD</span><span class="std-fn">Task Force on Climate-related Financial Disclosures &mdash; climate risk in financial terms.</span></div>
-      <div class="std-tile"><span class="std-ac">IFRS S1 / S2</span><span class="std-fn">ISSB&rsquo;s global baseline for sustainability and climate-related disclosure.</span></div>
+      <div class="std-tile"><span class="std-ac">IFRS S1 and IFRS S2</span><span class="std-fn">ISSB&rsquo;s global baseline for sustainability and climate disclosure &mdash; IFRS S2 incorporates the TCFD recommendations.</span></div>
       <div class="std-tile"><span class="std-ac">GHG Protocol</span><span class="std-fn">Greenhouse Gas Protocol &mdash; the standard for carbon accounting across scopes.</span></div>
-      <div class="std-tile"><span class="std-ac">IFC Standards</span><span class="std-fn">IFC Performance Standards &mdash; environmental and social risk for project finance.</span></div>
+      <div class="std-tile"><span class="std-ac">IFC Performance Standards</span><span class="std-fn">Environmental and social risk management for project finance.</span></div>
       <div class="std-tile"><span class="std-ac">Equator Principles</span><span class="std-fn">The risk-management framework for financing large projects responsibly.</span></div>
       </div>
     </div>
@@ -223,8 +222,8 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
     <div class="faq reveal">
       <div class="qa"><button type="button">What is the Teravora method? <span class="pl">+</span></button><div class="a"><p>Four auditable steps &mdash; <i>Assess &rarr; Comply &rarr; Improve &rarr; Prove</i>. You see the working at every stage, so a filing becomes a defensible disclosure rather than a set of assertions.</p></div></div>
       <div class="qa"><button type="button">What does &ldquo;measurable by design&rdquo; mean? <span class="pl">+</span></button><div class="a"><p>Every number is produced with a documented source, control, and evidence path from the moment it exists &mdash; so it can be checked, not just claimed.</p></div></div>
-      <div class="qa"><button type="button">Do you show real client outcomes? <span class="pl">+</span></button><div class="a"><p>Not until they are verified. The track record shown is our parent practice, <i>Teravue</i>, attributed over 25 years. Teravora&rsquo;s own results appear as engagements complete, measured the same way.</p></div></div>
-      <div class="qa"><button type="button">Which standards do you work to? <span class="pl">+</span></button><div class="a"><p>BRSR / BRSR-Core, GRI, TCFD, IFRS S1/S2 (ISSB), the GHG Protocol, the IFC Performance Standards, and the Equator Principles.</p></div></div>
+      <div class="qa"><button type="button">Do you show real client outcomes? <span class="pl">+</span></button><div class="a"><p>Not until they are verified. The track record shown is the associated practice, <i>Teravue</i>, over more than 25 years. Teravora&rsquo;s own results appear as engagements complete, measured the same way.</p></div></div>
+      <div class="qa"><button type="button">Which standards do you work to? <span class="pl">+</span></button><div class="a"><p>BRSR and BRSR Core, GRI, IFRS S1 and IFRS S2 (ISSB, incorporating the TCFD recommendations), the GHG Protocol, the IFC Performance Standards, and the Equator Principles.</p></div></div>
     </div>
   </div>
 </section>`;

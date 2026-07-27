@@ -20,7 +20,7 @@ export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div
     <div class="chips reveal">
       <span class="chip"><b>Materiality</b> assessed, not assumed</span>
       <span class="chip"><b>Governance</b> board-level ownership</span>
-      <span class="chip"><b>Frameworks</b> BRSR · GRI · ISSB</span>
+      <span class="chip"><b>Standards</b> BRSR · GRI · ISSB</span>
       <span class="chip on"><b>Roadmap</b> board-approvable</span>
     </div>
   </div></div>
@@ -32,14 +32,14 @@ export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div
     <div class="prob-top">
       <div class="sec-head reveal" style="margin-bottom:0">
         <span class="mono eyebrow">The shift</span>
-        <h2>ESG stopped being a report. It became a question your board must answer.</h2>
-        <p>Regulators mandate the disclosure, buyers and lenders screen on it, and frameworks multiply faster than teams can read them. Three pressures land at once.</p>
+        <h2>ESG stopped being a report. It became a question your board increasingly has to answer.</h2>
+        <p>Regulators mandate the disclosure, buyers and lenders screen on it, and standards multiply faster than teams can read them. Three pressures land at once.</p>
       </div>
     </div>
     <div class="pressure">
-      <div class="pcard reveal"><div class="k">01 · THE BOARD</div><h4>Accountability moved up.</h4><p>Sustainability committees, assured disclosures and investor questions put ESG on the board agenda. Someone has to own the answer — with a strategy behind it, not a slide.</p></div>
+      <div class="pcard reveal"><div class="k">01 · THE BOARD</div><h4>Accountability moved up.</h4><p>Sustainability committees, disclosures now under independent scrutiny and investor questions put ESG on the board agenda. Someone has to own the answer — with a strategy behind it, not a slide.</p></div>
       <div class="pcard reveal"><div class="k">02 · THE BUYER</div><h4>Markets screen before they buy.</h4><p>Customers, lenders and investors increasingly ask for your ESG position before the contract, the loan or the term sheet. A credible strategy is commercial infrastructure.</p></div>
-      <div class="pcard reveal"><div class="k">03 · THE NOISE</div><h4>Frameworks multiply.</h4><p>BRSR, GRI, TCFD, IFRS S1/S2 — each with its own vocabulary. Without a materiality-led strategy, teams chase acronyms instead of the handful of issues that actually move the business.</p></div>
+      <div class="pcard reveal"><div class="k">03 · THE NOISE</div><h4>Standards multiply.</h4><p>BRSR, GRI, IFRS S1 and IFRS S2 — each with its own vocabulary. Without a materiality-led strategy, teams chase acronyms instead of the handful of issues that actually move the business.</p></div>
     </div>
   </div>
 </section>
@@ -49,14 +49,14 @@ export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div
     <div class="sec-head reveal">
       <span class="mono eyebrow">What this is · what you get</span>
       <h2>From first materiality assessment to an operating cadence that sticks.</h2>
-      <p>We take you from "where do we stand?" to a governed, measured programme — aligned to the frameworks that matter for you, and built to survive contact with operations.</p>
+      <p>We take you from "where do we stand?" to a governed, measured programme — aligned to the standards that matter for you, and built to survive contact with operations.</p>
     </div>
     <div class="trace reveal" aria-hidden="true"><span class="tline"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span><span class="tpulse"></span></div>
     <div class="steps4">
-      <div class="s4 reveal"><div class="n">01 · ASSESS</div><h4>Establish the baseline</h4><p>Materiality, gap and baseline assessment — what matters, where you stand, and what your obligations already are.</p></div>
-      <div class="s4 reveal"><div class="n">02 · STRATEGIZE</div><h4>Set direction &amp; targets</h4><p>Strategy, targets and governance the board can approve — each priority tied to a business reason and a named owner.</p></div>
-      <div class="s4 reveal"><div class="n">03 · EMBED</div><h4>Wire it into operations</h4><p>Policies, processes, data ownership and management cadence — so the strategy runs in the business, not beside it.</p></div>
-      <div class="s4 reveal"><div class="n">04 · REVIEW</div><h4>Measure &amp; course-correct</h4><p>A review rhythm that tracks progress against targets and keeps the programme current as rules and markets move.</p></div>
+      <div class="s4 reveal"><div class="n">01 · ASSESS</div><h4>Establish the baseline</h4><p>Materiality, gap and baseline assessment — what matters, where you stand, and what your obligations already are.</p><div class="mout"><span class="mout-k">You get</span> A materiality assessment</div></div>
+      <div class="s4 reveal"><div class="n">02 · STRATEGIZE</div><h4>Set direction &amp; targets</h4><p>Strategy, targets and governance the board can approve — each priority tied to a business reason and a named owner.</p><div class="mout"><span class="mout-k">You get</span> A board-approvable roadmap</div></div>
+      <div class="s4 reveal"><div class="n">03 · EMBED</div><h4>Wire it into operations</h4><p>Policies, processes, data ownership and management cadence — so the strategy runs in the business, not beside it.</p><div class="mout"><span class="mout-k">You get</span> A governance &amp; operating cadence</div></div>
+      <div class="s4 reveal"><div class="n">04 · REVIEW</div><h4>Measure &amp; course-correct</h4><p>A review rhythm that tracks progress against targets and keeps the programme current as rules and markets move.</p><div class="mout"><span class="mout-k">You get</span> A measurement &amp; review rhythm</div></div>
     </div>
   </div>
 </section>
@@ -69,26 +69,25 @@ export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div
     </div>
     <div class="pb-grid">
       <div class="reveal">
-        <p style="color:var(--n200);margin-bottom:18px">The strategy is aligned to the frameworks your disclosure and your stakeholders already speak:</p>
+        <p style="color:var(--n200);margin-bottom:18px">The strategy is aligned to the standards your disclosure and your stakeholders already speak:</p>
         <div class="stds">
-          <span class="std2"><b>BRSR</b> / BRSR-Core</span>
+          <span class="std2"><b>BRSR</b> / BRSR Core</span>
           <span class="std2"><b>GRI</b></span>
-          <span class="std2"><b>IFRS</b> S1 / S2</span>
-          <span class="std2"><b>TCFD</b></span>
+          <span class="std2"><b>IFRS</b> S1 &amp; S2</span>
+          <span class="std2"><b>SDGs</b></span>
         </div>
         <div class="pov">A strategy that cannot name its owner, its measure and its next review date is a document, not a strategy. We build the kind you can be audited against — because eventually you will be.</div>
         <div class="illus">
           <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
           <p>A typical engagement moves from materiality assessment to a board-approved roadmap and operating cadence across one planning cycle.</p>
         </div>
-        <div class="egate">[ CLIENT PROGRAMME OUTCOMES POPULATE HERE ONCE SUBSTANTIATED — WE DO NOT PUBLISH AN OUTCOME WE HAVE NOT VERIFIED. ]</div>
       </div>
       <div class="readycard reveal">
         <div class="rc-head"><span class="t">ESG ROADMAP · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">PRIORITIES · MATERIALITY-RANKED</span><span class="v" data-final="RANKED">RANKED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">OWNERSHIP · NAMED TO A ROLE</span><span class="v" data-final="OWNED">OWNED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">TARGETS · MEASURED ON A CADENCE</span><span class="v" data-final="MEASURED">MEASURED</span></div>
-        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF OUR PARENT PRACTICE, TERAVUE.</div>
+        <div class="rc-foot">RECONCILED TO THE MULTI-MARKET TRACK RECORD OF THE ASSOCIATED PRACTICE, TERAVUE.</div>
       </div>
     </div>
     <div class="inline-cta reveal">
@@ -141,8 +140,8 @@ export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div
     <div class="faq reveal">
       <div class="qa"><button>What is a materiality assessment? <span class="pl">+</span></button><div class="a">A structured exercise that identifies which environmental, social and governance issues genuinely matter to your business and its stakeholders — so strategy, effort and disclosure concentrate on the issues that move risk and value, not on every acronym in the market.</div></div>
       <div class="qa"><button>We already file a BRSR. Why do we need a strategy? <span class="pl">+</span></button><div class="a">A BRSR reports where you stand; it does not decide where you are going. A strategy sets targets, owners and investment behind the numbers — which is also what boards, investors and assurers increasingly probe once the disclosure exists.</div></div>
-      <div class="qa"><button>Which frameworks should we align to? <span class="pl">+</span></button><div class="a">It depends on who is asking. Indian listed companies start from BRSR/BRSR-Core; GRI serves broad stakeholder reporting; TCFD and IFRS S1/S2 (ISSB) serve investors on climate and sustainability risk. A materiality-led strategy picks the set your obligations and stakeholders actually require.</div></div>
-      <div class="qa"><button>Do you publish outcome numbers? <span class="pl">+</span></button><div class="a">No — we are a new India brand and will not publish an outcome we have not verified. We prove the method: a business reason, an owner and a measure behind every priority. Track record shown is our parent practice, Teravue, attributed.</div></div>
+      <div class="qa"><button>Which standards should we align to? <span class="pl">+</span></button><div class="a">It depends on who is asking. Indian listed companies start from BRSR/BRSR Core; GRI serves broad stakeholder reporting; IFRS S1 and IFRS S2 (ISSB, incorporating the TCFD recommendations) serve investors on climate and sustainability risk. A materiality-led strategy picks the set your obligations and stakeholders actually require.</div></div>
+      <div class="qa"><button>Do you publish outcome numbers? <span class="pl">+</span></button><div class="a">Not until they are verified. Teravora is a new India practice and will not publish an outcome we have not substantiated. We prove the method — a business reason, an owner and a measure behind every priority — and our own results appear as engagements complete. The wider track record shown is the associated practice, Teravue, attributed.</div></div>
     </div>
   </div>
 </section>`;
