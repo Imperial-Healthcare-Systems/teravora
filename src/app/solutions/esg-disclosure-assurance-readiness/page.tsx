@@ -8,7 +8,7 @@ import { SolutionView } from "../SolutionView";
 export const metadata: Metadata = buildMetadata({
   title: "ESG Disclosure & Assurance Readiness in India | Teravora",
   description:
-    "Get to a filed, defensible BRSR that passes reasonable assurance. We map your data to BRSR-Core's 49 KPIs, close gaps, and show the method at every step.",
+    "Get to a filed, defensible BRSR ready for independent assessment or assurance. We map your data to the BRSR Core's 49 KPIs, close gaps, and show the method at every step.",
   path: ROUTES.solutionA,
   ogImage: "/og/solution-a.png",
 });
@@ -22,9 +22,9 @@ export default function SolutionA() {
       <JsonLd
         data={serviceSchema({
           name: "ESG Disclosure & Assurance Readiness",
-          serviceType: "BRSR and BRSR-Core assurance-readiness advisory",
+          serviceType: "BRSR and BRSR Core assessment or assurance readiness advisory",
           description:
-            "We map your data to BRSR-Core's 49 KPIs across 9 attributes, close the gaps in plain language, and prepare a Business Responsibility and Sustainability Report (BRSR) built to pass reasonable assurance — with the method shown at every step.",
+            "We map your data to the BRSR Core's 49 KPIs across 9 attributes, close the gaps in plain language, and prepare a Business Responsibility and Sustainability Report (BRSR) ready for independent assessment or assurance — with the method shown at every step.",
           path: ROUTES.solutionA,
         })}
       />
