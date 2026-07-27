@@ -58,7 +58,7 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
     var backBtn=document.getElementById("backBtn"),nextBtn=document.getElementById("nextBtn"),nextLbl=document.getElementById("nextLbl");
     var titles=["What's prompting this?","A little context","Where do we reach you?"];
     var helps=["Two quick taps. This routes you to the right specialist.","One required field. The rest help us tailor the reply — skip anything you'd rather not share.","Last step. A specialist replies within two business days."];
-    var LBL={trigger:{brsr:"BRSR / assurance deadline",customer:"Lender / DFI asked",deal:"Deal due diligence",training:"Team training",emissions:"Measure / cut emissions",unsure:"Not sure yet"},
+    var LBL={trigger:{brsr:"BRSR assessment or assurance",customer:"Lender / DFI asked",deal:"Deal due diligence",training:"Team training",emissions:"Measure / cut emissions",unsure:"Not sure yet"},
              band:{lender:"Lender / DFI",investor:"Investor / PE deal team",sponsor:"Sponsor / borrower",training:"Training buyer",t500:"Listed · top 500",t1000:"Listed · top 1,000",other:"Listed · other",supplier:"Supplier / MSME",na:"Not sure"},
              timeline:{thisfy:"This FY","6mo":"Next 6 months",explore:"Exploring"}};
     // A live deal carries a real clock, so deal/lender-driven requests lead the
@@ -66,7 +66,7 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
     // education case. Only a genuinely undirected request lands in Education.
     function lane(){var t=state.trigger,b=state.band;
       if(t==="deal"||t==="customer"||b==="lender"||b==="investor"||b==="sponsor")return["Deal lane","A live deal has its own clock — we'll scope to your transaction timeline before anything else."];
-      if(t==="brsr"||b==="t500"||b==="t1000")return["Fast lane","Because your deadline is real, we'll lead with what has to be assured first."];
+      if(t==="brsr"||b==="t500"||b==="t1000")return["Fast lane","Because your timeline is real, we'll lead with what has to be ready for assessment or assurance first."];
       if(t==="training"||b==="training")return["Training lane","We'll scope the cohort and the level to your teams before anything else."];
       if(t==="emissions")return["Scoping","We'll start with the inventory boundary — including where Scope 3 actually sits."];
       if(t==="unsure"||b==="na")return["Education lane","Nothing is forcing your hand yet — we'll start by helping you work out what actually applies."];
