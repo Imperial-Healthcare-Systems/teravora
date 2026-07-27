@@ -89,4 +89,19 @@ export function initWhyNow() {
     if (cfg.fy && FY2START[cfg.fy]) q.push("timeline=" + FY2START[cfg.fy]);
     window.location.href = "/start" + (q.length ? "?" + q.join("&") : "") + "#start";
   });
+
+  /* a11y (G18): keyboard-operable option tiles. The steps are a transform
+     carousel (off-screen but not `hidden`), so only the visible step's options
+     stay in the tab order — hooked onto showStep. Group order == step index. */
+  document.querySelectorAll(".pg-whynow .opts .opt").forEach(function (o) {
+    o.setAttribute("role", "button");
+    o.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") { e.preventDefault(); o.click(); } });
+  });
+  function syncOptTabs() {
+    document.querySelectorAll(".pg-whynow .opts").forEach(function (g, k) {
+      g.querySelectorAll(".opt").forEach(function (o) { o.setAttribute("tabindex", k === cur ? "0" : "-1"); });
+    });
+  }
+  if (typeof showStep === "function") { var _showStep = showStep; showStep = function (n) { _showStep(n); syncOptTabs(); }; }
+  syncOptTabs();
 }

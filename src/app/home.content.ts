@@ -7,7 +7,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
 <span id="top"></span>
 <header class="hero">
   <div class="hero-bg"></div><div class="hero-veil"></div>
-  <canvas id="stars"></canvas><div class="hero-flare"></div>
+  <canvas id="stars" aria-hidden="true"></canvas><div class="hero-flare"></div>
   <div class="wrap"><div class="hero-in">
     <span class="eyebrow reveal">Turn your sustainability goals into measurable results.</span>
     <h1 id="headline"><span class="hl-line">Practical ESG.</span><br><span class="l2 hl-line">Measurable Impact.</span></h1>
@@ -41,7 +41,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
-<section class="sec ig" id="infographic">
+<section class="sec ig" id="infographic" aria-label="BRSR Core: 49 KPIs across nine attributes">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="mono eyebrow">One service, in depth · When a BRSR Core deadline is what you're facing</span>

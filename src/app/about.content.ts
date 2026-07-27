@@ -5,7 +5,7 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
 <header class="shero" id="top">
   <div class="shero-bg"></div>
   <div class="shero-veil"></div>
-  <canvas id="stars"></canvas>
+  <canvas id="stars" aria-hidden="true"></canvas>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">The company</span>

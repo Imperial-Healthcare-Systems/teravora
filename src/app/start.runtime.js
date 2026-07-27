@@ -91,9 +91,14 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
     }
     card.querySelectorAll(".opts").forEach(function(g){var grp=g.dataset.group;
       g.querySelectorAll(".opt").forEach(function(o){o.insertAdjacentHTML("afterbegin",'<span class="rd"></span>');
-        o.addEventListener("click",function(){g.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel")});o.classList.add("sel");state[grp]=o.dataset.val;
+        // a11y (G18): the option tiles are <div>s — make them keyboard-operable
+        // (Enter/Space) with focus and selected state exposed to assistive tech.
+        o.setAttribute("role","button");o.setAttribute("tabindex","0");o.setAttribute("aria-pressed","false");
+        function pick(){g.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel");x.setAttribute("aria-pressed","false")});o.classList.add("sel");o.setAttribute("aria-pressed","true");state[grp]=o.dataset.val;
           if(grp==="trigger"){document.getElementById("divertNote").hidden=(o.dataset.val!=="unsure")}
-          updateSpec()})})});
+          updateSpec()}
+        o.addEventListener("click",pick);
+        o.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "||e.key==="Spacebar"){e.preventDefault();pick()}})})});
     function show(n){steps.forEach(function(s){s.hidden=(+s.dataset.step!==n)});step=n;
       stepInd.textContent="Step "+n+" of 3";fcTitle.textContent=titles[n-1];fcHelp.textContent=helps[n-1];
       pbar.style.width=(n/3*100)+"%";backBtn.hidden=(n===1);nextLbl.textContent=(n===3?"Request a Proposal":"Continue")}
@@ -130,8 +135,8 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
       ["trigger","band","timeline"].forEach(function(grp){var val=qp.get(grp);if(!val)return;
         var g=card.querySelector('.opts[data-group="'+grp+'"]');if(!g)return;
         var opt=g.querySelector('.opt[data-val="'+val.replace(/"/g,"")+'"]');if(!opt)return;
-        g.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel")});
-        opt.classList.add("sel");state[grp]=val;
+        g.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel");x.setAttribute("aria-pressed","false")});
+        opt.classList.add("sel");opt.setAttribute("aria-pressed","true");state[grp]=val;
         if(grp==="trigger"){var dn=document.getElementById("divertNote");if(dn)dn.hidden=(val!=="unsure")}});
     }catch(e){/* prefill is best-effort — a malformed URL never blocks the form */}
     show(1);updateSpec();
