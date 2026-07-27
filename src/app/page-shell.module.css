@@ -74,6 +74,34 @@
   color: var(--trv-sys-color-text-body);
 }
 
+/* Long-form legal / policy content: restore heading tiers and list markers the
+ * global reset strips, so Privacy / Terms / Accessibility read as real documents.
+ * Tokens only — spacing/keyword values trace to the frozen graph. */
+.prose h2 {
+  font-size: var(--trv-sys-text-h3-size);
+  margin-top: var(--trv-ref-space-3);
+}
+.prose h3 {
+  font-size: var(--trv-sys-text-h4-size);
+}
+.prose ul,
+.prose ol {
+  padding-left: var(--trv-sys-space-gutter);
+  display: block;
+}
+.prose li {
+  display: list-item;
+  list-style: disc outside;
+  margin-bottom: var(--trv-ref-space-2);
+}
+.prose ol > li {
+  list-style: decimal outside;
+}
+.prose strong {
+  color: var(--trv-sys-color-text-primary);
+  font-weight: var(--trv-ref-font-weight-semibold);
+}
+
 /* --- Grids -------------------------------------------------------------- */
 .cardGrid {
   display: grid;
