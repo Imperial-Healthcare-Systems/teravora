@@ -156,7 +156,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="manifest">
           <span class="mf-c tl"></span><span class="mf-c tr"></span><span class="mf-c bl"></span><span class="mf-c br"></span>
           <div class="mf-metrics">
-            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">[ QTY // KPI_METRICS ]</div></div>
+            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">[ BRSR CORE KPIs ]</div></div>
             <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">[ BRSR CORE ATTRIBUTES ]</div></div>          </div>
           <div class="mf-note">The SEBI BRSR Core specification — the standard we work to, not a client claim.</div>
           <div class="mf-std">

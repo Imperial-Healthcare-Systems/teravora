@@ -133,7 +133,7 @@ export const SOLUTION_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="sec-label reveal"><span>ON THE GROUND</span><span>WHAT YOUR NUMBERS DESCRIBE</span></div>
     <div class="tri-head reveal"><h2>A disclosure is only as strong as what it points to.</h2><p>Behind the framework is the real economy — the assets, resources and people your figures actually describe.</p></div>
     <div class="tri-grid">
-      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-carbon.webp')"><div class="tri-ph"></div><figcaption><span class="tk">CARBON &amp; ENERGY</span><span class="tl">Emissions and energy — the Scope 1&ndash;3 story behind the footprint you report.</span></figcaption></figure>
+      <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-carbon.webp')"><div class="tri-ph"></div><figcaption><span class="tk">CARBON &amp; ENERGY</span><span class="tl">Emissions and energy — the Scopes 1, 2 and 3 story behind the footprint you report.</span></figcaption></figure>
       <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-resources.webp')"><div class="tri-ph"></div><figcaption><span class="tk">RESOURCES &amp; OPERATIONS</span><span class="tl">Water, waste and the built assets your disclosures actually measure.</span></figcaption></figure>
       <figure class="tri-card reveal" style="--img:url('/v/solution/sol-tri-people.webp')"><div class="tri-ph"></div><figcaption><span class="tk">PEOPLE &amp; COMMUNITIES</span><span class="tl">The workforce and value chain your numbers reach, end to end.</span></figcaption></figure>
     </div>
