@@ -97,7 +97,7 @@ export function founderSchema() {
     "@id": `${SITE_ORIGIN}/#founder`,
     name: "Brijesh Dhruve",
     honorificSuffix:
-      "CEnv, CEng, CFA-Sustainable Investing, CFA-ESG, GARP-SCR, CEM, CEA, PMP",
+      "CEnv, CEng, CFA Institute Sustainable Investing Certificate, GARP-SCR, CEM, CEA, PMP",
     jobTitle: "Founder & Designated Partner",
     worksFor: { "@id": `${SITE_ORIGIN}/#organization` },
     url: `${SITE_ORIGIN}/about#founder`,
