@@ -112,7 +112,9 @@ export function founderSchema() {
       "Industrial decarbonisation",
       "Energy management",
       "ESG governance",
-      "BRSR / BRSR-Core assurance readiness",
+      "BRSR / BRSR Core assessment or assurance readiness",
+      "Social impact measurement and SROI",
+      "CSR outcome evaluation",
     ],
   };
 }

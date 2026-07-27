@@ -23,6 +23,7 @@ const CATALOG: { name: string; path: string }[] = [
   { name: "Technical & Environmental Services", path: ROUTES.solutionTechnical },
   { name: "Sustainable Finance & Carbon Markets", path: ROUTES.solutionFinance },
   { name: "ESG Disclosure & Assurance Readiness", path: ROUTES.solutionA },
+  { name: "Social Impact & SROI", path: ROUTES.solutionSocial },
 ];
 
 export default function Solutions() {

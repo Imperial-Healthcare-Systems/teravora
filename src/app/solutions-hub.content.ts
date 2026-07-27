@@ -11,7 +11,7 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="shero-flare"></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">Solutions</span>
-    <h1><span class="hl-line">One evidence discipline. Seven ways in.</span></h1>
+    <h1><span class="hl-line">One evidence discipline. Eight ways in.</span></h1>
     <p class="lede reveal">Every engagement runs the same spine — <span class="g">assess → comply → improve → prove</span> — so wherever you start, the numbers you end with can be checked. Start from the pressure you are actually under.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="/start"><span>Request a Proposal</span><span class="arw">→</span></a>
@@ -62,6 +62,11 @@ export const SOLUTIONS_HUB_BODY = String.raw`<div class="rails"><i></i></div>
       <a class="hubcard reveal" href="/solutions/esg-disclosure-assurance-readiness">
         <div class="hk">COMPLY · ASSURE</div><h3>ESG Disclosure &amp; Assurance Readiness</h3>
         <p>From scattered data to a filed BRSR built for independent assessment or assurance — evidence trail included.</p>
+        <span class="ha">Explore →</span>
+      </a>
+      <a class="hubcard reveal" href="/solutions/social-impact-sroi">
+        <div class="hk">MEASURE · PROVE</div><h3>Social Impact &amp; SROI</h3>
+        <p>CSR and community programmes turned into measured outcomes and a defensible SROI — the social value created for every rupee, with the working shown.</p>
         <span class="ha">Explore →</span>
       </a>
       <div class="hubcard ghost reveal" aria-hidden="true">

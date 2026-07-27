@@ -22,6 +22,9 @@ export const ROUTES = {
   solutionTechnical: "/solutions/technical-environmental-services",
   solutionFinance: "/solutions/sustainable-finance-carbon-markets",
   solutionTraining: "/solutions/capacity-building-esg-training",
+  // 8th service (client-directed, 2026-07-27): CSR / Social Impact / SROI as
+  // its own card + route.
+  solutionSocial: "/solutions/social-impact-sroi",
   howWeProve: "/how-we-prove",
   about: "/about",
   start: "/start",
@@ -69,6 +72,11 @@ export const NAV_ITEMS: NavItem[] = [
       {
         label: "ESG Disclosure & Assurance Readiness",
         href: ROUTES.solutionA,
+        kind: "service",
+      },
+      {
+        label: "Social Impact & SROI",
+        href: ROUTES.solutionSocial,
         kind: "service",
       },
     ],
