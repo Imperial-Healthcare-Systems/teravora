@@ -257,7 +257,7 @@ export const WHYNOW_BODY = String.raw`
           <div class="cfg-step" data-s="2">
             <div class="cfg-k">STEP 03 / 03 · REQUEST</div>
             <h3>Your specification is ready.</h3>
-            <p style="color:var(--n200);font-size:.95rem;margin-bottom:18px">Everything on the right goes to your specialist. Send it and we&rsquo;ll respond with the scoped method.</p>
+            <p style="color:var(--n200);font-size:.95rem;margin-bottom:18px">Everything on the right goes to your specialist. Continue and we&rsquo;ll respond with the scoped method.</p>
             <div class="hero-cta"><a class="btn btn-gold" href="#" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">&rarr;</span></a></div>
             <div class="cfg-nav"><button class="cfg-back" data-back>&larr; Change answers</button></div>
           </div>

@@ -105,13 +105,35 @@ var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
     nextBtn.addEventListener("click",function(){if(!valid()){card.classList.add("shk");setTimeout(function(){card.classList.remove("shk")},420);return}
       if(step<3){show(step+1)}else{submit()}});
     backBtn.addEventListener("click",function(){if(step>1)show(step-1)});
-    function submit(){document.getElementById("confLane").textContent=lane()[1];
+    var sending=false;
+    function fv(id){var el=document.getElementById(id);return el?el.value.trim():""}
+    function collect(){return{trigger:state.trigger,band:state.band,company:fv("company"),sector:fv("sector"),timeline:state.timeline,note:fv("note"),name:fv("name"),email:fv("email"),phone:fv("phone"),role:fv("role"),consent:document.getElementById("consent").checked}}
+    function showConfirmed(){document.getElementById("confLane").textContent=lane()[1];
       card.hidden=true;document.getElementById("confirmCard").hidden=false;
       document.getElementById("specFoot").textContent="Matched — a specialist has your context.";
       var w=document.getElementById("specStatus"),l=document.getElementById("specStatusLbl"),sp=document.getElementById("spec");
       if(w)w.setAttribute("data-s","3");if(l)l.textContent="MATCHED ✓";if(sp)sp.classList.remove("scanning");
       var pb=document.getElementById("specPbar");if(pb)pb.style.width="100%";
       var s=document.getElementById("start");if(s)window.scrollTo({top:s.offsetTop-40,behavior:"smooth"})}
+    function endSend(){sending=false;nextBtn.disabled=false;nextBtn.removeAttribute("aria-disabled");nextLbl.textContent="Request a Proposal"}
+    function showErr(){var e=document.getElementById("submitErr");if(e){e.innerHTML='⚠ We couldn’t send your request just now. Please try again, or email us at <a href="mailto:contact@teravora.in">contact@teravora.in</a> and we’ll pick it up.';e.hidden=false;e.focus&&e.setAttribute("tabindex","-1")}}
+    function submit(){if(sending)return;sending=true;
+      var e=document.getElementById("submitErr");if(e)e.hidden=true;
+      nextBtn.disabled=true;nextBtn.setAttribute("aria-disabled","true");nextLbl.textContent="Sending…";
+      fetch("/api/proposal",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(collect())})
+        .then(function(r){return r.json().catch(function(){return{ok:false}}).then(function(d){return{ok:r.ok&&d&&d.ok===true}})})
+        .then(function(res){if(res.ok){showConfirmed()}else{endSend();showErr()}})
+        .catch(function(){endSend();showErr()})}
+    // Prefill from deep-link params (?trigger=&band=&timeline=) — carried over from
+    // the home / why-now scoping configurators so the choice survives the handoff.
+    try{var qp=new URLSearchParams(window.location.search);
+      ["trigger","band","timeline"].forEach(function(grp){var val=qp.get(grp);if(!val)return;
+        var g=card.querySelector('.opts[data-group="'+grp+'"]');if(!g)return;
+        var opt=g.querySelector('.opt[data-val="'+val.replace(/"/g,"")+'"]');if(!opt)return;
+        g.querySelectorAll(".opt").forEach(function(x){x.classList.remove("sel")});
+        opt.classList.add("sel");state[grp]=val;
+        if(grp==="trigger"){var dn=document.getElementById("divertNote");if(dn)dn.hidden=(val!=="unsure")}});
+    }catch(e){/* prefill is best-effort — a malformed URL never blocks the form */}
     show(1);updateSpec();
   })();
 }

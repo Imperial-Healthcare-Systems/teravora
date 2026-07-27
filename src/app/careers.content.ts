@@ -4,8 +4,9 @@
 // ROLES SLOT (div.roles[data-roles="empty"] below): when real openings exist,
 // replace the empty state with role cards AND add per-role JobPosting JSON-LD
 // in careers/page.tsx. Never render a listing that is not a real, current opening.
-// TBC with client — same status as PROPOSAL_FALLBACK_EMAIL (proposalConfig.ts).
-const CAREERS_EMAIL = "careers@teravora.in";
+// Single live point of contact for now — open applications go to contact@teravora.in
+// until the client provisions a dedicated careers inbox.
+const CAREERS_EMAIL = "contact@teravora.in";
 const MAILTO = `mailto:${CAREERS_EMAIL}?subject=Open%20application%20%E2%80%94%20Teravora`;
 
 export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>

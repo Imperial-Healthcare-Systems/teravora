@@ -6,8 +6,8 @@
  * lane is NEVER surfaced as a user-facing score — only tailored reassurance.
  * ========================================================================== */
 
-// PLACEHOLDER — TODO: confirm production domain/email before ship.
-export const PROPOSAL_FALLBACK_EMAIL = "proposal@teravora.in";
+// Single live point of contact — every lead path uses contact@teravora.in for now.
+export const PROPOSAL_FALLBACK_EMAIL = "contact@teravora.in";
 
 export type StepId = "step1_trigger" | "step2_context" | "step3_contact";
 

@@ -261,6 +261,9 @@
 .pg-start .consent{display:flex;gap:11px;align-items:flex-start;font-size:.9rem;color:#374355;cursor:pointer;line-height:1.5}
 .pg-start .consent input{width:auto;margin-top:3px;accent-color:#177E84}
 .pg-start .err{display:block;color:#1B2A40;font-weight:600;font-size:.82rem;margin-top:7px}
+.pg-start .submit-err{margin-top:16px;padding:14px 16px;background:rgba(176,58,46,.06);border:1px solid rgba(176,58,46,.3);border-radius:10px;color:#8a2b22;font-size:.9rem;line-height:1.5}
+.pg-start .submit-err a{color:#8a2b22;text-decoration:underline;font-weight:600}
+.pg-start .btn-gold[disabled]{opacity:.6;cursor:progress}
 .pg-start .fc-actions{display:flex;justify-content:space-between;gap:12px;margin-top:28px}
 .pg-start .btn-ghost.lite{border-color:#c5d0de;color:#374355}
 .pg-start .btn-ghost.lite:hover{border-color:#157075;color:var(--navy)}

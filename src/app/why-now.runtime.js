@@ -76,8 +76,17 @@ export function initWhyNow() {
   document.querySelectorAll(".pg-whynow [data-back]").forEach(function (b) {
     b.addEventListener("click", function () { showStep(Math.max(cur - 1, 0)); });
   });
+  // Hand off to the full /start request form, carrying the scoped answers so they
+  // prefill there. Band always maps; only cleanly-matching timing is carried
+  // ("FY 2027-28" has no /start bucket, so timeline is simply left unset there).
+  const BAND2START = { "Top 500 listed": "t500", "Top 1,000 listed": "t1000", "Value chain / supplier": "supplier" };
+  const FY2START = { "FY 2026-27": "thisfy", "Exploring": "explore" };
   const submit = document.getElementById("cfgsubmit");
   if (submit) submit.addEventListener("click", function (e) {
-    e.preventDefault(); showStep(3); if (barEl) barEl.style.width = "100%";
+    e.preventDefault();
+    const q = [];
+    if (cfg.band && BAND2START[cfg.band]) q.push("band=" + BAND2START[cfg.band]);
+    if (cfg.fy && FY2START[cfg.fy]) q.push("timeline=" + FY2START[cfg.fy]);
+    window.location.href = "/start" + (q.length ? "?" + q.join("&") : "") + "#start";
   });
 }
