@@ -92,9 +92,9 @@ export const NAV_ITEMS: NavItem[] = [
 // enters structured data (E1 guard, seo.ts header).
 export const FAQ: Record<string, FaqEntry> = {
   whatIsEsdd: {
-    question: "What is ESDD, and how is it different from an EIA?",
+    question: "What is ESDD, and how is it different from an EIA or ESIA?",
     answer:
-      "An EIA (environmental impact assessment) assesses a proposed project's future impacts, usually for a consent. ESDD — environmental and social due diligence — assesses an existing business or asset's environmental and social risks and liabilities, typically for a transaction or financing decision.",
+      "An EIA (environmental impact assessment) — or an ESIA, which adds the social dimension — assesses a proposed project's future impacts, usually for a consent. ESDD — environmental and social due diligence — assesses an existing business or asset's environmental and social risks and liabilities, typically for a transaction or financing decision.",
   },
   ifcPerformanceStandards: {
     question: "What are the IFC Performance Standards?",
@@ -107,9 +107,9 @@ export const FAQ: Record<string, FaqEntry> = {
       "A risk-management framework adopted by financial institutions for assessing and managing environmental and social risk in project-related financing. Equator-aligned lenders expect projects to be assessed against the IFC Performance Standards — which is why diligence is built on them.",
   },
   desktopVsSiteEsdd: {
-    question: "What is the difference between a Desktop ESDD and a Site-Based ESDD?",
+    question: "What is the difference between a Desktop ESDD and a Site-based ESDD?",
     answer:
-      "A Desktop ESDD reviews the data room, permits and public record remotely — fast, and often enough for a red-flag screen. A Site-Based ESDD adds field verification: site visits, interviews and sampling where the risk or the lender requires eyes on the asset. Scope follows the deal, escalating only where the evidence demands it.",
+      "A Desktop ESDD reviews the data room, permits and public record remotely — fast, and often enough for a red-flag screen. A Site-based ESDD adds field verification: site visits, interviews and sampling where the risk or the lender requires eyes on the asset. Scope follows the deal, escalating only where the evidence demands it.",
   },
   ifcImplementation: {
     question:
@@ -128,19 +128,19 @@ export const FAQ: Record<string, FaqEntry> = {
       "BRSR stands for Business Responsibility and Sustainability Report — the disclosure that SEBI has mandated for the top 1,000 listed companies by market capitalisation since FY2022-23.",
   },
   whatIsBrsrCore: {
-    question: "What is BRSR-Core?",
+    question: "What is BRSR Core?",
     answer:
-      "BRSR-Core is the assured subset of the BRSR — 49 key performance indicators across 9 attributes, covering areas such as greenhouse gases, water, waste, energy, gender diversity, wages, and customer relationships.",
+      "BRSR Core is the subset of the BRSR that must be independently checked — 49 key performance indicators across 9 attributes, covering areas such as greenhouse gases, water, waste, energy, gender diversity, wages, and customer relationships.",
   },
   whoNeedsAssurance: {
-    question: "Who needs reasonable assurance of BRSR-Core, and when?",
+    question: "Who needs independent assessment or assurance of the BRSR Core, and when?",
     answer:
-      "SEBI is phasing in reasonable assurance of BRSR-Core by market-cap band: the top 150 from FY2023-24, top 250 from FY2024-25, top 500 from FY2025-26, and top 1,000 from FY2026-27.",
+      "SEBI is phasing in independent assessment or assurance of the BRSR Core by market-cap band: the top 150 from FY2023-24, the top 250 from FY2024-25, the top 500 from FY2025-26, and the top 1,000 from FY2026-27.",
   },
   reasonableVsLimited: {
-    question: "How is reasonable assurance different from limited assurance?",
+    question: "What does 'assessment or assurance' of the BRSR Core mean?",
     answer:
-      "Reasonable assurance is a higher bar than limited assurance. India's BRSR-Core requires reasonable assurance, meaning the underlying ESG data and controls must withstand a deeper level of independent verification.",
+      "SEBI requires the BRSR Core to be independently checked — through assessment or assurance by an eligible provider — rather than self-declared. It is a materially higher bar than disclosure alone: the underlying ESG data and controls must withstand independent verification.",
   },
   valueChain: {
     question: "Does BRSR apply to a company's value chain or suppliers?",
@@ -148,9 +148,9 @@ export const FAQ: Record<string, FaqEntry> = {
       "Per SEBI's circular dated 28 March 2025, value-chain ESG disclosure is voluntary and its assurance is deferred, described as 'assessment or assurance'. It covers trade partners individually accounting for at least 2% of purchases or sales, capped at 75% coverage.",
   },
   frameworks: {
-    question: "What frameworks does an India ESG disclosure programme touch?",
+    question: "What standards does an India ESG disclosure programme touch?",
     answer:
-      "Beyond BRSR and BRSR-Core, Indian ESG disclosure commonly aligns with GRI, SASB, TCFD, and IFRS S1/S2 (ISSB), with ISSB convergence widely anticipated. Due-diligence work draws on the IFC Performance Standards and the Equator Principles.",
+      "Beyond BRSR and BRSR Core, Indian ESG disclosure commonly aligns with GRI, SASB, and IFRS S1 and IFRS S2 (ISSB, incorporating the TCFD recommendations), with ISSB convergence widely anticipated. Due-diligence work draws on the IFC Performance Standards and the Equator Principles.",
   },
 };
 
