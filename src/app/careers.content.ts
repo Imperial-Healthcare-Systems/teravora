@@ -18,7 +18,7 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">Careers at Teravora</span>
     <h1><span class="hl-line">Do work you can stand behind.</span></h1>
-    <p class="lede reveal">Teravora is an India ESG advisory built on a proven backbone. We hire practitioners who want their work to <span class="g">survive an auditor's questions</span> — not just fill a deck.</p>
+    <p class="lede reveal">Teravora is an India ESG advisory built on a proven backbone. We hire practitioners who want their work to <span class="g">stand up to independent review, assessment or assurance</span> — not just fill a deck.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="${MAILTO}"><span>Send an open application</span><span class="arw">→</span></a>
       <a class="btn btn-ghost" href="#tracks"><span>See the disciplines</span></a>
@@ -36,10 +36,10 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
       <p>What we can offer is the work itself — and for the right person, the work is the offer.</p>
     </div>
     <div class="vgrid">
-      <div class="vcard reveal"><div class="k">THE WORK</div><h3>Built to be checked.</h3><p>Every number we produce carries its source, control and evidence path — built to survive reasonable assurance, the independent auditor-grade sign-off India's rules now demand. You learn to make work that holds up when it is tested, and that discipline stays with you for a career.</p></div>
-      <div class="vcard reveal"><div class="k">THE STANDARDS</div><h3>Standards fluency, learned on live work.</h3><p>BRSR and BRSR-Core (the assured subset — 49 KPIs across 9 attributes), the GHG Protocol, IFRS S1/S2, IFC Performance Standards and the Equator Principles — practised on real engagements, not read about after the fact.</p></div>
-      <div class="vcard reveal"><div class="k">THE STAGE</div><h3>Early enough to matter.</h3><p>Teravora is a new India practice on the backbone of our parent, Teravue. You get the scope and ownership of an early-stage team without starting from zero — the method, the standards fluency and the discipline are already in the building.</p></div>
-      <div class="vcard reveal"><div class="k">THE LEADERSHIP</div><h3>Reviewed by practitioners, not decks.</h3><p>The practice is led by its founder — a Chartered Environmentalist and Chartered Chemical Engineer with CFA (Sustainable Investing &amp; ESG), GARP-SCR, CEM, CEA and PMP credentials and more than 25 years across ESG governance, climate strategy and decarbonisation. The people who review your work do the work.</p></div>
+      <div class="vcard reveal"><div class="k">THE WORK</div><h3>Built to be checked.</h3><p>Every number we produce carries its source, control and evidence path — built to stand up to independent assessment or assurance, the independent check India's rules now demand. You learn to make work that holds up when it is tested, and that discipline stays with you for a career.</p></div>
+      <div class="vcard reveal"><div class="k">THE STANDARDS</div><h3>Standards fluency, learned by doing.</h3><p>BRSR and BRSR Core (the subset subject to independent assessment or assurance — 49 KPIs across 9 attributes), the GHG Protocol, IFRS S1 and S2, IFC Performance Standards and the Equator Principles — the standards our work is held to, not ones you read about after the fact.</p></div>
+      <div class="vcard reveal"><div class="k">THE STAGE</div><h3>Early enough to matter.</h3><p>Teravora is a new India practice built on the backbone of the associated practice, Teravue. You get the scope and ownership of an early-stage team without starting from zero — the method, the standards fluency and the discipline are already in the building.</p></div>
+      <div class="vcard reveal"><div class="k">THE LEADERSHIP</div><h3>Reviewed by practitioners, not decks.</h3><p>The practice is led by its founder — a Chartered Environmentalist and Chartered Chemical Engineer with the CFA Institute Sustainable Investing Certificate, GARP-SCR, CEM, CEA and PMP credentials and more than 25 years across ESG governance, climate strategy and decarbonisation. The people who review your work do the work.</p></div>
     </div>
   </div>
 </section>
@@ -48,8 +48,8 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="mono eyebrow">The disciplines</span>
-      <h2>Three practice areas we hire in.</h2>
-      <p>They mirror how we serve clients. Tell us which one fits you — or make the case for more than one.</p>
+      <h2>Our current priority areas for hiring.</h2>
+      <p>These are the areas we are hiring into right now — a subset of our full service range, chosen by where the work is growing fastest. Tell us which one fits you, or make the case for more than one.</p>
     </div>
     <div class="tracks">
       <div class="track reveal">
@@ -59,12 +59,12 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
       <div class="track reveal">
         <div class="track-h"><div class="track-g">◆</div><div class="track-t"><h3>Carbon &amp; Climate</h3><div class="track-for">GHG · CLIMATE DISCLOSURE</div></div></div>
-        <p class="track-p">Build greenhouse-gas inventories across Scope 1, 2 and 3 to the GHG Protocol, shape decarbonisation pathways a board can approve, and prepare climate disclosure aligned to TCFD and IFRS S2 — every figure traceable to its activity data.</p>
+        <p class="track-p">Build greenhouse-gas inventories across Scope 1, 2 and 3 to the GHG Protocol, shape decarbonisation pathways a board can approve, and prepare climate disclosure aligned to IFRS S2 (which incorporates the TCFD recommendations) — every figure traceable to its activity data.</p>
         <p class="track-fit"><b>Fits:</b> energy, engineering, carbon-accounting or climate-analytics backgrounds — comfortable defending a calculation line by line.</p>
       </div>
       <div class="track reveal">
         <div class="track-h"><div class="track-g">◇</div><div class="track-t"><h3>ESG Disclosure &amp; Assurance Readiness</h3><div class="track-for">DISCLOSURE · ASSURANCE</div></div></div>
-        <p class="track-p">Take listed companies from scattered data to a filed BRSR (Business Responsibility and Sustainability Report) that passes reasonable assurance: mapping data to the 49 BRSR-Core KPIs, closing gaps in plain language, and building the audit trail behind every number.</p>
+        <p class="track-p">Take listed companies from scattered data to a filed BRSR (Business Responsibility and Sustainability Report) that stands up to independent assessment or assurance: mapping data to the 49 BRSR Core KPIs, closing gaps in plain language, and building the evidence trail behind every number.</p>
         <p class="track-fit"><b>Fits:</b> audit, assurance, sustainability-reporting or ESG-compliance backgrounds — people who read a standard for what it requires, not what it suggests.</p>
       </div>
     </div>
@@ -99,5 +99,6 @@ export const CAREERS_BODY = String.raw`<div class="rails"><i></i></div>
       <a class="btn btn-ghost" href="/about"><span>Meet the practice</span></a>
     </div>
     <p class="apply-alt reveal">Or write to us directly: <a class="apply-mail" href="${MAILTO}">${CAREERS_EMAIL}</a></p>
+    <p class="apply-consent reveal">By applying, you consent to Teravora using the personal details in your CV and message to consider you for this and related roles. We use them only for that purpose, and handle and retain them as set out in our <a class="apply-mail" href="/privacy">Privacy policy</a>. Ask us at any time to see, update or delete what we hold.</p>
   </div>
 </section>`;
