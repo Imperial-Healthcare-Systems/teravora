@@ -79,6 +79,32 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 | **H15 / G6** | BRSR-dominance rebalance on Home (wheel + "one service in depth" so all 8 services get equal weight) | **design decision — 2–3 layout options owed to client** |
 | ledger `:146` | "STANDARDS · RECOGNISED FRAMEWORKS" → "STANDARDS" (house style) | minor — never confirmed |
 
+### 3d. Point 93 + Part B site-wide sweep — VERIFIED 2026-07-27
+- **Point 93 (Image Credits)** — ✅ page is structurally sound: every row has a linked
+  licence + Wikimedia source (`rel`/`target` correct), images are editorial backgrounds
+  (ports, dams, power plants) with **no implied client relationship**, and imagery is
+  client-confirmed royalty-free (G23). The mechanical "all links resolve / mobile-readable"
+  check folds into **G22**. ⚠️ *Launch check:* the credits list covers the Wikimedia-sourced
+  photos on the service pages + Careers + Solutions hub. **Confirm the Home / About /
+  ESG-Disclosure / new Social-Impact `/v/*` imagery is bespoke** (no attribution needed) —
+  if any of those are Wikimedia CC-BY, add a credit row.
+- **Part B general points** — recalibration grep across **all live pages** confirms they are
+  **clean** of the standard-dictionary residuals (BRSR-Core, Scope 1–3, reasonable assurance,
+  supply-chain, parent, CFA duplicate, ISO-certified, TCFD-and-IFRS…). Two last live stragglers
+  fixed (`4835858`): ESG-Disclosure "Scope 1–3"→"Scopes 1, 2 and 3" (G21); Home
+  `[ QTY // KPI_METRICS ]`→`[ BRSR CORE KPIs ]` (G5/polish). **G19** illustrative labels
+  verified present on **all 8 service pages** + the Home SEBI infographic. **G8** founder
+  block on Home verified clean (single CFA). Remaining residual matches are ONLY in
+  `/comps` (throwaway prototypes), `/learn` (skipped), and non-rendered JSDoc comments.
+- ⚠️ **`/comps/*` prototype routes** (`home--ledger`, `home--instrument`, `solution--*`) still
+  carry **pre-review V1 copy** ("BRSR-Core", "reasonable assurance", "our parent practice").
+  They are design mockups, **not** live pages — **exclude them from the production build or
+  delete them before launch** (folds into the Part C #13 route reconcile). *Not* a copy fix.
+- 🎨 *Design-review note:* Home keeps two intentional bracket-motif labels in the "instrument"
+  aesthetic — `[ OFFICIAL SEBI BRSR CORE SPECIFICATION — NOT A CLIENT OUTCOME METRIC ]` and
+  `[ BRSR CORE ATTRIBUTES ]`. These are filled, meaningful captions (not placeholders); left
+  as-is. Confirm at visual review that the bracket motif reads as intentional.
+
 ---
 
 ## 4. NON-PDF work to reach final build (dev / QA / launch)
@@ -89,7 +115,7 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 | Remove dev "N" badge on production build (`next.config` `devIndicators:false`) | G20 | Dev — **verify on prod build** |
 | Mobile + speed testing; compress images; defer non-critical animation | G22 | Dev / QA |
 | Optional page-length trim −20–30% (careful, per page; no identity change) | G16 | Us — optional |
-| Route / contents-map reconcile (account for BRSR-Readiness removal + Learn skip) | Part C #13 | QA |
+| Route / contents-map reconcile (account for BRSR-Readiness removal + Learn skip; **exclude/delete `/comps/*` prototype routes — they carry stale pre-review copy**) | Part C #13 | QA / Dev |
 | Domain / SSL / analytics / sitemap / robots / metadata | Part C #12 | Dev — launch |
 | **Bespoke imagery for the new Social Impact & SROI page** (currently reuses community/people photos as a placeholder-free interim) | VA follow-up | Design |
 | All forms tested (notice, error, success) incl. new consent lines | Part C #7 | Us + client wiring |
