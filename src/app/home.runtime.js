@@ -74,11 +74,10 @@ export function initHome() {
       ["ESG Disclosure & Assurance Readiness","BRSR and BRSR Core, prepared for independent assessment or assurance.",["BRSR CORE","ASSURANCE"],"/solutions/esg-disclosure-assurance-readiness"],
       ["Social Impact & SROI","Social impact measurement and SROI, grounded in CSR outcomes.",["SROI","CSR"],"/solutions/social-impact-sroi"]
     ];
-    /* TODO(client images): replace with the 8 service-wheel frames (one per service,
-       highlighting that wedge — order MUST match SERVICES). Until they land, the
-       first 8 existing ring frames are placeholders and will not match the labels
-       (client-confirmed interim, H15). */
-    var FRAMES=["/v/home/ac701337b.webp","/v/home/acb153623.webp","/v/home/acf6636f8.webp","/v/home/a48b88afe.webp","/v/home/aaf4ed172.webp","/v/home/a5acca33c.webp","/v/home/adf71bef7.webp","/v/home/a3b5a3718.webp"];
+    /* Client service-wheel frames (one per service, highlighting that wedge).
+       Order matches SERVICES. Normalized from the source art to identical 1024x1024
+       squares, disc-registered so the wheel never jumps between frames. */
+    var FRAMES=["/v/home/svc-1-due-diligence.webp","/v/home/svc-2-training.webp","/v/home/svc-3-carbon.webp","/v/home/svc-4-advisory.webp","/v/home/svc-5-technical.webp","/v/home/svc-6-finance.webp","/v/home/svc-7-disclosure.webp","/v/home/svc-8-social.webp"];
     var frames=document.getElementById("igframes"),hot=document.getElementById("ighot");
     if(!hot)return;
     var hotg=hot.querySelector("g"),
