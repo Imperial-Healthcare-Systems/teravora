@@ -73,10 +73,10 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 
 > **Note — `/learn` skipped (client directive).** The page is left as-is and still carries **pre-review copy**: it duplicates the Training page and retains old terminology ("BRSR-Core", "IFRS S1/S2", "frameworks", standalone TCFD). If `/learn` ships, it needs a terminology pass or should be revisited before launch.
 
-### 3c. Structural / design (deferred)
+### 3c. Structural / design
 | Item | What | Blocker |
 |---|---|---|
-| **H15 / G6** | BRSR-dominance rebalance on Home (wheel + "one service in depth" so all 8 services get equal weight) | **design decision — 2–3 layout options owed to client** |
+| ~~H15 / G6~~ | ~~BRSR-dominance rebalance on Home~~ → **client chose: repurpose the wheel into an 8-service wheel.** ✅ **Scaffold built + live** (`b3e532e`): all 8 services, each segment links to its page, keyboard rail, Explore CTA. | ⏳ **Awaiting client's 8 service-wheel frames** (interim uses old ring art as placeholders — labels won't match imagery until then). Drop paths into `FRAMES[]` in `home.runtime.js`. **Follow-up:** relocate the BRSR-Core 49-KPI attribute detail to the ESG Disclosure page. |
 | ledger `:146` | "STANDARDS · RECOGNISED FRAMEWORKS" → "STANDARDS" (house style) | minor — never confirmed |
 
 ### 3d. Point 93 + Part B site-wide sweep — VERIFIED 2026-07-27
@@ -105,14 +105,37 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
   `[ BRSR CORE ATTRIBUTES ]`. These are filled, meaningful captions (not placeholders); left
   as-is. Confirm at visual review that the bracket motif reads as intentional.
 
+### 3e. Ship-readiness scan — 2026-07-28
+- ✅ **Health check (Playwright, all 16 live routes):** every route returns **200 with no console
+  errors, no JS/page errors, and no failed requests / broken images** — includes the new
+  service-wheel webps, the 3 legal pages, and all 8 service pages. 16/16 clean.
+- ✅ **Terminology:** whole live site clean of the standard-dictionary residuals (incl. `/learn`
+  after its pass, `dac8353`). Only `/comps` (throwaway) still carries pre-review copy.
+- ✅ **Links:** no dead internal links; every `/solutions/*` href resolves; the only
+  `brsr-readiness` mention is a code comment.
+- 🔴 **SHIP-CRITICAL — SMTP env vars.** The primary conversion (`/start` → "Request a Proposal")
+  POSTs to `/api/proposal` → `sendProposalEmail` (nodemailer). It is fully built and validated,
+  **but delivers only if `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`, `SMTP_PORT` (+ `PROPOSAL_RECIPIENT`)
+  are set in the production environment.** Without them every proposal request fails to deliver
+  (it degrades gracefully to "email us at contact@teravora.in", but **no lead is captured**).
+  Set these in Vercel before/at launch and send one live test.
+- 🟠 **`/learn` ↔ Training service overlap.** `/learn` and `/solutions/capacity-building-esg-training`
+  both cover training and both sit in the nav → duplicate-content / user-confusion risk. `/learn`
+  is also **not in the sitemap** (allowlist). **Decision needed:** differentiate the two, consolidate,
+  or pick one canonical — then add `/learn` to `sitemap.ts` if it ships.
+- 🟢 *Cleanup (low-risk, on request):* prune the 9 orphaned old ring frames in `public/v/home/`;
+  tidy the "parent practice" wording in `learn/page.tsx`'s code comment.
+
 ---
 
 ## 4. NON-PDF work to reach final build (dev / QA / launch)
 
-> **Update 2026-07-27:** **G15 (print CSS) ✅ done** (`ea11792`) · **G18 (interactive a11y) ✅ done**
-> (`66512d0`) · **Legal pages ✅ done** (`13ef208`). **Production build passes clean** — all 33
-> routes compile, static generation OK. **G20 (N badge)** = client-confirmed local-dev only, no
-> action. Remaining: G22 (mobile/speed/compress), delete `/comps` at ship, `/learn` decision, deploy.
+> **Update 2026-07-28:** **G15 (print CSS) ✅** (`ea11792`) · **G18 (a11y) ✅** (`66512d0`) ·
+> **Legal ✅** (`13ef208`) · **H15 8-service wheel + real client images ✅** (`34dff21`) ·
+> **method/portfolio generalised ✅** (`24d735b`) · **`/learn` layout + terminology ✅**
+> (`1c240cb`, `dac8353`). **Prod build clean** (33 routes) · **health check clean** (16/16 routes,
+> no errors/404s). **G20 (N badge)** = local-dev only. **Remaining:** set SMTP env (ship-critical) ·
+> G22 mobile/speed/compress · delete `/comps` at ship · `/learn`↔Training decision · deploy.
 
 | Item | Ref | Owner | Status |
 |---|---|---|---|

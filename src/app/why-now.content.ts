@@ -258,7 +258,7 @@ export const WHYNOW_BODY = String.raw`
             <div class="cfg-k">STEP 03 / 03 · REQUEST</div>
             <h3>Your specification is ready.</h3>
             <p style="color:var(--n200);font-size:.95rem;margin-bottom:18px">Everything on the right goes to your specialist. Continue and we&rsquo;ll respond with the scoped method.</p>
-            <div class="hero-cta"><a class="btn btn-gold" href="#" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">&rarr;</span></a></div>
+            <div class="hero-cta"><a class="btn btn-gold" href="/start" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">&rarr;</span></a></div>
             <p class="cfg-consent" style="margin-top:14px;font-size:.78rem;line-height:1.5;color:rgba(255,255,255,.55)">By sending this, you agree Teravora may use the details you provide to respond to your enquiry, in line with our <a href="/privacy" style="color:inherit;text-decoration:underline">Privacy Policy</a>. We do not sell your data or share it for third-party marketing.</p>
             <div class="cfg-nav"><button class="cfg-back" data-back>&larr; Change answers</button></div>
           </div>

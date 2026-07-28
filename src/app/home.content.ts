@@ -41,34 +41,32 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
-<section class="sec ig" id="infographic" aria-label="BRSR Core: 49 KPIs across nine attributes">
+<section class="sec ig" id="infographic" aria-label="Our services — eight services, one method">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="mono eyebrow">One service, in depth · When a BRSR Core deadline is what you're facing</span>
-      <h2>The BRSR Core subset, made legible.</h2>
-      <p>India's SEBI BRSR Core — the subset subject to independent assessment or assurance — is one of our core service lines, and this is how we read it. Grouped by Environmental, Social and Governance — select any segment.</p>
+      <span class="mono eyebrow">The practice, at a glance · Eight services, one method</span>
+      <h2>Eight services. One standard of proof.</h2>
+      <p>Environmental and social risk, carbon, disclosure, finance, technical work and training — one connected practice, held to the same evidence standard. Select any service to explore it.</p>
     </div>
   </div>
   <div class="ig-stage">
     <div class="ig-inner">
       <ol class="ig-rail reveal">
-        <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li>
+        <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li>
       </ol>
       <div class="ig-ring reveal">
         <div class="ig-frames" id="igframes"></div>
         <svg class="ig-hot" id="ighot" viewBox="0 0 1000 1000" aria-hidden="true"><g></g></svg>
       </div>
       <div class="ig-detail reveal">
-        <div class="ig-idx" id="igidx">ATTRIBUTE 01 / 09 · ENVIRONMENTAL</div>
-        <h3 id="ightitle">GHG emissions</h3>
-        <p id="igdesc">Scope 1 and Scope 2 greenhouse-gas footprint — and Scope 3 where material — with intensity per rupee of turnover.</p>
+        <div class="ig-idx" id="igidx">SERVICE 01 / 08</div>
+        <h3 id="ightitle">Environmental &amp; Social Due Diligence</h3>
+        <p id="igdesc">Environmental and social risk on live deals — IFC Performance Standards, Equator Principles, Desktop and Site-based ESDD.</p>
         <div class="ig-tags" id="igtags"></div>
-        <div class="ig-note">[ OFFICIAL SEBI BRSR CORE SPECIFICATION — NOT A CLIENT OUTCOME METRIC ]</div>
-        <div class="ig-cap">49 KPIs · 9 ATTRIBUTES</div>
-        <div class="ig-esg" id="igesg">
-          <div class="e e0"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-9 7-16 16-16 0 9-7 16-16 16Z"/><path d="M4 20 14 10"/></svg></div><div class="lb">ENVIRONMENTAL</div></div>
-          <div class="e e1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="2.6"/><circle cx="16.5" cy="9.5" r="2.1"/><path d="M4 19c0-3 2.2-5 5-5s5 2 5 5"/><path d="M14.5 19c.1-2.3 1.5-3.8 3.4-3.8s2.1 1.2 2.1 2.3"/></svg></div><div class="lb">SOCIAL</div></div>
-          <div class="e e2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5V17M9.5 9.5V17M14.5 9.5V17M18.5 9.5V17"/><path d="M3.5 17.5h17"/></svg></div><div class="lb">GOVERNANCE</div></div>
+        <div class="ig-cap">EIGHT SERVICES · ONE METHOD</div>
+        <div class="ig-actions">
+          <a class="ig-link" id="iglink" href="/solutions/environmental-social-due-diligence"><span>Explore this service</span><span class="arw">→</span></a>
+          <a class="ig-all" href="/solutions">See all solutions</a>
         </div>
       </div>
     </div>
@@ -80,8 +78,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="band-scrim"></div>
   <div class="wrap band-in">
     <span class="mono band-kicker reveal">◇ MEASURABLE IMPACT</span>
-    <h2 class="band-h reveal">The disclosure is the deadline.<br>The impact is the point.</h2>
-    <p class="band-sub reveal">Every figure we file traces back to something real — carbon cut, water saved, a risk retired. The audit trail is how you prove it happened.</p>
+    <h2 class="band-h reveal">The requirement is the deadline.<br>The impact is the point.</h2>
+    <p class="band-sub reveal">Every figure we produce traces back to something real — carbon cut, water saved, a risk retired. The evidence trail is how you prove it happened.</p>
   </div>
 </section>
 
@@ -89,8 +87,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="badge-hl">◇ METHOD ENGINE · TRACE VIEW</span>
-      <h2>One method, four steps — from first data to a defensible disclosure.</h2>
-      <p>You see the working at every stage. That is the difference between a filing and a defensible disclosure.</p>
+      <h2>One method, four steps — from first data to a defensible result.</h2>
+      <p>You see the working at every stage. That is the difference between a claim and a defensible result.</p>
     </div>
     <div class="engine">
       <div class="pipe reveal">
@@ -112,9 +110,9 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
       <div class="steps reveal">
         <div class="step on" data-i="0"><div class="sh"><span class="sn">01</span><span class="st">Assess</span></div><p class="sd">We map your existing data against every requirement and find the gaps, in plain language.</p></div>
-        <div class="step" data-i="1"><div class="sh"><span class="sn">02</span><span class="st">Comply</span></div><p class="sd">We prepare a BRSR filing ready for independent assessment or assurance.</p></div>
-        <div class="step" data-i="2"><div class="sh"><span class="sn">03</span><span class="st">Improve</span></div><p class="sd">We turn the disclosure you must produce into operating and financing advantages you can use.</p></div>
-        <div class="step" data-i="3"><div class="sh"><span class="sn">04</span><span class="st">Prove</span></div><p class="sd">We build the audit trail behind every number, so the result stands up to scrutiny.</p></div>
+        <div class="step" data-i="1"><div class="sh"><span class="sn">02</span><span class="st">Comply</span></div><p class="sd">We produce the deliverable the work requires — built to withstand independent scrutiny.</p></div>
+        <div class="step" data-i="2"><div class="sh"><span class="sn">03</span><span class="st">Improve</span></div><p class="sd">We turn the work you must do into operating and financing advantages you can use.</p></div>
+        <div class="step" data-i="3"><div class="sh"><span class="sn">04</span><span class="st">Prove</span></div><p class="sd">We build the evidence trail behind every number, so the result stands up to scrutiny.</p></div>
       </div>
     </div>
   </div>
@@ -156,8 +154,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="manifest">
           <span class="mf-c tl"></span><span class="mf-c tr"></span><span class="mf-c bl"></span><span class="mf-c br"></span>
           <div class="mf-metrics">
-            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">[ BRSR CORE KPIs ]</div></div>
-            <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">[ BRSR CORE ATTRIBUTES ]</div></div>          </div>
+            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">BRSR CORE KPIs</div></div>
+            <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">BRSR CORE ATTRIBUTES</div></div>          </div>
           <div class="mf-note">The SEBI BRSR Core specification — the standard we work to, not a client claim.</div>
           <div class="mf-std">
             <span class="std" data-t="IFC Performance Standards — environmental and social risk"><span class="sp">E&amp;S</span><span class="sc">IFC PS</span></span>
@@ -213,24 +211,24 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <div class="pf-grid reveal">
       <div class="pf-intro">
-        <div class="sec-head"><span class="mono eyebrow">The method, applied</span><h2>What working with Teravora looks like.</h2><p>The shape of a typical engagement — from kickoff to a filed, defensible disclosure.</p></div>
+        <div class="sec-head"><span class="mono eyebrow">The method, applied</span><h2>What working with Teravora looks like.</h2><p>The shape of a typical engagement — from kickoff to a defensible, evidenced result.</p></div>
         <div class="pf-foot"><span>Want the track record behind the method?</span> <a href="https://teravue.org/" target="_blank" rel="noopener" class="lk">See the associated practice's work →</a></div>
       </div>
       <figure class="pf-fig">
         <div class="pf-imgwrap">
-          <img src="/v/home/method-review.webp" alt="A specialist reviews an ESG disclosure dashboard on a laptop — charts, KPIs and figures checked line by line before filing">
+          <img src="/v/home/method-review.webp" alt="A specialist reviews an ESG dashboard on a laptop — charts, KPIs and figures checked line by line">
           <div class="pf-live" aria-hidden="true"></div>
         </div>
-        <figcaption class="fig-cap"><span>◇ ENGAGEMENT WALKTHROUGH</span><span>KICKOFF → FILED</span></figcaption>
+        <figcaption class="fig-cap"><span>◇ ENGAGEMENT WALKTHROUGH</span><span>KICKOFF → DELIVERED</span></figcaption>
       </figure>
     </div>
     <div class="pf-view reveal" data-view="process">
       <div class="tl">
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEK 0</div><h4>Kickoff &amp; scope</h4><p>We map your band, deadline and the data you already hold.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 1–2 · ASSESS</div><h4>Gap analysis</h4><p>Every BRSR Core requirement marked present, partial, or missing — in plain language.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 3–6 · COMPLY</div><h4>Build the disclosure</h4><p>A filing prepared for independent assessment or assurance.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">ONGOING · IMPROVE</div><h4>Turn it to advantage</h4><p>Use the disclosure for financing and operating gains, not just compliance.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">FILING · PROVE</div><h4>Audit trail delivered</h4><p>Every number backed by evidence an assessor or assurer can follow.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEK 0</div><h4>Kickoff &amp; scope</h4><p>We map your goal, timeline and the data you already hold.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 1–2 · ASSESS</div><h4>Gap analysis</h4><p>Every requirement marked present, partial, or missing — in plain language.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 3–6 · COMPLY</div><h4>Build the deliverable</h4><p>The work prepared to withstand independent scrutiny.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">ONGOING · IMPROVE</div><h4>Turn it to advantage</h4><p>Use the work for financing and operating gains, not just compliance.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">DELIVERY · PROVE</div><h4>Evidence trail delivered</h4><p>Every number backed by evidence an independent reviewer can follow.</p></div>
       </div>
     </div>
   </div>
@@ -298,7 +296,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
             <div class="cfg-k">STEP 03 / 03 · REQUEST</div>
             <h3>Your specification is ready.</h3>
             <p style="color:var(--n200);font-size:.95rem;margin-bottom:18px">Everything on the right goes to your specialist. Continue and we'll respond with the scoped method.</p>
-            <div class="hero-cta"><a class="btn btn-gold" href="#" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">→</span></a></div>
+            <div class="hero-cta"><a class="btn btn-gold" href="/start" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">→</span></a></div>
             <p class="cfg-consent" style="margin-top:14px;font-size:.78rem;line-height:1.5;color:rgba(255,255,255,.55)">By sending this, you agree Teravora may use the details you provide to respond to your enquiry, in line with our <a href="/privacy" style="color:inherit;text-decoration:underline">Privacy Policy</a>. We do not sell your data or share it for third-party marketing.</p>
             <div class="cfg-nav"><button class="cfg-back" data-back>← Change answers</button></div>
           </div>
@@ -321,8 +319,4 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     </div>
   </div>
 </section>
-
-<a class="wafab" href="#" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.9 1 1-4.8-.2-.4A9.8 9.8 0 016 15c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 9.8-10 9.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
-  <span class="lab">Chat with a specialist</span>
-</a>`;
+`;

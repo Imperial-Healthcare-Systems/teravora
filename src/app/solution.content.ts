@@ -85,12 +85,12 @@ export const SOLUTION_BODY = String.raw`<div class="rails"><i></i></div>
         </div>
         <div class="pov">Many advisors check whether you <i>disclosed</i>. We prepare your numbers for an independent provider testing whether the disclosure <b>holds up</b>.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical BRSR Core readiness engagement moves you from a gap map to an assurance-ready filing across a single reporting cycle.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">ASSURANCE-READINESS · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">ASSURANCE-READINESS</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">METRIC · SOURCED TO PRIMARY EVIDENCE</span><span class="v" data-final="TRACED">TRACED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">CONTROL · VALIDATED TO THE STANDARD</span><span class="v" data-final="VALIDATED">VALIDATED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">EVIDENCE · TRAIL ASSURER CAN FOLLOW</span><span class="v" data-final="READY">READY</span></div>

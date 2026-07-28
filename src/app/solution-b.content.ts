@@ -70,7 +70,7 @@ export const SOLUTION_B_BODY = String.raw`<div class="rails"><i></i></div>
     </div>
     <figure class="reveal" style="margin:0">
       <img src="/v/home/ae4e4fefc.webp" alt="Carbon accounting architecture — Scope 1 direct, Scope 2 purchased energy and Scope 3 value-chain emissions reconciled into an assurance-ready ledger" style="width:100%;height:auto;display:block;border:1px solid rgba(196,145,47,.22);border-radius:14px" loading="lazy">
-      <figcaption style="margin-top:12px;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;color:rgba(255,255,255,.5)">◇ SCOPES 1 · 2 · 3 — DIRECT, ENERGY AND THE FULL VALUE CHAIN. ILLUSTRATIVE WORKFLOW — NOT A SOFTWARE PRODUCT OR CLIENT RESULT.</figcaption>
+      <figcaption style="margin-top:12px;font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;color:rgba(255,255,255,.5)">◇ SCOPES 1 · 2 · 3 — DIRECT, ENERGY AND THE FULL VALUE CHAIN.</figcaption>
     </figure>
   </div>
 </section>
@@ -91,12 +91,12 @@ export const SOLUTION_B_BODY = String.raw`<div class="rails"><i></i></div>
         </div>
         <div class="pov">A footprint is not a number — it is a calculation. We hand over the calculation, so you are never asked to defend a figure you cannot reconstruct.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical engagement takes you from source data to a complete Scopes 1, 2 and 3 inventory and a costed reduction pathway across a single reporting cycle.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">GHG INVENTORY · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">GHG INVENTORY</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">ACTIVITY DATA · SOURCED AT SITE</span><span class="v" data-final="TRACED">TRACED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">EMISSION FACTORS · SOURCED &amp; VERSIONED</span><span class="v" data-final="SOURCED">SOURCED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">PATHWAY · RANKED BY ABATEMENT &amp; COST</span><span class="v" data-final="COSTED">COSTED</span></div>

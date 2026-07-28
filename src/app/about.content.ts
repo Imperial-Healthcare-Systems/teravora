@@ -13,7 +13,7 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
     <p class="lede reveal">Teravora is the India practice built for India's reality — where ESG is now driven by <span class="g">regulation, financing conditions and value-chain expectations</span>, not by aspiration alone. New here on purpose: built for the mid-market and value-chain companies meeting India's ESG rules for the first time.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#cta"><span>Request a Proposal</span><span class="arw">→</span></a>
-      <a class="btn btn-ghost" href="#scope"><span>See our method</span></a>
+      <a class="btn btn-ghost" href="/how-we-prove"><span>See our method</span></a>
     </div>
     <div class="chips reveal">
       <span class="chip"><b>New</b> India brand</span>
@@ -98,8 +98,8 @@ export const ABOUT_BODY = String.raw`<div class="rails"><i></i></div>
     <h2 class="reveal">Built for India's reality. Bring us yours.</h2>
     <p class="reveal">A new brand, a proven backbone, and a method you can audit. Start with a proposal — a real person, not a form receipt.</p>
     <div class="hero-cta reveal">
-      <a class="btn btn-gold" href="#"><span>Request a Proposal</span><span class="arw">→</span></a>
-      <a class="btn btn-ghost" href="#"><span>See how we prove it</span></a>
+      <a class="btn btn-gold" href="/start"><span>Request a Proposal</span><span class="arw">→</span></a>
+      <a class="btn btn-ghost" href="/how-we-prove"><span>See how we prove it</span></a>
     </div>
   </div>
 </section>`;

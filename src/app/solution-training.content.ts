@@ -79,12 +79,12 @@ export const SOLUTION_TRAINING_BODY = String.raw`<div class="rails"><i></i></div
         </div>
         <div class="pov">Generic ESG training teaches the acronyms. Useful training teaches your team to defend their own numbers, answer a lender on their own site, and know when a question is above their pay grade — on purpose.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical programme runs from capability diagnosis to delivered working sessions and installed playbooks across one reporting cycle.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">CAPABILITY PROGRAMME · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">CAPABILITY PROGRAMME</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">GAPS · MAPPED TO OBLIGATIONS</span><span class="v" data-final="MAPPED">MAPPED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">SESSIONS · RUN ON LIVE DATA</span><span class="v" data-final="APPLIED">APPLIED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">PLAYBOOKS · LEFT IN THE BUILDING</span><span class="v" data-final="INSTALLED">INSTALLED</span></div>

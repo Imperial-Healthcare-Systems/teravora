@@ -78,12 +78,12 @@ export const SOLUTION_ADVISORY_BODY = String.raw`<div class="rails"><i></i></div
         </div>
         <div class="pov">A strategy that cannot name its owner, its measure and its next review date is a document, not a strategy. We build the kind you can be audited against — because eventually you will be.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical engagement moves from materiality assessment to a board-approved roadmap and operating cadence across one planning cycle.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">ESG ROADMAP · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">ESG ROADMAP</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">PRIORITIES · MATERIALITY-RANKED</span><span class="v" data-final="RANKED">RANKED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">OWNERSHIP · NAMED TO A ROLE</span><span class="v" data-final="OWNED">OWNED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">TARGETS · MEASURED ON A CADENCE</span><span class="v" data-final="MEASURED">MEASURED</span></div>
