@@ -60,64 +60,73 @@ export function initHome() {
     io.observe(lg);
   })();
 
-  /* infographic — BRSR-Core ring: immutable PNG slideshow (bg) + transparent hotspot overlay (fg) */
+  /* infographic — SERVICE wheel (H15/G6): the ported ring machinery, repurposed
+     from 9 BRSR attributes to the 8 services, each wedge linking to its page.
+     8 x 45deg wedges, first centred at top, clockwise. */
   (function(){
-    var A=[
-      ["GHG emissions","Scope 1 and Scope 2 greenhouse-gas footprint — and Scope 3 where material — with intensity per rupee of turnover.",["SCOPE 1","SCOPE 2","INTENSITY"],"ENVIRONMENTAL",0],
-      ["Water footprint","Withdrawal, consumption and discharge, with intensity and any zero-liquid-discharge coverage.",["WITHDRAWAL","DISCHARGE"],"ENVIRONMENTAL",0],
-      ["Energy footprint","Total energy consumed and its intensity, plus the share drawn from renewable sources.",["TOTAL","RENEWABLE"],"ENVIRONMENTAL",0],
-      ["Embracing circularity","Waste generated, the share recovered or recycled, and what is safely disposed.",["WASTE","RECOVERED"],"ENVIRONMENTAL",0],
-      ["Employee wellbeing","Coverage of safety, health and wellbeing measures across the workforce.",["SAFETY","HEALTH"],"SOCIAL",1],
-      ["Gender diversity","Representation across the workforce and equal remuneration for equal work.",["REPRESENTATION","EQUAL PAY"],"SOCIAL",1],
-      ["Inclusive development","Jobs and sourcing directed to smaller and more marginalised producers and regions.",["SOURCING","MSME"],"SOCIAL",1],
-      ["Fairness to customers & suppliers","Consumer complaints, data and cyber safety, and timely payments to suppliers.",["COMPLAINTS","PAYMENTS"],"SOCIAL",1],
-      ["Openness of business","Concentration of purchases and sales, related-party dealings, loans and advances.",["CONCENTRATION","RELATED-PARTY"],"GOVERNANCE",2]
+    var SERVICES=[
+      ["Environmental & Social Due Diligence","Environmental and social risk on live deals — IFC Performance Standards, Equator Principles, Desktop and Site-based ESDD.",["IFC PS","EQUATOR"],"/solutions/environmental-social-due-diligence"],
+      ["Capacity Building & Training","Tailor-made corporate and on-field training on the environment, ESG, climate change and sustainability.",["CORPORATE","ON-FIELD"],"/solutions/capacity-building-esg-training"],
+      ["Carbon & Climate","GHG inventories across Scopes 1, 2 and 3, and decarbonisation pathways a board can approve.",["GHG PROTOCOL","SCOPE 3"],"/solutions/carbon-climate"],
+      ["ESG & Climate Strategy Advisory","ESG and climate strategy aligned to the standards your stakeholders already speak.",["STRATEGY","IFRS S2"],"/solutions/esg-climate-strategy-advisory"],
+      ["Technical & Environmental Services","Technical and environmental work, prepared for the certification audit.",["TECHNICAL","AUDIT-READY"],"/solutions/technical-environmental-services"],
+      ["Sustainable Finance & Carbon Markets","Sustainable-finance and carbon-market instruments, built to stand up to diligence.",["GREEN FINANCE","CARBON"],"/solutions/sustainable-finance-carbon-markets"],
+      ["ESG Disclosure & Assurance Readiness","BRSR and BRSR Core, prepared for independent assessment or assurance.",["BRSR CORE","ASSURANCE"],"/solutions/esg-disclosure-assurance-readiness"],
+      ["Social Impact & SROI","Social impact measurement and SROI, grounded in CSR outcomes.",["SROI","CSR"],"/solutions/social-impact-sroi"]
     ];
-    var FRAMES=["/v/home/ac701337b.webp","/v/home/acb153623.webp","/v/home/acf6636f8.webp","/v/home/a48b88afe.webp","/v/home/aaf4ed172.webp","/v/home/a5acca33c.webp","/v/home/adf71bef7.webp","/v/home/a3b5a3718.webp","/v/home/ac2585710.webp"];
-    var frames=document.getElementById("igframes"),hot=document.getElementById("ighot"),hotg=hot.querySelector("g"),
-        rail=document.querySelectorAll(".ig-rail li"),esg=document.querySelectorAll("#igesg .e"),
+    /* TODO(client images): replace with the 8 service-wheel frames (one per service,
+       highlighting that wedge — order MUST match SERVICES). Until they land, the
+       first 8 existing ring frames are placeholders and will not match the labels
+       (client-confirmed interim, H15). */
+    var FRAMES=["/v/home/ac701337b.webp","/v/home/acb153623.webp","/v/home/acf6636f8.webp","/v/home/a48b88afe.webp","/v/home/aaf4ed172.webp","/v/home/a5acca33c.webp","/v/home/adf71bef7.webp","/v/home/a3b5a3718.webp"];
+    var frames=document.getElementById("igframes"),hot=document.getElementById("ighot");
+    if(!hot)return;
+    var hotg=hot.querySelector("g"),
+        rail=document.querySelectorAll(".ig-rail li"),
         idx=document.getElementById("igidx"),tt=document.getElementById("ightitle"),
-        dd=document.getElementById("igdesc"),tg=document.getElementById("igtags");
+        dd=document.getElementById("igdesc"),tg=document.getElementById("igtags"),
+        lk=document.getElementById("iglink");
     var imgs=FRAMES.map(function(src){var m=document.createElement("img");m.src=src;m.alt="";frames.appendChild(m);return m});
-    /* transparent hotspot wedges — geometry matches the cropped 1000x1000 ring frame */
-    var CX=500,CY=500,R0=160,R1=486,SEG=40;
+    /* transparent hotspot wedges — 8 x 45deg, first centred at top, clockwise */
+    var CX=500,CY=500,R0=160,R1=486,SEG=45,N=SERVICES.length;
+    var ACCENT=["#4FBCC2","#E4BE68","#3E9E7A","#4FBCC2","#E4BE68","#3E9E7A","#4FBCC2","#E4BE68"];
     function pol(r,deg){var a=(deg-90)*Math.PI/180;return (CX+r*Math.cos(a)).toFixed(1)+" "+(CY+r*Math.sin(a)).toFixed(1)}
     function sector(a0,a1){var laf=(a1-a0)>180?1:0;
       return "M"+pol(R1,a0)+" A"+R1+" "+R1+" 0 "+laf+" 1 "+pol(R1,a1)+" L"+pol(R0,a1)+" A"+R0+" "+R0+" 0 "+laf+" 0 "+pol(R0,a0)+" Z"}
     var ci=0,paused=false;
-    A.forEach(function(a,i){
+    SERVICES.forEach(function(s,i){
       var p=document.createElementNS("http://www.w3.org/2000/svg","path");
       p.setAttribute("d",sector(i*SEG-SEG/2,i*SEG+SEG/2));
       p.addEventListener("mouseenter",function(){ci=i;paused=true;sel(i)});
+      p.addEventListener("click",function(){ci=i;paused=true;sel(i)});   /* tap = preview; the Explore link navigates */
       hotg.appendChild(p);
     });
     function sel(i){
       imgs.forEach(function(m,k){m.classList.toggle("on",k===i)});
       rail.forEach(function(r,k){r.classList.toggle("on",k===i)});
-      var grp=A[i][4];esg.forEach(function(e,k){e.classList.toggle("on",k===grp)});
-      document.getElementById("infographic").style.setProperty("--seg",["#3E9E7A","#4FBCC2","#E4BE68"][grp]);  /* E green · S teal · G gold */
-      idx.textContent="ATTRIBUTE "+String(i+1).padStart(2,"0")+" / 09 · "+A[i][3];
-      tt.textContent=A[i][0];dd.textContent=A[i][1];
-      tg.innerHTML="";A[i][2].forEach(function(x){var s=document.createElement("span");s.textContent=x;tg.appendChild(s)});
+      document.getElementById("infographic").style.setProperty("--seg",ACCENT[i]);
+      if(idx)idx.textContent="SERVICE "+String(i+1).padStart(2,"0")+" / 08";
+      if(tt)tt.textContent=SERVICES[i][0];
+      if(dd)dd.textContent=SERVICES[i][1];
+      if(tg){tg.innerHTML="";SERVICES[i][2].forEach(function(x){var s=document.createElement("span");s.textContent=x;tg.appendChild(s)})}
+      if(lk)lk.setAttribute("href",SERVICES[i][3]);
     }
     sel(0);
-    /* a11y (G18): the decorative SVG ring is pointer-only + aria-hidden; make the
-       numbered rail the keyboard-operable control for the same 9 attributes, each
-       with an accessible name. Focusing or activating a rail item selects it (the
-       keyboard parallel of hovering a wedge) and pauses the auto-advance. */
+    /* a11y (G18): the SVG ring is pointer-only; the numbered rail is the keyboard
+       control. Focus/activate selects the service (the parallel of hovering a wedge). */
     var railEl=document.querySelector(".ig-rail");
-    if(railEl)railEl.setAttribute("aria-label","Select a BRSR Core attribute");
+    if(railEl)railEl.setAttribute("aria-label","Select a service");
     rail.forEach(function(li,i){
       li.setAttribute("role","button");
       li.setAttribute("tabindex","0");
-      li.setAttribute("aria-label","BRSR Core attribute "+(i+1)+" of 9: "+A[i][0]);
+      li.setAttribute("aria-label","Service "+(i+1)+" of 8: "+SERVICES[i][0]);
       li.style.cursor="pointer";
       li.addEventListener("click",function(){ci=i;paused=true;sel(i)});
       li.addEventListener("focus",function(){ci=i;paused=true;sel(i)});
       li.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "||e.key==="Spacebar"){e.preventDefault();ci=i;paused=true;sel(i)}});
     });
-    hot.addEventListener("mouseleave",function(){paused=false});   /* resume from the last-hovered segment */
-    if(!reduce){setInterval(function(){if(paused)return;ci=(ci+1)%9;sel(ci)},2600)}
+    hot.addEventListener("mouseleave",function(){paused=false});
+    if(!reduce){setInterval(function(){if(paused)return;ci=(ci+1)%N;sel(ci)},2600)}
   })();
 
   /* particles */

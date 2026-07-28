@@ -41,34 +41,32 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   </div>
 </section>
 
-<section class="sec ig" id="infographic" aria-label="BRSR Core: 49 KPIs across nine attributes">
+<section class="sec ig" id="infographic" aria-label="Our services — eight services, one method">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="mono eyebrow">One service, in depth · When a BRSR Core deadline is what you're facing</span>
-      <h2>The BRSR Core subset, made legible.</h2>
-      <p>India's SEBI BRSR Core — the subset subject to independent assessment or assurance — is one of our core service lines, and this is how we read it. Grouped by Environmental, Social and Governance — select any segment.</p>
+      <span class="mono eyebrow">The practice, at a glance · Eight services, one method</span>
+      <h2>Eight services. One standard of proof.</h2>
+      <p>Environmental and social risk, carbon, disclosure, finance, technical work and training — one connected practice, held to the same evidence standard. Select any service to explore it.</p>
     </div>
   </div>
   <div class="ig-stage">
     <div class="ig-inner">
       <ol class="ig-rail reveal">
-        <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li><li>09</li>
+        <li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li>
       </ol>
       <div class="ig-ring reveal">
         <div class="ig-frames" id="igframes"></div>
         <svg class="ig-hot" id="ighot" viewBox="0 0 1000 1000" aria-hidden="true"><g></g></svg>
       </div>
       <div class="ig-detail reveal">
-        <div class="ig-idx" id="igidx">ATTRIBUTE 01 / 09 · ENVIRONMENTAL</div>
-        <h3 id="ightitle">GHG emissions</h3>
-        <p id="igdesc">Scope 1 and Scope 2 greenhouse-gas footprint — and Scope 3 where material — with intensity per rupee of turnover.</p>
+        <div class="ig-idx" id="igidx">SERVICE 01 / 08</div>
+        <h3 id="ightitle">Environmental &amp; Social Due Diligence</h3>
+        <p id="igdesc">Environmental and social risk on live deals — IFC Performance Standards, Equator Principles, Desktop and Site-based ESDD.</p>
         <div class="ig-tags" id="igtags"></div>
-        <div class="ig-note">[ OFFICIAL SEBI BRSR CORE SPECIFICATION — NOT A CLIENT OUTCOME METRIC ]</div>
-        <div class="ig-cap">49 KPIs · 9 ATTRIBUTES</div>
-        <div class="ig-esg" id="igesg">
-          <div class="e e0"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-9 7-16 16-16 0 9-7 16-16 16Z"/><path d="M4 20 14 10"/></svg></div><div class="lb">ENVIRONMENTAL</div></div>
-          <div class="e e1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="2.6"/><circle cx="16.5" cy="9.5" r="2.1"/><path d="M4 19c0-3 2.2-5 5-5s5 2 5 5"/><path d="M14.5 19c.1-2.3 1.5-3.8 3.4-3.8s2.1 1.2 2.1 2.3"/></svg></div><div class="lb">SOCIAL</div></div>
-          <div class="e e2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5"/><path d="M5.5 9.5V17M9.5 9.5V17M14.5 9.5V17M18.5 9.5V17"/><path d="M3.5 17.5h17"/></svg></div><div class="lb">GOVERNANCE</div></div>
+        <div class="ig-cap">EIGHT SERVICES · ONE METHOD</div>
+        <div class="ig-actions">
+          <a class="ig-link" id="iglink" href="/solutions/environmental-social-due-diligence"><span>Explore this service</span><span class="arw">→</span></a>
+          <a class="ig-all" href="/solutions">See all solutions</a>
         </div>
       </div>
     </div>
