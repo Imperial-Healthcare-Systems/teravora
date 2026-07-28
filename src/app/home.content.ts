@@ -78,8 +78,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="band-scrim"></div>
   <div class="wrap band-in">
     <span class="mono band-kicker reveal">◇ MEASURABLE IMPACT</span>
-    <h2 class="band-h reveal">The disclosure is the deadline.<br>The impact is the point.</h2>
-    <p class="band-sub reveal">Every figure we file traces back to something real — carbon cut, water saved, a risk retired. The audit trail is how you prove it happened.</p>
+    <h2 class="band-h reveal">The requirement is the deadline.<br>The impact is the point.</h2>
+    <p class="band-sub reveal">Every figure we produce traces back to something real — carbon cut, water saved, a risk retired. The evidence trail is how you prove it happened.</p>
   </div>
 </section>
 
@@ -87,8 +87,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="badge-hl">◇ METHOD ENGINE · TRACE VIEW</span>
-      <h2>One method, four steps — from first data to a defensible disclosure.</h2>
-      <p>You see the working at every stage. That is the difference between a filing and a defensible disclosure.</p>
+      <h2>One method, four steps — from first data to a defensible result.</h2>
+      <p>You see the working at every stage. That is the difference between a claim and a defensible result.</p>
     </div>
     <div class="engine">
       <div class="pipe reveal">
@@ -110,9 +110,9 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
       </div>
       <div class="steps reveal">
         <div class="step on" data-i="0"><div class="sh"><span class="sn">01</span><span class="st">Assess</span></div><p class="sd">We map your existing data against every requirement and find the gaps, in plain language.</p></div>
-        <div class="step" data-i="1"><div class="sh"><span class="sn">02</span><span class="st">Comply</span></div><p class="sd">We prepare a BRSR filing ready for independent assessment or assurance.</p></div>
-        <div class="step" data-i="2"><div class="sh"><span class="sn">03</span><span class="st">Improve</span></div><p class="sd">We turn the disclosure you must produce into operating and financing advantages you can use.</p></div>
-        <div class="step" data-i="3"><div class="sh"><span class="sn">04</span><span class="st">Prove</span></div><p class="sd">We build the audit trail behind every number, so the result stands up to scrutiny.</p></div>
+        <div class="step" data-i="1"><div class="sh"><span class="sn">02</span><span class="st">Comply</span></div><p class="sd">We produce the deliverable the work requires — built to withstand independent scrutiny.</p></div>
+        <div class="step" data-i="2"><div class="sh"><span class="sn">03</span><span class="st">Improve</span></div><p class="sd">We turn the work you must do into operating and financing advantages you can use.</p></div>
+        <div class="step" data-i="3"><div class="sh"><span class="sn">04</span><span class="st">Prove</span></div><p class="sd">We build the evidence trail behind every number, so the result stands up to scrutiny.</p></div>
       </div>
     </div>
   </div>
@@ -211,24 +211,24 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap">
     <div class="pf-grid reveal">
       <div class="pf-intro">
-        <div class="sec-head"><span class="mono eyebrow">The method, applied</span><h2>What working with Teravora looks like.</h2><p>The shape of a typical engagement — from kickoff to a filed, defensible disclosure.</p></div>
+        <div class="sec-head"><span class="mono eyebrow">The method, applied</span><h2>What working with Teravora looks like.</h2><p>The shape of a typical engagement — from kickoff to a defensible, evidenced result.</p></div>
         <div class="pf-foot"><span>Want the track record behind the method?</span> <a href="https://teravue.org/" target="_blank" rel="noopener" class="lk">See the associated practice's work →</a></div>
       </div>
       <figure class="pf-fig">
         <div class="pf-imgwrap">
-          <img src="/v/home/method-review.webp" alt="A specialist reviews an ESG disclosure dashboard on a laptop — charts, KPIs and figures checked line by line before filing">
+          <img src="/v/home/method-review.webp" alt="A specialist reviews an ESG dashboard on a laptop — charts, KPIs and figures checked line by line">
           <div class="pf-live" aria-hidden="true"></div>
         </div>
-        <figcaption class="fig-cap"><span>◇ ENGAGEMENT WALKTHROUGH</span><span>KICKOFF → FILED</span></figcaption>
+        <figcaption class="fig-cap"><span>◇ ENGAGEMENT WALKTHROUGH</span><span>KICKOFF → DELIVERED</span></figcaption>
       </figure>
     </div>
     <div class="pf-view reveal" data-view="process">
       <div class="tl">
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEK 0</div><h4>Kickoff &amp; scope</h4><p>We map your band, deadline and the data you already hold.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 1–2 · ASSESS</div><h4>Gap analysis</h4><p>Every BRSR Core requirement marked present, partial, or missing — in plain language.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 3–6 · COMPLY</div><h4>Build the disclosure</h4><p>A filing prepared for independent assessment or assurance.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">ONGOING · IMPROVE</div><h4>Turn it to advantage</h4><p>Use the disclosure for financing and operating gains, not just compliance.</p></div>
-        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">FILING · PROVE</div><h4>Audit trail delivered</h4><p>Every number backed by evidence an assessor or assurer can follow.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEK 0</div><h4>Kickoff &amp; scope</h4><p>We map your goal, timeline and the data you already hold.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 1–2 · ASSESS</div><h4>Gap analysis</h4><p>Every requirement marked present, partial, or missing — in plain language.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">WEEKS 3–6 · COMPLY</div><h4>Build the deliverable</h4><p>The work prepared to withstand independent scrutiny.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">ONGOING · IMPROVE</div><h4>Turn it to advantage</h4><p>Use the work for financing and operating gains, not just compliance.</p></div>
+        <div class="tl-step"><div class="tl-dot"></div><div class="tl-wk">DELIVERY · PROVE</div><h4>Evidence trail delivered</h4><p>Every number backed by evidence an independent reviewer can follow.</p></div>
       </div>
     </div>
   </div>
