@@ -73,10 +73,10 @@ Every built page was verified: recalibration-grep clean · renders HTTP 200 · n
 
 > **Note — `/learn` skipped (client directive).** The page is left as-is and still carries **pre-review copy**: it duplicates the Training page and retains old terminology ("BRSR-Core", "IFRS S1/S2", "frameworks", standalone TCFD). If `/learn` ships, it needs a terminology pass or should be revisited before launch.
 
-### 3c. Structural / design (deferred)
+### 3c. Structural / design
 | Item | What | Blocker |
 |---|---|---|
-| **H15 / G6** | BRSR-dominance rebalance on Home (wheel + "one service in depth" so all 8 services get equal weight) | **design decision — 2–3 layout options owed to client** |
+| ~~H15 / G6~~ | ~~BRSR-dominance rebalance on Home~~ → **client chose: repurpose the wheel into an 8-service wheel.** ✅ **Scaffold built + live** (`b3e532e`): all 8 services, each segment links to its page, keyboard rail, Explore CTA. | ⏳ **Awaiting client's 8 service-wheel frames** (interim uses old ring art as placeholders — labels won't match imagery until then). Drop paths into `FRAMES[]` in `home.runtime.js`. **Follow-up:** relocate the BRSR-Core 49-KPI attribute detail to the ESG Disclosure page. |
 | ledger `:146` | "STANDARDS · RECOGNISED FRAMEWORKS" → "STANDARDS" (house style) | minor — never confirmed |
 
 ### 3d. Point 93 + Part B site-wide sweep — VERIFIED 2026-07-27
