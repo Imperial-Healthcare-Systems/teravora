@@ -77,12 +77,12 @@ export const SOLUTION_D_BODY = String.raw`<div class="rails"><i></i></div>
         </div>
         <div class="pov">A diligence report is only useful if both sides can act on it. We write findings a seller can verify, a buyer can price, and a lender can condition — the same evidence trail for all three.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical engagement runs from screening to a findings report and action plan inside the transaction window, with scope escalated only where the evidence demands it.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">ESDD FINDINGS · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">ESDD FINDINGS</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">RISKS · MAPPED TO IFC PS 1–8</span><span class="v" data-final="MAPPED">MAPPED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">FINDINGS · EVIDENCED ON SITE</span><span class="v" data-final="EVIDENCED">EVIDENCED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">ACTIONS · SEQUENCED FOR POST-CLOSE</span><span class="v" data-final="SEQUENCED">SEQUENCED</span></div>

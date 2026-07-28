@@ -80,12 +80,12 @@ export const SOLUTION_SOCIAL_BODY = String.raw`<div class="rails"><i></i></div>
         </div>
         <div class="pov">A social-value number without its assumptions on the table is a headline, not a measure. We build the kind you can be questioned on — because a funder, a board or an assessor eventually will.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical engagement moves from a stakeholder map to a valued, assurance-ready SROI account across a single programme cycle.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">SOCIAL VALUE ACCOUNT · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">SOCIAL VALUE ACCOUNT</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">STAKEHOLDERS · MAPPED, NOT ASSUMED</span><span class="v" data-final="MAPPED">MAPPED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">OUTCOMES · EVIDENCED FROM DATA</span><span class="v" data-final="EVIDENCED">EVIDENCED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">VALUE · PROXIED &amp; ADJUSTED</span><span class="v" data-final="VALUED">VALUED</span></div>

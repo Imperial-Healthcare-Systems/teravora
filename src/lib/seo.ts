@@ -8,8 +8,7 @@
 
 import type { Metadata } from "next";
 
-// PLACEHOLDER — TODO: replace with the confirmed production domain before ship.
-// Origin placeholder used literally across canonical URLs, JSON-LD @ids, OG, sitemap.
+// Confirmed production origin — used literally across canonical URLs, JSON-LD @ids, OG, sitemap.
 export const SITE_ORIGIN = "https://teravora.in";
 export const SITE_NAME = "Teravora";
 export const PARENT_ORG_NAME = "Teravue";

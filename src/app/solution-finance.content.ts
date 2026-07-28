@@ -78,12 +78,12 @@ export const SOLUTION_FINANCE_BODY = String.raw`<div class="rails"><i></i></div>
         </div>
         <div class="pov">Sustainable finance fails at the same place every time: the gap between the claim and the data behind it. We close that gap before you take the claim to market.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical engagement moves from evidence baseline to a diligence-ready framework and data room across one financing cycle.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">FINANCE READINESS · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">FINANCE READINESS</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">BASELINE · RECONCILED TO DISCLOSURE</span><span class="v" data-final="RECONCILED">RECONCILED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">KPIs · SELECTED TO BE TESTABLE</span><span class="v" data-final="TESTABLE">TESTABLE</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">DATA ROOM · READY FOR REVIEW</span><span class="v" data-final="READY">READY</span></div>

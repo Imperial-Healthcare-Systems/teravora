@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 import { absUrl } from "@/lib/seo";
 import { ROUTES } from "@/lib/site-data";
 
-// MVP canonicals (seo-aeo-spec §0.1). Origin is the teravora.in placeholder in
-// lib/seo.ts — T find/replaces it once the production domain is confirmed.
+// MVP canonicals (seo-aeo-spec §0.1). Origin is the confirmed production domain
+// (SITE_ORIGIN) in lib/seo.ts.
 // NOTE: this is an ALLOWLIST — only the routes below are emitted. The Sprint 5 (V)
 // throwaway comp routes under /comps are therefore already excluded by construction
 // (and are git-ignored + robots-disallowed + deleted before ship).

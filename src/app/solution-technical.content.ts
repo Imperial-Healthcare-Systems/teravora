@@ -78,12 +78,12 @@ export const SOLUTION_TECHNICAL_BODY = String.raw`<div class="rails"><i></i></di
         </div>
         <div class="pov">An audit that ends in adjectives is a site visit. Ours ends in quantities — what was measured, what it costs you, and what fixing it returns — so the decision is arithmetic, not faith.</div>
         <div class="illus">
-          <span class="lbl">◇ ILLUSTRATIVE MODEL — NOT A CLIENT RESULT</span>
+          <span class="lbl">◇ HOW A TYPICAL ENGAGEMENT MOVES</span>
           <p>A typical audit engagement runs from site measurement to a ranked findings register and implementation plan within a defined audit window.</p>
         </div>
       </div>
       <div class="readycard reveal">
-        <div class="rc-head"><span class="t">SITE AUDIT · SAMPLE</span><span class="tag">THE METHOD, NOT A CLAIM</span></div>
+        <div class="rc-head"><span class="t">SITE AUDIT</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">FLOWS · METERED AT SOURCE</span><span class="v" data-final="MEASURED">MEASURED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">FINDINGS · RANKED BY COST &amp; PAYBACK</span><span class="v" data-final="RANKED">RANKED</span></div>
         <div class="rc-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="lx">SYSTEM · CERTIFICATION-READY</span><span class="v" data-final="READY">READY</span></div>
