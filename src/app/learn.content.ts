@@ -8,7 +8,7 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
   <div class="wrap"><div class="shero-in">
     <span class="eyebrow reveal">ESG Capacity Building</span>
     <h1><span class="hl-line">Build real ESG, climate and sustainability capability in your team.</span></h1>
-    <p class="lede reveal">Tailor-made, practitioner-led training on environment, ESG, climate change and sustainability &mdash; corporate and on-field &mdash; that turns the method we use in live advisory into your team's capability: <span class="g">framework-fluent, evidence-first</span>.</p>
+    <p class="lede reveal">Tailor-made, practitioner-led training on environment, ESG, climate change and sustainability &mdash; corporate and on-field &mdash; that turns the method we use in live advisory into your team's capability: <span class="g">standards-fluent, evidence-first</span>.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-gold" href="#programs"><span>Explore programs</span><span class="arw">&rarr;</span></a>
       <a class="btn btn-ghost" href="#formats"><span>See formats</span></a>
@@ -33,7 +33,7 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="vgrid">
       <div class="vcard reveal"><div class="k">01 &middot; PRACTITIONER-LED</div><h4>From the field, not the textbook.</h4><p>Every module is drawn from live advisory work &mdash; the same gap maps, controls and evidence trails an assurer will follow.</p></div>
       <div class="vcard reveal"><div class="k">02 &middot; IMPLEMENTATION-FIRST</div><h4>You leave able to do it.</h4><p>Worked examples, real templates and your own data &mdash; training aimed at capability you can apply next reporting cycle, not a certificate on the wall.</p></div>
-      <div class="vcard reveal"><div class="k">03 &middot; BUILT FOR INDIA</div><h4>Standard-fluent, India-ready.</h4><p>Grounded in the standards that reach Indian companies &mdash; the IFC Performance Standards, the Equator Principles, the GHG Protocol, IFRS S1/S2 and India's BRSR / BRSR-Core &mdash; taught on the frameworks your team is accountable to.</p></div>
+      <div class="vcard reveal"><div class="k">03 &middot; BUILT FOR INDIA</div><h4>Standard-fluent, India-ready.</h4><p>Grounded in the standards that reach Indian companies &mdash; the IFC Performance Standards, the Equator Principles, the GHG Protocol, IFRS S1 and IFRS S2, and India's BRSR / BRSR Core &mdash; taught on the standards your team is accountable to.</p></div>
     </div>
   </div>
 </section>
@@ -57,7 +57,7 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="track reveal">
         <div class="track-h"><span class="track-n">02</span><div class="track-t"><h3>Foundations &amp; Systems</h3><span class="track-for">For teams standing up ESG reporting</span></div></div>
         <ul class="track-list">
-          <li><span class="pg-dot"></span><b>ESG Frameworks &amp; Reporting</b> &mdash; the disclosure landscape and how the pieces fit together.</li>
+          <li><span class="pg-dot"></span><b>ESG Standards &amp; Reporting</b> &mdash; the disclosure landscape and how the pieces fit together.</li>
           <li><span class="pg-dot"></span><b>Environmental &amp; Social Management Systems</b> &mdash; the system behind the numbers.</li>
           <li><span class="pg-dot"></span><b>Materiality &amp; Stakeholder Mapping</b> &mdash; deciding what to report, and to whom.</li>
         </ul>
@@ -65,9 +65,9 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
       <div class="track reveal">
         <div class="track-h"><span class="track-n">03</span><div class="track-t"><h3>Climate &amp; Carbon</h3><span class="track-for">For teams measuring and cutting emissions</span></div></div>
         <ul class="track-list">
-          <li><span class="pg-dot"></span><b>GHG Accounting &middot; Scope 1&ndash;3</b> &mdash; measuring a footprint you can defend, including Scope 3 across all fifteen categories.</li>
-          <li><span class="pg-dot"></span><b>TCFD &amp; Climate-Risk Disclosure</b> &mdash; turning climate risk into a reported number.</li>
-          <li><span class="pg-dot"></span><b>Decarbonization &amp; Net-Zero Pathways</b> &mdash; targets with a credible route behind them.</li>
+          <li><span class="pg-dot"></span><b>GHG Accounting &middot; Scopes 1, 2 and 3</b> &mdash; measuring a footprint you can defend, including Scope 3 across all fifteen categories.</li>
+          <li><span class="pg-dot"></span><b>IFRS S2 &amp; Climate-Risk Disclosure</b> &mdash; turning climate risk into a reported number, under the standard that now incorporates the TCFD recommendations.</li>
+          <li><span class="pg-dot"></span><b>Decarbonisation &amp; Net-Zero Pathways</b> &mdash; targets with a credible route behind them.</li>
         </ul>
       </div>
       <div class="track reveal">
@@ -111,17 +111,16 @@ export const LEARN_BODY = String.raw`<div class="rails"><i></i></div>
     <div class="fw-grid">
       <div class="fw-lead reveal">
         <span class="mono eyebrow">Standards</span>
-        <h2>Fluent in the frameworks that reach you.</h2>
+        <h2>Fluent in the standards that reach you.</h2>
         <p>We teach to the same standards we work in &mdash; so your team speaks the language an auditor, a lender and a regulator all expect.</p>
       </div>
       <div class="fw-chips reveal">
         <span class="fw-chip">IFC Performance Standards</span>
         <span class="fw-chip">Equator Principles</span>
         <span class="fw-chip">GHG Protocol</span>
-        <span class="fw-chip">IFRS S1 / S2</span>
-        <span class="fw-chip">TCFD</span>
+        <span class="fw-chip">IFRS S1 &amp; S2</span>
         <span class="fw-chip">GRI</span>
-        <span class="fw-chip">BRSR &middot; BRSR-Core</span>
+        <span class="fw-chip">BRSR &middot; BRSR Core</span>
       </div>
     </div>
   </div>
