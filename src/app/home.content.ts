@@ -154,8 +154,8 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
         <div class="manifest">
           <span class="mf-c tl"></span><span class="mf-c tr"></span><span class="mf-c bl"></span><span class="mf-c br"></span>
           <div class="mf-metrics">
-            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">[ BRSR CORE KPIs ]</div></div>
-            <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">[ BRSR CORE ATTRIBUTES ]</div></div>          </div>
+            <div class="mf-b"><div class="n" data-to="49">0</div><div class="k">BRSR CORE KPIs</div></div>
+            <div class="mf-b"><div class="n" data-to="9">0</div><div class="k">BRSR CORE ATTRIBUTES</div></div>          </div>
           <div class="mf-note">The SEBI BRSR Core specification — the standard we work to, not a client claim.</div>
           <div class="mf-std">
             <span class="std" data-t="IFC Performance Standards — environmental and social risk"><span class="sp">E&amp;S</span><span class="sc">IFC PS</span></span>
@@ -296,7 +296,7 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
             <div class="cfg-k">STEP 03 / 03 · REQUEST</div>
             <h3>Your specification is ready.</h3>
             <p style="color:var(--n200);font-size:.95rem;margin-bottom:18px">Everything on the right goes to your specialist. Continue and we'll respond with the scoped method.</p>
-            <div class="hero-cta"><a class="btn btn-gold" href="#" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">→</span></a></div>
+            <div class="hero-cta"><a class="btn btn-gold" href="/start" id="cfgsubmit"><span>Request a Proposal</span><span class="arw">→</span></a></div>
             <p class="cfg-consent" style="margin-top:14px;font-size:.78rem;line-height:1.5;color:rgba(255,255,255,.55)">By sending this, you agree Teravora may use the details you provide to respond to your enquiry, in line with our <a href="/privacy" style="color:inherit;text-decoration:underline">Privacy Policy</a>. We do not sell your data or share it for third-party marketing.</p>
             <div class="cfg-nav"><button class="cfg-back" data-back>← Change answers</button></div>
           </div>
@@ -319,8 +319,4 @@ export const HOME_BODY = String.raw`<div class="rails"><i></i></div>
     </div>
   </div>
 </section>
-
-<a class="wafab" href="#" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.9 1 1-4.8-.2-.4A9.8 9.8 0 016 15c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 9.8-10 9.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
-  <span class="lab">Chat with a specialist</span>
-</a>`;
+`;

@@ -142,7 +142,7 @@ export const HOW_WE_PROVE_BODY = String.raw`<header class="shero" id="top">
           <defs><linearGradient id="impcg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(79,188,194,.30)"/><stop offset="1" stop-color="rgba(79,188,194,0)"/></linearGradient></defs>
           <text x="44" y="326" class="clab">BASELINE</text><text x="300" y="326" class="clab">MEASURED</text><text x="500" y="326" text-anchor="end" class="clab">ASSURANCE-READY</text>
         </svg>
-        <p class="imp-cap">Across more than 25 years, the associated practice, <b>Teravue</b>, has taken emitters from a baseline to a measured, independently assured reduction &mdash; the backbone the Teravora method is built on. As we complete engagements in India, our own results will appear here, measured the same way.</p>
+        <p class="imp-cap">Across more than 25 years, the associated practice, <b>Teravue</b>, has taken emitters from a baseline to a measured, independently assured reduction &mdash; the backbone the Teravora method is built on. Teravora publishes its own India results as engagements complete, measured the same way.</p>
       </div>
       <div class="imp-track">
         <article class="imp-card reveal" data-i="0">
